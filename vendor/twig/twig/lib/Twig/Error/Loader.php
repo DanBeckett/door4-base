@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2010 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -24,6 +28,7 @@
  */
 class Twig_Error_Loader extends Twig_Error
 {
+<<<<<<< HEAD
     public function __construct($message, $lineno = -1, $source = null, Exception $previous = null)
     {
         if (PHP_VERSION_ID < 50300) {
@@ -34,5 +39,10 @@ class Twig_Error_Loader extends Twig_Error
         }
         $this->appendMessage($message);
         $this->setTemplateLine(false);
+=======
+    public function __construct($message, $lineno = -1, $filename = null, Exception $previous = null)
+    {
+        parent::__construct($message, false, false, $previous);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 }

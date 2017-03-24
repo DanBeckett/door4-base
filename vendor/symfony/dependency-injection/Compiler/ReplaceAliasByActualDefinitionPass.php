@@ -51,7 +51,11 @@ class ReplaceAliasByActualDefinitionPass implements CompilerPassInterface
             if (isset($replacements[$targetId])) {
                 $container->setAlias($definitionId, $replacements[$targetId]);
             }
+<<<<<<< HEAD
             // No need to process the same target twice
+=======
+            // No neeed to process the same target twice
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             if (isset($seenAliasTargets[$targetId])) {
                 continue;
             }

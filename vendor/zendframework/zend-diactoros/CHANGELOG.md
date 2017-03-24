@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+<<<<<<< HEAD
 ## 1.3.11 - TBD
 
 ### Added
@@ -398,12 +399,18 @@ All notable changes to this project will be documented in this file, in reverse 
   logic of `withUri()` to do a case-insensitive check for an existing `Host`
   header, replacing it with the new one.
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 ## 1.1.3 - 2015-08-10
 
 ### Added
 
+<<<<<<< HEAD
 - [#73](https://github.com/zendframework/zend-diactoros/pull/73) adds caching of
   the vendor directory to the Travis-CI configuration, to speed up builds.
+=======
+- Nothing.
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 ### Deprecated
 
@@ -578,7 +585,11 @@ immediately.
 - [#57](https://github.com/zendframework/zend-diactoros/pull/57) fixes the
   behavior of how the `ServerRequestFactory` marshals upload files when they are
   represented as a nested associative array.
+<<<<<<< HEAD
 - [#49](https://github.com/zendframework/zend-diactoros/pull/49) provides several
+=======
+- [#49](https://github.com/zendframework/zend-diactoros/pull/49) provides several 
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
   fixes that ensure that Diactoros complies with the PSR-7 specification:
   - `MessageInterface::getHeaderLine()` MUST return a string (that string CAN be
     empty). Previously, Diactoros would return `null`.

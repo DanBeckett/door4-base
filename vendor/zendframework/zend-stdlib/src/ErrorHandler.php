@@ -51,7 +51,11 @@ abstract class ErrorHandler
      */
     public static function start($errorLevel = \E_WARNING)
     {
+<<<<<<< HEAD
         if (! static::$stack) {
+=======
+        if (!static::$stack) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             set_error_handler([get_called_class(), 'addError'], $errorLevel);
         }
 
@@ -72,7 +76,11 @@ abstract class ErrorHandler
         if (static::$stack) {
             $errorException = array_pop(static::$stack);
 
+<<<<<<< HEAD
             if (! static::$stack) {
+=======
+            if (!static::$stack) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 restore_error_handler();
             }
 

@@ -5,6 +5,7 @@ php:
   - 5.4
   - 5.5
   - 5.6
+<<<<<<< HEAD
   - 7.0
   - hhvm
 
@@ -19,3 +20,12 @@ before_script:
 
 script:
   - composer test
+=======
+  - hhvm
+
+before_script:
+  - curl -s http://getcomposer.org/installer | php -- --quiet
+  - php composer.phar install --dev
+
+script: phpunit
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a

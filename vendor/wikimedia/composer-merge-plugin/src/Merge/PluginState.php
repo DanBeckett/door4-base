@@ -75,6 +75,7 @@ class PluginState
     protected $mergeExtra = false;
 
     /**
+<<<<<<< HEAD
      * Whether to merge the extra section in a deep / recursive way.
      *
      * By default the extra section is merged with array_merge() and duplicate
@@ -100,6 +101,8 @@ class PluginState
     protected $mergeScripts = false;
 
     /**
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @var bool $firstInstall
      */
     protected $firstInstall = false;
@@ -141,8 +144,11 @@ class PluginState
                 'replace' => false,
                 'merge-dev' => true,
                 'merge-extra' => false,
+<<<<<<< HEAD
                 'merge-extra-deep' => false,
                 'merge-scripts' => false,
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             ),
             isset($extra['merge-plugin']) ? $extra['merge-plugin'] : array()
         );
@@ -155,8 +161,11 @@ class PluginState
         $this->replace = (bool)$config['replace'];
         $this->mergeDev = (bool)$config['merge-dev'];
         $this->mergeExtra = (bool)$config['merge-extra'];
+<<<<<<< HEAD
         $this->mergeExtraDeep = (bool)$config['merge-extra-deep'];
         $this->mergeScripts = (bool)$config['merge-scripts'];
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -246,6 +255,7 @@ class PluginState
      */
     public function isDevMode()
     {
+<<<<<<< HEAD
         return $this->shouldMergeDev() && $this->devMode;
     }
 
@@ -257,6 +267,9 @@ class PluginState
     public function shouldMergeDev()
     {
         return $this->mergeDev;
+=======
+        return $this->mergeDev && $this->devMode;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -362,6 +375,7 @@ class PluginState
     {
         return $this->mergeExtra;
     }
+<<<<<<< HEAD
 
     /**
      * Should the extra section be merged deep / recursively?
@@ -396,5 +410,7 @@ class PluginState
     {
         return $this->mergeScripts;
     }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }
 // vim:sw=4:ts=4:sts=4:et:

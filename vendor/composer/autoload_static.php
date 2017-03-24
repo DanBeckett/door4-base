@@ -15,6 +15,7 @@ class ComposerStaticInitDrupal8
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+<<<<<<< HEAD
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
     );
@@ -29,6 +30,17 @@ class ComposerStaticInitDrupal8
             'Zumba\\Mink\\Driver\\' => 18,
             'Zumba\\GastonJS\\' => 15,
             'Zend\\Stdlib\\' => 12,
+=======
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'Z' => 
+        array (
+            'Zend\\Stdlib\\' => 12,
+            'Zend\\Hydrator\\' => 14,
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             'Zend\\Feed\\' => 10,
             'Zend\\Escaper\\' => 13,
             'Zend\\Diactoros\\' => 15,
@@ -36,7 +48,10 @@ class ComposerStaticInitDrupal8
         'W' => 
         array (
             'Wikimedia\\Composer\\' => 19,
+<<<<<<< HEAD
             'Webmozart\\Assert\\' => 17,
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         ),
         'S' => 
         array (
@@ -53,6 +68,7 @@ class ComposerStaticInitDrupal8
             'Symfony\\Component\\HttpKernel\\' => 29,
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\EventDispatcher\\' => 34,
+<<<<<<< HEAD
             'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Debug\\' => 24,
@@ -60,12 +76,21 @@ class ComposerStaticInitDrupal8
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\ClassLoader\\' => 30,
             'Symfony\\Component\\BrowserKit\\' => 29,
+=======
+            'Symfony\\Component\\DependencyInjection\\' => 38,
+            'Symfony\\Component\\Debug\\' => 24,
+            'Symfony\\Component\\Console\\' => 26,
+            'Symfony\\Component\\ClassLoader\\' => 30,
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
         ),
         'P' => 
         array (
+<<<<<<< HEAD
             'Psr\\Log\\' => 8,
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             'Psr\\Http\\Message\\' => 17,
         ),
         'M' => 
@@ -77,7 +102,10 @@ class ComposerStaticInitDrupal8
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+<<<<<<< HEAD
             'Goutte\\' => 7,
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         ),
         'D' => 
         array (
@@ -85,22 +113,29 @@ class ComposerStaticInitDrupal8
             'Drupal\\Core\\Composer\\' => 21,
             'Drupal\\Core\\' => 12,
             'Drupal\\Component\\' => 17,
+<<<<<<< HEAD
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         ),
         'C' => 
         array (
             'Composer\\Semver\\' => 16,
+<<<<<<< HEAD
             'Composer\\Installers\\' => 20,
         ),
         'B' => 
         array (
             'Behat\\Mink\\Driver\\' => 18,
             'Behat\\Mink\\' => 11,
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+<<<<<<< HEAD
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -115,10 +150,19 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/jcalderonzumba/gastonjs/src',
         ),
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Zend\\Stdlib\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-stdlib/src',
         ),
+<<<<<<< HEAD
+=======
+        'Zend\\Hydrator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-hydrator/src',
+        ),
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Zend\\Feed\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-feed/src',
@@ -135,10 +179,13 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src',
         ),
+<<<<<<< HEAD
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Symfony\\Polyfill\\Php55\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php55',
@@ -191,10 +238,13 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
+<<<<<<< HEAD
         'Symfony\\Component\\DomCrawler\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/dom-crawler',
         ),
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Symfony\\Component\\DependencyInjection\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/dependency-injection',
@@ -203,10 +253,13 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
         ),
+<<<<<<< HEAD
         'Symfony\\Component\\CssSelector\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/css-selector',
         ),
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
@@ -215,10 +268,13 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/symfony/class-loader',
         ),
+<<<<<<< HEAD
         'Symfony\\Component\\BrowserKit\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Symfony\\Cmf\\Component\\Routing\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony-cmf/routing',
@@ -227,10 +283,13 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
+<<<<<<< HEAD
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
@@ -251,10 +310,13 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+<<<<<<< HEAD
         'Goutte\\' => 
         array (
             0 => __DIR__ . '/..' . '/fabpot/goutte/Goutte',
         ),
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Drupal\\Driver\\' => 
         array (
             0 => __DIR__ . '/../..' . '/drivers/lib/Drupal/Driver',
@@ -271,6 +333,7 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/../..' . '/core/lib/Drupal/Component',
         ),
+<<<<<<< HEAD
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -279,10 +342,13 @@ class ComposerStaticInitDrupal8
         array (
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
         ),
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'Composer\\Semver\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
         ),
+<<<<<<< HEAD
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
@@ -306,6 +372,11 @@ class ComposerStaticInitDrupal8
                 0 => __DIR__ . '/..' . '/mikey179/vfsStream/src/main/php',
             ),
         ),
+=======
+    );
+
+    public static $prefixesPsr0 = array (
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'T' => 
         array (
             'Twig_' => 
@@ -322,9 +393,15 @@ class ComposerStaticInitDrupal8
         ),
         'P' => 
         array (
+<<<<<<< HEAD
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
+=======
+            'Psr\\Log\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/psr/log',
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             ),
         ),
         'E' => 
@@ -352,6 +429,13 @@ class ComposerStaticInitDrupal8
             array (
                 0 => __DIR__ . '/..' . '/doctrine/collections/lib',
             ),
+<<<<<<< HEAD
+=======
+            'Doctrine\\Common\\Cache\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/cache/lib',
+            ),
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             'Doctrine\\Common\\Annotations\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
@@ -361,6 +445,16 @@ class ComposerStaticInitDrupal8
                 0 => __DIR__ . '/..' . '/doctrine/common/lib',
             ),
         ),
+<<<<<<< HEAD
+=======
+        'C' => 
+        array (
+            'Composer\\Installers\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/composer/installers/src',
+            ),
+        ),
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'A' => 
         array (
             'Asm89\\Stack' => 
@@ -379,6 +473,7 @@ class ComposerStaticInitDrupal8
         'Drupal\\Core\\DrupalKernel' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/DrupalKernel.php',
         'Drupal\\Core\\DrupalKernelInterface' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/DrupalKernelInterface.php',
         'Drupal\\Core\\Site\\Settings' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Site/Settings.php',
+<<<<<<< HEAD
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
@@ -821,6 +916,9 @@ class ComposerStaticInitDrupal8
         'SebastianBergmann\\RecursionContext\\Exception' => __DIR__ . '/..' . '/sebastian/recursion-context/src/Exception.php',
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+=======
+        'RecursiveCallbackFilterIterator' => __DIR__ . '/..' . '/symfony/polyfill-php54/Resources/stubs/RecursiveCallbackFilterIterator.php',
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         'SessionHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php54/Resources/stubs/SessionHandlerInterface.php',
         'Symfony\\Component\\HttpFoundation\\FileBag' => __DIR__ . '/..' . '/symfony/http-foundation/FileBag.php',
         'Symfony\\Component\\HttpFoundation\\HeaderBag' => __DIR__ . '/..' . '/symfony/http-foundation/HeaderBag.php',
@@ -830,7 +928,10 @@ class ComposerStaticInitDrupal8
         'Symfony\\Component\\HttpKernel\\HttpKernel' => __DIR__ . '/..' . '/symfony/http-kernel/HttpKernel.php',
         'Symfony\\Component\\HttpKernel\\HttpKernelInterface' => __DIR__ . '/..' . '/symfony/http-kernel/HttpKernelInterface.php',
         'Symfony\\Component\\HttpKernel\\TerminableInterface' => __DIR__ . '/..' . '/symfony/http-kernel/TerminableInterface.php',
+<<<<<<< HEAD
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     );
 
     public static function getInitializer(ClassLoader $loader)

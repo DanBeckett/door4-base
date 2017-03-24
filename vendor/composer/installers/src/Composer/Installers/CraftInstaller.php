@@ -1,6 +1,7 @@
 <?php
 namespace Composer\Installers;
 
+<<<<<<< HEAD
 /**
  * Installer for Craft Plugins
  */
@@ -32,4 +33,11 @@ class CraftInstaller extends BaseInstaller
 
         return $vars;
     }
+=======
+class CraftInstaller extends BaseInstaller
+{
+    protected $locations = array(
+        'plugin' => 'craft/plugins/{$name}/',
+    );
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

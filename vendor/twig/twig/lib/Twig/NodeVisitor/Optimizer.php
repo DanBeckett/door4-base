@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2010 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,8 +21,11 @@
  * You can configure which optimizations you want to activate via the
  * optimizer mode.
  *
+<<<<<<< HEAD
  * @final
  *
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @author Fabien Potencier <fabien@symfony.com>
  */
 class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
@@ -36,6 +43,11 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
     protected $inABody = false;
 
     /**
+<<<<<<< HEAD
+=======
+     * Constructor.
+     *
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @param int $optimizers The optimizer mode
      */
     public function __construct($optimizers = -1)
@@ -47,13 +59,23 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
         $this->optimizers = $optimizers;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     protected function doEnterNode(Twig_Node $node, Twig_Environment $env)
     {
         if (self::OPTIMIZE_FOR === (self::OPTIMIZE_FOR & $this->optimizers)) {
             $this->enterOptimizeFor($node, $env);
         }
 
+<<<<<<< HEAD
         if (PHP_VERSION_ID < 50400 && self::OPTIMIZE_VAR_ACCESS === (self::OPTIMIZE_VAR_ACCESS & $this->optimizers) && !$env->isStrictVariables() && !$env->hasExtension('Twig_Extension_Sandbox')) {
+=======
+        if (PHP_VERSION_ID < 50400 && self::OPTIMIZE_VAR_ACCESS === (self::OPTIMIZE_VAR_ACCESS & $this->optimizers) && !$env->isStrictVariables() && !$env->hasExtension('sandbox')) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             if ($this->inABody) {
                 if (!$node instanceof Twig_Node_Expression) {
                     if (get_class($node) !== 'Twig_Node') {
@@ -70,6 +92,12 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
         return $node;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     protected function doLeaveNode(Twig_Node $node, Twig_Environment $env)
     {
         $expression = $node instanceof Twig_Node_Expression;
@@ -84,14 +112,22 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
 
         $node = $this->optimizePrintNode($node, $env);
 
+<<<<<<< HEAD
         if (self::OPTIMIZE_VAR_ACCESS === (self::OPTIMIZE_VAR_ACCESS & $this->optimizers) && !$env->isStrictVariables() && !$env->hasExtension('Twig_Extension_Sandbox')) {
+=======
+        if (self::OPTIMIZE_VAR_ACCESS === (self::OPTIMIZE_VAR_ACCESS & $this->optimizers) && !$env->isStrictVariables() && !$env->hasExtension('sandbox')) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             if ($node instanceof Twig_Node_Body) {
                 $this->inABody = false;
             } elseif ($this->inABody) {
                 if (!$expression && get_class($node) !== 'Twig_Node' && $prependedNodes = array_shift($this->prependedNodes)) {
                     $nodes = array();
                     foreach (array_unique($prependedNodes) as $name) {
+<<<<<<< HEAD
                         $nodes[] = new Twig_Node_SetTemp($name, $node->getTemplateLine());
+=======
+                        $nodes[] = new Twig_Node_SetTemp($name, $node->getLine());
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                     }
 
                     $nodes[] = $node;
@@ -108,7 +144,11 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
         if ('Twig_Node_Expression_Name' === get_class($node) && $node->isSimple()) {
             $this->prependedNodes[0][] = $node->getAttribute('name');
 
+<<<<<<< HEAD
             return new Twig_Node_Expression_TempName($node->getAttribute('name'), $node->getTemplateLine());
+=======
+            return new Twig_Node_Expression_TempName($node->getAttribute('name'), $node->getLine());
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         return $node;
@@ -121,6 +161,12 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
      *
      *   * "echo $this->render(Parent)Block()" with "$this->display(Parent)Block()"
      *
+<<<<<<< HEAD
+=======
+     * @param Twig_NodeInterface $node A Node
+     * @param Twig_Environment   $env  The current Twig environment
+     *
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @return Twig_NodeInterface
      */
     protected function optimizePrintNode(Twig_NodeInterface $node, Twig_Environment $env)
@@ -129,6 +175,7 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
             return $node;
         }
 
+<<<<<<< HEAD
         $exprNode = $node->getNode('expr');
         if (
             $exprNode instanceof Twig_Node_Expression_BlockReference ||
@@ -137,6 +184,15 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
             $exprNode->setAttribute('output', true);
 
             return $exprNode;
+=======
+        if (
+            $node->getNode('expr') instanceof Twig_Node_Expression_BlockReference ||
+            $node->getNode('expr') instanceof Twig_Node_Expression_Parent
+        ) {
+            $node->getNode('expr')->setAttribute('output', true);
+
+            return $node->getNode('expr');
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         return $node;
@@ -145,6 +201,12 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
     /**
      * Removes "raw" filters.
      *
+<<<<<<< HEAD
+=======
+     * @param Twig_NodeInterface $node A Node
+     * @param Twig_Environment   $env  The current Twig environment
+     *
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @return Twig_NodeInterface
      */
     protected function optimizeRawFilter(Twig_NodeInterface $node, Twig_Environment $env)
@@ -158,6 +220,12 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
 
     /**
      * Optimizes "for" tag by removing the "loop" variable creation whenever possible.
+<<<<<<< HEAD
+=======
+     *
+     * @param Twig_NodeInterface $node A Node
+     * @param Twig_Environment   $env  The current Twig environment
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     protected function enterOptimizeFor(Twig_NodeInterface $node, Twig_Environment $env)
     {
@@ -222,6 +290,12 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
 
     /**
      * Optimizes "for" tag by removing the "loop" variable creation whenever possible.
+<<<<<<< HEAD
+=======
+     *
+     * @param Twig_NodeInterface $node A Node
+     * @param Twig_Environment   $env  The current Twig environment
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     protected function leaveOptimizeFor(Twig_NodeInterface $node, Twig_Environment $env)
     {
@@ -244,6 +318,12 @@ class Twig_NodeVisitor_Optimizer extends Twig_BaseNodeVisitor
         }
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function getPriority()
     {
         return 255;

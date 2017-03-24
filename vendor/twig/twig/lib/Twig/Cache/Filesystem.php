@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2015 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -31,6 +35,12 @@ class Twig_Cache_Filesystem implements Twig_CacheInterface
         $this->options = $options;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function generateKey($name, $className)
     {
         $hash = hash('sha256', $className);
@@ -38,6 +48,7 @@ class Twig_Cache_Filesystem implements Twig_CacheInterface
         return $this->directory.$hash[0].$hash[1].'/'.$hash.'.php';
     }
 
+<<<<<<< HEAD
     public function load($key)
     {
         if (file_exists($key)) {
@@ -45,10 +56,24 @@ class Twig_Cache_Filesystem implements Twig_CacheInterface
         }
     }
 
+=======
+    /**
+     * {@inheritdoc}
+     */
+    public function load($key)
+    {
+        @include_once $key;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function write($key, $content)
     {
         $dir = dirname($key);
         if (!is_dir($dir)) {
+<<<<<<< HEAD
             if (false === @mkdir($dir, 0777, true)) {
                 if (PHP_VERSION_ID >= 50300) {
                     clearstatcache(true, $dir);
@@ -56,6 +81,10 @@ class Twig_Cache_Filesystem implements Twig_CacheInterface
                 if (!is_dir($dir)) {
                     throw new RuntimeException(sprintf('Unable to create the cache directory (%s).', $dir));
                 }
+=======
+            if (false === @mkdir($dir, 0777, true) && !is_dir($dir)) {
+                throw new RuntimeException(sprintf('Unable to create the cache directory (%s).', $dir));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
         } elseif (!is_writable($dir)) {
             throw new RuntimeException(sprintf('Unable to write in the cache directory (%s).', $dir));
@@ -80,6 +109,12 @@ class Twig_Cache_Filesystem implements Twig_CacheInterface
         throw new RuntimeException(sprintf('Failed to write cache file "%s".', $key));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function getTimestamp($key)
     {
         if (!file_exists($key)) {

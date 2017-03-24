@@ -3,6 +3,11 @@ namespace Composer\Installers;
 
 use Composer\DependencyResolver\Pool;
 use Composer\Package\PackageInterface;
+<<<<<<< HEAD
+=======
+use Composer\Package\LinkConstraint\MultiConstraint;
+use Composer\Package\LinkConstraint\VersionConstraint;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 class CakePHPInstaller extends BaseInstaller
 {
@@ -50,6 +55,7 @@ class CakePHPInstaller extends BaseInstaller
      */
     protected function matchesCakeVersion($matcher, $version)
     {
+<<<<<<< HEAD
         if (class_exists('Composer\Semver\Constraint\MultiConstraint')) {
             $multiClass = 'Composer\Semver\Constraint\MultiConstraint';
             $constraintClass = 'Composer\Semver\Constraint\Constraint';
@@ -58,21 +64,33 @@ class CakePHPInstaller extends BaseInstaller
             $constraintClass = 'Composer\Package\LinkConstraint\VersionConstraint';
         }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $repositoryManager = $this->composer->getRepositoryManager();
         if ($repositoryManager) {
             $repos = $repositoryManager->getLocalRepository();
             if (!$repos) {
                 return false;
             }
+<<<<<<< HEAD
             $cake3 = new $multiClass(array(
                 new $constraintClass($matcher, $version),
                 new $constraintClass('!=', '9999999-dev'),
+=======
+            $cake3 = new MultiConstraint(array(
+                new VersionConstraint($matcher, $version),
+                new VersionConstraint('!=', '9999999-dev'),
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             ));
             $pool = new Pool('dev');
             $pool->addRepository($repos);
             $packages = $pool->whatProvides('cakephp/cakephp');
             foreach ($packages as $package) {
+<<<<<<< HEAD
                 $installed = new $constraintClass('=', $package->getVersion());
+=======
+                $installed = new VersionConstraint('=', $package->getVersion());
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 if ($cake3->matches($installed)) {
                     return true;
                     break;

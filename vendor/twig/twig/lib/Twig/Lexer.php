@@ -3,8 +3,13 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
  * (c) Armin Ronacher
+=======
+ * (c) 2009 Fabien Potencier
+ * (c) 2009 Armin Ronacher
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -26,7 +31,10 @@ class Twig_Lexer implements Twig_LexerInterface
     protected $states;
     protected $brackets;
     protected $env;
+<<<<<<< HEAD
     // to be renamed to $name in 2.0 (where it is private)
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     protected $filename;
     protected $options;
     protected $regexes;
@@ -34,8 +42,11 @@ class Twig_Lexer implements Twig_LexerInterface
     protected $positions;
     protected $currentVarBlockLine;
 
+<<<<<<< HEAD
     private $source;
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     const STATE_DATA = 0;
     const STATE_BLOCK = 1;
     const STATE_VAR = 2;
@@ -75,6 +86,7 @@ class Twig_Lexer implements Twig_LexerInterface
         );
     }
 
+<<<<<<< HEAD
     public function tokenize($code, $name = null)
     {
         if (!$code instanceof Twig_Source) {
@@ -88,6 +100,13 @@ class Twig_Lexer implements Twig_LexerInterface
             @trigger_error('Support for having "mbstring.func_overload" different from 0 is deprecated version 1.29 and will be removed in 2.0.', E_USER_DEPRECATED);
         }
 
+=======
+    /**
+     * {@inheritdoc}
+     */
+    public function tokenize($code, $filename = null)
+    {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         if (function_exists('mb_internal_encoding') && ((int) ini_get('mbstring.func_overload')) & 2) {
             $mbEncoding = mb_internal_encoding();
             mb_internal_encoding('ASCII');
@@ -95,8 +114,13 @@ class Twig_Lexer implements Twig_LexerInterface
             $mbEncoding = null;
         }
 
+<<<<<<< HEAD
         $this->code = str_replace(array("\r\n", "\r"), "\n", $this->source->getCode());
         $this->filename = $this->source->getName();
+=======
+        $this->code = str_replace(array("\r\n", "\r"), "\n", $code);
+        $this->filename = $filename;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $this->cursor = 0;
         $this->lineno = 1;
         $this->end = strlen($this->code);
@@ -140,14 +164,22 @@ class Twig_Lexer implements Twig_LexerInterface
 
         if (!empty($this->brackets)) {
             list($expect, $lineno) = array_pop($this->brackets);
+<<<<<<< HEAD
             throw new Twig_Error_Syntax(sprintf('Unclosed "%s".', $expect), $lineno, $this->source);
+=======
+            throw new Twig_Error_Syntax(sprintf('Unclosed "%s".', $expect), $lineno, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         if ($mbEncoding) {
             mb_internal_encoding($mbEncoding);
         }
 
+<<<<<<< HEAD
         return new Twig_TokenStream($this->tokens, $this->source);
+=======
+        return new Twig_TokenStream($this->tokens, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     protected function lexData()
@@ -235,7 +267,11 @@ class Twig_Lexer implements Twig_LexerInterface
             $this->moveCursor($match[0]);
 
             if ($this->cursor >= $this->end) {
+<<<<<<< HEAD
                 throw new Twig_Error_Syntax(sprintf('Unclosed "%s".', $this->state === self::STATE_BLOCK ? 'block' : 'variable'), $this->currentVarBlockLine, $this->source);
+=======
+                throw new Twig_Error_Syntax(sprintf('Unclosed "%s".', $this->state === self::STATE_BLOCK ? 'block' : 'variable'), $this->currentVarBlockLine, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
         }
 
@@ -267,12 +303,20 @@ class Twig_Lexer implements Twig_LexerInterface
             // closing bracket
             elseif (false !== strpos(')]}', $this->code[$this->cursor])) {
                 if (empty($this->brackets)) {
+<<<<<<< HEAD
                     throw new Twig_Error_Syntax(sprintf('Unexpected "%s".', $this->code[$this->cursor]), $this->lineno, $this->source);
+=======
+                    throw new Twig_Error_Syntax(sprintf('Unexpected "%s".', $this->code[$this->cursor]), $this->lineno, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 }
 
                 list($expect, $lineno) = array_pop($this->brackets);
                 if ($this->code[$this->cursor] != strtr($expect, '([{', ')]}')) {
+<<<<<<< HEAD
                     throw new Twig_Error_Syntax(sprintf('Unclosed "%s".', $expect), $lineno, $this->source);
+=======
+                    throw new Twig_Error_Syntax(sprintf('Unclosed "%s".', $expect), $lineno, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 }
             }
 
@@ -292,7 +336,11 @@ class Twig_Lexer implements Twig_LexerInterface
         }
         // unlexable
         else {
+<<<<<<< HEAD
             throw new Twig_Error_Syntax(sprintf('Unexpected character "%s".', $this->code[$this->cursor]), $this->lineno, $this->source);
+=======
+            throw new Twig_Error_Syntax(sprintf('Unexpected character "%s".', $this->code[$this->cursor]), $this->lineno, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
     }
 
@@ -303,7 +351,11 @@ class Twig_Lexer implements Twig_LexerInterface
         }
 
         if (!preg_match(str_replace('%s', $tag, $this->regexes['lex_raw_data']), $this->code, $match, PREG_OFFSET_CAPTURE, $this->cursor)) {
+<<<<<<< HEAD
             throw new Twig_Error_Syntax(sprintf('Unexpected end of file: Unclosed "%s" block.', $tag), $this->lineno, $this->source);
+=======
+            throw new Twig_Error_Syntax(sprintf('Unexpected end of file: Unclosed "%s" block.', $tag), $this->lineno, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $text = substr($this->code, $this->cursor, $match[0][1] - $this->cursor);
@@ -319,7 +371,11 @@ class Twig_Lexer implements Twig_LexerInterface
     protected function lexComment()
     {
         if (!preg_match($this->regexes['lex_comment'], $this->code, $match, PREG_OFFSET_CAPTURE, $this->cursor)) {
+<<<<<<< HEAD
             throw new Twig_Error_Syntax('Unclosed comment.', $this->lineno, $this->source);
+=======
+            throw new Twig_Error_Syntax('Unclosed comment.', $this->lineno, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $this->moveCursor(substr($this->code, $this->cursor, $match[0][1] - $this->cursor).$match[0][0]);
@@ -338,7 +394,11 @@ class Twig_Lexer implements Twig_LexerInterface
         } elseif (preg_match(self::REGEX_DQ_STRING_DELIM, $this->code, $match, null, $this->cursor)) {
             list($expect, $lineno) = array_pop($this->brackets);
             if ($this->code[$this->cursor] != '"') {
+<<<<<<< HEAD
                 throw new Twig_Error_Syntax(sprintf('Unclosed "%s".', $expect), $lineno, $this->source);
+=======
+                throw new Twig_Error_Syntax(sprintf('Unclosed "%s".', $expect), $lineno, $this->filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
 
             $this->popState();
@@ -414,7 +474,11 @@ class Twig_Lexer implements Twig_LexerInterface
     protected function popState()
     {
         if (0 === count($this->states)) {
+<<<<<<< HEAD
             throw new Exception('Cannot pop state without a previous state.');
+=======
+            throw new Exception('Cannot pop state without a previous state');
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $this->state = array_pop($this->states);

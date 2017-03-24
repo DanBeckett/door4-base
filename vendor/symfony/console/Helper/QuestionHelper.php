@@ -38,7 +38,11 @@ class QuestionHelper extends Helper
      * @param OutputInterface $output   An OutputInterface instance
      * @param Question        $question The question to ask
      *
+<<<<<<< HEAD
      * @return mixed The user answer
+=======
+     * @return string The user answer
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @throws RuntimeException If there is no data to read in the input stream
      */
@@ -384,7 +388,11 @@ class QuestionHelper extends Helper
      * @param OutputInterface $output      An Output instance
      * @param Question        $question    A Question instance
      *
+<<<<<<< HEAD
      * @return mixed The validated response
+=======
+     * @return string The validated response
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @throws \Exception In case the max number of attempts has been reached and no valid response has been given
      */

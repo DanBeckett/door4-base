@@ -164,7 +164,11 @@ class Definition
     }
 
     /**
+<<<<<<< HEAD
      * Gets the service that this service is decorating.
+=======
+     * Gets the service that decorates this service.
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @return null|array An array composed of the decorated service id, the new id for it and the priority of decoration, null if no service is decorated
      */
@@ -308,10 +312,13 @@ class Definition
      */
     public function replaceArgument($index, $argument)
     {
+<<<<<<< HEAD
         if (0 === count($this->arguments)) {
             throw new OutOfBoundsException('Cannot replace arguments if none have been configured yet.');
         }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         if ($index < 0 || $index > count($this->arguments) - 1) {
             throw new OutOfBoundsException(sprintf('The index "%d" is not in the range [0, %d].', $index, count($this->arguments) - 1));
         }

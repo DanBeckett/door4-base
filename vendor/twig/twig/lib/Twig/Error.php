@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2009 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,8 +29,13 @@
  * and line number) yourself by passing them to the constructor. If some or all
  * these information are not available from where you throw the exception, then
  * this class will guess them automatically (when the line number is set to -1
+<<<<<<< HEAD
  * and/or the name is set to null). As this is a costly operation, this
  * can be disabled by passing false for both the name and the line number
+=======
+ * and/or the filename is set to null). As this is a costly operation, this
+ * can be disabled by passing false for both the filename and the line number
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * when creating a new instance of this class.
  *
  * @author Fabien Potencier <fabien@symfony.com>
@@ -34,11 +43,15 @@
 class Twig_Error extends Exception
 {
     protected $lineno;
+<<<<<<< HEAD
     // to be renamed to name in 2.0
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     protected $filename;
     protected $rawMessage;
     protected $previous;
 
+<<<<<<< HEAD
     private $sourcePath;
     private $sourceCode;
 
@@ -46,10 +59,17 @@ class Twig_Error extends Exception
      * Constructor.
      *
      * Set both the line number and the name to false to
+=======
+    /**
+     * Constructor.
+     *
+     * Set both the line number and the filename to false to
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * disable automatic guessing of the original template name
      * and line number.
      *
      * Set the line number to -1 to enable its automatic guessing.
+<<<<<<< HEAD
      * Set the name to null to enable its automatic guessing.
      *
      * By default, automatic guessing is enabled.
@@ -71,6 +91,19 @@ class Twig_Error extends Exception
             $this->sourceCode = $source->getCode();
             $this->sourcePath = $source->getPath();
         }
+=======
+     * Set the filename to null to enable its automatic guessing.
+     *
+     * By default, automatic guessing is enabled.
+     *
+     * @param string    $message  The error message
+     * @param int       $lineno   The template line where the error occurred
+     * @param string    $filename The template file name where the error occurred
+     * @param Exception $previous The previous exception
+     */
+    public function __construct($message, $lineno = -1, $filename = null, Exception $previous = null)
+    {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         if (PHP_VERSION_ID < 50300) {
             $this->previous = $previous;
             parent::__construct('');
@@ -79,9 +112,15 @@ class Twig_Error extends Exception
         }
 
         $this->lineno = $lineno;
+<<<<<<< HEAD
         $this->filename = $name;
 
         if (-1 === $lineno || null === $name || null === $this->sourcePath) {
+=======
+        $this->filename = $filename;
+
+        if (-1 === $this->lineno || null === $this->filename) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $this->guessTemplateInfo();
         }
 
@@ -101,6 +140,7 @@ class Twig_Error extends Exception
     }
 
     /**
+<<<<<<< HEAD
      * Gets the logical name where the error occurred.
      *
      * @return string The name
@@ -111,10 +151,19 @@ class Twig_Error extends Exception
     {
         @trigger_error(sprintf('The "%s" method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', __METHOD__), E_USER_DEPRECATED);
 
+=======
+     * Gets the filename where the error occurred.
+     *
+     * @return string The filename
+     */
+    public function getTemplateFile()
+    {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         return $this->filename;
     }
 
     /**
+<<<<<<< HEAD
      * Sets the logical name where the error occurred.
      *
      * @param string $name The name
@@ -157,6 +206,15 @@ class Twig_Error extends Exception
 
         $this->filename = $name;
         $this->sourceCode = $this->sourcePath = null;
+=======
+     * Sets the filename where the error occurred.
+     *
+     * @param string $filename The filename
+     */
+    public function setTemplateFile($filename)
+    {
+        $this->filename = $filename;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
         $this->updateRepr();
     }
@@ -183,6 +241,7 @@ class Twig_Error extends Exception
         $this->updateRepr();
     }
 
+<<<<<<< HEAD
     /**
      * Gets the source context of the Twig template where the error occurred.
      *
@@ -209,6 +268,8 @@ class Twig_Error extends Exception
         $this->updateRepr();
     }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function guess()
     {
         $this->guessTemplateInfo();
@@ -247,6 +308,7 @@ class Twig_Error extends Exception
     {
         $this->message = $this->rawMessage;
 
+<<<<<<< HEAD
         if ($this->sourcePath && $this->lineno > 0) {
             $this->file = $this->sourcePath;
             $this->line = $this->lineno;
@@ -254,6 +316,8 @@ class Twig_Error extends Exception
             return;
         }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $dot = false;
         if ('.' === substr($this->message, -1)) {
             $this->message = substr($this->message, 0, -1);
@@ -268,11 +332,19 @@ class Twig_Error extends Exception
 
         if ($this->filename) {
             if (is_string($this->filename) || (is_object($this->filename) && method_exists($this->filename, '__toString'))) {
+<<<<<<< HEAD
                 $name = sprintf('"%s"', $this->filename);
             } else {
                 $name = json_encode($this->filename);
             }
             $this->message .= sprintf(' in %s', $name);
+=======
+                $filename = sprintf('"%s"', $this->filename);
+            } else {
+                $filename = json_encode($this->filename);
+            }
+            $this->message .= sprintf(' in %s', $filename);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         if ($this->lineno && $this->lineno >= 0) {
@@ -313,11 +385,16 @@ class Twig_Error extends Exception
             }
         }
 
+<<<<<<< HEAD
         // update template name
+=======
+        // update template filename
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         if (null !== $template && null === $this->filename) {
             $this->filename = $template->getTemplateName();
         }
 
+<<<<<<< HEAD
         // update template path if any
         if (null !== $template && null === $this->sourcePath) {
             $src = $template->getSourceContext();
@@ -325,6 +402,8 @@ class Twig_Error extends Exception
             $this->sourcePath = $src->getPath();
         }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         if (null === $template || $this->lineno > -1) {
             return;
         }

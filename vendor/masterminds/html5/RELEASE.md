@@ -1,5 +1,6 @@
 # Release Notes
 
+<<<<<<< HEAD
 2.2.2 (2016-10-22)
 
 - #116: In XML mode, tags are case sensitive
@@ -12,6 +13,13 @@
 - #109: Fixed issue where address tag could be written without closing tag (thanks sylus)
 
 2.2.0 (2016-04-11)
+=======
+2.2.1 (2015-05-10)
+
+- #109: Fixed issue where address tag could be written without closing tag
+
+2.2.0 (2015-04-11)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 - #105: Enable composer cache (for CI/CD)
 - #100: Use mb_substitute_character inset of ini_set for environments where

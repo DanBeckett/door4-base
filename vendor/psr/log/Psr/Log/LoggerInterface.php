@@ -3,14 +3,22 @@
 namespace Psr\Log;
 
 /**
+<<<<<<< HEAD
  * Describes a logger instance.
+=======
+ * Describes a logger instance
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * The message MUST be a string or object implementing __toString().
  *
  * The message MAY contain placeholders in the form: {foo} where foo
  * will be replaced by the context data in key "foo".
  *
+<<<<<<< HEAD
  * The context array can contain arbitrary data. The only assumption that
+=======
+ * The context array can contain arbitrary data, the only assumption that
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * can be made by implementors is that if an Exception instance is given
  * to produce a stack trace, it MUST be in a key named "exception".
  *
@@ -23,9 +31,14 @@ interface LoggerInterface
      * System is unusable.
      *
      * @param string $message
+<<<<<<< HEAD
      * @param array  $context
      *
      * @return void
+=======
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function emergency($message, array $context = array());
 
@@ -36,9 +49,14 @@ interface LoggerInterface
      * trigger the SMS alerts and wake you up.
      *
      * @param string $message
+<<<<<<< HEAD
      * @param array  $context
      *
      * @return void
+=======
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function alert($message, array $context = array());
 
@@ -48,9 +66,14 @@ interface LoggerInterface
      * Example: Application component unavailable, unexpected exception.
      *
      * @param string $message
+<<<<<<< HEAD
      * @param array  $context
      *
      * @return void
+=======
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function critical($message, array $context = array());
 
@@ -59,9 +82,14 @@ interface LoggerInterface
      * be logged and monitored.
      *
      * @param string $message
+<<<<<<< HEAD
      * @param array  $context
      *
      * @return void
+=======
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function error($message, array $context = array());
 
@@ -72,9 +100,14 @@ interface LoggerInterface
      * that are not necessarily wrong.
      *
      * @param string $message
+<<<<<<< HEAD
      * @param array  $context
      *
      * @return void
+=======
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function warning($message, array $context = array());
 
@@ -82,9 +115,14 @@ interface LoggerInterface
      * Normal but significant events.
      *
      * @param string $message
+<<<<<<< HEAD
      * @param array  $context
      *
      * @return void
+=======
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function notice($message, array $context = array());
 
@@ -94,9 +132,14 @@ interface LoggerInterface
      * Example: User logs in, SQL logs.
      *
      * @param string $message
+<<<<<<< HEAD
      * @param array  $context
      *
      * @return void
+=======
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function info($message, array $context = array());
 
@@ -104,20 +147,32 @@ interface LoggerInterface
      * Detailed debug information.
      *
      * @param string $message
+<<<<<<< HEAD
      * @param array  $context
      *
      * @return void
+=======
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function debug($message, array $context = array());
 
     /**
      * Logs with an arbitrary level.
      *
+<<<<<<< HEAD
      * @param mixed  $level
      * @param string $message
      * @param array  $context
      *
      * @return void
+=======
+     * @param mixed $level
+     * @param string $message
+     * @param array $context
+     * @return null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function log($level, $message, array $context = array());
 }

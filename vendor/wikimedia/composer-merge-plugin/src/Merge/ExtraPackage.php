@@ -59,11 +59,14 @@ class ExtraPackage
     protected $package;
 
     /**
+<<<<<<< HEAD
      * @var VersionParser $versionParser
      */
     protected $versionParser;
 
     /**
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @param string $path Path to composer.json file
      * @param Composer $composer
      * @param Logger $logger
@@ -75,7 +78,10 @@ class ExtraPackage
         $this->logger = $logger;
         $this->json = $this->readPackageJson($path);
         $this->package = $this->loadPackage($this->json);
+<<<<<<< HEAD
         $this->versionParser = new VersionParser();
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -126,10 +132,17 @@ class ExtraPackage
     }
 
     /**
+<<<<<<< HEAD
      * @param array $json
      * @return CompletePackage
      */
     protected function loadPackage(array $json)
+=======
+     * @param string $json
+     * @return CompletePackage
+     */
+    protected function loadPackage($json)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         $loader = new ArrayLoader();
         $package = $loader->load($json);
@@ -152,9 +165,18 @@ class ExtraPackage
      */
     public function mergeInto(RootPackageInterface $root, PluginState $state)
     {
+<<<<<<< HEAD
         $this->prependRepositories($root);
 
         $this->mergeRequires('require', $root, $state);
+=======
+        $this->addRepositories($root);
+
+        $this->mergeRequires('require', $root, $state);
+        if ($state->isDevMode()) {
+            $this->mergeRequires('require-dev', $root, $state);
+        }
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
         $this->mergePackageLinks('conflict', $root);
         $this->mergePackageLinks('replace', $root);
@@ -163,6 +185,7 @@ class ExtraPackage
         $this->mergeSuggests($root);
 
         $this->mergeAutoload('autoload', $root);
+<<<<<<< HEAD
 
         $this->mergeExtra($root, $state);
 
@@ -186,6 +209,13 @@ class ExtraPackage
         $this->mergeRequires('require-dev', $root, $state);
         $this->mergeAutoload('devAutoload', $root);
         $this->mergeReferences($root);
+=======
+        if ($state->isDevMode()) {
+            $this->mergeAutoload('devAutoload', $root);
+        }
+
+        $this->mergeExtra($root, $state);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -194,7 +224,11 @@ class ExtraPackage
      *
      * @param RootPackageInterface $root
      */
+<<<<<<< HEAD
     protected function prependRepositories(RootPackageInterface $root)
+=======
+    protected function addRepositories(RootPackageInterface $root)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         if (!isset($this->json['repositories'])) {
             return;
@@ -206,12 +240,20 @@ class ExtraPackage
             if (!isset($repoJson['type'])) {
                 continue;
             }
+<<<<<<< HEAD
             $this->logger->info("Prepending {$repoJson['type']} repository");
+=======
+            $this->logger->info("Adding {$repoJson['type']} repository");
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $repo = $repoManager->createRepository(
                 $repoJson['type'],
                 $repoJson
             );
+<<<<<<< HEAD
             $repoManager->prependRepository($repo);
+=======
+            $repoManager->addRepository($repo);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $newRepos[] = $repo;
         }
 
@@ -423,6 +465,7 @@ class ExtraPackage
 
         if ($state->replaceDuplicateLinks()) {
             $unwrapped->setExtra(
+<<<<<<< HEAD
                 self::mergeExtraArray($state->shouldMergeExtraDeep(), $rootExtra, $extra)
             );
         } else {
@@ -439,11 +482,29 @@ class ExtraPackage
             }
             $unwrapped->setExtra(
                 self::mergeExtraArray($state->shouldMergeExtraDeep(), $extra, $rootExtra)
+=======
+                array_merge($rootExtra, $extra)
+            );
+
+        } else {
+            foreach (array_intersect(
+                array_keys($extra),
+                array_keys($rootExtra)
+            ) as $key) {
+                $this->logger->info(
+                    "Ignoring duplicate <comment>{$key}</comment> in ".
+                    "<comment>{$this->path}</comment> extra config."
+                );
+            }
+            $unwrapped->setExtra(
+                array_merge($extra, $rootExtra)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             );
         }
     }
 
     /**
+<<<<<<< HEAD
      * Merge scripts config into a RootPackageInterface
      *
      * @param RootPackageInterface $root
@@ -488,6 +549,8 @@ class ExtraPackage
     }
 
     /**
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * Update Links with a 'self.version' constraint with the root package's
      * version.
      *
@@ -504,7 +567,11 @@ class ExtraPackage
         $linkType = BasePackage::$supportedLinkTypes[$type];
         $version = $root->getVersion();
         $prettyVersion = $root->getPrettyVersion();
+<<<<<<< HEAD
         $vp = $this->versionParser;
+=======
+        $vp = new VersionParser();
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
         $method = 'get' . ucfirst($linkType['method']);
         $packages = $root->$method();
@@ -569,6 +636,7 @@ class ExtraPackage
         // @codeCoverageIgnoreEnd
         return $root;
     }
+<<<<<<< HEAD
 
     /**
      * Update the root packages reference information.
@@ -617,5 +685,7 @@ class ExtraPackage
 
         return $references;
     }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }
 // vim:sw=4:ts=4:sts=4:et:

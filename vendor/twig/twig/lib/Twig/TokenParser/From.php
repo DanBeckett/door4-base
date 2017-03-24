@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2010 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -15,8 +19,11 @@
  * <pre>
  *   {% from 'forms.html' import forms %}
  * </pre>
+<<<<<<< HEAD
  *
  * @final
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Twig_TokenParser_From extends Twig_TokenParser
 {
@@ -48,7 +55,11 @@ class Twig_TokenParser_From extends Twig_TokenParser
 
         foreach ($targets as $name => $alias) {
             if ($this->parser->isReservedMacroName($name)) {
+<<<<<<< HEAD
                 throw new Twig_Error_Syntax(sprintf('"%s" cannot be an imported macro as it is a reserved keyword.', $name), $token->getLine(), $stream->getSourceContext());
+=======
+                throw new Twig_Error_Syntax(sprintf('"%s" cannot be an imported macro as it is a reserved keyword.', $name), $token->getLine(), $stream->getFilename());
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
 
             $this->parser->addImportedSymbol('function', $alias, 'get'.$name, $node->getNode('var'));

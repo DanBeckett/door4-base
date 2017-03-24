@@ -440,9 +440,12 @@ class Table
                 foreach ($unmergedRows as $unmergedRowKey => $unmergedRow) {
                     $value = isset($lines[$unmergedRowKey - $line]) ? $lines[$unmergedRowKey - $line] : '';
                     $unmergedRows[$unmergedRowKey][$column] = new TableCell($value, array('colspan' => $cell->getColspan()));
+<<<<<<< HEAD
                     if ($nbLines === $unmergedRowKey - $line) {
                         break;
                     }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 }
             }
         }
@@ -563,7 +566,11 @@ class Table
 
                 foreach ($row as $i => $cell) {
                     if ($cell instanceof TableCell) {
+<<<<<<< HEAD
                         $textLength = Helper::strlenWithoutDecoration($this->output->getFormatter(), $cell);
+=======
+                        $textLength = strlen($cell);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                         if ($textLength > 0) {
                             $contentColumns = str_split($cell, ceil($textLength / $cell->getColspan()));
                             foreach ($contentColumns as $position => $content) {

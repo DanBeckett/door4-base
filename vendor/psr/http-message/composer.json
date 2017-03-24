@@ -2,7 +2,10 @@
     "name": "psr/http-message",
     "description": "Common interface for HTTP messages",
     "keywords": ["psr", "psr-7", "http", "http-message", "request", "response"],
+<<<<<<< HEAD
     "homepage": "https://github.com/php-fig/http-message",
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     "license": "MIT",
     "authors": [
         {

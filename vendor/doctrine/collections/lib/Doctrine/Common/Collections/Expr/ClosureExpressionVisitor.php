@@ -69,6 +69,7 @@ class ClosureExpressionVisitor extends ExpressionVisitor
             return $object[$field];
         }
 
+<<<<<<< HEAD
         if (isset($object->$field)) {
             return $object->$field;
         }
@@ -87,6 +88,8 @@ class ClosureExpressionVisitor extends ExpressionVisitor
             return $object->$accessor();
         }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         return $object->$field;
     }
 
@@ -173,6 +176,7 @@ class ClosureExpressionVisitor extends ExpressionVisitor
                     return false !== strpos(ClosureExpressionVisitor::getObjectFieldValue($object, $field), $value);
                 };
 
+<<<<<<< HEAD
             case Comparison::MEMBER_OF:
                 return function ($object) use ($field, $value) {
                     $fieldValues = ClosureExpressionVisitor::getObjectFieldValue($object, $field);
@@ -193,6 +197,8 @@ class ClosureExpressionVisitor extends ExpressionVisitor
                 };
 
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             default:
                 throw new \RuntimeException("Unknown comparison operator: " . $comparison->getOperator());
         }

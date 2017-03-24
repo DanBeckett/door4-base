@@ -38,6 +38,7 @@ class AnnotationDirectoryLoader extends AnnotationFileLoader
 
         $collection = new RouteCollection();
         $collection->addResource(new DirectoryResource($dir, '/\.php$/'));
+<<<<<<< HEAD
         $files = iterator_to_array(new \RecursiveIteratorIterator(
             new RecursiveCallbackFilterIterator(
                 new \RecursiveDirectoryIterator($dir),
@@ -47,6 +48,9 @@ class AnnotationDirectoryLoader extends AnnotationFileLoader
             ),
             \RecursiveIteratorIterator::LEAVES_ONLY
         ));
+=======
+        $files = iterator_to_array(new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir), \RecursiveIteratorIterator::LEAVES_ONLY));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         usort($files, function (\SplFileInfo $a, \SplFileInfo $b) {
             return (string) $a > (string) $b ? 1 : -1;
         });
@@ -87,6 +91,7 @@ class AnnotationDirectoryLoader extends AnnotationFileLoader
         return is_dir($path) && (!$type || 'annotation' === $type);
     }
 }
+<<<<<<< HEAD
 
 /**
  * @internal To be removed as RecursiveCallbackFilterIterator is available since PHP 5.4
@@ -118,3 +123,5 @@ class RecursiveCallbackFilterIterator extends \FilterIterator implements \Recurs
         return new static($this->iterator->getChildren(), $this->callback);
     }
 }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a

@@ -1,5 +1,6 @@
 # CHANGELOG
 
+<<<<<<< HEAD
 ## 6.2.3 - 2017-02-28
 
 * Fix deprecations with guzzle/psr7 version 1.4
@@ -11,6 +12,8 @@
 * Fix drain case where content-length is the literal string zero
 * Obfuscate in-URL credentials in exceptions
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 ## 6.2.1 - 2016-07-18
 
 * Address HTTP_PROXY security vulnerability, CVE-2016-5385:
@@ -757,7 +760,11 @@ interfaces.
 * Deprecating Response::getRequest() and now using a shallow clone of a request object to remove a circular reference
   to help with refcount based garbage collection of resources created by sending a request
 * Deprecating ZF1 cache and log adapters. These will be removed in the next major version.
+<<<<<<< HEAD
 * Deprecating `Response::getPreviousResponse()` (method signature still exists, but it's deprecated). Use the
+=======
+* Deprecating `Response::getPreviousResponse()` (method signature still exists, but it'sdeprecated). Use the
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
   HistoryPlugin for a history.
 * Added a `responseBody` alias for the `response_body` location
 * Refactored internals to no longer rely on Response::getRequest()

@@ -1,18 +1,26 @@
 {
     "name": "guzzlehttp/psr7",
     "type": "library",
+<<<<<<< HEAD
     "description": "PSR-7 message implementation that also provides common utility methods",
     "keywords": ["request", "response", "message", "stream", "http", "uri", "url"],
+=======
+    "description": "PSR-7 message implementation",
+    "keywords": ["message", "stream", "http", "uri"],
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     "license": "MIT",
     "authors": [
         {
             "name": "Michael Dowling",
             "email": "mtdowling@gmail.com",
             "homepage": "https://github.com/mtdowling"
+<<<<<<< HEAD
         },
         {
             "name": "Tobias Schultze",
             "homepage": "https://github.com/Tobion"
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
     ],
     "require": {

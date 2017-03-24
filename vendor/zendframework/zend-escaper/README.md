@@ -5,9 +5,19 @@
 
 The OWASP Top 10 web security risks study lists Cross-Site Scripting (XSS) in
 second place. PHP’s sole functionality against XSS is limited to two functions
+<<<<<<< HEAD
 of which one is commonly misapplied. Thus, the zend-escaper component was written.
 It offers developers a way to escape output and defend from XSS and related
 vulnerabilities by introducing contextual escaping based on peer-reviewed rules.
 
 - File issues at https://github.com/zendframework/zend-escaper/issues
 - Documentation is at https://zendframework.github.io/zend-escaper/
+=======
+of which one is commonly misapplied. Thus, the `Zend\Escaper` component was written.
+It offers developers a way to escape output and defend from XSS and related
+vulnerabilities by introducing contextual escaping based on peer-reviewed rules.
+
+
+- File issues at https://github.com/zendframework/zend-escaper/issues
+- Documentation is at http://framework.zend.com/manual/current/en/index.html#zend-escaper
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a

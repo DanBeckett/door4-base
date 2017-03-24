@@ -1029,7 +1029,15 @@ EOF;
     private function addAliases()
     {
         if (!$aliases = $this->container->getAliases()) {
+<<<<<<< HEAD
             return $this->container->isFrozen() ? "\n        \$this->aliases = array();\n" : '';
+=======
+            if ($this->container->isFrozen()) {
+                return "\n        \$this->aliases = array();\n";
+            } else {
+                return '';
+            }
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $code = "        \$this->aliases = array(\n";
@@ -1398,9 +1406,15 @@ EOF;
                     $service = $this->dumpValue($value->getFactoryService(false));
 
                     return sprintf('%s->%s(%s)', 0 === strpos($service, '$') ? sprintf('$this->get(%s)', $service) : $this->getServiceCall($value->getFactoryService(false)), $value->getFactoryMethod(false), implode(', ', $arguments));
+<<<<<<< HEAD
                 }
 
                 throw new RuntimeException('Cannot dump definitions which have factory method without factory service or factory class.');
+=======
+                } else {
+                    throw new RuntimeException('Cannot dump definitions which have factory method without factory service or factory class.');
+                }
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
 
             $class = $value->getClass();
@@ -1438,9 +1452,15 @@ EOF;
             }
         } elseif (is_object($value) || is_resource($value)) {
             throw new RuntimeException('Unable to dump a service container if a parameter is an object or a resource.');
+<<<<<<< HEAD
         }
 
         return $this->export($value);
+=======
+        } else {
+            return $this->export($value);
+        }
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -1509,6 +1529,7 @@ EOF;
 
         if (null !== $reference && ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE !== $reference->getInvalidBehavior()) {
             return sprintf('$this->get(\'%s\', ContainerInterface::NULL_ON_INVALID_REFERENCE)', $id);
+<<<<<<< HEAD
         }
 
         if ($this->container->hasAlias($id)) {
@@ -1516,6 +1537,15 @@ EOF;
         }
 
         return sprintf('$this->get(\'%s\')', $id);
+=======
+        } else {
+            if ($this->container->hasAlias($id)) {
+                $id = (string) $this->container->getAlias($id);
+            }
+
+            return sprintf('$this->get(\'%s\')', $id);
+        }
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**

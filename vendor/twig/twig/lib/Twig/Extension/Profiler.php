@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2015 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -36,7 +40,11 @@ class Twig_Extension_Profiler extends Twig_Extension
 
     public function getNodeVisitors()
     {
+<<<<<<< HEAD
         return array(new Twig_Profiler_NodeVisitor_Profiler(get_class($this)));
+=======
+        return array(new Twig_Profiler_NodeVisitor_Profiler($this->getName()));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     public function getName()

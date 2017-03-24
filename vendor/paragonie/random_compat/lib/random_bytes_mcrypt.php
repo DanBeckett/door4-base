@@ -4,8 +4,13 @@
  * for using the new PHP 7 random_* API in PHP 5 projects
  * 
  * The MIT License (MIT)
+<<<<<<< HEAD
  *
  * Copyright (c) 2015 - 2017 Paragon Initiative Enterprises
+=======
+ * 
+ * Copyright (c) 2015 Paragon Initiative Enterprises
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -26,6 +31,7 @@
  * SOFTWARE.
  */
 
+<<<<<<< HEAD
 if (!is_callable('random_bytes')) {
     /**
      * Powered by ext/mcrypt (and thankfully NOT libmcrypt)
@@ -61,11 +67,45 @@ if (!is_callable('random_bytes')) {
             &&
             RandomCompat_strlen($buf) === $bytes
         ) {
+=======
+
+/**
+ * Powered by ext/mcrypt (and thankfully NOT libmcrypt)
+ * 
+ * @ref https://bugs.php.net/bug.php?id=55169
+ * @ref https://github.com/php/php-src/blob/c568ffe5171d942161fc8dda066bce844bdef676/ext/mcrypt/mcrypt.c#L1321-L1386
+ * 
+ * @param int $bytes
+ * 
+ * @throws Exception
+ * 
+ * @return string
+ */
+function random_bytes($bytes)
+{
+    try {
+        $bytes = RandomCompat_intval($bytes);
+    } catch (TypeError $ex) {
+        throw new TypeError(
+            'random_bytes(): $bytes must be an integer'
+        );
+    }
+    if ($bytes < 1) {
+        throw new Error(
+            'Length must be greater than 0'
+        );
+    }
+
+    $buf = @mcrypt_create_iv($bytes, MCRYPT_DEV_URANDOM);
+    if ($buf !== false) {
+        if (RandomCompat_strlen($buf) === $bytes) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             /**
              * Return our random entropy buffer here:
              */
             return $buf;
         }
+<<<<<<< HEAD
 
         /**
          * If we reach here, PHP has failed us.
@@ -74,4 +114,13 @@ if (!is_callable('random_bytes')) {
             'Could not gather sufficient random data'
         );
     }
+=======
+    }
+    /**
+     * If we reach here, PHP has failed us.
+     */
+    throw new Exception(
+        'Could not gather sufficient random data'
+    );
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

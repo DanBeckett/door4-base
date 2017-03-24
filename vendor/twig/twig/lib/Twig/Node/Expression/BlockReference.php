@@ -3,8 +3,13 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
  * (c) Armin Ronacher
+=======
+ * (c) 2009 Fabien Potencier
+ * (c) 2009 Armin Ronacher
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -17,6 +22,7 @@
  */
 class Twig_Node_Expression_BlockReference extends Twig_Node_Expression
 {
+<<<<<<< HEAD
     /**
      * @param Twig_Node|null $template
      */
@@ -34,10 +40,16 @@ class Twig_Node_Expression_BlockReference extends Twig_Node_Expression
         }
 
         parent::__construct($nodes, array('is_defined_test' => false, 'output' => false), $lineno, $tag);
+=======
+    public function __construct(Twig_NodeInterface $name, $asString = false, $lineno, $tag = null)
+    {
+        parent::__construct(array('name' => $name), array('as_string' => $asString, 'output' => false), $lineno, $tag);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     public function compile(Twig_Compiler $compiler)
     {
+<<<<<<< HEAD
         if ($this->getAttribute('is_defined_test')) {
             $this->compileTemplateCall($compiler, 'hasBlock');
         } else {
@@ -87,5 +99,25 @@ class Twig_Node_Expression_BlockReference extends Twig_Node_Expression
         }
 
         return $compiler->raw(')');
+=======
+        if ($this->getAttribute('as_string')) {
+            $compiler->raw('(string) ');
+        }
+
+        if ($this->getAttribute('output')) {
+            $compiler
+                ->addDebugInfo($this)
+                ->write('$this->displayBlock(')
+                ->subcompile($this->getNode('name'))
+                ->raw(", \$context, \$blocks);\n")
+            ;
+        } else {
+            $compiler
+                ->raw('$this->renderBlock(')
+                ->subcompile($this->getNode('name'))
+                ->raw(', $context, $blocks)')
+            ;
+        }
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 }

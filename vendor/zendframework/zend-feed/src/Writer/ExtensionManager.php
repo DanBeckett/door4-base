@@ -12,7 +12,11 @@ namespace Zend\Feed\Writer;
 /**
  * Default implementation of ExtensionManagerInterface
  *
+<<<<<<< HEAD
  * Decorator for an ExtensionManagerInstance.
+=======
+ * Decorator of ExtensionPluginManager.
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class ExtensionManager implements ExtensionManagerInterface
 {
@@ -22,6 +26,7 @@ class ExtensionManager implements ExtensionManagerInterface
      * Constructor
      *
      * Seeds the extension manager with a plugin manager; if none provided,
+<<<<<<< HEAD
      * creates and decorates an instance of StandaloneExtensionManager.
      *
      * @param  null|ExtensionManagerInterface $pluginManager
@@ -30,6 +35,16 @@ class ExtensionManager implements ExtensionManagerInterface
     {
         if (null === $pluginManager) {
             $pluginManager = new StandaloneExtensionManager();
+=======
+     * creates an instance.
+     *
+     * @param  null|ExtensionPluginManager $pluginManager
+     */
+    public function __construct(ExtensionPluginManager $pluginManager = null)
+    {
+        if (null === $pluginManager) {
+            $pluginManager = new ExtensionPluginManager();
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
         $this->pluginManager = $pluginManager;
     }
@@ -37,7 +52,11 @@ class ExtensionManager implements ExtensionManagerInterface
     /**
      * Method overloading
      *
+<<<<<<< HEAD
      * Proxy to composed ExtensionManagerInterface instance.
+=======
+     * Proxy to composed ExtensionPluginManager instance.
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @param  string $method
      * @param  array $args

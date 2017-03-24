@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+<<<<<<< HEAD
 ## 2.7.0 - 2016-02-11
 
 ### Added
@@ -61,6 +62,14 @@ All notable changes to this project will be documented in this file, in reverse 
     calling `get()`. The class exposes a `getDecoratedClient()` method to allow
     retrieval of the decorated zend-http client instance.
 
+=======
+## 2.5.2 - TBD
+
+### Added
+
+- Nothing.
+
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 ### Deprecated
 
 - Nothing.
@@ -76,6 +85,7 @@ All notable changes to this project will be documented in this file, in reverse 
 - [#2](https://github.com/zendframework/zend-feed/pull/2) ensures that the
   routine for "absolutising" a link in `Reader\FeedSet` always generates a URI
   with a scheme.
+<<<<<<< HEAD
 - [#14](https://github.com/zendframework/zend-feed/pull/14) makes the following
   changes to fix behavior around HTTP clients used within
   `Zend\Feed\Reader\Reader`:
@@ -92,3 +102,5 @@ All notable changes to this project will be documented in this file, in reverse 
     determine if it can check for HTTP caching headers, and, if so, to retrieve
     them.
   - `findFeedLinks()` was updated to consume a `ClientInterface`.
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a

@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+<<<<<<< HEAD
 ## 3.1.0 - 2016-09-13
 
 ### Added
@@ -108,6 +109,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 - Nothing.
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 ## 2.7.3 - 2015-09-24
 
 ### Added

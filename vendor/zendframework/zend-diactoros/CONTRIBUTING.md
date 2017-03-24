@@ -78,14 +78,22 @@ standards checks, and provides configuration for our selected checks.
 To run checks only:
 
 ```console
+<<<<<<< HEAD
 $ composer cs-check
+=======
+$ ./vendor/bin/phpcs --standard=PSR2 src test
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 ```
 
 `phpcs` also installs a tool named `phpcbf` which can attempt to fix problems
 for you:
 
 ```console
+<<<<<<< HEAD
 $ composer cs-fix
+=======
+$ ./vendor/bin/phpcbf --standard=PSR2 src test
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 ```
 
 If you allow phpcbf to fix CS issues, please re-run the tests to ensure
@@ -102,7 +110,11 @@ pull your work into the master repository. We recommend using
 3. Clone the canonical repository locally and enter it.
 
    ```console
+<<<<<<< HEAD
    $ git clone git://github.com/zendframework/zend-diactoros.git
+=======
+   $ git clone git://github.com:zendframework/zend-diactoros.git
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
    $ cd zend-diactoros
    ```
 
@@ -221,8 +233,11 @@ repository, we suggest doing some cleanup of these branches.
    ```console
    $ git push {username} :<branchname>
    ```
+<<<<<<< HEAD
 
 
 ## Conduct
 
 Please see our [CONDUCT.md](CONDUCT.md) to understand expected behavior when interacting with others in the project.
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a

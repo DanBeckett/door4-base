@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2011 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -22,8 +26,11 @@
  * </pre>
  *
  * @see http://www.twig-project.org/doc/templates.html#horizontal-reuse for details.
+<<<<<<< HEAD
  *
  * @final
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Twig_TokenParser_Use extends Twig_TokenParser
 {
@@ -33,7 +40,11 @@ class Twig_TokenParser_Use extends Twig_TokenParser
         $stream = $this->parser->getStream();
 
         if (!$template instanceof Twig_Node_Expression_Constant) {
+<<<<<<< HEAD
             throw new Twig_Error_Syntax('The template references in a "use" statement must be a string.', $stream->getCurrent()->getLine(), $stream->getSourceContext());
+=======
+            throw new Twig_Error_Syntax('The template references in a "use" statement must be a string.', $stream->getCurrent()->getLine(), $stream->getFilename());
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $targets = array();

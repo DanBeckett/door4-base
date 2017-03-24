@@ -25,9 +25,12 @@ use Symfony\Component\HttpFoundation\Response;
  * Client simulates a browser and makes requests to a Kernel object.
  *
  * @author Fabien Potencier <fabien@symfony.com>
+<<<<<<< HEAD
  *
  * @method Request|null getRequest() A Request instance
  * @method Response|null getResponse() A Response instance
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Client extends BaseClient
 {
@@ -51,6 +54,29 @@ class Client extends BaseClient
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * {@inheritdoc}
+     *
+     * @return Request|null A Request instance
+     */
+    public function getRequest()
+    {
+        return parent::getRequest();
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return Response|null A Response instance
+     */
+    public function getResponse()
+    {
+        return parent::getResponse();
+    }
+
+    /**
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * Makes a request.
      *
      * @param Request $request A Request instance

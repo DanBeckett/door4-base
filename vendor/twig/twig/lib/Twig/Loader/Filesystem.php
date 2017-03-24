@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2009 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -14,7 +18,11 @@
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
+<<<<<<< HEAD
 class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderInterface, Twig_SourceContextLoaderInterface
+=======
+class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderInterface
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 {
     /** Identifier of the main namespace. */
     const MAIN_NAMESPACE = '__main__';
@@ -23,6 +31,7 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
     protected $cache = array();
     protected $errorCache = array();
 
+<<<<<<< HEAD
     private $rootPath;
 
     /**
@@ -36,6 +45,15 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
             $this->rootPath = $realPath.DIRECTORY_SEPARATOR;
         }
 
+=======
+    /**
+     * Constructor.
+     *
+     * @param string|array $paths A path or an array of paths where to look for templates
+     */
+    public function __construct($paths = array())
+    {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         if ($paths) {
             $this->setPaths($paths);
         }
@@ -87,7 +105,11 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
      * Adds a path where templates are stored.
      *
      * @param string $path      A path where to look for templates
+<<<<<<< HEAD
      * @param string $namespace A path namespace
+=======
+     * @param string $namespace A path name
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @throws Twig_Error_Loader
      */
@@ -96,9 +118,14 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
         // invalidate the cache
         $this->cache = $this->errorCache = array();
 
+<<<<<<< HEAD
         $checkPath = $this->isAbsolutePath($path) ? $path : $this->rootPath.$path;
         if (!is_dir($checkPath)) {
             throw new Twig_Error_Loader(sprintf('The "%s" directory does not exist ("%s").', $path, $checkPath));
+=======
+        if (!is_dir($path)) {
+            throw new Twig_Error_Loader(sprintf('The "%s" directory does not exist.', $path));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $this->paths[$namespace][] = rtrim($path, '/\\');
@@ -108,7 +135,11 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
      * Prepends a path where templates are stored.
      *
      * @param string $path      A path where to look for templates
+<<<<<<< HEAD
      * @param string $namespace A path namespace
+=======
+     * @param string $namespace A path name
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @throws Twig_Error_Loader
      */
@@ -117,9 +148,14 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
         // invalidate the cache
         $this->cache = $this->errorCache = array();
 
+<<<<<<< HEAD
         $checkPath = $this->isAbsolutePath($path) ? $path : $this->rootPath.$path;
         if (!is_dir($checkPath)) {
             throw new Twig_Error_Loader(sprintf('The "%s" directory does not exist ("%s").', $path, $checkPath));
+=======
+        if (!is_dir($path)) {
+            throw new Twig_Error_Loader(sprintf('The "%s" directory does not exist.', $path));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $path = rtrim($path, '/\\');
@@ -131,6 +167,7 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
         }
     }
 
+<<<<<<< HEAD
     public function getSource($name)
     {
         @trigger_error(sprintf('Calling "getSource" on "%s" is deprecated since 1.27. Use getSourceContext() instead.', get_class($this)), E_USER_DEPRECATED);
@@ -156,6 +193,27 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
         return $path;
     }
 
+=======
+    /**
+     * {@inheritdoc}
+     */
+    public function getSource($name)
+    {
+        return file_get_contents($this->findTemplate($name));
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getCacheKey($name)
+    {
+        return $this->findTemplate($name);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function exists($name)
     {
         $name = $this->normalizeName($name);
@@ -167,12 +225,21 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
         try {
             return false !== $this->findTemplate($name, false);
         } catch (Twig_Error_Loader $exception) {
+<<<<<<< HEAD
             @trigger_error(sprintf('In %s::findTemplate(), you must accept a second argument that when set to "false" returns "false" instead of throwing an exception. Not supporting this argument is deprecated since version 1.27.', get_class($this)), E_USER_DEPRECATED);
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             return false;
         }
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function isFresh($name, $time)
     {
         return filemtime($this->findTemplate($name)) <= $time;
@@ -210,10 +277,13 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
         }
 
         foreach ($this->paths[$namespace] as $path) {
+<<<<<<< HEAD
             if (!$this->isAbsolutePath($path)) {
                 $path = $this->rootPath.'/'.$path;
             }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             if (is_file($path.'/'.$shortname)) {
                 if (false !== $realpath = realpath($path.'/'.$shortname)) {
                     return $this->cache[$name] = $realpath;
@@ -274,6 +344,7 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
             }
         }
     }
+<<<<<<< HEAD
 
     private function isAbsolutePath($file)
     {
@@ -285,4 +356,6 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
             || null !== parse_url($file, PHP_URL_SCHEME)
         ;
     }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

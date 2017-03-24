@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2009 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -26,8 +30,11 @@
  *   using the js escaping strategy
  * {% endautoescape %}
  * </pre>
+<<<<<<< HEAD
  *
  * @final
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Twig_TokenParser_AutoEscape extends Twig_TokenParser
 {
@@ -41,7 +48,11 @@ class Twig_TokenParser_AutoEscape extends Twig_TokenParser
         } else {
             $expr = $this->parser->getExpressionParser()->parseExpression();
             if (!$expr instanceof Twig_Node_Expression_Constant) {
+<<<<<<< HEAD
                 throw new Twig_Error_Syntax('An escaping strategy must be a string or a bool.', $stream->getCurrent()->getLine(), $stream->getSourceContext());
+=======
+                throw new Twig_Error_Syntax('An escaping strategy must be a string or a bool.', $stream->getCurrent()->getLine(), $stream->getFilename());
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
             $value = $expr->getAttribute('value');
 
@@ -55,7 +66,11 @@ class Twig_TokenParser_AutoEscape extends Twig_TokenParser
                 @trigger_error('Using the autoescape tag with "true" or "false" before the strategy name is deprecated since version 1.21.', E_USER_DEPRECATED);
 
                 if (false === $value) {
+<<<<<<< HEAD
                     throw new Twig_Error_Syntax('Unexpected escaping strategy as you set autoescaping to false.', $stream->getCurrent()->getLine(), $stream->getSourceContext());
+=======
+                    throw new Twig_Error_Syntax('Unexpected escaping strategy as you set autoescaping to false.', $stream->getCurrent()->getLine(), $stream->getFilename());
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 }
 
                 $value = $stream->next()->getValue();

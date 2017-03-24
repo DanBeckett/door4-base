@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Copyright (c) 2015-2016, Zend Technologies USA, Inc.
+=======
+Copyright (c) 2015, Zend Technologies USA, Inc.
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

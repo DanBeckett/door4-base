@@ -3,7 +3,11 @@
  * Zend Framework (http://framework.zend.com/)
  *
  * @see       http://github.com/zendframework/zend-diactoros for the canonical source repository
+<<<<<<< HEAD
  * @copyright Copyright (c) 2015-2016 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright Copyright (c) 2015 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @license   https://github.com/zendframework/zend-diactoros/blob/master/LICENSE.md New BSD License
  */
 
@@ -51,6 +55,7 @@ class UploadedFile implements UploadedFileInterface
      */
     private $stream;
 
+<<<<<<< HEAD
     /**
      * @param string|resource $streamOrFile
      * @param int $size
@@ -59,6 +64,8 @@ class UploadedFile implements UploadedFileInterface
      * @param string|null $clientMediaType
      * @throws InvalidArgumentException
      */
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function __construct($streamOrFile, $size, $errorStatus, $clientFilename = null, $clientMediaType = null)
     {
         if ($errorStatus === UPLOAD_ERR_OK) {
@@ -142,26 +149,44 @@ class UploadedFile implements UploadedFileInterface
      */
     public function moveTo($targetPath)
     {
+<<<<<<< HEAD
         if ($this->moved) {
             throw new RuntimeException('Cannot move file; already moved!');
         }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         if ($this->error !== UPLOAD_ERR_OK) {
             throw new RuntimeException('Cannot retrieve stream due to upload error');
         }
 
+<<<<<<< HEAD
         if (! is_string($targetPath) || empty($targetPath)) {
+=======
+        if (! is_string($targetPath)) {
+            throw new InvalidArgumentException(
+                'Invalid path provided for move operation; must be a string'
+            );
+        }
+
+        if (empty($targetPath)) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             throw new InvalidArgumentException(
                 'Invalid path provided for move operation; must be a non-empty string'
             );
         }
 
+<<<<<<< HEAD
         $targetDirectory = dirname($targetPath);
         if (! is_dir($targetDirectory) || ! is_writable($targetDirectory)) {
             throw new RuntimeException(sprintf(
                 'The target directory `%s` does not exists or is not writable',
                 $targetDirectory
             ));
+=======
+        if ($this->moved) {
+            throw new RuntimeException('Cannot move file; already moved!');
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $sapi = PHP_SAPI;

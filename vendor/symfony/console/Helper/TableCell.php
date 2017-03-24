@@ -37,10 +37,13 @@ class TableCell
      */
     public function __construct($value = '', array $options = array())
     {
+<<<<<<< HEAD
         if (is_numeric($value) && !is_string($value)) {
             $value = (string) $value;
         }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $this->value = $value;
 
         // check option names

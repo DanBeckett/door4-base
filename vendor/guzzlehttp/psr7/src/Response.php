@@ -2,7 +2,10 @@
 namespace GuzzleHttp\Psr7;
 
 use Psr\Http\Message\ResponseInterface;
+<<<<<<< HEAD
 use Psr\Http\Message\StreamInterface;
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 /**
  * PSR-7 response implementation.
@@ -101,7 +104,11 @@ class Response implements ResponseInterface
 
         $this->setHeaders($headers);
         if ($reason == '' && isset(self::$phrases[$this->statusCode])) {
+<<<<<<< HEAD
             $this->reasonPhrase = self::$phrases[$this->statusCode];
+=======
+            $this->reasonPhrase = self::$phrases[$status];
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         } else {
             $this->reasonPhrase = (string) $reason;
         }

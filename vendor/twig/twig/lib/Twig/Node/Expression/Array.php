@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2009 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -43,7 +47,11 @@ class Twig_Node_Expression_Array extends Twig_Node_Expression
         foreach ($this->getKeyValuePairs() as $pair) {
             // we compare the string representation of the keys
             // to avoid comparing the line numbers which are not relevant here.
+<<<<<<< HEAD
             if ((string) $key === (string) $pair['key']) {
+=======
+            if ((string) $key == (string) $pair['key']) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 return true;
             }
         }
@@ -54,7 +62,11 @@ class Twig_Node_Expression_Array extends Twig_Node_Expression
     public function addElement(Twig_Node_Expression $value, Twig_Node_Expression $key = null)
     {
         if (null === $key) {
+<<<<<<< HEAD
             $key = new Twig_Node_Expression_Constant(++$this->index, $value->getTemplateLine());
+=======
+            $key = new Twig_Node_Expression_Constant(++$this->index, $value->getLine());
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         array_push($this->nodes, $key, $value);

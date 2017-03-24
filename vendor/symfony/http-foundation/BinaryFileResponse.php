@@ -164,7 +164,11 @@ class BinaryFileResponse extends Response
         if ('' === $filenameFallback && (!preg_match('/^[\x20-\x7e]*$/', $filename) || false !== strpos($filename, '%'))) {
             $encoding = mb_detect_encoding($filename, null, true);
 
+<<<<<<< HEAD
             for ($i = 0, $filenameLength = mb_strlen($filename, $encoding); $i < $filenameLength; ++$i) {
+=======
+            for ($i = 0; $i < mb_strlen($filename, $encoding); ++$i) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 $char = mb_substr($filename, $i, 1, $encoding);
 
                 if ('%' === $char || ord($char) < 32 || ord($char) > 126) {

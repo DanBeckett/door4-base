@@ -3,19 +3,27 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2012 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
 {
+<<<<<<< HEAD
     private $reflector;
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     protected function compileCallable(Twig_Compiler $compiler)
     {
         $closingParenthesis = false;
         if ($this->hasAttribute('callable') && $callable = $this->getAttribute('callable')) {
+<<<<<<< HEAD
             if (is_string($callable) && false === strpos($callable, '::')) {
                 $compiler->raw($callable);
             } else {
@@ -33,6 +41,16 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
                     $compiler->raw(sprintf('call_user_func_array($this->env->get%s(\'%s\')->getCallable(), array', $type, $this->getAttribute('name')));
                     $closingParenthesis = true;
                 }
+=======
+            if (is_string($callable)) {
+                $compiler->raw($callable);
+            } elseif (is_array($callable) && $callable[0] instanceof Twig_ExtensionInterface) {
+                $compiler->raw(sprintf('$this->env->getExtension(\'%s\')->%s', $callable[0]->getName(), $callable[1]));
+            } else {
+                $type = ucfirst($this->getAttribute('type'));
+                $compiler->raw(sprintf('call_user_func_array($this->env->get%s(\'%s\')->getCallable(), array', $type, $this->getAttribute('name')));
+                $closingParenthesis = true;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
         } else {
             $compiler->raw($this->getAttribute('thing')->compile());
@@ -82,7 +100,11 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
             $first = false;
         }
 
+<<<<<<< HEAD
         if ($this->hasNode('arguments')) {
+=======
+        if ($this->hasNode('arguments') && null !== $this->getNode('arguments')) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $callable = $this->hasAttribute('callable') ? $this->getAttribute('callable') : null;
 
             $arguments = $this->getArguments($callable, $this->getNode('arguments'));
@@ -132,6 +154,10 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
             throw new LogicException($message);
         }
 
+<<<<<<< HEAD
+=======
+        // manage named arguments
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $callableParameters = $this->getCallableParameters($callable, $isVariadic);
         $arguments = array();
         $names = array();
@@ -146,7 +172,11 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
                     throw new Twig_Error_Syntax(sprintf('Argument "%s" is defined twice for %s "%s".', $name, $callType, $callName));
                 }
 
+<<<<<<< HEAD
                 if (count($missingArguments)) {
+=======
+                if (!empty($missingArguments)) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                     throw new Twig_Error_Syntax(sprintf(
                         'Argument "%s" could not be assigned for %s "%s(%s)" because it is mapped to an internal PHP function which cannot determine default value for optional argument%s "%s".',
                         $name, $callType, $callName, implode(', ', $names), count($missingArguments) > 1 ? 's' : '', implode('", "', $missingArguments))
@@ -205,7 +235,11 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
             throw new Twig_Error_Syntax(sprintf(
                 'Unknown argument%s "%s" for %s "%s(%s)".',
                 count($parameters) > 1 ? 's' : '', implode('", "', array_keys($parameters)), $callType, $callName, implode(', ', $names)
+<<<<<<< HEAD
             ), $unknownParameter ? $unknownParameter->getTemplateLine() : -1);
+=======
+            ), $unknownParameter ? $unknownParameter->getLine() : -1);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         return $arguments;
@@ -218,9 +252,21 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
 
     private function getCallableParameters($callable, $isVariadic)
     {
+<<<<<<< HEAD
         list($r) = $this->reflectCallable($callable);
         if (null === $r) {
             return array();
+=======
+        if (is_array($callable)) {
+            $r = new ReflectionMethod($callable[0], $callable[1]);
+        } elseif (is_object($callable) && !$callable instanceof Closure) {
+            $r = new ReflectionObject($callable);
+            $r = $r->getMethod('__invoke');
+        } elseif (is_string($callable) && false !== strpos($callable, '::')) {
+            $r = new ReflectionMethod($callable);
+        } else {
+            $r = new ReflectionFunction($callable);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $parameters = $r->getParameters();
@@ -244,7 +290,11 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
                 array_pop($parameters);
             } else {
                 $callableName = $r->name;
+<<<<<<< HEAD
                 if ($r instanceof ReflectionMethod) {
+=======
+                if ($r->getDeclaringClass()) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                     $callableName = $r->getDeclaringClass()->name.'::'.$callableName;
                 }
 
@@ -254,6 +304,7 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
 
         return $parameters;
     }
+<<<<<<< HEAD
 
     private function reflectCallable($callable)
     {
@@ -286,4 +337,6 @@ abstract class Twig_Node_Expression_Call extends Twig_Node_Expression
 
         return $this->reflector = array($r, $callable);
     }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

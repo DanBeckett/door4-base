@@ -36,6 +36,7 @@ class MultiConstraint implements ConstraintInterface
     }
 
     /**
+<<<<<<< HEAD
      * @return ConstraintInterface[]
      */
     public function getConstraints()
@@ -60,6 +61,8 @@ class MultiConstraint implements ConstraintInterface
     }
 
     /**
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @param ConstraintInterface $provider
      *
      * @return bool

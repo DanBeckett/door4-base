@@ -21,7 +21,11 @@
     },
     "require-dev": {
         "symfony/config": "~2.8",
+<<<<<<< HEAD
         "symfony/intl": "~2.7.25|^2.8.18|~3.2.5",
+=======
+        "symfony/intl": "~2.4|~3.0.0",
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         "symfony/yaml": "~2.2|~3.0.0",
         "psr/log": "~1.0"
     },

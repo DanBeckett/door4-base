@@ -179,7 +179,11 @@ class ClassNotFoundFatalErrorHandler implements FatalErrorHandlerInterface
         );
 
         if ($prefix) {
+<<<<<<< HEAD
             $candidates = array_filter($candidates, function ($candidate) use ($prefix) { return 0 === strpos($candidate, $prefix); });
+=======
+            $candidates = array_filter($candidates, function ($candidate) use ($prefix) {return 0 === strpos($candidate, $prefix);});
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         // We cannot use the autoloader here as most of them use require; but if the class

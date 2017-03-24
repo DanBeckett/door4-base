@@ -3,7 +3,11 @@
  * Zend Framework (http://framework.zend.com/)
  *
  * @see       http://github.com/zendframework/zend-diactoros for the canonical source repository
+<<<<<<< HEAD
  * @copyright Copyright (c) 2015-2016 Zend Technologies USA Inc. (http://www.zend.com)
+=======
+ * @copyright Copyright (c) 2015 Zend Technologies USA Inc. (http://www.zend.com)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @license   https://github.com/zendframework/zend-diactoros/blob/master/LICENSE.md New BSD License
  */
 
@@ -70,7 +74,10 @@ trait MessageTrait
      */
     public function withProtocolVersion($version)
     {
+<<<<<<< HEAD
         $this->validateProtocolVersion($version);
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $new = clone $this;
         $new->protocol = $version;
         return $new;
@@ -205,9 +212,12 @@ trait MessageTrait
         $normalized = strtolower($header);
 
         $new = clone $this;
+<<<<<<< HEAD
         if ($new->hasHeader($header)) {
             unset($new->headers[$new->headerNames[$normalized]]);
         }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $new->headerNames[$normalized] = $header;
         $new->headers[$header]         = $value;
 
@@ -314,6 +324,7 @@ trait MessageTrait
         return $new;
     }
 
+<<<<<<< HEAD
     private function getStream($stream, $modeIfNotInstance)
     {
         if ($stream instanceof StreamInterface) {
@@ -331,6 +342,8 @@ trait MessageTrait
         return new Stream($stream, $modeIfNotInstance);
     }
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     /**
      * Test that an array contains only strings
      *
@@ -355,6 +368,7 @@ trait MessageTrait
         $headerNames = $headers = [];
         foreach ($originalHeaders as $header => $value) {
             if (! is_string($header)) {
+<<<<<<< HEAD
                 throw new InvalidArgumentException(sprintf(
                     'Invalid header name; expected non-empty string, received %s',
                     gettype($header)
@@ -377,6 +391,13 @@ trait MessageTrait
                         ));
                     }
                 });
+=======
+                continue;
+            }
+
+            if (! is_array($value) && ! is_string($value)) {
+                continue;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
 
             if (! is_array($value)) {
@@ -418,6 +439,7 @@ trait MessageTrait
     {
         array_walk($values, __NAMESPACE__ . '\HeaderSecurity::assertValid');
     }
+<<<<<<< HEAD
 
     /**
      * Validate the HTTP protocol version
@@ -448,4 +470,6 @@ trait MessageTrait
             ));
         }
     }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

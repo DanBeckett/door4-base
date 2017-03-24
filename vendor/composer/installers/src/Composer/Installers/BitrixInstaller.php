@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 namespace Composer\Installers;
 
@@ -123,4 +124,15 @@ class BitrixInstaller extends BaseInstaller
 
         static::$checkedDuplicates[] = $oldPath;
     }
+=======
+namespace Composer\Installers;
+
+class BitrixInstaller extends BaseInstaller
+{
+    protected $locations = array(
+        'module'    => 'local/modules/{$name}/',
+        'component' => 'local/components/{$name}/',
+        'theme'     => 'local/templates/{$name}/'
+    );
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

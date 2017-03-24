@@ -1,2 +1,6 @@
 coverage_clover: clover.xml
 json_path: coveralls-upload.json
+<<<<<<< HEAD
+=======
+src_dir: src
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a

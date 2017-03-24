@@ -24,7 +24,10 @@ namespace Doctrine\Common\Cache;
  *
  * @since  2.3
  * @author Fabio B. Silva <fabio.bat.silva@gmail.com>
+<<<<<<< HEAD
  * @author Tobias Schultze <http://tobion.de>
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 abstract class FileCache extends CacheProvider
 {
@@ -43,6 +46,7 @@ abstract class FileCache extends CacheProvider
     private $extension;
 
     /**
+<<<<<<< HEAD
      * @var int
      */
     private $umask;
@@ -51,16 +55,33 @@ abstract class FileCache extends CacheProvider
      * @var int
      */
     private $directoryStringLength;
+=======
+     * @var string[] regular expressions for replacing disallowed characters in file name
+     */
+    private $disallowedCharacterPatterns = array(
+        '/\-/', // replaced to disambiguate original `-` and `-` derived from replacements
+        '/[^a-zA-Z0-9\-_\[\]]/' // also excludes non-ascii chars (not supported, depending on FS)
+    );
+
+    /**
+     * @var string[] replacements for disallowed file characters
+     */
+    private $replacementCharacters = array('__', '-');
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
     /**
      * @var int
      */
+<<<<<<< HEAD
     private $extensionStringLength;
 
     /**
      * @var bool
      */
     private $isRunningOnWindows;
+=======
+    private $umask;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
     /**
      * Constructor.
@@ -98,10 +119,13 @@ abstract class FileCache extends CacheProvider
         // YES, this needs to be *after* createPathIfNeeded()
         $this->directory = realpath($directory);
         $this->extension = (string) $extension;
+<<<<<<< HEAD
 
         $this->directoryStringLength = strlen($this->directory);
         $this->extensionStringLength = strlen($this->extension);
         $this->isRunningOnWindows    = defined('PHP_WINDOWS_VERSION_BUILD');
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -117,7 +141,11 @@ abstract class FileCache extends CacheProvider
     /**
      * Gets the cache file extension.
      *
+<<<<<<< HEAD
      * @return string
+=======
+     * @return string|null
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getExtension()
     {
@@ -131,6 +159,7 @@ abstract class FileCache extends CacheProvider
      */
     protected function getFilename($id)
     {
+<<<<<<< HEAD
         $hash = hash('sha256', $id);
 
         // This ensures that the filename is unique and that there are no invalid chars in it.
@@ -154,6 +183,13 @@ abstract class FileCache extends CacheProvider
             . substr($hash, 0, 2)
             . DIRECTORY_SEPARATOR
             . $filename
+=======
+        return $this->directory
+            . DIRECTORY_SEPARATOR
+            . implode(str_split(hash('sha256', $id), 2), DIRECTORY_SEPARATOR)
+            . DIRECTORY_SEPARATOR
+            . preg_replace($this->disallowedCharacterPatterns, $this->replacementCharacters, $id)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             . $this->extension;
     }
 
@@ -162,9 +198,13 @@ abstract class FileCache extends CacheProvider
      */
     protected function doDelete($id)
     {
+<<<<<<< HEAD
         $filename = $this->getFilename($id);
 
         return @unlink($filename) || ! file_exists($filename);
+=======
+        return @unlink($this->getFilename($id));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -173,6 +213,7 @@ abstract class FileCache extends CacheProvider
     protected function doFlush()
     {
         foreach ($this->getIterator() as $name => $file) {
+<<<<<<< HEAD
             if ($file->isDir()) {
                 // Remove the intermediate directories which have been created to balance the tree. It only takes effect
                 // if the directory is empty. If several caches share the same directory but with different file extensions,
@@ -183,6 +224,9 @@ abstract class FileCache extends CacheProvider
                 // If no extension is set, we have no other choice than removing everything.
                 @unlink($name);
             }
+=======
+            @unlink($name);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         return true;
@@ -194,10 +238,15 @@ abstract class FileCache extends CacheProvider
     protected function doGetStats()
     {
         $usage = 0;
+<<<<<<< HEAD
         foreach ($this->getIterator() as $name => $file) {
             if (! $file->isDir() && $this->isFilenameEndingWithExtension($name)) {
                 $usage += $file->getSize();
             }
+=======
+        foreach ($this->getIterator() as $file) {
+            $usage += $file->getSize();
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         $free = disk_free_space($this->directory);
@@ -267,6 +316,7 @@ abstract class FileCache extends CacheProvider
      */
     private function getIterator()
     {
+<<<<<<< HEAD
         return new \RecursiveIteratorIterator(
             new \RecursiveDirectoryIterator($this->directory, \FilesystemIterator::SKIP_DOTS),
             \RecursiveIteratorIterator::CHILD_FIRST
@@ -283,4 +333,11 @@ abstract class FileCache extends CacheProvider
         return '' === $this->extension
             || strrpos($name, $this->extension) === (strlen($name) - $this->extensionStringLength);
     }
+=======
+        return new \RegexIterator(
+            new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($this->directory)),
+            '/^.+' . preg_quote($this->extension, '/') . '$/i'
+        );
+    }
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

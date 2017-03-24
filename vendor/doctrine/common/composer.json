@@ -29,7 +29,11 @@
     },
     "extra": {
         "branch-alias": {
+<<<<<<< HEAD
             "dev-master": "2.5.x-dev"
+=======
+            "dev-master": "2.6.x-dev"
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
     },
     "archive": {

@@ -71,6 +71,7 @@ class RedisCache extends CacheProvider
      */
     protected function doFetchMultiple(array $keys)
     {
+<<<<<<< HEAD
         $fetchedItems = array_combine($keys, $this->redis->mget($keys));
 
         // Redis mget returns false for keys that do not exist. So we need to filter those out unless it's the real data.
@@ -105,6 +106,9 @@ class RedisCache extends CacheProvider
 
         // No lifetime, use MSET
         return (bool) $this->redis->mset($keysAndValues);
+=======
+        return array_filter(array_combine($keys, $this->redis->mget($keys)));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -132,7 +136,11 @@ class RedisCache extends CacheProvider
      */
     protected function doDelete($id)
     {
+<<<<<<< HEAD
         return $this->redis->delete($id) >= 0;
+=======
+        return $this->redis->delete($id) > 0;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -170,11 +178,15 @@ class RedisCache extends CacheProvider
         if (defined('HHVM_VERSION')) {
             return Redis::SERIALIZER_PHP;
         }
+<<<<<<< HEAD
 
         if (defined('Redis::SERIALIZER_IGBINARY') && extension_loaded('igbinary')) {
             return Redis::SERIALIZER_IGBINARY;
         }
 
         return Redis::SERIALIZER_PHP;
+=======
+        return defined('Redis::SERIALIZER_IGBINARY') ? Redis::SERIALIZER_IGBINARY : Redis::SERIALIZER_PHP;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 }

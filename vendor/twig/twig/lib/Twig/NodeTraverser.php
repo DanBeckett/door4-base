@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2009 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -14,8 +18,11 @@
  *
  * It visits all nodes and their children and calls the given visitor for each.
  *
+<<<<<<< HEAD
  * @final
  *
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @author Fabien Potencier <fabien@symfony.com>
  */
 class Twig_NodeTraverser
@@ -24,8 +31,15 @@ class Twig_NodeTraverser
     protected $visitors = array();
 
     /**
+<<<<<<< HEAD
      * @param Twig_Environment            $env
      * @param Twig_NodeVisitorInterface[] $visitors
+=======
+     * Constructor.
+     *
+     * @param Twig_Environment            $env      A Twig_Environment instance
+     * @param Twig_NodeVisitorInterface[] $visitors An array of Twig_NodeVisitorInterface instances
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function __construct(Twig_Environment $env, array $visitors = array())
     {
@@ -35,6 +49,14 @@ class Twig_NodeTraverser
         }
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Adds a visitor.
+     *
+     * @param Twig_NodeVisitorInterface $visitor A Twig_NodeVisitorInterface instance
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function addVisitor(Twig_NodeVisitorInterface $visitor)
     {
         if (!isset($this->visitors[$visitor->getPriority()])) {
@@ -47,6 +69,11 @@ class Twig_NodeTraverser
     /**
      * Traverses a node and calls the registered visitors.
      *
+<<<<<<< HEAD
+=======
+     * @param Twig_NodeInterface $node A Twig_NodeInterface instance
+     *
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @return Twig_NodeInterface
      */
     public function traverse(Twig_NodeInterface $node)

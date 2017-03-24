@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2009 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,7 +27,11 @@ class Twig_Autoloader
     /**
      * Registers Twig_Autoloader as an SPL autoloader.
      *
+<<<<<<< HEAD
      * @param bool $prepend whether to prepend the autoloader or not
+=======
+     * @param bool $prepend Whether to prepend the autoloader or not.
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public static function register($prepend = false)
     {
@@ -39,7 +47,11 @@ class Twig_Autoloader
     /**
      * Handles autoloading of classes.
      *
+<<<<<<< HEAD
      * @param string $class a class name
+=======
+     * @param string $class A class name.
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public static function autoload($class)
     {

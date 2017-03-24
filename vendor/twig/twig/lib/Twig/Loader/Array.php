@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2009 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -19,18 +23,32 @@
  *
  * This loader should only be used for unit testing.
  *
+<<<<<<< HEAD
  * @final
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
 class Twig_Loader_Array implements Twig_LoaderInterface, Twig_ExistsLoaderInterface, Twig_SourceContextLoaderInterface
+=======
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class Twig_Loader_Array implements Twig_LoaderInterface, Twig_ExistsLoaderInterface
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 {
     protected $templates = array();
 
     /**
+<<<<<<< HEAD
      * @param array $templates An array of templates (keys are the names, and values are the source code)
      */
     public function __construct(array $templates = array())
+=======
+     * Constructor.
+     *
+     * @param array $templates An array of templates (keys are the names, and values are the source code)
+     */
+    public function __construct(array $templates)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         $this->templates = $templates;
     }
@@ -46,10 +64,18 @@ class Twig_Loader_Array implements Twig_LoaderInterface, Twig_ExistsLoaderInterf
         $this->templates[(string) $name] = $template;
     }
 
+<<<<<<< HEAD
     public function getSource($name)
     {
         @trigger_error(sprintf('Calling "getSource" on "%s" is deprecated since 1.27. Use getSourceContext() instead.', get_class($this)), E_USER_DEPRECATED);
 
+=======
+    /**
+     * {@inheritdoc}
+     */
+    public function getSource($name)
+    {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $name = (string) $name;
         if (!isset($this->templates[$name])) {
             throw new Twig_Error_Loader(sprintf('Template "%s" is not defined.', $name));
@@ -58,6 +84,7 @@ class Twig_Loader_Array implements Twig_LoaderInterface, Twig_ExistsLoaderInterf
         return $this->templates[$name];
     }
 
+<<<<<<< HEAD
     public function getSourceContext($name)
     {
         $name = (string) $name;
@@ -68,11 +95,22 @@ class Twig_Loader_Array implements Twig_LoaderInterface, Twig_ExistsLoaderInterf
         return new Twig_Source($this->templates[$name], $name);
     }
 
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function exists($name)
     {
         return isset($this->templates[(string) $name]);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function getCacheKey($name)
     {
         $name = (string) $name;
@@ -83,6 +121,12 @@ class Twig_Loader_Array implements Twig_LoaderInterface, Twig_ExistsLoaderInterf
         return $this->templates[$name];
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function isFresh($name, $time)
     {
         $name = (string) $name;

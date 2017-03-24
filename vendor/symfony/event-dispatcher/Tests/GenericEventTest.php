@@ -11,13 +11,20 @@
 
 namespace Symfony\Component\EventDispatcher\Tests;
 
+<<<<<<< HEAD
 use PHPUnit\Framework\TestCase;
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 use Symfony\Component\EventDispatcher\GenericEvent;
 
 /**
  * Test class for Event.
  */
+<<<<<<< HEAD
 class GenericEventTest extends TestCase
+=======
+class GenericEventTest extends \PHPUnit_Framework_TestCase
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 {
     /**
      * @var GenericEvent
@@ -96,7 +103,11 @@ class GenericEventTest extends TestCase
         $this->assertEquals('Event', $this->event['name']);
 
         // test getting invalid arg
+<<<<<<< HEAD
         $this->{method_exists($this, $_ = 'expectException') ? $_ : 'setExpectedException'}('InvalidArgumentException');
+=======
+        $this->setExpectedException('InvalidArgumentException');
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $this->assertFalse($this->event['nameNotExist']);
     }
 

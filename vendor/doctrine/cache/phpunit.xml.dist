@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
@@ -11,6 +12,19 @@
         <ini name="error_reporting" value="-1" />
     </php>
 
+=======
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         bootstrap="./tests/Doctrine/Tests/TestInit.php"
+>
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     <testsuites>
         <testsuite name="Doctrine Cache Test Suite">
             <directory>./tests/Doctrine/</directory>

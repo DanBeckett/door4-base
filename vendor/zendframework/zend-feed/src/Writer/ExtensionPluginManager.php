@@ -10,8 +10,11 @@
 namespace Zend\Feed\Writer;
 
 use Zend\ServiceManager\AbstractPluginManager;
+<<<<<<< HEAD
 use Zend\ServiceManager\Exception\InvalidServiceException;
 use Zend\ServiceManager\Factory\InvokableFactory;
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 /**
  * Plugin manager implementation for feed writer extensions
@@ -21,6 +24,7 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 class ExtensionPluginManager extends AbstractPluginManager
 {
     /**
+<<<<<<< HEAD
      * Aliases for default set of extension classes
      *
      * @var array
@@ -100,12 +104,35 @@ class ExtensionPluginManager extends AbstractPluginManager
 
     /**
      * Do not share instances (v2)
+=======
+     * Default set of extension classes
+     *
+     * @var array
+     */
+    protected $invokableClasses = [
+        'atomrendererfeed'           => 'Zend\Feed\Writer\Extension\Atom\Renderer\Feed',
+        'contentrendererentry'       => 'Zend\Feed\Writer\Extension\Content\Renderer\Entry',
+        'dublincorerendererentry'    => 'Zend\Feed\Writer\Extension\DublinCore\Renderer\Entry',
+        'dublincorerendererfeed'     => 'Zend\Feed\Writer\Extension\DublinCore\Renderer\Feed',
+        'itunesentry'                => 'Zend\Feed\Writer\Extension\ITunes\Entry',
+        'itunesfeed'                 => 'Zend\Feed\Writer\Extension\ITunes\Feed',
+        'itunesrendererentry'        => 'Zend\Feed\Writer\Extension\ITunes\Renderer\Entry',
+        'itunesrendererfeed'         => 'Zend\Feed\Writer\Extension\ITunes\Renderer\Feed',
+        'slashrendererentry'         => 'Zend\Feed\Writer\Extension\Slash\Renderer\Entry',
+        'threadingrendererentry'     => 'Zend\Feed\Writer\Extension\Threading\Renderer\Entry',
+        'wellformedwebrendererentry' => 'Zend\Feed\Writer\Extension\WellFormedWeb\Renderer\Entry',
+    ];
+
+    /**
+     * Do not share instances
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @var bool
      */
     protected $shareByDefault = false;
 
     /**
+<<<<<<< HEAD
      * Do not share instances (v3)
      *
      * @var bool
@@ -114,14 +141,23 @@ class ExtensionPluginManager extends AbstractPluginManager
 
     /**
      * Validate the plugin (v3)
+=======
+     * Validate the plugin
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * Checks that the extension loaded is of a valid type.
      *
      * @param  mixed $plugin
      * @return void
+<<<<<<< HEAD
      * @throws InvalidServiceException if invalid
      */
     public function validate($plugin)
+=======
+     * @throws Exception\InvalidArgumentException if invalid
+     */
+    public function validatePlugin($plugin)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         if ($plugin instanceof Extension\AbstractRenderer) {
             // we're okay
@@ -138,13 +174,18 @@ class ExtensionPluginManager extends AbstractPluginManager
             return;
         }
 
+<<<<<<< HEAD
         throw new InvalidServiceException(sprintf(
+=======
+        throw new Exception\InvalidArgumentException(sprintf(
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             'Plugin of type %s is invalid; must implement %s\Extension\RendererInterface '
             . 'or the classname must end in "Feed" or "Entry"',
             (is_object($plugin) ? get_class($plugin) : gettype($plugin)),
             __NAMESPACE__
         ));
     }
+<<<<<<< HEAD
 
     /**
      * Validate plugin (v2)
@@ -166,4 +207,6 @@ class ExtensionPluginManager extends AbstractPluginManager
             ));
         }
     }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

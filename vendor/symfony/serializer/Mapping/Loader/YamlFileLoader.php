@@ -60,6 +60,7 @@ class YamlFileLoader extends FileLoader
             $this->classes = $classes;
         }
 
+<<<<<<< HEAD
         if (!isset($this->classes[$classMetadata->getName()])) {
             return false;
         }
@@ -94,5 +95,41 @@ class YamlFileLoader extends FileLoader
         }
 
         return true;
+=======
+        if (isset($this->classes[$classMetadata->getName()])) {
+            $yaml = $this->classes[$classMetadata->getName()];
+
+            if (isset($yaml['attributes']) && is_array($yaml['attributes'])) {
+                $attributesMetadata = $classMetadata->getAttributesMetadata();
+
+                foreach ($yaml['attributes'] as $attribute => $data) {
+                    if (isset($attributesMetadata[$attribute])) {
+                        $attributeMetadata = $attributesMetadata[$attribute];
+                    } else {
+                        $attributeMetadata = new AttributeMetadata($attribute);
+                        $classMetadata->addAttributeMetadata($attributeMetadata);
+                    }
+
+                    if (isset($data['groups'])) {
+                        if (!is_array($data['groups'])) {
+                            throw new MappingException('The "groups" key must be an array of strings in "%s" for the attribute "%s" of the class "%s".', $this->file, $attribute, $classMetadata->getName());
+                        }
+
+                        foreach ($data['groups'] as $group) {
+                            if (!is_string($group)) {
+                                throw new MappingException('Group names must be strings in "%s" for the attribute "%s" of the class "%s".', $this->file, $attribute, $classMetadata->getName());
+                            }
+
+                            $attributeMetadata->addGroup($group);
+                        }
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        return false;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 }

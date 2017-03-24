@@ -79,7 +79,11 @@ class AnnotationLoader implements LoaderInterface
                         $metadata->addConstraint($constraint);
                     } elseif ($constraint instanceof Constraint) {
                         if (preg_match('/^(get|is|has)(.+)$/i', $method->name, $matches)) {
+<<<<<<< HEAD
                             $metadata->addGetterMethodConstraint(lcfirst($matches[2]), $matches[0], $constraint);
+=======
+                            $metadata->addGetterConstraint(lcfirst($matches[2]), $constraint);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                         } else {
                             throw new MappingException(sprintf('The constraint on "%s::%s" cannot be added. Constraints can only be added on methods beginning with "get", "is" or "has".', $className, $method->name));
                         }

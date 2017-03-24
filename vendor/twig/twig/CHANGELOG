@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * 1.33.0 (2017-03-22)
 
  * fixed a race condition handling when writing cache files
@@ -112,6 +113,8 @@
    getTokenParsers(), getTags(), getNodeVisitors(), getUnaryOperators(), getBinaryOperators(),
    getFunctions(), getFilters(), getGlobals(), initGlobals(), initExtensions(), and initExtension()
 
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 * 1.24.0 (2016-01-25)
 
  * adding support for the ?? operator

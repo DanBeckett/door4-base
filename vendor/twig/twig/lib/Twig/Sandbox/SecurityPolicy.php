@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2009 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -12,8 +16,11 @@
 /**
  * Represents a security policy which need to be enforced when sandbox mode is enabled.
  *
+<<<<<<< HEAD
  * @final
  *
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @author Fabien Potencier <fabien@symfony.com>
  */
 class Twig_Sandbox_SecurityPolicy implements Twig_Sandbox_SecurityPolicyInterface
@@ -99,8 +106,12 @@ class Twig_Sandbox_SecurityPolicy implements Twig_Sandbox_SecurityPolicyInterfac
         }
 
         if (!$allowed) {
+<<<<<<< HEAD
             $class = get_class($obj);
             throw new Twig_Sandbox_SecurityNotAllowedMethodError(sprintf('Calling "%s" method on a "%s" object is not allowed.', $method, $class), $class, $method);
+=======
+            throw new Twig_Sandbox_SecurityError(sprintf('Calling "%s" method on a "%s" object is not allowed.', $method, get_class($obj)));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
     }
 
@@ -116,8 +127,12 @@ class Twig_Sandbox_SecurityPolicy implements Twig_Sandbox_SecurityPolicyInterfac
         }
 
         if (!$allowed) {
+<<<<<<< HEAD
             $class = get_class($obj);
             throw new Twig_Sandbox_SecurityNotAllowedPropertyError(sprintf('Calling "%s" property on a "%s" object is not allowed.', $property, $class), $class, $property);
+=======
+            throw new Twig_Sandbox_SecurityError(sprintf('Calling "%s" property on a "%s" object is not allowed.', $property, get_class($obj)));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
     }
 }

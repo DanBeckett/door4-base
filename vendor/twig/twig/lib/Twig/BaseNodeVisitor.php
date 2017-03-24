@@ -16,6 +16,12 @@
  */
 abstract class Twig_BaseNodeVisitor implements Twig_NodeVisitorInterface
 {
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     final public function enterNode(Twig_NodeInterface $node, Twig_Environment $env)
     {
         if (!$node instanceof Twig_Node) {
@@ -25,6 +31,12 @@ abstract class Twig_BaseNodeVisitor implements Twig_NodeVisitorInterface
         return $this->doEnterNode($node, $env);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * {@inheritdoc}
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     final public function leaveNode(Twig_NodeInterface $node, Twig_Environment $env)
     {
         if (!$node instanceof Twig_Node) {
@@ -37,6 +49,12 @@ abstract class Twig_BaseNodeVisitor implements Twig_NodeVisitorInterface
     /**
      * Called before child nodes are visited.
      *
+<<<<<<< HEAD
+=======
+     * @param Twig_Node        $node The node to visit
+     * @param Twig_Environment $env  The Twig environment instance
+     *
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @return Twig_Node The modified node
      */
     abstract protected function doEnterNode(Twig_Node $node, Twig_Environment $env);
@@ -44,6 +62,12 @@ abstract class Twig_BaseNodeVisitor implements Twig_NodeVisitorInterface
     /**
      * Called after child nodes are visited.
      *
+<<<<<<< HEAD
+=======
+     * @param Twig_Node        $node The node to visit
+     * @param Twig_Environment $env  The Twig environment instance
+     *
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @return Twig_Node|false The modified node or false if the node must be removed
      */
     abstract protected function doLeaveNode(Twig_Node $node, Twig_Environment $env);

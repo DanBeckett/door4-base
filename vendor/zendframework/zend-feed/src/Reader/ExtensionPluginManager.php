@@ -10,8 +10,11 @@
 namespace Zend\Feed\Reader;
 
 use Zend\ServiceManager\AbstractPluginManager;
+<<<<<<< HEAD
 use Zend\ServiceManager\Exception\InvalidServiceException;
 use Zend\ServiceManager\Factory\InvokableFactory;
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 /**
  * Plugin manager implementation for feed reader extensions based on the
@@ -23,6 +26,7 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 class ExtensionPluginManager extends AbstractPluginManager
 {
     /**
+<<<<<<< HEAD
      * Aliases for default set of extension classes
      *
      * @var array
@@ -108,12 +112,37 @@ class ExtensionPluginManager extends AbstractPluginManager
 
     /**
      * Do not share instances (v2)
+=======
+     * Default set of extension classes
+     *
+     * @var array
+     */
+    protected $invokableClasses = [
+        'atomentry'            => 'Zend\Feed\Reader\Extension\Atom\Entry',
+        'atomfeed'             => 'Zend\Feed\Reader\Extension\Atom\Feed',
+        'contententry'         => 'Zend\Feed\Reader\Extension\Content\Entry',
+        'creativecommonsentry' => 'Zend\Feed\Reader\Extension\CreativeCommons\Entry',
+        'creativecommonsfeed'  => 'Zend\Feed\Reader\Extension\CreativeCommons\Feed',
+        'dublincoreentry'      => 'Zend\Feed\Reader\Extension\DublinCore\Entry',
+        'dublincorefeed'       => 'Zend\Feed\Reader\Extension\DublinCore\Feed',
+        'podcastentry'         => 'Zend\Feed\Reader\Extension\Podcast\Entry',
+        'podcastfeed'          => 'Zend\Feed\Reader\Extension\Podcast\Feed',
+        'slashentry'           => 'Zend\Feed\Reader\Extension\Slash\Entry',
+        'syndicationfeed'      => 'Zend\Feed\Reader\Extension\Syndication\Feed',
+        'threadentry'          => 'Zend\Feed\Reader\Extension\Thread\Entry',
+        'wellformedwebentry'   => 'Zend\Feed\Reader\Extension\WellFormedWeb\Entry',
+    ];
+
+    /**
+     * Do not share instances
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @var bool
      */
     protected $shareByDefault = false;
 
     /**
+<<<<<<< HEAD
      * Do not share instances (v3)
      *
      * @var bool
@@ -121,6 +150,8 @@ class ExtensionPluginManager extends AbstractPluginManager
     protected $sharedByDefault = false;
 
     /**
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * Validate the plugin
      *
      * Checks that the extension loaded is of a valid type.
@@ -129,7 +160,11 @@ class ExtensionPluginManager extends AbstractPluginManager
      * @return void
      * @throws Exception\InvalidArgumentException if invalid
      */
+<<<<<<< HEAD
     public function validate($plugin)
+=======
+    public function validatePlugin($plugin)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         if ($plugin instanceof Extension\AbstractEntry
             || $plugin instanceof Extension\AbstractFeed
@@ -138,7 +173,11 @@ class ExtensionPluginManager extends AbstractPluginManager
             return;
         }
 
+<<<<<<< HEAD
         throw new InvalidServiceException(sprintf(
+=======
+        throw new Exception\InvalidArgumentException(sprintf(
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             'Plugin of type %s is invalid; must implement %s\Extension\AbstractFeed '
             . 'or %s\Extension\AbstractEntry',
             (is_object($plugin) ? get_class($plugin) : gettype($plugin)),
@@ -146,6 +185,7 @@ class ExtensionPluginManager extends AbstractPluginManager
             __NAMESPACE__
         ));
     }
+<<<<<<< HEAD
 
     /**
      * Validate the plugin (v2)
@@ -168,4 +208,6 @@ class ExtensionPluginManager extends AbstractPluginManager
             ));
         }
     }
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

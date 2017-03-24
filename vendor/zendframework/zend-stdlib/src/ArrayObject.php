@@ -180,16 +180,25 @@ class ArrayObject implements IteratorAggregate, ArrayAccess, Serializable, Count
      */
     public function exchangeArray($data)
     {
+<<<<<<< HEAD
         if (! is_array($data) && ! is_object($data)) {
             throw new Exception\InvalidArgumentException(
                 'Passed variable is not an array or object, using empty array instead'
             );
+=======
+        if (!is_array($data) && !is_object($data)) {
+            throw new Exception\InvalidArgumentException('Passed variable is not an array or object, using empty array instead');
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         if (is_object($data) && ($data instanceof self || $data instanceof \ArrayObject)) {
             $data = $data->getArrayCopy();
         }
+<<<<<<< HEAD
         if (! is_array($data)) {
+=======
+        if (!is_array($data)) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $data = (array) $data;
         }
 
@@ -292,7 +301,11 @@ class ArrayObject implements IteratorAggregate, ArrayAccess, Serializable, Count
     public function &offsetGet($key)
     {
         $ret = null;
+<<<<<<< HEAD
         if (! $this->offsetExists($key)) {
+=======
+        if (!$this->offsetExists($key)) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             return $ret;
         }
         $ret =& $this->storage[$key];

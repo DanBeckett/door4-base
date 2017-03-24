@@ -1,17 +1,23 @@
 <?php
 namespace Composer\Installers;
 
+<<<<<<< HEAD
 use Composer\Package\PackageInterface;
 
 class OxidInstaller extends BaseInstaller
 {
 	const VENDOR_PATTERN = '/^modules\/(?P<vendor>.+)\/.+/';
 
+=======
+class OxidInstaller extends BaseInstaller
+{
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     protected $locations = array(
         'module'    => 'modules/{$name}/',
         'theme'  => 'application/views/{$name}/',
         'out'    => 'out/{$name}/',
     );
+<<<<<<< HEAD
 
 	/**
 	 * getInstallPath
@@ -56,4 +62,6 @@ class OxidInstaller extends BaseInstaller
 		$vendorMetaDataPath = $vendorPath . '/vendormetadata.php';
 		touch($vendorMetaDataPath);
 	}
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

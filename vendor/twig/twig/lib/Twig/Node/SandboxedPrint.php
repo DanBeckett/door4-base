@@ -3,7 +3,11 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
+=======
+ * (c) 2010 Fabien Potencier
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,7 +29,11 @@ class Twig_Node_SandboxedPrint extends Twig_Node_Print
     {
         $compiler
             ->addDebugInfo($this)
+<<<<<<< HEAD
             ->write('echo $this->env->getExtension(\'Twig_Extension_Sandbox\')->ensureToStringAllowed(')
+=======
+            ->write('echo $this->env->getExtension(\'sandbox\')->ensureToStringAllowed(')
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             ->subcompile($this->getNode('expr'))
             ->raw(");\n")
         ;
@@ -36,9 +44,17 @@ class Twig_Node_SandboxedPrint extends Twig_Node_Print
      *
      * This is mostly needed when another visitor adds filters (like the escaper one).
      *
+<<<<<<< HEAD
      * @return Twig_Node
      */
     protected function removeNodeFilter(Twig_Node $node)
+=======
+     * @param Twig_Node $node A Node
+     *
+     * @return Twig_Node
+     */
+    protected function removeNodeFilter($node)
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         if ($node instanceof Twig_Node_Expression_Filter) {
             return $this->removeNodeFilter($node->getNode('node'));

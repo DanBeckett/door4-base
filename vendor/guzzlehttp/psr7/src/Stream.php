@@ -207,6 +207,7 @@ class Stream implements StreamInterface
         if (!$this->readable) {
             throw new \RuntimeException('Cannot read from non-readable stream');
         }
+<<<<<<< HEAD
         if ($length < 0) {
             throw new \RuntimeException('Length parameter cannot be negative');
         }
@@ -221,6 +222,10 @@ class Stream implements StreamInterface
         }
 
         return $string;
+=======
+
+        return fread($this->stream, $length);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     public function write($string)

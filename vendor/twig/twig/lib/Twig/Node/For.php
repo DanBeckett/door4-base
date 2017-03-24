@@ -3,8 +3,13 @@
 /*
  * This file is part of Twig.
  *
+<<<<<<< HEAD
  * (c) Fabien Potencier
  * (c) Armin Ronacher
+=======
+ * (c) 2009 Fabien Potencier
+ * (c) 2009 Armin Ronacher
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -27,12 +32,16 @@ class Twig_Node_For extends Twig_Node
             $body = new Twig_Node_If(new Twig_Node(array($ifexpr, $body)), null, $lineno, $tag);
         }
 
+<<<<<<< HEAD
         $nodes = array('key_target' => $keyTarget, 'value_target' => $valueTarget, 'seq' => $seq, 'body' => $body);
         if (null !== $else) {
             $nodes['else'] = $else;
         }
 
         parent::__construct($nodes, array('with_loop' => true, 'ifexpr' => null !== $ifexpr), $lineno, $tag);
+=======
+        parent::__construct(array('key_target' => $keyTarget, 'value_target' => $valueTarget, 'seq' => $seq, 'body' => $body, 'else' => $else), array('with_loop' => true, 'ifexpr' => null !== $ifexpr), $lineno, $tag);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     public function compile(Twig_Compiler $compiler)
@@ -45,7 +54,11 @@ class Twig_Node_For extends Twig_Node
             ->raw(");\n")
         ;
 
+<<<<<<< HEAD
         if ($this->hasNode('else')) {
+=======
+        if (null !== $this->getNode('else')) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $compiler->write("\$context['_iterated'] = false;\n");
         }
 
@@ -74,7 +87,11 @@ class Twig_Node_For extends Twig_Node
             }
         }
 
+<<<<<<< HEAD
         $this->loop->setAttribute('else', $this->hasNode('else'));
+=======
+        $this->loop->setAttribute('else', null !== $this->getNode('else'));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $this->loop->setAttribute('with_loop', $this->getAttribute('with_loop'));
         $this->loop->setAttribute('ifexpr', $this->getAttribute('ifexpr'));
 
@@ -90,7 +107,11 @@ class Twig_Node_For extends Twig_Node
             ->write("}\n")
         ;
 
+<<<<<<< HEAD
         if ($this->hasNode('else')) {
+=======
+        if (null !== $this->getNode('else')) {
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $compiler
                 ->write("if (!\$context['_iterated']) {\n")
                 ->indent()

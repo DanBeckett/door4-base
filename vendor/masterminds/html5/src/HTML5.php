@@ -166,10 +166,16 @@ class HTML5
     public function parse(\Masterminds\HTML5\Parser\InputStream $input, array $options = array())
     {
         $this->errors = array();
+<<<<<<< HEAD
         $options = array_merge($this->getOptions(), $options);
         $events = new DOMTreeBuilder(false, $options);
         $scanner = new Scanner($input);
         $parser = new Tokenizer($scanner, $events, !empty($options['xmlNamespaces']) ? Tokenizer::CONFORMANT_XML: Tokenizer::CONFORMANT_HTML);
+=======
+        $events = new DOMTreeBuilder(false, array_merge($this->getOptions(), $options));
+        $scanner = new Scanner($input);
+        $parser = new Tokenizer($scanner, $events);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
         $parser->parse();
         $this->errors = $events->getErrors();
@@ -185,10 +191,16 @@ class HTML5
      */
     public function parseFragment(\Masterminds\HTML5\Parser\InputStream $input, array $options = array())
     {
+<<<<<<< HEAD
         $options = array_merge($this->getOptions(), $options);
         $events = new DOMTreeBuilder(true, $options);
         $scanner = new Scanner($input);
         $parser = new Tokenizer($scanner, $events, !empty($options['xmlNamespaces']) ? Tokenizer::CONFORMANT_XML: Tokenizer::CONFORMANT_HTML);
+=======
+        $events = new DOMTreeBuilder(true, array_merge($this->getOptions(), $options));
+        $scanner = new Scanner($input);
+        $parser = new Tokenizer($scanner, $events);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
         $parser->parse();
         $this->errors = $events->getErrors();

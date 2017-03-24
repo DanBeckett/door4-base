@@ -10,7 +10,11 @@ namespace GuzzleHttp\Promise;
  *
  *     GuzzleHttp\Promise\queue()->run();
  */
+<<<<<<< HEAD
 class TaskQueue implements TaskQueueInterface
+=======
+class TaskQueue
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 {
     private $enableShutdown = true;
     private $queue = [];
@@ -30,16 +34,39 @@ class TaskQueue implements TaskQueueInterface
         }
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Returns true if the queue is empty.
+     *
+     * @return bool
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function isEmpty()
     {
         return !$this->queue;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Adds a task to the queue that will be executed the next time run is
+     * called.
+     *
+     * @param callable $task
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function add(callable $task)
     {
         $this->queue[] = $task;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Execute all of the pending task in the queue.
+     */
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function run()
     {
         /** @var callable $task */

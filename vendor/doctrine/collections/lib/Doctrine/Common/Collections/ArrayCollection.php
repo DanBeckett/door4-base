@@ -26,11 +26,14 @@ use Doctrine\Common\Collections\Expr\ClosureExpressionVisitor;
 /**
  * An ArrayCollection is a Collection implementation that wraps a regular PHP array.
  *
+<<<<<<< HEAD
  * Warning: Using (un-)serialize() on a collection is not a supported use-case
  * and may break when we change the internals in the future. If you need to
  * serialize a collection use {@link toArray()} and reconstruct the collection
  * manually.
  *
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @since  2.0
  * @author Guilherme Blanco <guilhermeblanco@hotmail.com>
  * @author Jonathan Wage <jonwage@gmail.com>
@@ -56,6 +59,7 @@ class ArrayCollection implements Collection, Selectable
     }
 
     /**
+<<<<<<< HEAD
      * Creates a new instance from the specified elements.
      *
      * This method is provided for derived classes to specify how a new
@@ -71,6 +75,8 @@ class ArrayCollection implements Collection, Selectable
     }
 
     /**
+=======
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * {@inheritDoc}
      */
     public function toArray()
@@ -274,9 +280,15 @@ class ArrayCollection implements Collection, Selectable
     /**
      * {@inheritDoc}
      */
+<<<<<<< HEAD
     public function add($element)
     {
         $this->elements[] = $element;
+=======
+    public function add($value)
+    {
+        $this->elements[] = $value;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
         return true;
     }
@@ -304,7 +316,11 @@ class ArrayCollection implements Collection, Selectable
      */
     public function map(Closure $func)
     {
+<<<<<<< HEAD
         return $this->createFrom(array_map($func, $this->elements));
+=======
+        return new static(array_map($func, $this->elements));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -312,7 +328,11 @@ class ArrayCollection implements Collection, Selectable
      */
     public function filter(Closure $p)
     {
+<<<<<<< HEAD
         return $this->createFrom(array_filter($this->elements, $p));
+=======
+        return new static(array_filter($this->elements, $p));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -344,7 +364,11 @@ class ArrayCollection implements Collection, Selectable
             }
         }
 
+<<<<<<< HEAD
         return array($this->createFrom($matches), $this->createFrom($noMatches));
+=======
+        return array(new static($matches), new static($noMatches));
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -388,9 +412,14 @@ class ArrayCollection implements Collection, Selectable
         }
 
         if ($orderings = $criteria->getOrderings()) {
+<<<<<<< HEAD
             $next = null;
             foreach (array_reverse($orderings) as $field => $ordering) {
                 $next = ClosureExpressionVisitor::sortByField($field, $ordering == Criteria::DESC ? -1 : 1, $next);
+=======
+            foreach (array_reverse($orderings) as $field => $ordering) {
+                $next = ClosureExpressionVisitor::sortByField($field, $ordering == Criteria::DESC ? -1 : 1);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
 
             uasort($filtered, $next);
@@ -403,6 +432,10 @@ class ArrayCollection implements Collection, Selectable
             $filtered = array_slice($filtered, (int)$offset, $length);
         }
 
+<<<<<<< HEAD
         return $this->createFrom($filtered);
+=======
+        return new static($filtered);
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 }

@@ -14,7 +14,11 @@ namespace Composer\Semver\Constraint;
 /**
  * Defines a constraint.
  */
+<<<<<<< HEAD
 class Constraint implements ConstraintInterface
+=======
+class Constraint extends AbstractConstraint
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 {
     /* operator integer values */
     const OP_EQ = 0;
@@ -55,6 +59,7 @@ class Constraint implements ConstraintInterface
     );
 
     /** @var string */
+<<<<<<< HEAD
     protected $operator;
 
     /** @var string */
@@ -97,6 +102,12 @@ class Constraint implements ConstraintInterface
 
         return $this->__toString();
     }
+=======
+    private $operator;
+
+    /** @var string */
+    private $version;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
     /**
      * Get all supported comparison operators.

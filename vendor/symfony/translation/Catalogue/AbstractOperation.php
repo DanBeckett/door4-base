@@ -83,6 +83,10 @@ abstract class AbstractOperation implements OperationInterface
         $this->source = $source;
         $this->target = $target;
         $this->result = new MessageCatalogue($source->getLocale());
+<<<<<<< HEAD
+=======
+        $this->domains = null;
+>>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $this->messages = array();
     }
 
