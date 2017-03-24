@@ -1,0 +1,18 @@
+egopowerplus.small:
+  label: small
+  mediaQuery: 'only screen and (max-width: 640px)'
+  weight: 0
+  multipliers:
+    - 1x
+egopowerplus.medium:
+  label: medium
+  mediaQuery: 'only screen and (max-width: 1023px) and (min-width: 641px)'
+  weight: 1
+  multipliers:
+    - 1x
+egopowerplus.large:
+  label: large
+  mediaQuery: ''
+  weight: 2
+  multipliers:
+    - 1x

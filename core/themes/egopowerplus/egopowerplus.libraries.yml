@@ -1,0 +1,7 @@
+ego-base-styles:
+  version: 1.0
+  css:
+    theme:
+      css/large.css: {}
+      css/medium.css: {}
+      css/small.css: {}
