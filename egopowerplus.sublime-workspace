@@ -1,0 +1,562 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"create_default_",
+				"create_default_price_list_js_options"
+			],
+			[
+				"espresso",
+				"espresso_event_categories"
+			],
+			[
+				"quer",
+				"queried_id"
+			],
+			[
+				"transper",
+				"transparentize"
+			],
+			[
+				"Helv",
+				"HelveticaNeueBold"
+			],
+			[
+				"get_template_dire",
+				"get_template_directory_uri"
+			],
+			[
+				"butt",
+				"button_link"
+			],
+			[
+				"back",
+				"backdropgrey"
+			],
+			[
+				"table",
+				"table-outer-border"
+			],
+			[
+				"form-item",
+				"form-item-quantity"
+			],
+			[
+				"magblue",
+				"magbluepale"
+			],
+			[
+				"data",
+				"data_arr"
+			],
+			[
+				"function",
+				"function_exists"
+			],
+			[
+				"door",
+				"door4-untracked-css"
+			],
+			[
+				"css",
+				"css_dependencies"
+			],
+			[
+				"door4",
+				"door4-untracked"
+			],
+			[
+				"sm-",
+				"sm-category"
+			],
+			[
+				"founda",
+				"foundation_classes"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"echo",
+				"echo\techo \"…\""
+			],
+			[
+				"resi",
+				"resizeVids"
+			],
+			[
+				"kla",
+				"klavika_regular"
+			],
+			[
+				"proxim",
+				"proxima-nova-bold"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"last_filter": "tabs",
+		"selected_items":
+		[
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"indentation",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"convert to tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"convert to spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"convert to tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"install package",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/egopowerplus"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/functions.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-site-plugin/toyotafleet-site-plugin.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-price-list-upload/css/admin.css",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-call_to_action_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-price-list-upload/js/toyotafleet-price-list-upload.js",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-interactive_price_list_commercial_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/comparison-table-functions.js",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-price-list-upload/toyotafleet-price-list-upload.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/index.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/theme-background-controller.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-hybrid_price_comparison_block.php",
+		"/Users/danbeckett/_projects/toyota/price_list_headers.csv",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-image_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/filter-range-functions.js",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-filter_hybrid_tabs_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-filter_range_tabs_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/modules/_type.scss",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-offers_scroller_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/main.scss",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/functions/table-functions.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/partials/_standard.scss",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-team_table_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-wysiwyg_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/modules/_colors.scss",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/theme-quick-links.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-multi_wysiwyg_panel_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/style.css",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/acf-json/index.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/equalise-multi-wysiwyg-panels.js",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/offer-slides.js",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/modules/_helpers.scss",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/initialise-youtube.js",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-site-plugin/toyotafleet-price-list-upload.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-content_callouts_block.php",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/background-slides.js",
+		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/dirts.js",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/functions.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/theme_load_posts.js",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/theme_load_team.js",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/partials/medium.scss",
+		"/Applications/MAMP/htdocs/floorplanner-retail.magnet/floorplanner-retail.sublime-project",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/sidebar-content.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/style.css",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/single-careers.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/front-page.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/modules/colours.scss",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/category.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/theme.js",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_partners.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_statistics_block.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-espresso_events.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_call_to_action_zebra.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_landing_page_block.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_trustees_block.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_faq_block.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/taxonomy-espresso_event_categories.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/archive-espresso_events.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-young-clarets.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/partials/small.scss",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-ucfb.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-brierfield-mill.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-partners.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-single-team.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-staff.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/jquery.inview.min.js",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/home.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/plugins/event-espresso-mods.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_costing_block.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_detail_block.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_team_archive_block.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/single-espresso_events.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/event_cart.template.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-checkout.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/countup.js",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/footer.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_wysiwyg_w_image.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_course_archive_block.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/single-espresso_people.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-page.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/archive.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/image.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/single.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-post.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-calendar.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/jquery-countup.js",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-careers.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/fonts/bfcitc_icons/css/bfcitc_icons.css",
+		"/Users/danbeckett/Desktop/Screen Shot 2016-10-21 at 10.49.23.png",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/plugins/eea-multi-event-registration/templates/event_cart.template.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-trustees.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-basic.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-faqs.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/header.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-social-footer.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_banner_image.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_section_title.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_wysiwyg.php",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/door4_styleles.css.map",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/door4_styles.scss",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/modules/type.scss",
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/modules/mixins.scss",
+		"/Users/danbeckett/Work Archive/mailshots/amplifon/amplifon-oct16-hearing-test/build/build.html",
+		"/Users/danbeckett/Work Archive/mailshots/magnet/magnet-hard-hitting-joinery-offers/build/build.html",
+		"/Users/danbeckett/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/header.php",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/functions/register-scripts.php",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/package.json",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/README.md",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/readme.txt",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/style.css",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/css/sass/partials/_standard.scss",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/css/sass/modules/_type.scss",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/css/sass/modules/_colors.scss",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/theme-header.php",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/index.php",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/theme-footer.php",
+		"/Applications/MAMP/htdocs/smartperms/wp-content/themes/smartperms/css/sass/partials/_mobile.scss",
+		"/Applications/MAMP/htdocs/sites/smartperms/wp-content/themes/smartperms/functions/setup-theme.php",
+		"/Applications/MAMP/htdocs/sites/smartperms/wp-content/themes/smartperms/functions/register-scripts.php",
+		"/Applications/MAMP/htdocs/sites/smartperms/wp-content/themes/smartperms/functions/register-stylesheets.php",
+		"/Applications/MAMP/htdocs/sites/smartperms/wp-content/themes/smartperms/header.php",
+		"/Applications/MAMP/htdocs/sites/smartperms/wp-content/themes/smartperms/functions.php",
+		"/Applications/MAMP/htdocs/sites/smartperms/wp-content/themes/smartperms/readme.txt",
+		"/Applications/MAMP/htdocs/sites/smartperms/wp-content/themes/smartperms/css/sass/modules/_type.scss",
+		"/Applications/MAMP/htdocs/sites/smartperms/wp-content/themes/smartperms/css/sass/partials/_bugfixes.scss"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"get_option",
+			"notice",
+			"admin-notice",
+			"logo",
+			"<form",
+			"header",
+			"wptuts",
+			"wptut",
+			"errors",
+			"theme_wptuts",
+			"theme_wptuts_options",
+			"wptuts_",
+			"'wptuts'",
+			"wptuts",
+			"wptuts_settings_header",
+			"tpl_settings_header",
+			"wptuts_",
+			"wptuts_setting_",
+			"wptuts_setting",
+			"_header",
+			"wptuts_",
+			"$wptut",
+			"options_validate",
+			"reset",
+			"_init",
+			"options_init",
+			"wptuts_options_init",
+			"'logo",
+			"get_default",
+			"print_r",
+			"tpl_get_default",
+			"tpl_options_validat",
+			"valid",
+			"tpl_options_init",
+			"process_cs",
+			"valida",
+			"tpl_options_validate",
+			"price_list_url",
+			"<form",
+			"tpl_options_validate",
+			"print_r",
+			"-settings",
+			"logo",
+			"tpl_upload_s",
+			"tpl_options",
+			"reset",
+			"tpl_setting_logo",
+			"tpl_setting",
+			"header_text",
+			"wptut",
+			"_settings",
+			"wptuts-s",
+			"setting_logo",
+			"validate",
+			"-options",
+			"form-",
+			"wptuts-settings",
+			"errors",
+			"$wptuts",
+			"do_meta_boxes",
+			"divider",
+			"range-title",
+			"slick",
+			"slider",
+			"palette-toyota",
+			"filter",
+			"-wysiw",
+			"rounded",
+			"fcp-block",
+			"flexibl",
+			"multi",
+			"margin",
+			"twitter-bg",
+			"1.1.",
+			"for",
+			"full-w",
+			"bodygrey",
+			"load_team_ajax",
+			"load_posts_ajax",
+			"load_posts_",
+			"load_team",
+			"more-link",
+			"mobile-trigger",
+			"pull-left",
+			"n class=\"more-link-icon-wrap original\">\n\t\t\t\t\t\t<span class=\"more-link-icon\"></span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>",
+			"mobile-trigger",
+			"espresso_eve",
+			"mobile-trigger",
+			"ucfb-header-logo",
+			"<p>",
+			"load_team",
+			"search",
+			"load_team",
+			".show",
+			"news",
+			"load",
+			"load_",
+			"navbar-brand",
+			"navbar",
+			"page-ucfb",
+			"pull-left",
+			"page-template-",
+			"navbar-brand",
+			"young-",
+			"-yc",
+			"ucfb",
+			"7",
+			".current",
+			"trustee",
+			"paged",
+			"featured",
+			"featured-news",
+			"mobile-trigger",
+			"global-wrapper",
+			"'bm'",
+			"jquery",
+			".on",
+			"col-md-8",
+			"page-title",
+			"espresso_peopl",
+			"post_type",
+			"bg-white",
+			"gener",
+			"cart_count",
+			"top-nav-bar",
+			"jquery",
+			"shadow",
+			"pre-post"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 89.0
+	},
+	"pinned_build_system": "",
+	"project": "egopowerplus.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
