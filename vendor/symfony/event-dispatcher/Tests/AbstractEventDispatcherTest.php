@@ -11,19 +11,11 @@
 
 namespace Symfony\Component\EventDispatcher\Tests;
 
-<<<<<<< HEAD
-use PHPUnit\Framework\TestCase;
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-<<<<<<< HEAD
-abstract class AbstractEventDispatcherTest extends TestCase
-=======
 abstract class AbstractEventDispatcherTest extends \PHPUnit_Framework_TestCase
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 {
     /* Some pseudo events */
     const preFoo = 'pre.foo';

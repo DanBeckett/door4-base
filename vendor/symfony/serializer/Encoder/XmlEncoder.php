@@ -369,14 +369,7 @@ class XmlEncoder extends SerializerAwareEncoder implements EncoderInterface, Dec
         if (is_array($data) || ($data instanceof \Traversable && !$this->serializer->supportsNormalization($data, $this->format))) {
             foreach ($data as $key => $data) {
                 //Ah this is the magic @ attribute types.
-<<<<<<< HEAD
-                if (0 === strpos($key, '@') && $this->isElementNameValid($attributeName = substr($key, 1))) {
-                    if (!is_scalar($data)) {
-                        $data = $this->serializer->normalize($data, $this->format, $this->context);
-                    }
-=======
                 if (0 === strpos($key, '@') && is_scalar($data) && $this->isElementNameValid($attributeName = substr($key, 1))) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                     $parentNode->setAttribute($attributeName, $data);
                 } elseif ($key === '#') {
                     $append = $this->selectNodeType($parentNode, $data);
@@ -481,11 +474,7 @@ class XmlEncoder extends SerializerAwareEncoder implements EncoderInterface, Dec
         } elseif ($val instanceof \Traversable) {
             $this->buildXml($node, $val);
         } elseif (is_object($val)) {
-<<<<<<< HEAD
-            return $this->selectNodeType($node, $this->serializer->normalize($val, $this->format, $this->context));
-=======
             return $this->buildXml($node, $this->serializer->normalize($val, $this->format, $this->context));
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         } elseif (is_numeric($val)) {
             return $this->appendText($node, (string) $val);
         } elseif (is_string($val) && $this->needsCdataWrapping($val)) {

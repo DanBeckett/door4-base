@@ -859,13 +859,6 @@ class Application
             // ignore invalid options/arguments for now, to allow the event listeners to customize the InputDefinition
         }
 
-<<<<<<< HEAD
-        // don't bind the input again as it would override any input argument/option set from the command event in
-        // addition to being useless
-        $command->setInputBound(true);
-
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $event = new ConsoleCommandEvent($command, $input, $output);
         $this->dispatcher->dispatch(ConsoleEvents::COMMAND, $event);
 

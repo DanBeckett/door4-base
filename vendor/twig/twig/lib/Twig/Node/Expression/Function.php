@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2010 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -16,11 +12,7 @@ class Twig_Node_Expression_Function extends Twig_Node_Expression_Call
 {
     public function __construct($name, Twig_NodeInterface $arguments, $lineno)
     {
-<<<<<<< HEAD
-        parent::__construct(array('arguments' => $arguments), array('name' => $name, 'is_defined_test' => false), $lineno);
-=======
         parent::__construct(array('arguments' => $arguments), array('name' => $name), $lineno);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     public function compile(Twig_Compiler $compiler)
@@ -35,16 +27,7 @@ class Twig_Node_Expression_Function extends Twig_Node_Expression_Call
         $this->setAttribute('needs_context', $function->needsContext());
         $this->setAttribute('arguments', $function->getArguments());
         if ($function instanceof Twig_FunctionCallableInterface || $function instanceof Twig_SimpleFunction) {
-<<<<<<< HEAD
-            $callable = $function->getCallable();
-            if ('constant' === $name && $this->getAttribute('is_defined_test')) {
-                $callable = 'twig_constant_is_defined';
-            }
-
-            $this->setAttribute('callable', $callable);
-=======
             $this->setAttribute('callable', $function->getCallable());
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
         if ($function instanceof Twig_SimpleFunction) {
             $this->setAttribute('is_variadic', $function->isVariadic());

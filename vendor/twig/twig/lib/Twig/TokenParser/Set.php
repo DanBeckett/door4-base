@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2009 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -29,11 +25,6 @@
  *
  *  {% set foo %}Some content{% endset %}
  * </pre>
-<<<<<<< HEAD
- *
- * @final
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Twig_TokenParser_Set extends Twig_TokenParser
 {
@@ -50,21 +41,13 @@ class Twig_TokenParser_Set extends Twig_TokenParser
             $stream->expect(Twig_Token::BLOCK_END_TYPE);
 
             if (count($names) !== count($values)) {
-<<<<<<< HEAD
-                throw new Twig_Error_Syntax('When using set, you must have the same number of variables and assignments.', $stream->getCurrent()->getLine(), $stream->getSourceContext());
-=======
                 throw new Twig_Error_Syntax('When using set, you must have the same number of variables and assignments.', $stream->getCurrent()->getLine(), $stream->getFilename());
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
         } else {
             $capture = true;
 
             if (count($names) > 1) {
-<<<<<<< HEAD
-                throw new Twig_Error_Syntax('When using set with a block, you cannot have a multi-target.', $stream->getCurrent()->getLine(), $stream->getSourceContext());
-=======
                 throw new Twig_Error_Syntax('When using set with a block, you cannot have a multi-target.', $stream->getCurrent()->getLine(), $stream->getFilename());
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
 
             $stream->expect(Twig_Token::BLOCK_END_TYPE);

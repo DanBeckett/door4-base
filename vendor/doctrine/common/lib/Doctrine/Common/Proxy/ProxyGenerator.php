@@ -302,11 +302,7 @@ class <proxyShortClassName> extends \<className> implements \<baseProxyInterface
         $tmpFileName = $fileName . '.' . uniqid('', true);
 
         file_put_contents($tmpFileName, $proxyCode);
-<<<<<<< HEAD
-        @chmod($tmpFileName, 0664);
-=======
         chmod($tmpFileName, 0664);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         rename($tmpFileName, $fileName);
     }
 

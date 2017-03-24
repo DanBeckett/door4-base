@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2009 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,11 +21,8 @@ interface Twig_ExtensionInterface
      *
      * This is where you can load some file that contains filter functions for instance.
      *
-<<<<<<< HEAD
-=======
      * @param Twig_Environment $environment The current Twig_Environment instance
      *
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @deprecated since 1.23 (to be removed in 2.0), implement Twig_Extension_InitRuntimeInterface instead
      */
     public function initRuntime(Twig_Environment $environment);
@@ -44,11 +37,7 @@ interface Twig_ExtensionInterface
     /**
      * Returns the node visitor instances to add to the existing list.
      *
-<<<<<<< HEAD
-     * @return Twig_NodeVisitorInterface[]
-=======
      * @return Twig_NodeVisitorInterface[] An array of Twig_NodeVisitorInterface instances
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getNodeVisitors();
 
@@ -76,11 +65,7 @@ interface Twig_ExtensionInterface
     /**
      * Returns a list of operators to add to the existing list.
      *
-<<<<<<< HEAD
-     * @return array<array> First array of unary operators, second array of binary operators
-=======
      * @return array An array of operators
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getOperators();
 
@@ -97,11 +82,6 @@ interface Twig_ExtensionInterface
      * Returns the name of the extension.
      *
      * @return string The extension name
-<<<<<<< HEAD
-     *
-     * @deprecated since 1.26 (to be removed in 2.0), not used anymore internally
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getName();
 }

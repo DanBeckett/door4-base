@@ -36,11 +36,7 @@ interface MessageInterface
      * new protocol version.
      *
      * @param string $version HTTP protocol version
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function withProtocolVersion($version);
 
@@ -65,11 +61,7 @@ interface MessageInterface
      * While header names are not case-sensitive, getHeaders() will preserve the
      * exact case in which headers were originally specified.
      *
-<<<<<<< HEAD
-     * @return string[][] Returns an associative array of the message's headers. Each
-=======
      * @return array Returns an associative array of the message's headers. Each
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *     key MUST be a header name, and each value MUST be an array of strings
      *     for that header.
      */
@@ -134,11 +126,7 @@ interface MessageInterface
      *
      * @param string $name Case-insensitive header field name.
      * @param string|string[] $value Header value(s).
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @throws \InvalidArgumentException for invalid header names or values.
      */
     public function withHeader($name, $value);
@@ -156,11 +144,7 @@ interface MessageInterface
      *
      * @param string $name Case-insensitive header field name to add.
      * @param string|string[] $value Header value(s).
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @throws \InvalidArgumentException for invalid header names or values.
      */
     public function withAddedHeader($name, $value);
@@ -175,11 +159,7 @@ interface MessageInterface
      * the named header.
      *
      * @param string $name Case-insensitive header field name to remove.
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function withoutHeader($name);
 
@@ -200,11 +180,7 @@ interface MessageInterface
      * new body stream.
      *
      * @param StreamInterface $body Body.
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @throws \InvalidArgumentException When the body is not valid.
      */
     public function withBody(StreamInterface $body);

@@ -35,32 +35,6 @@ class GetterMetadata extends MemberMetadata
     /**
      * Constructor.
      *
-<<<<<<< HEAD
-     * @param string      $class    The class the getter is defined on
-     * @param string      $property The property which the getter returns
-     * @param string|null $method   The method that is called to retrieve the value being validated (null for auto-detection)
-     *
-     * @throws ValidatorException
-     */
-    public function __construct($class, $property, $method = null)
-    {
-        if (null === $method) {
-            $getMethod = 'get'.ucfirst($property);
-            $isMethod = 'is'.ucfirst($property);
-            $hasMethod = 'has'.ucfirst($property);
-
-            if (method_exists($class, $getMethod)) {
-                $method = $getMethod;
-            } elseif (method_exists($class, $isMethod)) {
-                $method = $isMethod;
-            } elseif (method_exists($class, $hasMethod)) {
-                $method = $hasMethod;
-            } else {
-                throw new ValidatorException(sprintf('Neither of these methods exist in class %s: %s, %s, %s', $class, $getMethod, $isMethod, $hasMethod));
-            }
-        } elseif (!method_exists($class, $method)) {
-            throw new ValidatorException(sprintf('The %s() method does not exist in class %s.', $method, $class));
-=======
      * @param string $class    The class the getter is defined on
      * @param string $property The property which the getter returns
      *
@@ -80,7 +54,6 @@ class GetterMetadata extends MemberMetadata
             $method = $hasMethod;
         } else {
             throw new ValidatorException(sprintf('Neither of these methods exist in class %s: %s, %s, %s', $class, $getMethod, $isMethod, $hasMethod));
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         parent::__construct($class, $method, $property);

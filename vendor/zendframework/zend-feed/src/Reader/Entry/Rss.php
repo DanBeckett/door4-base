@@ -167,11 +167,7 @@ class Rss extends AbstractEntry implements EntryInterface
     /**
      * Get the entry's date of creation
      *
-<<<<<<< HEAD
-     * @return \DateTime
-=======
      * @return string
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getDateCreated()
     {
@@ -182,11 +178,7 @@ class Rss extends AbstractEntry implements EntryInterface
      * Get the entry's date of modification
      *
      * @throws Exception\RuntimeException
-<<<<<<< HEAD
-     * @return \DateTime
-=======
      * @return string
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getDateModified()
     {

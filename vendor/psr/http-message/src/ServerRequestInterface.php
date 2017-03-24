@@ -80,11 +80,7 @@ interface ServerRequestInterface extends RequestInterface
      * updated cookie values.
      *
      * @param array $cookies Array of key/value pairs representing cookies.
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function withCookieParams(array $cookies);
 
@@ -122,11 +118,7 @@ interface ServerRequestInterface extends RequestInterface
      *
      * @param array $query Array of query string arguments, typically from
      *     $_GET.
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function withQueryParams(array $query);
 
@@ -151,13 +143,8 @@ interface ServerRequestInterface extends RequestInterface
      * immutability of the message, and MUST return an instance that has the
      * updated body parameters.
      *
-<<<<<<< HEAD
-     * @param array $uploadedFiles An array tree of UploadedFileInterface instances.
-     * @return static
-=======
      * @param array An array tree of UploadedFileInterface instances.
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @throws \InvalidArgumentException if an invalid structure is provided.
      */
     public function withUploadedFiles(array $uploadedFiles);
@@ -203,11 +190,7 @@ interface ServerRequestInterface extends RequestInterface
      *
      * @param null|array|object $data The deserialized body data. This will
      *     typically be in an array or object.
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @throws \InvalidArgumentException if an unsupported argument type is
      *     provided.
      */
@@ -256,11 +239,7 @@ interface ServerRequestInterface extends RequestInterface
      * @see getAttributes()
      * @param string $name The attribute name.
      * @param mixed $value The value of the attribute.
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function withAttribute($name, $value);
 
@@ -276,11 +255,7 @@ interface ServerRequestInterface extends RequestInterface
      *
      * @see getAttributes()
      * @param string $name The attribute name.
-<<<<<<< HEAD
-     * @return static
-=======
      * @return self
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function withoutAttribute($name);
 }

@@ -9,11 +9,7 @@ With the help of
 Run the command below to install via Composer
 
 ```shell
-<<<<<<< HEAD
-composer require egulias/email-validator "~1.2"
-=======
 composer require egulias/email-validator
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 ```
 
 ##Usage##

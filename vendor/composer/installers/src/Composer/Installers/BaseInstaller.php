@@ -1,10 +1,6 @@
 <?php
 namespace Composer\Installers;
 
-<<<<<<< HEAD
-use Composer\IO\IOInterface;
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 use Composer\Composer;
 use Composer\Package\PackageInterface;
 
@@ -13,31 +9,17 @@ abstract class BaseInstaller
     protected $locations = array();
     protected $composer;
     protected $package;
-<<<<<<< HEAD
-    protected $io;
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
     /**
      * Initializes base installer.
      *
      * @param PackageInterface $package
      * @param Composer         $composer
-<<<<<<< HEAD
-     * @param IOInterface      $io
-     */
-    public function __construct(PackageInterface $package = null, Composer $composer = null, IOInterface $io = null)
-    {
-        $this->composer = $composer;
-        $this->package = $package;
-        $this->io = $io;
-=======
      */
     public function __construct(PackageInterface $package = null, Composer $composer = null)
     {
         $this->composer = $composer;
         $this->package = $package;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -69,11 +51,7 @@ abstract class BaseInstaller
         if ($this->composer->getPackage()) {
             $extra = $this->composer->getPackage()->getExtra();
             if (!empty($extra['installer-paths'])) {
-<<<<<<< HEAD
-                $customPath = $this->mapCustomInstallPaths($extra['installer-paths'], $prettyName, $type, $vendor);
-=======
                 $customPath = $this->mapCustomInstallPaths($extra['installer-paths'], $prettyName, $type);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 if ($customPath !== false) {
                     return $this->templatePath($customPath, $availableVars);
                 }
@@ -138,22 +116,12 @@ abstract class BaseInstaller
      * @param  array  $paths
      * @param  string $name
      * @param  string $type
-<<<<<<< HEAD
-     * @param  string $vendor = NULL
-     * @return string
-     */
-    protected function mapCustomInstallPaths(array $paths, $name, $type, $vendor = NULL)
-    {
-        foreach ($paths as $path => $names) {
-            if (in_array($name, $names) || in_array('type:' . $type, $names) || in_array('vendor:' . $vendor, $names)) {
-=======
      * @return string
      */
     protected function mapCustomInstallPaths(array $paths, $name, $type)
     {
         foreach ($paths as $path => $names) {
             if (in_array($name, $names) || in_array('type:' . $type, $names)) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 return $path;
             }
         }

@@ -11,10 +11,6 @@
 
 namespace Symfony\Component\EventDispatcher\Tests\Debug;
 
-<<<<<<< HEAD
-use PHPUnit\Framework\TestCase;
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 use Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -22,11 +18,7 @@ use Symfony\Component\EventDispatcher\EventDispatcher;
 use Symfony\Component\EventDispatcher\Event;
 use Symfony\Component\Stopwatch\Stopwatch;
 
-<<<<<<< HEAD
-class TraceableEventDispatcherTest extends TestCase
-=======
 class TraceableEventDispatcherTest extends \PHPUnit_Framework_TestCase
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 {
     public function testAddRemoveListener()
     {

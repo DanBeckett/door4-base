@@ -3,11 +3,7 @@
  * Zend Framework (http://framework.zend.com/)
  *
  * @see       http://github.com/zendframework/zend-diactoros for the canonical source repository
-<<<<<<< HEAD
- * @copyright Copyright (c) 2015-2016 Zend Technologies USA Inc. (http://www.zend.com)
-=======
  * @copyright Copyright (c) 2015 Zend Technologies USA Inc. (http://www.zend.com)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @license   https://github.com/zendframework/zend-diactoros/blob/master/LICENSE.md New BSD License
  */
 
@@ -40,11 +36,7 @@ class Uri implements UriInterface
      *
      * @const string
      */
-<<<<<<< HEAD
-    const CHAR_UNRESERVED = 'a-zA-Z0-9_\-\.~\pL';
-=======
     const CHAR_UNRESERVED = 'a-zA-Z0-9_\-\.~';
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
     /**
      * @var int[] Array indexed by valid scheme names to their corresponding ports.
@@ -314,37 +306,21 @@ class Uri implements UriInterface
      */
     public function withPort($port)
     {
-<<<<<<< HEAD
-        if (! is_numeric($port) && $port !== null) {
-            throw new InvalidArgumentException(sprintf(
-                'Invalid port "%s" specified; must be an integer, an integer string, or null',
-=======
         if (! is_numeric($port)) {
             throw new InvalidArgumentException(sprintf(
                 'Invalid port "%s" specified; must be an integer or integer string',
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 (is_object($port) ? get_class($port) : gettype($port))
             ));
         }
 
-<<<<<<< HEAD
-        if ($port !== null) {
-            $port = (int) $port;
-        }
-=======
         $port = (int) $port;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
         if ($port === $this->port) {
             // Do nothing if no change was made.
             return clone $this;
         }
 
-<<<<<<< HEAD
-        if ($port !== null && $port < 1 || $port > 65535) {
-=======
         if ($port < 1 || $port > 65535) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             throw new InvalidArgumentException(sprintf(
                 'Invalid port "%d" specified; must be a valid TCP/UDP port',
                 $port
@@ -464,21 +440,12 @@ class Uri implements UriInterface
             );
         }
 
-<<<<<<< HEAD
-        $this->scheme    = isset($parts['scheme']) ? $this->filterScheme($parts['scheme']) : '';
-        $this->userInfo  = isset($parts['user']) ? $parts['user'] : '';
-        $this->host      = isset($parts['host']) ? $parts['host'] : '';
-        $this->port      = isset($parts['port']) ? $parts['port'] : null;
-        $this->path      = isset($parts['path']) ? $this->filterPath($parts['path']) : '';
-        $this->query     = isset($parts['query']) ? $this->filterQuery($parts['query']) : '';
-=======
         $this->scheme    = isset($parts['scheme'])   ? $this->filterScheme($parts['scheme']) : '';
         $this->userInfo  = isset($parts['user'])     ? $parts['user']     : '';
         $this->host      = isset($parts['host'])     ? $parts['host']     : '';
         $this->port      = isset($parts['port'])     ? $parts['port']     : null;
         $this->path      = isset($parts['path'])     ? $this->filterPath($parts['path']) : '';
         $this->query     = isset($parts['query'])    ? $this->filterQuery($parts['query']) : '';
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $this->fragment  = isset($parts['fragment']) ? $this->filterFragment($parts['fragment']) : '';
 
         if (isset($parts['pass'])) {
@@ -538,12 +505,6 @@ class Uri implements UriInterface
     private function isNonStandardPort($scheme, $host, $port)
     {
         if (! $scheme) {
-<<<<<<< HEAD
-            if ($host && ! $port) {
-                return false;
-            }
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             return true;
         }
 
@@ -590,11 +551,7 @@ class Uri implements UriInterface
     private function filterPath($path)
     {
         $path = preg_replace_callback(
-<<<<<<< HEAD
-            '/(?:[^' . self::CHAR_UNRESERVED . ':@&=\+\$,\/;%]+|%(?![A-Fa-f0-9]{2}))/u',
-=======
             '/(?:[^' . self::CHAR_UNRESERVED . ':@&=\+\$,\/;%]+|%(?![A-Fa-f0-9]{2}))/',
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             [$this, 'urlEncodeChar'],
             $path
         );
@@ -668,11 +625,7 @@ class Uri implements UriInterface
     private function filterFragment($fragment)
     {
         if (! empty($fragment) && strpos($fragment, '#') === 0) {
-<<<<<<< HEAD
-            $fragment = '%23' . substr($fragment, 1);
-=======
             $fragment = substr($fragment, 1);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         return $this->filterQueryOrFragment($fragment);
@@ -687,11 +640,7 @@ class Uri implements UriInterface
     private function filterQueryOrFragment($value)
     {
         return preg_replace_callback(
-<<<<<<< HEAD
-            '/(?:[^' . self::CHAR_UNRESERVED . self::CHAR_SUB_DELIMS . '%:@\/\?]+|%(?![A-Fa-f0-9]{2}))/u',
-=======
             '/(?:[^' . self::CHAR_UNRESERVED . self::CHAR_SUB_DELIMS . '%:@\/\?]+|%(?![A-Fa-f0-9]{2}))/',
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             [$this, 'urlEncodeChar'],
             $value
         );

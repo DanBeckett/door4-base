@@ -38,22 +38,14 @@ interface EntryInterface
     /**
      * Get the entry creation date
      *
-<<<<<<< HEAD
-     * @return \DateTime
-=======
      * @return string
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getDateCreated();
 
     /**
      * Get the entry modification date
      *
-<<<<<<< HEAD
-     * @return \DateTime
-=======
      * @return string
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getDateModified();
 

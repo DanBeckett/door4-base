@@ -161,15 +161,11 @@ class Parser
                             throw new ParseException('YAML merge keys used with a scalar value instead of an array.', $this->getRealCurrentLineNb() + 1, $this->currentLine);
                         }
 
-<<<<<<< HEAD
-                        $data += $refValue; // array union
-=======
                         foreach ($refValue as $key => $value) {
                             if (!isset($data[$key])) {
                                 $data[$key] = $value;
                             }
                         }
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                     } else {
                         if (isset($values['value']) && $values['value'] !== '') {
                             $value = $values['value'];
@@ -191,28 +187,20 @@ class Parser
                                     throw new ParseException('Merge items must be arrays.', $this->getRealCurrentLineNb() + 1, $parsedItem);
                                 }
 
-<<<<<<< HEAD
-                                $data += $parsedItem; // array union
-=======
                                 foreach ($parsedItem as $key => $value) {
                                     if (!isset($data[$key])) {
                                         $data[$key] = $value;
                                     }
                                 }
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                             }
                         } else {
                             // If the value associated with the key is a single mapping node, each of its key/value pairs is inserted into the
                             // current mapping, unless the key already exists in it.
-<<<<<<< HEAD
-                            $data += $parsed; // array union
-=======
                             foreach ($parsed as $key => $value) {
                                 if (!isset($data[$key])) {
                                     $data[$key] = $value;
                                 }
                             }
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                         }
                     }
                 } elseif (isset($values['value']) && preg_match('#^&(?P<ref>[^ ]+) *(?P<value>.*)#u', $values['value'], $matches)) {
@@ -638,11 +626,7 @@ class Parser
             $previousLineIndented = false;
             $previousLineBlank = false;
 
-<<<<<<< HEAD
-            for ($i = 0, $blockLinesCount = count($blockLines); $i < $blockLinesCount; ++$i) {
-=======
             for ($i = 0; $i < count($blockLines); ++$i) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 if ('' === $blockLines[$i]) {
                     $text .= "\n";
                     $previousLineIndented = false;

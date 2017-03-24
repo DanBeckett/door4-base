@@ -27,11 +27,7 @@ use Doctrine\Common\Collections\Expr\Value;
  * Builder for Expressions in the {@link Selectable} interface.
  *
  * Important Notice for interoperable code: You have to use scalar
-<<<<<<< HEAD
- * values only for comparisons, otherwise the behavior of the comparison
-=======
  * values only for comparisons, otherwise the behavior of the comparision
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * may be different between implementations (Array vs ORM vs ODM).
  *
  * @author Benjamin Eberlei <kontakt@beberlei.de>
@@ -167,41 +163,4 @@ class ExpressionBuilder
     {
         return new Comparison($field, Comparison::CONTAINS, new Value($value));
     }
-<<<<<<< HEAD
-
-    /**
-     * @param string $field
-     * @param mixed  $value
-     *
-     * @return Comparison
-     */
-    public function memberOf ($field, $value)
-    {
-        return new Comparison($field, Comparison::MEMBER_OF, new Value($value));
-    }
-
-    /**
-     * @param string $field
-     * @param mixed  $value
-     *
-     * @return Comparison
-     */
-    public function startsWith($field, $value)
-    {
-        return new Comparison($field, Comparison::STARTS_WITH, new Value($value));
-    }
-
-    /**
-     * @param string $field
-     * @param mixed  $value
-     *
-     * @return Comparison
-     */
-    public function endsWith($field, $value)
-    {
-        return new Comparison($field, Comparison::ENDS_WITH, new Value($value));
-    }    
-
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

@@ -85,11 +85,7 @@ class YamlFileLoader extends FileLoader
      * @param array  $content
      * @param string $file
      */
-<<<<<<< HEAD
-    private function parseImports(array $content, $file)
-=======
     private function parseImports($content, $file)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         if (!isset($content['imports'])) {
             return;
@@ -116,11 +112,7 @@ class YamlFileLoader extends FileLoader
      * @param array  $content
      * @param string $file
      */
-<<<<<<< HEAD
-    private function parseDefinitions(array $content, $file)
-=======
     private function parseDefinitions($content, $file)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         if (!isset($content['services'])) {
             return;
@@ -138,15 +130,9 @@ class YamlFileLoader extends FileLoader
     /**
      * Parses a definition.
      *
-<<<<<<< HEAD
-     * @param string       $id
-     * @param array|string $service
-     * @param string       $file
-=======
      * @param string $id
      * @param array  $service
      * @param string $file
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @throws InvalidArgumentException When tags are invalid
      */
@@ -468,11 +454,7 @@ class YamlFileLoader extends FileLoader
      *
      * @param array $content
      */
-<<<<<<< HEAD
-    private function loadFromExtensions(array $content)
-=======
     private function loadFromExtensions($content)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         foreach ($content as $namespace => $values) {
             if (in_array($namespace, array('imports', 'parameters', 'services'))) {

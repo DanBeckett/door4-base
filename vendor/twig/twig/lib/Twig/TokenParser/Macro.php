@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2009 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -21,11 +17,6 @@
  *    <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value|e }}" size="{{ size|default(20) }}" />
  * {% endmacro %}
  * </pre>
-<<<<<<< HEAD
- *
- * @final
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Twig_TokenParser_Macro extends Twig_TokenParser
 {
@@ -44,11 +35,7 @@ class Twig_TokenParser_Macro extends Twig_TokenParser
             $value = $token->getValue();
 
             if ($value != $name) {
-<<<<<<< HEAD
-                throw new Twig_Error_Syntax(sprintf('Expected endmacro for macro "%s" (but "%s" given).', $name, $value), $stream->getCurrent()->getLine(), $stream->getSourceContext());
-=======
                 throw new Twig_Error_Syntax(sprintf('Expected endmacro for macro "%s" (but "%s" given).', $name, $value), $stream->getCurrent()->getLine(), $stream->getFilename());
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             }
         }
         $this->parser->popLocalScope();

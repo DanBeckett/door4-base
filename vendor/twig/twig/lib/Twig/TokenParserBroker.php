@@ -3,13 +3,8 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
- * (c) Arnaud Le Blanc
-=======
  * (c) 2010 Fabien Potencier
  * (c) 2010 Arnaud Le Blanc
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -29,11 +24,8 @@ class Twig_TokenParserBroker implements Twig_TokenParserBrokerInterface
     protected $brokers = array();
 
     /**
-<<<<<<< HEAD
-=======
      * Constructor.
      *
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @param array|Traversable $parsers                 A Traversable of Twig_TokenParserInterface instances
      * @param array|Traversable $brokers                 A Traversable of Twig_TokenParserBrokerInterface instances
      * @param bool              $triggerDeprecationError
@@ -58,27 +50,21 @@ class Twig_TokenParserBroker implements Twig_TokenParserBrokerInterface
         }
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Adds a TokenParser.
      *
      * @param Twig_TokenParserInterface $parser A Twig_TokenParserInterface instance
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function addTokenParser(Twig_TokenParserInterface $parser)
     {
         $this->parsers[$parser->getTag()] = $parser;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Removes a TokenParser.
      *
      * @param Twig_TokenParserInterface $parser A Twig_TokenParserInterface instance
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function removeTokenParser(Twig_TokenParserInterface $parser)
     {
         $name = $parser->getTag();
@@ -87,27 +73,21 @@ class Twig_TokenParserBroker implements Twig_TokenParserBrokerInterface
         }
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Adds a TokenParserBroker.
      *
      * @param Twig_TokenParserBroker $broker A Twig_TokenParserBroker instance
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function addTokenParserBroker(Twig_TokenParserBroker $broker)
     {
         $this->brokers[] = $broker;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Removes a TokenParserBroker.
      *
      * @param Twig_TokenParserBroker $broker A Twig_TokenParserBroker instance
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function removeTokenParserBroker(Twig_TokenParserBroker $broker)
     {
         if (false !== $pos = array_search($broker, $this->brokers)) {

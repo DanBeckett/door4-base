@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2009 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -23,12 +19,9 @@ interface Twig_NodeVisitorInterface
     /**
      * Called before child nodes are visited.
      *
-<<<<<<< HEAD
-=======
      * @param Twig_NodeInterface $node The node to visit
      * @param Twig_Environment   $env  The Twig environment instance
      *
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @return Twig_NodeInterface The modified node
      */
     public function enterNode(Twig_NodeInterface $node, Twig_Environment $env);
@@ -36,12 +29,9 @@ interface Twig_NodeVisitorInterface
     /**
      * Called after child nodes are visited.
      *
-<<<<<<< HEAD
-=======
      * @param Twig_NodeInterface $node The node to visit
      * @param Twig_Environment   $env  The Twig environment instance
      *
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @return Twig_NodeInterface|false The modified node or false if the node must be removed
      */
     public function leaveNode(Twig_NodeInterface $node, Twig_Environment $env);

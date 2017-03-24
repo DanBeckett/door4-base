@@ -3,13 +3,8 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
- * (c) Armin Ronacher
-=======
  * (c) 2009 Fabien Potencier
  * (c) 2009 Armin Ronacher
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -19,11 +14,6 @@
  * Represents a Token.
  *
  * @author Fabien Potencier <fabien@symfony.com>
-<<<<<<< HEAD
- *
- * @final
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Twig_Token
 {
@@ -46,11 +36,8 @@ class Twig_Token
     const INTERPOLATION_END_TYPE = 11;
 
     /**
-<<<<<<< HEAD
-=======
      * Constructor.
      *
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @param int    $type   The type of the token
      * @param string $value  The token value
      * @param int    $lineno The line position in the source
@@ -62,14 +49,11 @@ class Twig_Token
         $this->lineno = $lineno;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * Returns a string representation of the token.
      *
      * @return string A string representation of the token
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function __toString()
     {
         return sprintf('%s(%s)', self::typeToString($this->type, true), $this->value);
@@ -79,15 +63,9 @@ class Twig_Token
      * Tests the current token for a type and/or a value.
      *
      * Parameters may be:
-<<<<<<< HEAD
-     *  * just type
-     *  * type and value (or array of possible values)
-     *  * just value (or array of possible values) (NAME_TYPE is used as type)
-=======
      * * just type
      * * type and value (or array of possible values)
      * * just value (or array of possible values) (NAME_TYPE is used as type)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @param array|int         $type   The type to test
      * @param array|string|null $values The token value
@@ -109,13 +87,9 @@ class Twig_Token
     }
 
     /**
-<<<<<<< HEAD
-     * @return int
-=======
      * Gets the line.
      *
      * @return int The source line
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getLine()
     {
@@ -123,13 +97,9 @@ class Twig_Token
     }
 
     /**
-<<<<<<< HEAD
-     * @return int
-=======
      * Gets the token type.
      *
      * @return int The token type
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getType()
     {
@@ -137,13 +107,9 @@ class Twig_Token
     }
 
     /**
-<<<<<<< HEAD
-     * @return string
-=======
      * Gets the token value.
      *
      * @return string The token value
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function getValue()
     {
@@ -208,11 +174,7 @@ class Twig_Token
     }
 
     /**
-<<<<<<< HEAD
-     * Returns the English representation of a given type.
-=======
      * Returns the english representation of a given type.
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @param int $type The type as an integer
      *

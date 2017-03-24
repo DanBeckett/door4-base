@@ -18,13 +18,6 @@ This package supercedes and replaces [phly/http](https://github.com/phly/http).
 
 ## Documentation
 
-<<<<<<< HEAD
-Documentation is available at:
-
-- https://zendframework.github.io/zend-diactoros/
-
-Source files for documentation are [in the doc/ tree](doc/).
-=======
 Documentation is [in the doc tree](doc/), and can be compiled using [bookdown](http://bookdown.io):
 
 ```console
@@ -36,7 +29,6 @@ $ php -S 0.0.0.0:8080 -t doc/html/ # then browse to http://localhost:8080/
 >
 > You can install bookdown globally using `composer global require bookdown/bookdown`. If you do
 > this, make sure that `$HOME/.composer/vendor/bin` is on your `$PATH`.
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
   [Master]: https://travis-ci.org/zendframework/zend-diactoros
   [Master image]: https://secure.travis-ci.org/zendframework/zend-diactoros.svg?branch=master

@@ -62,11 +62,7 @@ class ArrayConverter
                  * $tree['foo'] was string before we found array {bar: test2}.
                  *  Treat new element as string too, e.g. add $tree['foo.bar'] = 'test2';
                  */
-<<<<<<< HEAD
-                $elem = &$elem[implode('.', array_slice($parts, $i))];
-=======
                 $elem = &$elem[ implode('.', array_slice($parts, $i)) ];
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 break;
             }
             $parentOfElem = &$elem;

@@ -60,10 +60,7 @@ class CheckCircularReferencesPass implements CompilerPassInterface
             $id = $node->getId();
 
             if (empty($this->checkedNodes[$id])) {
-<<<<<<< HEAD
-=======
 
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 // don't check circular dependencies for lazy services
                 if (!$node->getValue() || !$node->getValue()->isLazy()) {
                     $searchKey = array_search($id, $this->currentPath);

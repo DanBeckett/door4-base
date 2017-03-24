@@ -2,11 +2,7 @@
 
 namespace Doctrine\Common\Cache;
 
-<<<<<<< HEAD
-use Predis\ClientInterface;
-=======
 use Predis\Client;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 /**
  * Predis cache provider.
@@ -16,28 +12,16 @@ use Predis\Client;
 class PredisCache extends CacheProvider
 {
     /**
-<<<<<<< HEAD
-     * @var ClientInterface
-=======
      * @var Client
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     private $client;
 
     /**
-<<<<<<< HEAD
-     * @param ClientInterface $client
-     *
-     * @return void
-     */
-    public function __construct(ClientInterface $client)
-=======
      * @param Client $client
      *
      * @return void
      */
     public function __construct(Client $client)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         $this->client = $client;
     }
@@ -62,52 +46,14 @@ class PredisCache extends CacheProvider
     {
         $fetchedItems = call_user_func_array(array($this->client, 'mget'), $keys);
 
-<<<<<<< HEAD
-        return array_map('unserialize', array_filter(array_combine($keys, $fetchedItems)));
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    protected function doSaveMultiple(array $keysAndValues, $lifetime = 0)
-    {
-        if ($lifetime) {
-            $success = true;
-
-            // Keys have lifetime, use SETEX for each of them
-            foreach ($keysAndValues as $key => $value) {
-                $response = $this->client->setex($key, $lifetime, serialize($value));
-
-                if ((string) $response != 'OK') {
-                    $success = false;
-                }
-            }
-
-            return $success;
-        }
-
-        // No lifetime, use MSET
-        $response = $this->client->mset(array_map(function ($value) {
-            return serialize($value);
-        }, $keysAndValues));
-
-        return (string) $response == 'OK';
-    }
-
-=======
         return array_filter(array_combine($keys, array_map('unserialize', $fetchedItems)));
     }
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     /**
      * {@inheritdoc}
      */
     protected function doContains($id)
     {
-<<<<<<< HEAD
-        return (bool) $this->client->exists($id);
-=======
         return $this->client->exists($id);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -130,11 +76,7 @@ class PredisCache extends CacheProvider
      */
     protected function doDelete($id)
     {
-<<<<<<< HEAD
-        return $this->client->del($id) >= 0;
-=======
         return $this->client->del($id) > 0;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**

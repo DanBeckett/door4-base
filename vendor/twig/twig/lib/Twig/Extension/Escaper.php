@@ -3,32 +3,18 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2009 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-<<<<<<< HEAD
-
-/**
- * @final
- */
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 class Twig_Extension_Escaper extends Twig_Extension
 {
     protected $defaultStrategy;
 
     /**
-<<<<<<< HEAD
-=======
      * Constructor.
      *
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @param string|false|callable $defaultStrategy An escaping strategy
      *
      * @see setDefaultStrategy()
@@ -59,11 +45,7 @@ class Twig_Extension_Escaper extends Twig_Extension
      * Sets the default strategy to use when not defined by the user.
      *
      * The strategy can be a valid PHP callback that takes the template
-<<<<<<< HEAD
-     * name as an argument and returns the strategy to use.
-=======
      * "filename" as an argument and returns the strategy to use.
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      *
      * @param string|false|callable $defaultStrategy An escaping strategy
      */
@@ -77,15 +59,6 @@ class Twig_Extension_Escaper extends Twig_Extension
         }
 
         if ('filename' === $defaultStrategy) {
-<<<<<<< HEAD
-            @trigger_error('Using "filename" as the default strategy is deprecated since version 1.27. Use "name" instead.', E_USER_DEPRECATED);
-
-            $defaultStrategy = 'name';
-        }
-
-        if ('name' === $defaultStrategy) {
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $defaultStrategy = array('Twig_FileExtensionEscapingStrategy', 'guess');
         }
 
@@ -95,28 +68,16 @@ class Twig_Extension_Escaper extends Twig_Extension
     /**
      * Gets the default strategy to use when not defined by the user.
      *
-<<<<<<< HEAD
-     * @param string $name The template name
-     *
-     * @return string|false The default strategy to use for the template
-     */
-    public function getDefaultStrategy($name)
-=======
      * @param string $filename The template "filename"
      *
      * @return string|false The default strategy to use for the template
      */
     public function getDefaultStrategy($filename)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         // disable string callables to avoid calling a function named html or js,
         // or any other upcoming escaping strategy
         if (!is_string($this->defaultStrategy) && false !== $this->defaultStrategy) {
-<<<<<<< HEAD
-            return call_user_func($this->defaultStrategy, $name);
-=======
             return call_user_func($this->defaultStrategy, $filename);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         return $this->defaultStrategy;

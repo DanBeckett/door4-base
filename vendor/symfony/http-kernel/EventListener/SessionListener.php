@@ -11,10 +11,6 @@
 
 namespace Symfony\Component\HttpKernel\EventListener;
 
-<<<<<<< HEAD
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;

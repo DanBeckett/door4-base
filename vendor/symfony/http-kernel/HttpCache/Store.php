@@ -317,40 +317,14 @@ class Store implements StoreInterface
     /**
      * Purges data for the given URL.
      *
-<<<<<<< HEAD
-     * This method purges both the HTTP and the HTTPS version of the cache entry.
-     *
-     * @param string $url A URL
-     *
-     * @return bool true if the URL exists with either HTTP or HTTPS scheme and has been purged, false otherwise
-     */
-    public function purge($url)
-    {
-        $http = preg_replace('#^https#', 'http', $url);
-        $https = preg_replace('#^http#', 'https', $url);
-
-        return $this->doPurge($http) || $this->doPurge($https);
-    }
-
-    /**
-     * Purges data for the given URL.
-     *
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * @param string $url A URL
      *
      * @return bool true if the URL exists and has been purged, false otherwise
      */
-<<<<<<< HEAD
-    private function doPurge($url)
-    {
-        $key = $this->getCacheKey(Request::create($url));
-=======
     public function purge($url)
     {
         $key = $this->getCacheKey(Request::create($url));
 
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         if (isset($this->locks[$key])) {
             flock($this->locks[$key], LOCK_UN);
             fclose($this->locks[$key]);

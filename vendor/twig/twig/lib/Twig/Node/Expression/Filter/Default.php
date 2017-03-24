@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2011 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -26,15 +22,6 @@ class Twig_Node_Expression_Filter_Default extends Twig_Node_Expression_Filter
 {
     public function __construct(Twig_NodeInterface $node, Twig_Node_Expression_Constant $filterName, Twig_NodeInterface $arguments, $lineno, $tag = null)
     {
-<<<<<<< HEAD
-        $default = new Twig_Node_Expression_Filter($node, new Twig_Node_Expression_Constant('default', $node->getTemplateLine()), $arguments, $node->getTemplateLine());
-
-        if ('default' === $filterName->getAttribute('value') && ($node instanceof Twig_Node_Expression_Name || $node instanceof Twig_Node_Expression_GetAttr)) {
-            $test = new Twig_Node_Expression_Test_Defined(clone $node, 'defined', new Twig_Node(), $node->getTemplateLine());
-            $false = count($arguments) ? $arguments->getNode(0) : new Twig_Node_Expression_Constant('', $node->getTemplateLine());
-
-            $node = new Twig_Node_Expression_Conditional($test, $default, $false, $node->getTemplateLine());
-=======
         $default = new Twig_Node_Expression_Filter($node, new Twig_Node_Expression_Constant('default', $node->getLine()), $arguments, $node->getLine());
 
         if ('default' === $filterName->getAttribute('value') && ($node instanceof Twig_Node_Expression_Name || $node instanceof Twig_Node_Expression_GetAttr)) {
@@ -42,7 +29,6 @@ class Twig_Node_Expression_Filter_Default extends Twig_Node_Expression_Filter
             $false = count($arguments) ? $arguments->getNode(0) : new Twig_Node_Expression_Constant('', $node->getLine());
 
             $node = new Twig_Node_Expression_Conditional($test, $default, $false, $node->getLine());
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         } else {
             $node = $default;
         }

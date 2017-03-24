@@ -14,11 +14,8 @@ use Zend\Feed\Writer;
 use Zend\Stdlib\StringUtils;
 use Zend\Stdlib\StringWrapper\StringWrapperInterface;
 
-<<<<<<< HEAD
-=======
 /**
 */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 class Feed
 {
     /**

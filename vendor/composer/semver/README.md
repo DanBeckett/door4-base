@@ -56,17 +56,10 @@ Comparator::greaterThan('1.25.0', '1.24.0'); // 1.25.0 > 1.24.0
 
 ### Semver
 
-<<<<<<< HEAD
-The `Composer\Semver\Semver` class provides the following methods:
-
-* satisfies($version, $constraints)
-* satisfiedBy(array $versions, $constraint)
-=======
 The `Composer\Semver\Semver` class providers the following methods:
 
 * satisfies($version, $constraints)
 * satisfiedBy($constraint, array $versions)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 * sort($versions)
 * rsort($versions)
 

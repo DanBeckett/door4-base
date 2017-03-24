@@ -9,11 +9,7 @@
          processIsolation="false"
          stopOnFailure="false"
          syntaxCheck="false"
-<<<<<<< HEAD
-         bootstrap="test/bootstrap.php"
-=======
          bootstrap="vendor/autoload.php"
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 >
   <testsuites>
     <testsuite name="Twig Test Suite">
@@ -21,17 +17,6 @@
     </testsuite>
   </testsuites>
 
-<<<<<<< HEAD
-  <php>
-    <ini name="error_reporting" value="-1" />
-  </php>
-
-  <listeners>
-    <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
-  </listeners>
-
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
   <filter>
     <whitelist>
       <directory suffix=".php">./lib/Twig/</directory>

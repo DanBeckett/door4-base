@@ -162,10 +162,7 @@ class Process
         $this->setTimeout($timeout);
         $this->useFileHandles = '\\' === DIRECTORY_SEPARATOR;
         $this->pty = false;
-<<<<<<< HEAD
-=======
         $this->enhanceWindowsCompatibility = true;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         $this->enhanceSigchildCompatibility = '\\' !== DIRECTORY_SEPARATOR && $this->isSigchildEnabled();
         $this->options = array_replace(array('suppress_errors' => true, 'binary_pipes' => true), $options);
     }

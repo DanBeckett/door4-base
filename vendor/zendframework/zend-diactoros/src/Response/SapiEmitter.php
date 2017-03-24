@@ -3,11 +3,7 @@
  * Zend Framework (http://framework.zend.com/)
  *
  * @see       http://github.com/zendframework/zend-diactoros for the canonical source repository
-<<<<<<< HEAD
- * @copyright Copyright (c) 2015-2016 Zend Technologies USA Inc. (http://www.zend.com)
-=======
  * @copyright Copyright (c) 2015 Zend Technologies USA Inc. (http://www.zend.com)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @license   https://github.com/zendframework/zend-diactoros/blob/master/LICENSE.md New BSD License
  */
 
@@ -18,11 +14,6 @@ use RuntimeException;
 
 class SapiEmitter implements EmitterInterface
 {
-<<<<<<< HEAD
-    use SapiEmitterTrait;
-
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     /**
      * Emits a response for a PHP SAPI environment.
      *
@@ -38,14 +29,6 @@ class SapiEmitter implements EmitterInterface
             throw new RuntimeException('Unable to emit response; headers already sent');
         }
 
-<<<<<<< HEAD
-        $response = $this->injectContentLength($response);
-
-        $this->emitStatusLine($response);
-        $this->emitHeaders($response);
-        $this->flush($maxBufferLevel);
-        $this->emitBody($response);
-=======
         $this->emitStatusLine($response);
         $this->emitHeaders($response);
         $this->emitBody($response, $maxBufferLevel);
@@ -94,20 +77,11 @@ class SapiEmitter implements EmitterInterface
                 $first = false;
             }
         }
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
      * Emit the message body.
      *
-<<<<<<< HEAD
-     * @param ResponseInterface $response
-     */
-    private function emitBody(ResponseInterface $response)
-    {
-        echo $response->getBody();
-    }
-=======
      * Loops through the output buffer, flushing each, before emitting
      * the response body using `echo()`.
      *
@@ -139,5 +113,4 @@ class SapiEmitter implements EmitterInterface
         $filtered = ucwords($filtered);
         return str_replace(' ', '-', $filtered);
     }
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

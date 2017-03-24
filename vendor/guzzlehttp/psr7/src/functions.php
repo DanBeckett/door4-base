@@ -371,26 +371,6 @@ function copy_to_stream(
     StreamInterface $dest,
     $maxLen = -1
 ) {
-<<<<<<< HEAD
-    $bufferSize = 8192;
-
-    if ($maxLen === -1) {
-        while (!$source->eof()) {
-            if (!$dest->write($source->read($bufferSize))) {
-                break;
-            }
-        }
-    } else {
-        $remaining = $maxLen;
-        while ($remaining > 0 && !$source->eof()) {
-            $buf = $source->read(min($bufferSize, $remaining));
-            $len = strlen($buf);
-            if (!$len) {
-                break;
-            }
-            $remaining -= $len;
-            $dest->write($buf);
-=======
     if ($maxLen === -1) {
         while (!$source->eof()) {
             if (!$dest->write($source->read(1048576))) {
@@ -410,7 +390,6 @@ function copy_to_stream(
         $dest->write($buf);
         if ($bytes == $maxLen) {
             break;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
     }
 }
@@ -513,14 +492,7 @@ function parse_request($message)
 function parse_response($message)
 {
     $data = _parse_message($message);
-<<<<<<< HEAD
-    // According to https://tools.ietf.org/html/rfc7230#section-3.1.2 the space
-    // between status-code and reason-phrase is required. But browsers accept
-    // responses without space and reason as well.
-    if (!preg_match('/^HTTP\/.* [0-9]{3}( .*|$)/', $data['start-line'])) {
-=======
     if (!preg_match('/^HTTP\/.* [0-9]{3} .*/', $data['start-line'])) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         throw new \InvalidArgumentException('Invalid response string');
     }
     $parts = explode(' ', $data['start-line'], 3);

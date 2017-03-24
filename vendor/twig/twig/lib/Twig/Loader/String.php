@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2009 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -31,22 +27,6 @@
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
-<<<<<<< HEAD
-class Twig_Loader_String implements Twig_LoaderInterface, Twig_ExistsLoaderInterface, Twig_SourceContextLoaderInterface
-{
-    public function getSource($name)
-    {
-        @trigger_error(sprintf('Calling "getSource" on "%s" is deprecated since 1.27. Use getSourceContext() instead.', get_class($this)), E_USER_DEPRECATED);
-
-        return $name;
-    }
-
-    public function getSourceContext($name)
-    {
-        return new Twig_Source($name, $name);
-    }
-
-=======
 class Twig_Loader_String implements Twig_LoaderInterface, Twig_ExistsLoaderInterface
 {
     /**
@@ -60,29 +40,22 @@ class Twig_Loader_String implements Twig_LoaderInterface, Twig_ExistsLoaderInter
     /**
      * {@inheritdoc}
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function exists($name)
     {
         return true;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * {@inheritdoc}
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function getCacheKey($name)
     {
         return $name;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * {@inheritdoc}
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function isFresh($name, $time)
     {
         return true;

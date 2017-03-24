@@ -9,12 +9,6 @@
  * file that was distributed with this source code.
  */
 
-<<<<<<< HEAD
-/**
- * @final
- */
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 class Twig_NodeVisitor_SafeAnalysis extends Twig_BaseNodeVisitor
 {
     protected $data = array();
@@ -63,23 +57,17 @@ class Twig_NodeVisitor_SafeAnalysis extends Twig_BaseNodeVisitor
         );
     }
 
-<<<<<<< HEAD
-=======
     /**
      * {@inheritdoc}
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     protected function doEnterNode(Twig_Node $node, Twig_Environment $env)
     {
         return $node;
     }
 
-<<<<<<< HEAD
-=======
     /**
      * {@inheritdoc}
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     protected function doLeaveNode(Twig_Node $node, Twig_Environment $env)
     {
         if ($node instanceof Twig_Node_Expression_Constant) {
@@ -156,12 +144,9 @@ class Twig_NodeVisitor_SafeAnalysis extends Twig_BaseNodeVisitor
         return array_intersect($a, $b);
     }
 
-<<<<<<< HEAD
-=======
     /**
      * {@inheritdoc}
      */
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     public function getPriority()
     {
         return 0;

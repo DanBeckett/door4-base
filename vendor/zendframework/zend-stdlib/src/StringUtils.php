@@ -84,11 +84,7 @@ abstract class StringUtils
     public static function registerWrapper($wrapper)
     {
         $wrapper = (string) $wrapper;
-<<<<<<< HEAD
-        if (! in_array($wrapper, static::$wrapperRegistry, true)) {
-=======
         if (!in_array($wrapper, static::$wrapperRegistry, true)) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             static::$wrapperRegistry[] = $wrapper;
         }
     }

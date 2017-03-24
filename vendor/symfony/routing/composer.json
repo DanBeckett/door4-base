@@ -21,11 +21,7 @@
     "require-dev": {
         "symfony/config": "~2.7|~3.0.0",
         "symfony/http-foundation": "~2.3|~3.0.0",
-<<<<<<< HEAD
-        "symfony/yaml": "^2.0.5|~3.0.0",
-=======
         "symfony/yaml": "~2.0,>=2.0.5|~3.0.0",
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         "symfony/expression-language": "~2.4|~3.0.0",
         "doctrine/annotations": "~1.0",
         "doctrine/common": "~2.2",

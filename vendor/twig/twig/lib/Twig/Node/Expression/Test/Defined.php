@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2011 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -33,24 +29,12 @@ class Twig_Node_Expression_Test_Defined extends Twig_Node_Expression_Test
             $node->setAttribute('is_defined_test', true);
         } elseif ($node instanceof Twig_Node_Expression_GetAttr) {
             $node->setAttribute('is_defined_test', true);
-<<<<<<< HEAD
-            $this->changeIgnoreStrictCheck($node);
-        } elseif ($node instanceof Twig_Node_Expression_BlockReference) {
-            $node->setAttribute('is_defined_test', true);
-        } elseif ($node instanceof Twig_Node_Expression_Function && 'constant' === $node->getAttribute('name')) {
-            $node->setAttribute('is_defined_test', true);
-        } elseif ($node instanceof Twig_Node_Expression_Constant || $node instanceof Twig_Node_Expression_Array) {
-            $node = new Twig_Node_Expression_Constant(true, $node->getTemplateLine());
-        } else {
-            throw new Twig_Error_Syntax('The "defined" test only works with simple variables.', $this->getTemplateLine());
-=======
 
             $this->changeIgnoreStrictCheck($node);
         } elseif ($node instanceof Twig_Node_Expression_Constant || $node instanceof Twig_Node_Expression_Array) {
             $node = new Twig_Node_Expression_Constant(true, $node->getLine());
         } else {
             throw new Twig_Error_Syntax('The "defined" test only works with simple variables.', $this->getLine());
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         parent::__construct($node, $name, $arguments, $lineno);

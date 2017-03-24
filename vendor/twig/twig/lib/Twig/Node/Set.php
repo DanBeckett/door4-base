@@ -3,11 +3,7 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
-=======
  * (c) 2010 Fabien Potencier
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -18,11 +14,7 @@
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
-<<<<<<< HEAD
-class Twig_Node_Set extends Twig_Node implements Twig_NodeCaptureInterface
-=======
 class Twig_Node_Set extends Twig_Node
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 {
     public function __construct($capture, Twig_NodeInterface $names, Twig_NodeInterface $values, $lineno, $tag = null)
     {
@@ -38,11 +30,7 @@ class Twig_Node_Set extends Twig_Node
 
             $values = $this->getNode('values');
             if ($values instanceof Twig_Node_Text) {
-<<<<<<< HEAD
-                $this->setNode('values', new Twig_Node_Expression_Constant($values->getAttribute('data'), $values->getTemplateLine()));
-=======
                 $this->setNode('values', new Twig_Node_Expression_Constant($values->getAttribute('data'), $values->getLine()));
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 $this->setAttribute('capture', false);
             }
         }

@@ -3,27 +3,17 @@
  * Zend Framework (http://framework.zend.com/)
  *
  * @see       http://github.com/zendframework/zend-diactoros for the canonical source repository
-<<<<<<< HEAD
- * @copyright Copyright (c) 2015-2016 Zend Technologies USA Inc. (http://www.zend.com)
-=======
  * @copyright Copyright (c) 2015 Zend Technologies USA Inc. (http://www.zend.com)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  * @license   https://github.com/zendframework/zend-diactoros/blob/master/LICENSE.md New BSD License
  */
 
 namespace Zend\Diactoros;
 
 use InvalidArgumentException;
-<<<<<<< HEAD
-use Psr\Http\Message\UploadedFileInterface;
-use stdClass;
-use UnexpectedValueException;
-=======
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\UploadedFileInterface;
 use stdClass;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 /**
  * Class for marshaling a request object from the current PHP environment.
@@ -70,25 +60,12 @@ abstract class ServerRequestFactory
         $server  = static::normalizeServer($server ?: $_SERVER);
         $files   = static::normalizeFiles($files ?: $_FILES);
         $headers = static::marshalHeaders($server);
-<<<<<<< HEAD
-
-        return new ServerRequest(
-=======
         $request = new ServerRequest(
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $server,
             $files,
             static::marshalUriFromServer($server, $headers),
             static::get('REQUEST_METHOD', $server, 'GET'),
             'php://input',
-<<<<<<< HEAD
-            $headers,
-            $cookies ?: $_COOKIE,
-            $query ?: $_GET,
-            $body ?: $_POST,
-            static::marshalProtocolVersion($server)
-        );
-=======
             $headers
         );
 
@@ -96,7 +73,6 @@ abstract class ServerRequestFactory
             ->withCookieParams($cookies ?: $_COOKIE)
             ->withQueryParams($query ?: $_GET)
             ->withParsedBody($body ?: $_POST);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -220,22 +196,6 @@ abstract class ServerRequestFactory
     {
         $headers = [];
         foreach ($server as $key => $value) {
-<<<<<<< HEAD
-            // Apache prefixes environment variables with REDIRECT_
-            // if they are added by rewrite rules
-            if (strpos($key, 'REDIRECT_') === 0) {
-                $key = substr($key, 9);
-
-                // We will not overwrite existing variables with the
-                // prefixed versions, though
-                if (array_key_exists($key, $server)) {
-                    continue;
-                }
-            }
-
-            if ($value && strpos($key, 'HTTP_') === 0) {
-                $name = strtr(strtolower(substr($key, 5)), '_', '-');
-=======
             if (strpos($key, 'HTTP_COOKIE') === 0) {
                 // Cookies are handled using the $_COOKIE superglobal
                 continue;
@@ -246,19 +206,14 @@ abstract class ServerRequestFactory
                 $name = strtr(ucwords(strtolower($name)), ' ', '-');
                 $name = strtolower($name);
 
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 $headers[$name] = $value;
                 continue;
             }
 
             if ($value && strpos($key, 'CONTENT_') === 0) {
-<<<<<<< HEAD
-                $name = 'content-' . strtolower(substr($key, 8));
-=======
                 $name = substr($key, 8); // Content-
                 $name = 'Content-' . (($name == 'MD5') ? $name : ucfirst(strtolower($name)));
                 $name = strtolower($name);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 $headers[$name] = $value;
                 continue;
             }
@@ -312,20 +267,8 @@ abstract class ServerRequestFactory
             $query = ltrim($server['QUERY_STRING'], '?');
         }
 
-<<<<<<< HEAD
-        // URI fragment
-        $fragment = '';
-        if (strpos($path, '#') !== false) {
-            list($path, $fragment) = explode('#', $path, 2);
-        }
-
         return $uri
             ->withPath($path)
-            ->withFragment($fragment)
-=======
-        return $uri
-            ->withPath($path)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             ->withQuery($query);
     }
 
@@ -512,29 +455,4 @@ abstract class ServerRequestFactory
         }
         return $normalizedFiles;
     }
-<<<<<<< HEAD
-
-    /**
-     * Return HTTP protocol version (X.Y)
-     *
-     * @param array $server
-     * @return string
-     */
-    private static function marshalProtocolVersion(array $server)
-    {
-        if (! isset($server['SERVER_PROTOCOL'])) {
-            return '1.1';
-        }
-
-        if (! preg_match('#^(HTTP/)?(?P<version>[1-9]\d*(?:\.\d)?)$#', $server['SERVER_PROTOCOL'], $matches)) {
-            throw new UnexpectedValueException(sprintf(
-                'Unrecognized protocol version (%s)',
-                $server['SERVER_PROTOCOL']
-            ));
-        }
-
-        return $matches['version'];
-    }
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 }

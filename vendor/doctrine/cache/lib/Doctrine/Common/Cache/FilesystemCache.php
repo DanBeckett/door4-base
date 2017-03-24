@@ -53,11 +53,7 @@ class FilesystemCache extends FileCache
         $resource = fopen($filename, "r");
 
         if (false !== ($line = fgets($resource))) {
-<<<<<<< HEAD
-            $lifetime = (int) $line;
-=======
             $lifetime = (integer) $line;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         if ($lifetime !== 0 && $lifetime < time()) {
@@ -90,11 +86,7 @@ class FilesystemCache extends FileCache
         $resource = fopen($filename, "r");
 
         if (false !== ($line = fgets($resource))) {
-<<<<<<< HEAD
-            $lifetime = (int) $line;
-=======
             $lifetime = (integer) $line;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
         }
 
         fclose($resource);

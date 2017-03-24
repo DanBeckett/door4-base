@@ -5,11 +5,7 @@ sudo: false
 cache:
     directories:
         - vendor
-<<<<<<< HEAD
-        - $HOME/.composer/cache/files
-=======
         - $HOME/.composer/cache
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 php:
     - 5.2
@@ -18,22 +14,12 @@ php:
     - 5.5
     - 5.6
     - 7.0
-<<<<<<< HEAD
-    - 7.1
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     - hhvm
 
 env:
     - TWIG_EXT=no
     - TWIG_EXT=yes
 
-<<<<<<< HEAD
-before_install:
-    - if [[ ! $TRAVIS_PHP_VERSION = hhvm* ]]; then phpenv config-rm xdebug.ini || echo "xdebug not available"; fi
-
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 install:
     # Composer is not available on PHP 5.2
     - if [ ${TRAVIS_PHP_VERSION:0:3} != "5.2" ]; then travis_retry composer install; fi
@@ -41,23 +27,13 @@ install:
 before_script:
     - if [ "$TWIG_EXT" == "yes" ]; then sh -c "cd ext/twig && phpize && ./configure --enable-twig && make && make install"; fi
     - if [ "$TWIG_EXT" == "yes" ]; then echo "extension=twig.so" >> `php --ini | grep "Loaded Configuration" | sed -e "s|.*:\s*||"`; fi
-<<<<<<< HEAD
-=======
     - if [ ${TRAVIS_PHP_VERSION:0:3} == "5.2" ]; then sed -i.bak "s|vendor/autoload.php|test/bootstrap.php|" phpunit.xml.dist; fi
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
 matrix:
     fast_finish: true
     exclude:
         - php: hhvm
           env: TWIG_EXT=yes
-<<<<<<< HEAD
-        - php: 7.0
-          env: TWIG_EXT=yes
-        - php: 7.1
-          env: TWIG_EXT=yes
-=======
     allow_failures:
         - php: 7.0
           env: TWIG_EXT=yes
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a

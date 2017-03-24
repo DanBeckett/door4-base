@@ -100,11 +100,7 @@ class CakePHPInstallerTest extends TestCase
 
         $this->setCakephpVersion($rm, '~8.8');
         $result = $installer->getLocations();
-<<<<<<< HEAD
-        $this->assertContains('vendor/{$vendor}/{$name}/', $result['plugin']);
-=======
         $this->assertEquals('vendor/{$vendor}/{$name}/', $result['plugin']);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     protected function setCakephpVersion($rm, $version) {

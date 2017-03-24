@@ -3,13 +3,8 @@
 /*
  * This file is part of Twig.
  *
-<<<<<<< HEAD
- * (c) Fabien Potencier
- * (c) Armin Ronacher
-=======
  * (c) 2009 Fabien Potencier
  * (c) 2009 Armin Ronacher
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -24,16 +19,7 @@ class Twig_Node_If extends Twig_Node
 {
     public function __construct(Twig_NodeInterface $tests, Twig_NodeInterface $else = null, $lineno, $tag = null)
     {
-<<<<<<< HEAD
-        $nodes = array('tests' => $tests);
-        if (null !== $else) {
-            $nodes['else'] = $else;
-        }
-
-        parent::__construct($nodes, array(), $lineno, $tag);
-=======
         parent::__construct(array('tests' => $tests, 'else' => $else), array(), $lineno, $tag);
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     public function compile(Twig_Compiler $compiler)
@@ -59,11 +45,7 @@ class Twig_Node_If extends Twig_Node
             ;
         }
 
-<<<<<<< HEAD
-        if ($this->hasNode('else')) {
-=======
         if ($this->hasNode('else') && null !== $this->getNode('else')) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $compiler
                 ->outdent()
                 ->write("} else {\n")

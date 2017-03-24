@@ -188,39 +188,6 @@ class ServerRequest extends Request implements ServerRequestInterface
     public static function getUriFromGlobals() {
         $uri = new Uri('');
 
-<<<<<<< HEAD
-        $uri = $uri->withScheme(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http');
-
-        $hasPort = false;
-        if (isset($_SERVER['HTTP_HOST'])) {
-            $hostHeaderParts = explode(':', $_SERVER['HTTP_HOST']);
-            $uri = $uri->withHost($hostHeaderParts[0]);
-            if (isset($hostHeaderParts[1])) {
-                $hasPort = true;
-                $uri = $uri->withPort($hostHeaderParts[1]);
-            }
-        } elseif (isset($_SERVER['SERVER_NAME'])) {
-            $uri = $uri->withHost($_SERVER['SERVER_NAME']);
-        } elseif (isset($_SERVER['SERVER_ADDR'])) {
-            $uri = $uri->withHost($_SERVER['SERVER_ADDR']);
-        }
-
-        if (!$hasPort && isset($_SERVER['SERVER_PORT'])) {
-            $uri = $uri->withPort($_SERVER['SERVER_PORT']);
-        }
-
-        $hasQuery = false;
-        if (isset($_SERVER['REQUEST_URI'])) {
-            $requestUriParts = explode('?', $_SERVER['REQUEST_URI']);
-            $uri = $uri->withPath($requestUriParts[0]);
-            if (isset($requestUriParts[1])) {
-                $hasQuery = true;
-                $uri = $uri->withQuery($requestUriParts[1]);
-            }
-        }
-
-        if (!$hasQuery && isset($_SERVER['QUERY_STRING'])) {
-=======
         if (isset($_SERVER['HTTPS'])) {
             $uri = $uri->withScheme($_SERVER['HTTPS'] == 'on' ? 'https' : 'http');
         }
@@ -240,7 +207,6 @@ class ServerRequest extends Request implements ServerRequestInterface
         }
 
         if (isset($_SERVER['QUERY_STRING'])) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             $uri = $uri->withQuery($_SERVER['QUERY_STRING']);
         }
 

@@ -59,35 +59,19 @@ interface Cache
      *
      * @param string $id The cache id of the entry to check for.
      *
-<<<<<<< HEAD
-     * @return bool TRUE if a cache entry exists for the given cache id, FALSE otherwise.
-=======
      * @return boolean TRUE if a cache entry exists for the given cache id, FALSE otherwise.
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function contains($id);
 
     /**
      * Puts data into the cache.
      *
-<<<<<<< HEAD
-     * If a cache entry with the given id already exists, its data will be replaced.
-     *
-     * @param string $id       The cache id.
-     * @param mixed  $data     The cache entry/data.
-     * @param int    $lifeTime The lifetime in number of seconds for this cache entry.
-     *                         If zero (the default), the entry never expires (although it may be deleted from the cache
-     *                         to make place for other entries).
-     *
-     * @return bool TRUE if the entry was successfully stored in the cache, FALSE otherwise.
-=======
      * @param string $id       The cache id.
      * @param mixed  $data     The cache entry/data.
      * @param int    $lifeTime The cache lifetime.
      *                         If != 0, sets a specific lifetime for this cache entry (0 => infinite lifeTime).
      *
      * @return boolean TRUE if the entry was successfully stored in the cache, FALSE otherwise.
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function save($id, $data, $lifeTime = 0);
 
@@ -96,12 +80,7 @@ interface Cache
      *
      * @param string $id The cache id.
      *
-<<<<<<< HEAD
-     * @return bool TRUE if the cache entry was successfully deleted, FALSE otherwise.
-     *              Deleting a non-existing entry is considered successful.
-=======
      * @return boolean TRUE if the cache entry was successfully deleted, FALSE otherwise.
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function delete($id);
 

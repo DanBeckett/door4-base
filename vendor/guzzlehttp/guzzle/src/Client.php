@@ -9,20 +9,6 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
 /**
-<<<<<<< HEAD
- * @method ResponseInterface get(string|UriInterface $uri, array $options = [])
- * @method ResponseInterface head(string|UriInterface $uri, array $options = [])
- * @method ResponseInterface put(string|UriInterface $uri, array $options = [])
- * @method ResponseInterface post(string|UriInterface $uri, array $options = [])
- * @method ResponseInterface patch(string|UriInterface $uri, array $options = [])
- * @method ResponseInterface delete(string|UriInterface $uri, array $options = [])
- * @method Promise\PromiseInterface getAsync(string|UriInterface $uri, array $options = [])
- * @method Promise\PromiseInterface headAsync(string|UriInterface $uri, array $options = [])
- * @method Promise\PromiseInterface putAsync(string|UriInterface $uri, array $options = [])
- * @method Promise\PromiseInterface postAsync(string|UriInterface $uri, array $options = [])
- * @method Promise\PromiseInterface patchAsync(string|UriInterface $uri, array $options = [])
- * @method Promise\PromiseInterface deleteAsync(string|UriInterface $uri, array $options = [])
-=======
  * @method ResponseInterface get($uri, array $options = [])
  * @method ResponseInterface head($uri, array $options = [])
  * @method ResponseInterface put($uri, array $options = [])
@@ -35,7 +21,6 @@ use Psr\Http\Message\ResponseInterface;
  * @method Promise\PromiseInterface postAsync($uri, array $options = [])
  * @method Promise\PromiseInterface patchAsync($uri, array $options = [])
  * @method Promise\PromiseInterface deleteAsync($uri, array $options = [])
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Client implements ClientInterface
 {
@@ -157,17 +142,10 @@ class Client implements ClientInterface
         $uri = Psr7\uri_for($uri === null ? '' : $uri);
 
         if (isset($config['base_uri'])) {
-<<<<<<< HEAD
-            $uri = Psr7\UriResolver::resolve(Psr7\uri_for($config['base_uri']), $uri);
-        }
-
-        return $uri->getScheme() === '' && $uri->getHost() !== '' ? $uri->withScheme('http') : $uri;
-=======
             $uri = Psr7\Uri::resolve(Psr7\uri_for($config['base_uri']), $uri);
         }
 
         return $uri->getScheme() === '' ? $uri->withScheme('http') : $uri;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**

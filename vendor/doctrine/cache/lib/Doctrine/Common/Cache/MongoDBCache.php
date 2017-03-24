@@ -21,10 +21,6 @@ namespace Doctrine\Common\Cache;
 
 use MongoBinData;
 use MongoCollection;
-<<<<<<< HEAD
-use MongoCursorException;
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 use MongoDate;
 
 /**
@@ -45,11 +41,7 @@ class MongoDBCache extends CacheProvider
      * cache entry should expire.
      *
      * With MongoDB 2.2+, entries can be automatically deleted by MongoDB by
-<<<<<<< HEAD
-     * indexing this field with the "expireAfterSeconds" option equal to zero.
-=======
      * indexing this field wit the "expireAfterSeconds" option equal to zero.
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      * This will direct MongoDB to regularly query for and delete any entries
      * whose date is older than the current time. Entries without a date value
      * in this field will be ignored.
@@ -127,20 +119,6 @@ class MongoDBCache extends CacheProvider
      */
     protected function doSave($id, $data, $lifeTime = 0)
     {
-<<<<<<< HEAD
-        try {
-            $result = $this->collection->update(
-                array('_id' => $id),
-                array('$set' => array(
-                    self::EXPIRATION_FIELD => ($lifeTime > 0 ? new MongoDate(time() + $lifeTime) : null),
-                    self::DATA_FIELD => new MongoBinData(serialize($data), MongoBinData::BYTE_ARRAY),
-                )),
-                array('upsert' => true, 'multiple' => false)
-            );
-        } catch (MongoCursorException $e) {
-            return false;
-        }
-=======
         $result = $this->collection->update(
             array('_id' => $id),
             array('$set' => array(
@@ -149,7 +127,6 @@ class MongoDBCache extends CacheProvider
             )),
             array('upsert' => true, 'multiple' => false)
         );
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
 
         return isset($result['ok']) ? $result['ok'] == 1 : true;
     }
@@ -161,11 +138,7 @@ class MongoDBCache extends CacheProvider
     {
         $result = $this->collection->remove(array('_id' => $id));
 
-<<<<<<< HEAD
-        return isset($result['ok']) ? $result['ok'] == 1 : true;
-=======
         return isset($result['n']) ? $result['n'] == 1 : true;
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     }
 
     /**
@@ -197,13 +170,8 @@ class MongoDBCache extends CacheProvider
         return array(
             Cache::STATS_HITS => null,
             Cache::STATS_MISSES => null,
-<<<<<<< HEAD
-            Cache::STATS_UPTIME => (isset($serverStatus['uptime']) ? (int) $serverStatus['uptime'] : null),
-            Cache::STATS_MEMORY_USAGE => (isset($collStats['size']) ? (int) $collStats['size'] : null),
-=======
             Cache::STATS_UPTIME => (isset($serverStatus['uptime']) ? (integer) $serverStatus['uptime'] : null),
             Cache::STATS_MEMORY_USAGE => (isset($collStats['size']) ? (integer) $collStats['size'] : null),
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             Cache::STATS_MEMORY_AVAILABLE  => null,
         );
     }
@@ -212,12 +180,7 @@ class MongoDBCache extends CacheProvider
      * Check if the document is expired.
      *
      * @param array $document
-<<<<<<< HEAD
-     *
-     * @return bool
-=======
      * @return boolean
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     private function isExpired(array $document)
     {

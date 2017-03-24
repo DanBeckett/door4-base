@@ -31,11 +31,7 @@ interface FlushableCache
     /**
      * Flushes all cache entries, globally.
      *
-<<<<<<< HEAD
-     * @return bool TRUE if the cache entries were successfully flushed, FALSE otherwise.
-=======
      * @return boolean TRUE if the cache entries were successfully flushed, FALSE otherwise.
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function flushAll();
 }

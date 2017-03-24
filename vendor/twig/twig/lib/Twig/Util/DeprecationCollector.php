@@ -11,11 +11,6 @@
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>
-<<<<<<< HEAD
- *
- * @final
-=======
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
  */
 class Twig_Util_DeprecationCollector
 {
@@ -33,11 +28,7 @@ class Twig_Util_DeprecationCollector
      * @param string $dir A directory where templates are stored
      * @param string $ext Limit the loaded templates by extension
      *
-<<<<<<< HEAD
-     * @return array An array of deprecations
-=======
      * @return array() An array of deprecations
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
      */
     public function collectDir($dir, $ext = '.twig')
     {
@@ -53,19 +44,11 @@ class Twig_Util_DeprecationCollector
     /**
      * Returns deprecations for passed templates.
      *
-<<<<<<< HEAD
-     * @param Traversable $iterator An iterator of templates (where keys are template names and values the contents of the template)
-     *
-     * @return array An array of deprecations
-     */
-    public function collect(Traversable $iterator)
-=======
      * @param Iterator $iterator An iterator of templates (where keys are template names and values the contents of the template)
      *
      * @return array() An array of deprecations
      */
     public function collect(Iterator $iterator)
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
     {
         $this->deprecations = array();
 
@@ -73,11 +56,7 @@ class Twig_Util_DeprecationCollector
 
         foreach ($iterator as $name => $contents) {
             try {
-<<<<<<< HEAD
-                $this->twig->parse($this->twig->tokenize(new Twig_Source($contents, $name)));
-=======
                 $this->twig->parse($this->twig->tokenize($contents, $name));
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             } catch (Twig_Error_Syntax $e) {
                 // ignore templates containing syntax errors
             }

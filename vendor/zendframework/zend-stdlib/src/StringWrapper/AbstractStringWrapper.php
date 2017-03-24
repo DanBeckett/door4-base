@@ -38,19 +38,11 @@ abstract class AbstractStringWrapper implements StringWrapperInterface
     {
         $supportedEncodings = static::getSupportedEncodings();
 
-<<<<<<< HEAD
-        if (! in_array(strtoupper($encoding), $supportedEncodings)) {
-            return false;
-        }
-
-        if ($convertEncoding !== null && ! in_array(strtoupper($convertEncoding), $supportedEncodings)) {
-=======
         if (!in_array(strtoupper($encoding), $supportedEncodings)) {
             return false;
         }
 
         if ($convertEncoding !== null && !in_array(strtoupper($convertEncoding), $supportedEncodings)) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             return false;
         }
 
@@ -69,11 +61,7 @@ abstract class AbstractStringWrapper implements StringWrapperInterface
         $supportedEncodings = static::getSupportedEncodings();
 
         $encodingUpper = strtoupper($encoding);
-<<<<<<< HEAD
-        if (! in_array($encodingUpper, $supportedEncodings)) {
-=======
         if (!in_array($encodingUpper, $supportedEncodings)) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
             throw new Exception\InvalidArgumentException(
                 'Wrapper doesn\'t support character encoding "' . $encoding . '"'
             );
@@ -81,11 +69,7 @@ abstract class AbstractStringWrapper implements StringWrapperInterface
 
         if ($convertEncoding !== null) {
             $convertEncodingUpper = strtoupper($convertEncoding);
-<<<<<<< HEAD
-            if (! in_array($convertEncodingUpper, $supportedEncodings)) {
-=======
             if (!in_array($convertEncodingUpper, $supportedEncodings)) {
->>>>>>> c81b45ba9a8b61239547a84a8e02a8dc1003e74a
                 throw new Exception\InvalidArgumentException(
                     'Wrapper doesn\'t support character encoding "' . $convertEncoding . '"'
                 );
