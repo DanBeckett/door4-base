@@ -65,17 +65,17 @@
 /* Fonts */
 @font-face {
   font-family: 'heroic_condensedmedium';
-  src: url("../../egopowerplus/components/fonts/heroiccondensed-medium-webfont.woff2") format("woff2"), url("../../egopowerplus/components/fonts/heroiccondensed-medium-webfont.woff") format("woff");
+  src: url("../../components/fonts/heroiccondensed-medium-webfont.woff2") format("woff2"), url("../../components/fonts/heroiccondensed-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'heroic_condensedbold';
-  src: url("../../egopowerplus/components/fonts/heroiccondensed-bold-webfont.woff2") format("woff2"), url("../../egopowerplus/components/fonts/heroiccondensed-bold-webfont.woff") format("woff");
+  src: url("../../components/fonts/heroiccondensed-bold-webfont.woff2") format("woff2"), url("../../components/fonts/heroiccondensed-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'heroic_condensedblack';
-  src: url("../../egopowerplus/components/fonts/heroiccondensed-black-webfont.woff2") format("woff2"), url("../../egopowerplus/components/fonts/heroiccondensed-black-webfont.woff") format("woff");
+  src: url("../../components/fonts/heroiccondensed-black-webfont.woff2") format("woff2"), url("../../components/fonts/heroiccondensed-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 html,
@@ -312,9 +312,9 @@ header {
         list-style-position: outside;
         list-style-type: none; }
         header div#header_inner ul#sign_in_register li.sign_in a {
-          background-image: url(../../egopowerplus/images/icon_user.png); }
+          background-image: url(../../images/icon_user.png); }
         header div#header_inner ul#sign_in_register li.register a {
-          background-image: url(../../egopowerplus/images/icon_register.png); }
+          background-image: url(../../images/icon_register.png); }
         header div#header_inner ul#sign_in_register li a {
           color: #ffffff;
           text-decoration: none;
@@ -328,7 +328,7 @@ header {
     header div#header_inner div#navigation_wrapper {
       margin: 0 189px 0 0;
       padding: 0;
-      background-image: url(../../egopowerplus/images/header_background.jpg);
+      background-image: url(../../images/header_background.jpg);
       background-position: left top;
       background-repeat: no-repeat;
       background-size: 100% auto; }
@@ -340,7 +340,7 @@ header {
         header div#header_inner div#navigation_wrapper div#header_logo a {
           color: #ffffff;
           display: block;
-          background-image: url(../../egopowerplus/images/header_logo.png);
+          background-image: url(../../images/header_logo.png);
           width: 181px;
           height: 72px;
           background-repeat: no-repeat;
@@ -405,7 +405,7 @@ header {
         header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form {
           margin: 0;
           padding: 0 40px 0 12px; }
-          header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#searchform {
+          header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#search-block-form {
             background-color: #333333;
             margin: 0;
             padding: 0;
@@ -413,7 +413,7 @@ header {
             -webkit-transform: skewX(-16deg);
             transform: skewX(-16deg);
             position: relative; }
-            header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#searchform:after {
+            header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#search-block-form:after {
               background-color: #555;
               content: "";
               display: block;
@@ -422,7 +422,9 @@ header {
               right: 42px;
               top: 0;
               width: 3px; }
-            header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#searchform input#s {
+            header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#search-block-form div {
+              display: inline-block; }
+            header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#search-block-form input#edit-keys {
               -webkit-transform: skewX(16deg);
               transform: skewX(16deg);
               background: none;
@@ -432,8 +434,10 @@ header {
               line-height: 26px;
               margin: 0;
               padding: 3px 16px;
-              width: 182px; }
-            header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#searchform button {
+              width: 148px; }
+              header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#search-block-form input#edit-keys:focus {
+                outline: none; }
+            header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#search-block-form input#edit-submit {
               -webkit-transform: skewX(16deg) translateY(-3px);
               transform: skewX(16deg) translateY(-3px);
               background: none;
@@ -446,9 +450,10 @@ header {
               border: none;
               cursor: pointer;
               height: 24px;
-              background-image: url(../../egopowerplus/images/icon_search.png);
+              background-image: url(../../images/icon_search.png);
               background-position: center;
-              background-repeat: no-repeat; }
+              background-repeat: no-repeat;
+              text-indent: -5000em; }
       header div#header_inner div#navigation_wrapper ul#header_menu {
         margin: 0 275px 0 208px;
         padding: 48px 0 0 0;
@@ -499,11 +504,11 @@ header {
 
 /* SVG Replacements for header items */
 html.svg header div#header_inner ul#sign_in_register li.sign_in a {
-  background-image: url(../../egopowerplus/images/icon_user.svg); }
+  background-image: url(../../images/icon_user.svg); }
 html.svg header div#header_inner ul#sign_in_register li.register a {
-  background-image: url(../../egopowerplus/images/icon_register.svg); }
+  background-image: url(../../images/icon_register.svg); }
 html.svg header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#searchform button {
-  background-image: url(../../egopowerplus/images/icon_search.svg); }
+  background-image: url(../../images/icon_search.svg); }
 
 /* Padding reduction for header menu items at smaller desktop widths */
 @media only screen and (max-width: 1200px) and (min-width: 1024px) {
@@ -639,7 +644,7 @@ footer {
         footer div#footer_inner ul#footer_social div#footer_logo a {
           color: #ffffff;
           display: inline-block;
-          background-image: url(../../egopowerplus/images/header_logo.png);
+          background-image: url(../../images/header_logo.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain;
@@ -817,7 +822,7 @@ div#main div.content_block.content_block_hero {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-      background-image: url(../../egopowerplus/images/hero_caption_shade.png);
+      background-image: url(../../images/hero_caption_shade.png);
       background-position: center;
       background-size: 100% 100%;
       background-repeat: no-repeat; }
@@ -905,6 +910,8 @@ div#main div.content_block.content_block_intro_text {
 div#main div.content_block.content_block_labelled_product_image {
   margin: 0;
   padding: 0; }
+  div#main div.content_block.content_block_labelled_product_image.background-grey {
+    background-color: #ededed; }
   div#main div.content_block.content_block_labelled_product_image div.labelled_product_image {
     margin: 0 auto;
     padding: 0 42px 40px 37px;
@@ -1207,7 +1214,7 @@ div#main div.content_block.content_block_warranty_panel {
     position: absolute;
     top: 31px;
     left: 50%;
-    background-image: url(../../egopowerplus/images/warranty_badge.png);
+    background-image: url(../../images/warranty_badge.png);
     background-position: center;
     background-size: contain; }
   div#main div.content_block.content_block_warranty_panel div.warranty_panel {
@@ -1283,6 +1290,8 @@ div#main div.content_block.content_block_single_image {
 div#main div.content_block.content_block_review_slider {
   margin: 0;
   padding: 70px 20px 70px 20px; }
+  div#main div.content_block.content_block_review_slider.background-grey {
+    background-color: #ededed; }
   div#main div.content_block.content_block_review_slider div.review_slider {
     margin: 0 auto;
     padding: 0;
@@ -2121,7 +2130,19 @@ div#main div.content_block.content_block_batteries_table {
 /* Content Block - Video - inc_block_video.php */
 div#main div.content_block.content_block_video {
   margin: 0;
-  padding: 40px 0 20px 0; }
+  padding: 40px 0 20px 0;
+  position: relative;
+  overflow: hidden; }
+  div#main div.content_block.content_block_video.background-slash:before {
+    background-color: #ededed;
+    bottom: -50%;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    -webkit-transform: skewY(15deg);
+    transform: skewY(15deg);
+    width: 100%; }
   div#main div.content_block.content_block_video div.video {
     margin: 0 auto;
     padding: 0;
@@ -2143,7 +2164,7 @@ div#main div.content_block.content_block_video {
       padding: 0;
       position: absolute;
       cursor: pointer;
-      background-image: url(../../egopowerplus/images/icon_video.png);
+      background-image: url(../../images/icon_video.png);
       background-position: center;
       background-size: contain;
       opacity: 0.7;
@@ -2151,5 +2172,239 @@ div#main div.content_block.content_block_video {
       transition: all 0.4s; }
       div#main div.content_block.content_block_video div.video span.play_button:hover {
         opacity: 0.9; }
+
+/* Content Block - Home 'Uniqueness' Banner - inc_block_home_uniqueness_banner.php */
+div#main div.content_block.content_block_home_uniqueness_banner {
+  background-color: #ededed;
+  margin: 0;
+  padding: 10px 0 10px 0; }
+  div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1320px; }
+    div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.graphic {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 620px;
+      width: 100%; }
+      div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.graphic img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0; }
+        div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.graphic img.standard {
+          display: block; }
+        div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.graphic img.svg {
+          display: none; }
+    div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.caption {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 54px;
+      line-height: 54px;
+      letter-spacing: -1px;
+      color: #77bc1f;
+      text-align: center;
+      margin: 0;
+      padding: 55px 0 55px 0; }
+
+html.svg div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.graphic img.standard {
+  display: none; }
+html.svg div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.graphic img.svg {
+  display: block; }
+
+/* Content Block - One Banner Multiple Tools - inc_block_one_battery_multiple_tools.php */
+div#main div.content_block.content_block_one_battery_multiple_tools {
+  background-color: #2d2d2d;
+  margin: 0;
+  background-image: url(../../images/1bmt_background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 6px solid #ffffff; }
+  div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools {
+    margin: 0 auto;
+    padding: 40px 96px 40px 96px;
+    max-width: 1366px;
+    min-height: 400px; }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content {
+      margin: 0;
+      padding: 24px 0 39px 0; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content div.logo {
+        margin: 0;
+        padding: 10px 0 19px 0;
+        text-align: center; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content div.logo img {
+          width: auto;
+          height: auto;
+          max-width: 100%; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content h2 {
+        margin: 0;
+        padding: 24px 0 5px 0;
+        text-align: center;
+        color: #77bc1f; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content h2 span {
+          color: #ffffff; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content p {
+        margin: 0;
+        padding: 5px 0 5px 0;
+        text-align: center;
+        color: #ffffff; }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration {
+      margin: 0;
+      padding: 0; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 71.04%;
+        min-height: 300px;
+        background-image: url(../../images/spiky_hexothing.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column {
+          margin: 0;
+          padding: 0;
+          width: 33.3333%;
+          float: left; }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle {
+            margin: 0;
+            padding: 0;
+            position: relative; }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle img {
+              display: block;
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: auto;
+              position: relative; }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.image {
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              margin: 0;
+              padding: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%; }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper {
+              margin: 0;
+              padding: 11px 22px;
+              background-color: #77bc1f;
+              position: absolute;
+              left: 18%;
+              top: 78%;
+              transform: skewX(-16deg);
+              -webkit-border-radius: 6px;
+              border-radius: 6px;
+              z-index: 50;
+              white-space: nowrap;
+              overflow: hidden; }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper div.label {
+                font-weight: normal;
+                font-family: 'heroic_condensedbold', sans-serif;
+                font-size: 22px;
+                line-height: 28px;
+                text-transform: uppercase;
+                line-height: 22px;
+                transform: skewX(16deg);
+                color: #ffffff;
+                margin: 0;
+                padding: 0; }
+                div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper div.label span {
+                  color: #000000; }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle.circle_3_2 div.label_wrapper {
+              left: 61%;
+              top: 54%; }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column.circle_column_1, div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column.circle_column_3 {
+            padding-top: 16.6666%; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel {
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 28.96%;
+        min-height: 300px;
+        background-image: url(../../images/1bmt_side_lines.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100% auto; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key {
+          margin: 0;
+          padding: 28% 0 0 50.88%; }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li {
+            margin: 0;
+            padding: 0;
+            list-style-position: outside;
+            list-style-type: none; }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item {
+              margin: 0;
+              padding: 0;
+              position: relative; }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item img {
+                margin: 0;
+                padding: 0;
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                display: block;
+                position: relative; }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item div.overlay {
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-size: contain; }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item div.title {
+                font-weight: normal;
+                font-family: 'heroic_condensedbold', sans-serif;
+                font-size: 22px;
+                line-height: 28px;
+                text-transform: uppercase;
+                font-size: 20px;
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                color: #ffffff; }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content {
+      margin: 0;
+      padding: 12px 0 21px 0; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h2 {
+        margin: 0;
+        padding: 24px 0 2px 0;
+        text-align: center;
+        color: #77bc1f; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h2 span {
+          color: #ffffff; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h3 {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 54px;
+        line-height: 54px;
+        letter-spacing: -1px;
+        margin: 0;
+        padding: 0 0 16px 0;
+        text-align: center;
+        color: #ffffff;
+        text-transform: none; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content p {
+        margin: 0;
+        padding: 16px 0 5px 0;
+        text-align: center;
+        color: #ffffff; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content p a {
+          color: #77bc1f;
+          text-decoration: none; }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content p a i {
+            margin-left: 10px; }
 
 /*# sourceMappingURL=large.css.map */

@@ -27,51 +27,10 @@
                             <a href="index.php">EGO</a>
                         
                         </div><!-- #header_logo -->
-                            
-                        <div id="header_search_and_location">
-                        
-                        	<div id="location_wrapper">
-                            
-                            	<div id="location_trigger">United Kingdom <i class="fa fa-angle-down"></i></div>
-                                
-                                <ul id="location_choices">
-                                
-                                	<li><a href="#">Location #1</a></li>
-                                    <li><a href="#">Location #2</a></li>
-                                    <li><a href="#">Location #3</a></li>
-                                    <li><a href="#">Location #4</a></li>
-                                
-                                </ul><!-- #location_choices -->
-                            
-                            </div><!-- .location_wrapper -->
-                            
-                            <div id="search_form">
 
-                            {{ page.header }}
-                        
-                                <form method="get" id="searchform" action="#">
-                            
-                                    <input type="text" value="" name="s" id="s" placeholder="Search" />
-                                    
-                                    <button type="button"></button>
-                            
-                                </form>          
-                            
-                            </div><!-- #search_form -->
-
-                        </div><!-- #header_search_and_location -->
+                        {{ page.header_search_location }}
                     
-                        <ul id="header_menu">
-                        
-                            <li class=""><a href="page-our-story.php">Our Story</a></li>
-                            
-                            <li class=""><a href="page-product-range.php">Product Range</a></li>
-                            
-                            <li class=""><a href="page-where-to-buy.php">Where To Buy</a></li>
-                            
-                            <!-- a class of 'current' can be added to these <li>'s to add the little green bar underneath -->
-                                            
-                        </ul><!-- #header_menu -->
+                        {{ page.header }}
                         
                         <div style="clear:both;"></div>
                 

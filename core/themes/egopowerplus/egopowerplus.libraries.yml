@@ -3,6 +3,6 @@ ego-base-styles:
   css:
     theme:
       components/font-awesome/css/font-awesome.min.css: {}
-      css/large.css: {}
-      css/medium.css: {}
-      css/small.css: {}
+      css/compiled/large.css: {}
+      css/compiled/medium.css: {}
+      css/compiled/small.css: {}
