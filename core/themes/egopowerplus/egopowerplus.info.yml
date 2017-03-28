@@ -4,6 +4,8 @@ description: 'Black and green Drupal theme for Ego Power Plus website'
 core: 8.x
 libraries:
   - egopowerplus/ego-base-styles
+libraries-override:
+  classy/base: false
 base theme: classy
 regions: 
   header: Header

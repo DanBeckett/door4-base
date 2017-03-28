@@ -1,4 +1,10 @@
- <div id="global_wrapper"><!-- Wraps everything, including the mobile menu -->
+ {#
+/**
+ * @file
+ * Theme for overall site header
+  */
+#}
+<div id="global_wrapper"><!-- Wraps everything, including the mobile menu -->
     
         <div id="site_wrapper"><!-- Wraps the site, and the mobile menu sits outside -->
         
@@ -40,6 +46,8 @@
                             </div><!-- .location_wrapper -->
                             
                             <div id="search_form">
+
+                            {{ page.header }}
                         
                                 <form method="get" id="searchform" action="#">
                             

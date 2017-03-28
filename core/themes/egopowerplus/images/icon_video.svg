@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="182px" height="182px" viewBox="0 0 182 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>SVG/Video</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M136.707,91.2321 C136.707,89.3841 135.889,87.6451 134.413,86.5341 L74.858,41.5441 C73.101,40.2161 71.175,39.9851 69.204,40.9371 C67.499,41.7601 66.497,43.5721 66.497,45.4621 L66.497,137.3411 C66.497,139.0861 67.489,140.6751 69.052,141.4541 C69.936,141.8921 70.322,142.1091 71.243,142.1091 C72.499,142.1091 73.687,141.7081 74.728,140.9211 L134.349,95.9311 C135.822,94.8211 136.707,93.0811 136.707,91.2321 L136.707,91.2321 Z M182.462,90.4391 C182.896,141.4551 141.455,182.8961 90.439,182.4611 C40.906,182.0421 0.425,141.5601 0.003,92.0281 C-0.431,41.0111 41.011,-0.4299 92.027,0.0031 C141.561,0.4241 182.041,40.9061 182.462,90.4391 L182.462,90.4391 Z M77.932,58.0541 L121.922,91.2321 L77.932,124.4111 L77.932,58.0541 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SVG/Video">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="VideoButton" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <g id="Mixin/Fill/White" mask="url(#mask-2)" fill="#FFFFFF">
+                <rect x="0" y="0" width="182" height="182"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

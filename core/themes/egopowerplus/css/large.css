@@ -65,17 +65,17 @@
 /* Fonts */
 @font-face {
   font-family: 'heroic_condensedmedium';
-  src: url("../../components/fonts/heroiccondensed-medium-webfont.woff2") format("woff2"), url("../../components/fonts/heroiccondensed-medium-webfont.woff") format("woff");
+  src: url("../../egopowerplus/components/fonts/heroiccondensed-medium-webfont.woff2") format("woff2"), url("../../egopowerplus/components/fonts/heroiccondensed-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'heroic_condensedbold';
-  src: url("../../components/fonts/heroiccondensed-bold-webfont.woff2") format("woff2"), url("../../components/fonts/heroiccondensed-bold-webfont.woff") format("woff");
+  src: url("../../egopowerplus/components/fonts/heroiccondensed-bold-webfont.woff2") format("woff2"), url("../../egopowerplus/components/fonts/heroiccondensed-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'heroic_condensedblack';
-  src: url("../../components/fonts/heroiccondensed-black-webfont.woff2") format("woff2"), url("../../components/fonts/heroiccondensed-black-webfont.woff") format("woff");
+  src: url("../../egopowerplus/components/fonts/heroiccondensed-black-webfont.woff2") format("woff2"), url("../../egopowerplus/components/fonts/heroiccondensed-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 html,
@@ -312,9 +312,9 @@ header {
         list-style-position: outside;
         list-style-type: none; }
         header div#header_inner ul#sign_in_register li.sign_in a {
-          background-image: url(../../images/icon_user.png); }
+          background-image: url(../../egopowerplus/images/icon_user.png); }
         header div#header_inner ul#sign_in_register li.register a {
-          background-image: url(../../images/icon_register.png); }
+          background-image: url(../../egopowerplus/images/icon_register.png); }
         header div#header_inner ul#sign_in_register li a {
           color: #ffffff;
           text-decoration: none;
@@ -328,7 +328,7 @@ header {
     header div#header_inner div#navigation_wrapper {
       margin: 0 189px 0 0;
       padding: 0;
-      background-image: url(../../images/header_background.jpg);
+      background-image: url(../../egopowerplus/images/header_background.jpg);
       background-position: left top;
       background-repeat: no-repeat;
       background-size: 100% auto; }
@@ -340,7 +340,7 @@ header {
         header div#header_inner div#navigation_wrapper div#header_logo a {
           color: #ffffff;
           display: block;
-          background-image: url(../../images/header_logo.png);
+          background-image: url(../../egopowerplus/images/header_logo.png);
           width: 181px;
           height: 72px;
           background-repeat: no-repeat;
@@ -446,7 +446,7 @@ header {
               border: none;
               cursor: pointer;
               height: 24px;
-              background-image: url(../../images/icon_search.png);
+              background-image: url(../../egopowerplus/images/icon_search.png);
               background-position: center;
               background-repeat: no-repeat; }
       header div#header_inner div#navigation_wrapper ul#header_menu {
@@ -499,11 +499,11 @@ header {
 
 /* SVG Replacements for header items */
 html.svg header div#header_inner ul#sign_in_register li.sign_in a {
-  background-image: url(../../images/icon_user.svg); }
+  background-image: url(../../egopowerplus/images/icon_user.svg); }
 html.svg header div#header_inner ul#sign_in_register li.register a {
-  background-image: url(../../images/icon_register.svg); }
+  background-image: url(../../egopowerplus/images/icon_register.svg); }
 html.svg header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#searchform button {
-  background-image: url(../../images/icon_search.svg); }
+  background-image: url(../../egopowerplus/images/icon_search.svg); }
 
 /* Padding reduction for header menu items at smaller desktop widths */
 @media only screen and (max-width: 1200px) and (min-width: 1024px) {
@@ -639,7 +639,7 @@ footer {
         footer div#footer_inner ul#footer_social div#footer_logo a {
           color: #ffffff;
           display: inline-block;
-          background-image: url(../../images/header_logo.png);
+          background-image: url(../../egopowerplus/images/header_logo.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: contain;
@@ -817,7 +817,7 @@ div#main div.content_block.content_block_hero {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-      background-image: url(../../images/hero_caption_shade.png);
+      background-image: url(../../egopowerplus/images/hero_caption_shade.png);
       background-position: center;
       background-size: 100% 100%;
       background-repeat: no-repeat; }
@@ -1207,7 +1207,7 @@ div#main div.content_block.content_block_warranty_panel {
     position: absolute;
     top: 31px;
     left: 50%;
-    background-image: url(../../images/warranty_badge.png);
+    background-image: url(../../egopowerplus/images/warranty_badge.png);
     background-position: center;
     background-size: contain; }
   div#main div.content_block.content_block_warranty_panel div.warranty_panel {
@@ -2143,7 +2143,7 @@ div#main div.content_block.content_block_video {
       padding: 0;
       position: absolute;
       cursor: pointer;
-      background-image: url(../../images/icon_video.png);
+      background-image: url(../../egopowerplus/images/icon_video.png);
       background-position: center;
       background-size: contain;
       opacity: 0.7;

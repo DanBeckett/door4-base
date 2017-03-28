@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>SVG/Register</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.708,14.707 L20.579,14.707 L20.579,16.707 L16.708,16.707 L16.708,20.578 L14.708,20.578 L14.708,16.707 L10.838,16.707 L10.838,14.707 L14.708,14.707 L14.708,10.836 L16.708,10.836 L16.708,14.707 Z M15.709,23.417 C11.458,23.417 8,19.958 8,15.707 C8,11.457 11.458,8 15.709,8 C19.959,8 23.417,11.457 23.417,15.707 C23.417,19.958 19.959,23.417 15.709,23.417 L15.709,23.417 Z M15.709,7 C10.907,7 7,10.906 7,15.707 C7,20.51 10.907,24.417 15.709,24.417 C20.511,24.417 24.417,20.51 24.417,15.707 C24.417,10.906 20.511,7 15.709,7 L15.709,7 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SVG/Register">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Page-1" fill="#77BC1F" xlink:href="#path-1"></use>
+            <g id="Mixin/Fill/Green" mask="url(#mask-2)" fill="#77BC1F">
+                <rect x="0" y="0" width="32" height="32"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

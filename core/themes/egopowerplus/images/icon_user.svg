@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>SVG/User</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.1118,22.1973 C19.5098,21.3053 17.6718,20.7903 15.7088,20.7903 C13.7458,20.7903 11.9068,21.3063 10.3048,22.1973 C8.8838,20.7983 7.9998,18.8553 7.9998,16.7093 C7.9998,12.4583 11.4578,9.0003 15.7088,9.0003 C19.9588,9.0003 23.4168,12.4583 23.4168,16.7093 C23.4168,18.8553 22.5328,20.7983 21.1118,22.1973 M15.7088,8.0003 C10.9068,8.0003 6.9998,11.9063 6.9998,16.7093 C6.9998,21.5103 10.9068,25.4173 15.7088,25.4173 C20.5108,25.4173 24.4168,21.5103 24.4168,16.7093 C24.4168,11.9063 20.5108,8.0003 15.7088,8.0003" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SVG/User">
+            <path d="M15.708,11.7285 C13.804,11.7285 12.26,13.2715 12.26,15.1755 C12.26,17.0805 13.804,18.6245 15.708,18.6245 C17.613,18.6245 19.157,17.0805 19.157,15.1755 C19.157,13.2715 17.613,11.7285 15.708,11.7285" id="Fill-1" fill="#77BC1F"></path>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Fill-3" fill="#77BC1F" xlink:href="#path-1"></use>
+            <g id="Mixin/Fill/Green" mask="url(#mask-2)" fill="#77BC1F">
+                <rect x="0" y="0" width="32" height="32"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
