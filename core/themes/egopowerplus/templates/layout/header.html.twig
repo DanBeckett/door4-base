@@ -8,37 +8,35 @@
     
         <div id="site_wrapper"><!-- Wraps the site, and the mobile menu sits outside -->
         
-            <header>
+            <header class="no_breadcrumb">
     
-                <div id="header_inner">
-                
-                	<ul id="sign_in_register">
-                    
-                    	<li class="sign_in"><a href="#">Sign In</a></li>
-                        
-                        <li class="register"><a href="#">Register Product</a></li>
-                    
-                    </ul><!-- #sign_in_register -->
-                    
-                    <div id="navigation_wrapper">
-                
-                        <div id="header_logo">
-                        
-                            <a href="index.php">EGO</a>
-                        
-                        </div><!-- #header_logo -->
+                <div id="header_main_wrapper">
 
-                        {{ page.header_search_location }}
-                    
-                        {{ page.header }}
+                    <div id="header_main">
+
+                    	{{ page.header_sign_in }}
                         
-                        <div style="clear:both;"></div>
-                
-                	</div><!-- #navigation_wrapper -->
-					
-                    <div style="clear:both;"></div>
+                        <div id="navigation_wrapper">
                     
-                </div><!-- #header_inner -->
+                            <div id="header_logo">
+                            
+                                <a href="index.php">EGO</a>
+                            
+                            </div><!-- #header_logo -->
+
+                            {{ page.header_search_location }}
+                        
+                            {{ page.header }}
+                            
+                            <div style="clear:both;"></div>
+                    
+                    	</div><!-- #navigation_wrapper -->
+    					
+                        <div style="clear:both;"></div>
+
+                    </div>
+                    
+                </div><!-- #header_main_wrapper -->
     
             </header>
             

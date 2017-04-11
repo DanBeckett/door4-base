@@ -9,6 +9,7 @@
 /* 'EGO Dark Grey' - #4D4D4D - R.77 G.77 B.77 */
 /* 'EGO Darkest Grey' - #333333 - R.51 G.51 B.51 */
 /* 'EGO Black' - #000000 - R.0 G.0 B.0 */
+/* 'EGO Blue' - #5c91a9 - R.92 G.145 B.169 */
 /* ========================== */
 /* Typography                 */
 /* ========================== */
@@ -30,50 +31,51 @@
 /* 'Mobile Regular' */
 /* 'Mobile Block Header' */
 /* Intro Text Pill Caption */
+/* Product Banner */
 @media only screen and (max-width: 1023px) and (min-width: 641px) {
   /* Main */
   /* Header */
   header {
     border-bottom-width: 6px; }
-    header div#header_inner ul#sign_in_register {
+    header div#header_main_wrapper div#header_main ul#sign_in_register {
       padding: 13px 10px 12px 0;
       width: 160px; }
-      header div#header_inner ul#sign_in_register li {
+      header div#header_main_wrapper div#header_main ul#sign_in_register li {
         padding: 3px 0 3px 0; }
-        header div#header_inner ul#sign_in_register li a {
+        header div#header_main_wrapper div#header_main ul#sign_in_register li a {
           font-size: 13px; }
-          header div#header_inner ul#sign_in_register li a span.large_only {
+          header div#header_main_wrapper div#header_main ul#sign_in_register li a span.large_only {
             display: none; }
-    header div#header_inner div#navigation_wrapper {
+    header div#header_main_wrapper div#header_main div#navigation_wrapper {
       margin: 0 160px 0 0; }
-      header div#header_inner div#navigation_wrapper div#header_search_and_location {
+      header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_search_and_location {
         padding: 0 30px 0 26px;
         float: none;
         width: auto;
         margin: 0 0 0 208px;
         height: 51px; }
-        header div#header_inner div#navigation_wrapper div#header_search_and_location div#location_wrapper {
+        header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_search_and_location div#location_wrapper {
           padding: 13px 0 1px 0;
           width: 45%;
           float: left; }
-          header div#header_inner div#navigation_wrapper div#header_search_and_location div#location_wrapper div#location_trigger {
+          header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_search_and_location div#location_wrapper div#location_trigger {
             margin: 0;
             font-size: 14px; }
-          header div#header_inner div#navigation_wrapper div#header_search_and_location div#location_wrapper ul#location_choices {
+          header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_search_and_location div#location_wrapper ul#location_choices {
             left: -10px; }
-        header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form {
+        header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_search_and_location div#search_form {
           padding: 13px 0 0 0;
           width: 55%;
           float: right; }
-          header div#header_inner div#navigation_wrapper div#header_search_and_location div#search_form form#searchform input#s {
+          header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_search_and_location div#search_form form#searchform input#s {
             width: calc(100% - 40px); }
-      header div#header_inner div#navigation_wrapper ul#header_menu {
+      header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu {
         margin: 0 0 0 208px;
         padding: 2px 0 0 13px;
         text-align: left; }
-        header div#header_inner div#navigation_wrapper ul#header_menu li {
+        header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li {
           margin: 0 4px; }
-          header div#header_inner div#navigation_wrapper ul#header_menu li a {
+          header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li a {
             padding: 1px 12px 18px; }
 
   /* Footer */
@@ -199,42 +201,85 @@
     div#main div.content_block.content_block_feature_link_type_2 div.image_overlay_wrapper div.image_overlay {
       margin: 0 -100px 0 0; }
 
+  /* Content Block - One Banner Multiple Tools - inc_block_one_battery_multiple_tools.php */
+  div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools {
+    padding: 20px 20px;
+    /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content {
+      padding: 5px 0 22px 0;
+      /* */ }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content h2 {
+        padding: 5px 0;
+        /* */
+        line-height: 75px;
+        /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper {
+      padding: 3px 10px;
+      /* */
+      left: 6%;
+      /* */
+      top: 78%;
+      /* */ }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper div.label {
+        font-size: 18px;
+        /* */
+        line-height: 18px;
+        /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle.circle_3_2 div.label_wrapper {
+      left: 58%;
+      /* */
+      top: 56%;
+      /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item div.title {
+      font-size: 17px;
+      /* */
+      line-height: 19px;
+      /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h2 {
+      line-height: 75px;
+      /* */ }
+
   /* QUARANTINE --------------------------------------- */
   /* */ }
 /* Extra fixes for small medium items */
 @media only screen and (max-width: 760px) and (min-width: 641px) {
-  header div#header_inner ul#sign_in_register {
+  header div#header_main_wrapper div#header_main ul#sign_in_register {
     padding: 18px 17px 10px 0;
     width: 134px; }
-    header div#header_inner ul#sign_in_register li {
+    header div#header_main_wrapper div#header_main ul#sign_in_register li {
       padding: 3px 0; }
-      header div#header_inner ul#sign_in_register li a {
+      header div#header_main_wrapper div#header_main ul#sign_in_register li a {
         font-size: 11px;
         line-height: 16px; }
-        header div#header_inner ul#sign_in_register li a i.fa {
+        header div#header_main_wrapper div#header_main ul#sign_in_register li a i.fa {
           font-size: 13px;
           margin-left: 1px; }
-          header div#header_inner ul#sign_in_register li a i.fa.fa-plus-circle {
+          header div#header_main_wrapper div#header_main ul#sign_in_register li a i.fa.fa-plus-circle {
             font-size: 17px; }
-  header div#header_inner div#navigation_wrapper {
+  header div#header_main_wrapper div#header_main div#navigation_wrapper {
     margin: 0 134px 0 0; }
-    header div#header_inner div#navigation_wrapper div#header_logo {
+    header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_logo {
       float: left;
       margin: 0;
       padding: 24px 0 13px 4px;
       width: 144px; }
-      header div#header_inner div#navigation_wrapper div#header_logo a {
+      header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_logo a {
         height: 56px;
         width: 140px; }
-    header div#header_inner div#navigation_wrapper div#header_search_and_location {
+    header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_search_and_location {
       margin: 0 0 0 144px;
       padding: 0 20px 0 10px; }
-    header div#header_inner div#navigation_wrapper ul#header_menu {
+    header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu {
       margin: 0 0 0 144px;
       padding: 0; }
-      header div#header_inner div#navigation_wrapper ul#header_menu li {
+      header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li {
         margin: 0; }
-        header div#header_inner div#navigation_wrapper ul#header_menu li a {
-          padding: 1px 9px 12px 9px; } }
+        header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li a {
+          padding: 1px 9px 12px 9px; }
+  header.no_breadcrumb + div#main {
+    padding-top: 100px; }
+
+  div#main {
+    padding-top: 138px; } }
 
 /*# sourceMappingURL=medium.css.map */

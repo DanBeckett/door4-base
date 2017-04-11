@@ -6,3 +6,8 @@ ego-base-styles:
       css/compiled/large.css: {}
       css/compiled/medium.css: {}
       css/compiled/small.css: {}
+  js:
+    js/vendor/jquery.flexslider-min.js: {}
+    js/egopowerplus.js: {}
+  dependencies:
+    - core/jquery

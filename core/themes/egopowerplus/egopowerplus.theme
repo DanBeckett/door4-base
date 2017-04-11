@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the egopowerplus theme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
+
+function egopowerplus_theme_suggestions_block_alter(&$suggestions, $variables) {
+
+  /* We use 'panels' to allow us to reuse content block types in body content.
+  The following adds the general "block type" to the theme suggestions, so we can style them globally */	
+  $content = $variables['elements']['content'];
+  if (isset($content['#block_content']) && $content['#block_content'] instanceof \Drupal\block_content\BlockContentInterface) {
+    $suggestions[] = 'block__' . $content['#block_content']->bundle();
+  }
+}
