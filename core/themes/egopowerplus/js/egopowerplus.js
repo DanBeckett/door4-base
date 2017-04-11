@@ -10,6 +10,9 @@ jQuery(window).load(function() {
 			animationSpeed: 800,
 			prevText: "&#xf104;",
 			nextText: "&#xf105;",
+			start: function(){
+				 jQuery('div.review_slider').addClass('active'); 
+			}
 		});
 	};
 });
