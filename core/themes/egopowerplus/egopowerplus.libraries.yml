@@ -7,7 +7,9 @@ ego-base-styles:
       css/compiled/medium.css: {}
       css/compiled/small.css: {}
   js:
+    js/vendor/modernizr.js: {}
     js/vendor/jquery.flexslider-min.js: {}
+    js/vendor/jquery.matchHeight.js: {}
     js/egopowerplus.js: {}
   dependencies:
     - core/jquery

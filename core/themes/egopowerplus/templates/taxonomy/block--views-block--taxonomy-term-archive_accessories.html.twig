@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a page intro block.
+ * Theme override for term taxonomy for accessories
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -25,32 +25,19 @@
  * @see template_preprocess_block()
  */
 #}
-
 {%
   set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'content_block content_block_' ~ content.field_strapline_style['#items'][0].value
+    'content_block',
+    'content_block_range_list_3_across'
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {% if content.field_pill_caption|render %}
-    <span class="pill_caption">
-      <span>{{ content.field_pill_caption }}</span>
-    </span>
-  {% endif %}
-  <div class="intro_text">
+  <div class="range_list_3_across">
     {% block content %}
-      <div class="intro_title{% if content.field_include_rule['#items'][0].value == false %} no-rule{% endif %}">
-        {{ content.field_strapline }}
-      </div>
-      {{ content.body }}
-      {% if content.field_banner|render %}
-        <span class="banner">
-          <span>{{ content.field_banner }}</span>
-        </span>
-      {% endif %}
+        {{ content }}
     {% endblock %}
   </div>
 </div>

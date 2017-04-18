@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a page intro block.
+ * Theme override to display image label blocks.
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -25,32 +25,37 @@
  * @see template_preprocess_block()
  */
 #}
-
 {%
   set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'content_block content_block_' ~ content.field_strapline_style['#items'][0].value
+    'content_block content_block_labelled_product_image',
+    content.field_background_style['#items'][0].value
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {% if content.field_pill_caption|render %}
-    <span class="pill_caption">
-      <span>{{ content.field_pill_caption }}</span>
-    </span>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
-  <div class="intro_text">
+  {{ title_suffix }}
+  <div class="labelled_product_image">
     {% block content %}
-      <div class="intro_title{% if content.field_include_rule['#items'][0].value == false %} no-rule{% endif %}">
-        {{ content.field_strapline }}
+      <div class="product_image">
+        <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" />
+        <div class="overlay active" style="background-image: url({{ file_url(content.field_overlay_image.0['#item'].entity.uri.value) }}); ?>"></div>
       </div>
-      {{ content.body }}
-      {% if content.field_banner|render %}
-        <span class="banner">
-          <span>{{ content.field_banner }}</span>
-        </span>
-      {% endif %}
+      <div class="labels_key">
+        <div class="labels_toggle active">
+          Display Labels
+          <span class="switch"></span>
+        </div>
+        <ol class="key_items">
+          {{ content.field_labels }}
+        </ol>
+        <div class="arc56_logo"></div>
+      </div>
     {% endblock %}
   </div>
 </div>

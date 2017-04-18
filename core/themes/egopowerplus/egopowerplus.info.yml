@@ -12,4 +12,6 @@ regions:
   header_search_location: Header Search and Location Area
   header_sign_in: Header Sign In Area
   content: Content
-  footer: Footer
+  lead_out : Lead Out
+  footer_menus: Footer Menus
+  footer_social: Footer Social

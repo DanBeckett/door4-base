@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a page intro block.
+ * Theme override to display a "uniqueness" block CSS has dictacted including "home" in classnames, does this need to be made extendable?
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -25,32 +25,33 @@
  * @see template_preprocess_block()
  */
 #}
-
 {%
   set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'content_block content_block_' ~ content.field_strapline_style['#items'][0].value
+    'content_block content_block_home_uniqueness_banner'
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {% if content.field_pill_caption|render %}
-    <span class="pill_caption">
-      <span>{{ content.field_pill_caption }}</span>
-    </span>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
-  <div class="intro_text">
-    {% block content %}
-      <div class="intro_title{% if content.field_include_rule['#items'][0].value == false %} no-rule{% endif %}">
-        {{ content.field_strapline }}
+  {{ title_suffix }}
+  <div class="home_uniqueness_banner">
+  {% block content %}
+      <div class="graphic">
+        {% if content.field_image_standard.0['#item'].entity.uri.value %}
+         <img class="standard" src="{{ file_url(content.field_image_standard.0['#item'].entity.uri.value) }}" />
+        {% endif %}
+        {% if content.field_image_svg.0['#file'].uri.value %}
+         <img class="svg" src="{{ file_url(content.field_image_svg.0['#file'].uri.value) }}" />
+        {% endif %}
       </div>
-      {{ content.body }}
-      {% if content.field_banner|render %}
-        <span class="banner">
-          <span>{{ content.field_banner }}</span>
-        </span>
-      {% endif %}
-    {% endblock %}
+      <div class="caption">
+       {{ content.field_caption['#items'].0.value }}
+      </div>
+  {% endblock %}
   </div>
 </div>

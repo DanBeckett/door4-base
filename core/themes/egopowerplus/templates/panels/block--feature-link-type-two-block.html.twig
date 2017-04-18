@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a page intro block.
+ * Theme override to display a feature link block (type two).
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -25,32 +25,23 @@
  * @see template_preprocess_block()
  */
 #}
-
 {%
   set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'content_block content_block_' ~ content.field_strapline_style['#items'][0].value
+    'content_block content_block_feature_link_type_2',
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {% if content.field_pill_caption|render %}
-    <span class="pill_caption">
-      <span>{{ content.field_pill_caption }}</span>
-    </span>
-  {% endif %}
-  <div class="intro_text">
-    {% block content %}
-      <div class="intro_title{% if content.field_include_rule['#items'][0].value == false %} no-rule{% endif %}">
-        {{ content.field_strapline }}
-      </div>
+  {% block content %}
+    <div class="feature_link_type_2 {{ content.field_palette['#items'][0].value }}">
+      <h2> {{ content.field_title['#items'].0.value }}</h2>
       {{ content.body }}
-      {% if content.field_banner|render %}
-        <span class="banner">
-          <span>{{ content.field_banner }}</span>
-        </span>
-      {% endif %}
-    {% endblock %}
-  </div>
+      {{ content.field_link }}
+    </div>
+    <div class="image_overlay_wrapper">
+      <div class="image_overlay" style="background-image: url({{ file_url(content.field_image.0['#item'].entity.uri.value) }});"></div>
+    </div>
+  {% endblock %}
 </div>
