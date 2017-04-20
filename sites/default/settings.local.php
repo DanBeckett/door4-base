@@ -106,7 +106,6 @@ $settings['rebuild_access'] = TRUE;
  */
 $settings['skip_permissions_hardening'] = TRUE;
 
-​// Local development configuration.
 if (!defined('PANTHEON_ENVIRONMENT')) {
   // Database.
   $databases['default']['default'] = array (
