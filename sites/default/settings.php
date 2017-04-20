@@ -23,7 +23,6 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
-### PANTHEON DATABASE
 $databases['default']['default'] = array (
   'database' => 'pantheon',
   'username' => 'pantheon',
@@ -34,17 +33,5 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-### LOCAL DATABASE
-/*
-$databases['default']['default'] = array (
-  'database' => 'egopowerplus',
-  'username' => 'egopowerplus',
-  'password' => 'fbd0799696854ef4ba192a080f9f71b7',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);*/
 $settings['hash_salt'] = 'klrwZW6YTn5540ensN7myhnmzJd3RitOGLh7Uou2CQhbidisns4eBqFKtArUw3ON-pZIVr-6zQ';
 $settings['install_profile'] = 'standard';
