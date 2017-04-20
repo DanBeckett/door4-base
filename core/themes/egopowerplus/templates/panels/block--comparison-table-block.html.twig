@@ -1,0 +1,355 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'content_block content_block_' ~ content.field_table_to_display['#items'][0].value ~ '_table'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% block content %}
+    {% if content.field_table_to_display['#items'][0].value == 'blowers' %}
+
+      <div class="blowers_table">
+    
+        {% if content.field_title %}
+          <div class="title">{{ content.field_title }}</div>
+        {% endif %}
+
+         <table class="blowers" width="" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr class="headers">
+              <th scope="row">&nbsp;</th>
+              <td colspan="3" scope="col">LB6000E</td>
+              <td colspan="3" scope="col">LB4800E</td>
+              <td colspan="3" scope="col">LB5300E</td>
+              <td colspan="3" scope="col">LB5750E</td>
+              </tr>
+            <tr class="shaded">
+              <th scope="row">Constant Speed</th>
+              <td colspan="3">Yes</td>
+              <td colspan="3">Yes</td>
+              <td colspan="3">Yes</td>
+              <td colspan="3">Yes</td>
+            </tr>
+            <tr class="reduce-padding-bottom">
+              <th scope="row">Run Time</th>
+              <td class="no-right-border"><strong>2.5Ah</strong></td>
+              <td class="no-right-border"><strong>5.0Ah</strong></td>
+              <td><strong>7.5Ah</strong></td>
+              <td class="no-right-border"><strong>2.0Ah</strong></td>
+              <td class="no-right-border"><strong>5.0Ah</strong></td>
+              <td><strong>7.5Ah</strong></td>
+              <td class="no-right-border"><strong>2.5Ah</strong></td>
+              <td class="no-right-border"><strong>5.0Ah</strong></td>
+              <td><strong>7.5Ah</strong></td>
+              <td class="no-right-border"><strong>2.5Ah</strong></td>
+              <td class="no-right-border"><strong>5.0Ah</strong></td>
+              <td><strong>7.5Ah</strong></td>
+            </tr>
+            <tr class="reduce-padding-top reduce-padding-bottom">
+              <th scope="row">Low Speed</th>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">Up to 120 mins</td>
+              <td>-</td>
+              <td class="no-right-border">Up to 60 mins</td>
+              <td class="no-right-border">Up to 150 mins</td>
+              <td>Up to 225 mins</td>
+              <td class="no-right-border">Up to 75 mins</td>
+              <td class="no-right-border">Up to 150 mins</td>
+              <td>Up to 225 mins</td>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">Up to 150 mins</td>
+              <td>Up to 225 mins</td>
+            </tr>
+            <tr class="reduce-padding-top reduce-padding-bottom">
+              <th scope="row">High Speed</th>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">Up to 22 mins</td>
+              <td>-</td>
+              <td class="no-right-border">Up to 18 mins</td>
+              <td class="no-right-border">Up to 45 mins</td>
+              <td>Up to 70 mins</td>
+              <td class="no-right-border">Up to 22 mins</td>
+              <td class="no-right-border">Up to 44 mins</td>
+              <td>Up to 66 mins</td>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">Up to 18 mins</td>
+              <td>Up to 25 mins</td>
+            </tr>
+            <tr class="reduce-padding-top">
+              <th scope="row">Boost</th>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">Up to 15 mins</td>
+              <td>-</td>
+              <td class="no-right-border">Up to 10 mins</td>
+              <td class="no-right-border">Up to 25 mins</td>
+              <td>Up to 35 mins</td>
+              <td class="no-right-border">Up to 10 mins</td>
+              <td class="no-right-border">Up to 20 mins</td>
+              <td>Up to 30 mins</td>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">-</td>
+              <td>-</td>
+            </tr>
+            <tr class="shaded reduce-padding-bottom">
+              <th scope="row">&nbsp;</th>
+              <td class="no-right-border"><strong>LOW</strong></td>
+              <td class="no-right-border"><strong>HIGH</strong></td>
+              <td><strong>BOOST</strong></td>
+              <td class="no-right-border"><strong>LOW</strong></td>
+              <td class="no-right-border"><strong>HIGH</strong></td>
+              <td><strong>BOOST</strong></td>
+              <td class="no-right-border"><strong>LOW</strong></td>
+              <td class="no-right-border"><strong>HIGH</strong></td>
+              <td><strong>BOOST</strong></td>
+              <td class="no-right-border"><strong>LOW</strong></td>
+              <td class="no-right-border"><strong>HIGH</strong></td>
+              <td><strong>BOOST</strong></td>
+            </tr>
+            <tr class="shaded reduce-padding-top reduce-padding-bottom">
+              <th scope="row">Air Volume (m<sup>3</sup>/h)</th>
+              <td class="no-right-border">440</td>
+              <td class="no-right-border">850</td>
+              <td>1020</td>
+              <td class="no-right-border">420</td>
+              <td class="no-right-border">650</td>
+              <td>810</td>
+              <td class="no-right-border">440</td>
+              <td class="no-right-border">675</td>
+              <td>900</td>
+              <td class="no-right-border">440</td>
+              <td class="no-right-border">977</td>
+              <td>-</td>
+            </tr>
+            <tr class="shaded reduce-padding-top reduce-padding-bottom">
+              <th scope="row">Air Speed (km/h)</th>
+              <td class="no-right-border">80</td>
+              <td class="no-right-border">160</td>
+              <td>192</td>
+              <td class="no-right-border">72</td>
+              <td class="no-right-border">120</td>
+              <td>148</td>
+              <td class="no-right-border">80</td>
+              <td class="no-right-border">136</td>
+              <td>176</td>
+              <td class="no-right-border">80</td>
+              <td class="no-right-border">212</td>
+              <td>-</td>
+            </tr>
+            <tr class="shaded reduce-padding-top">
+              <th scope="row">Force (N)</th>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">19</td>
+              <td>-</td>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">-</td>
+              <td>13</td>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">-</td>
+              <td>16</td>
+              <td class="no-right-border">-</td>
+              <td class="no-right-border">18</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">Speed Setting</th>
+              <td colspan="3">-</td>
+              <td colspan="3">Variable speed with boost</td>
+              <td colspan="3">Variable speed with boost</td>
+              <td colspan="3">Variable speed with boost</td>
+            </tr>
+            <tr class="shaded">
+              <th scope="row">Weight Without Battery</th>
+              <td colspan="3">-</td>
+              <td colspan="3">2.3g</td>
+              <td colspan="3">2.2kg</td>
+              <td colspan="3">2.2kg</td>
+            </tr>
+            <tr>
+              <th scope="row">Motor Type</th>
+              <td colspan="3">Brushless</td>
+              <td colspan="3">Brushless</td>
+              <td colspan="3">Brushless</td>
+              <td colspan="3">Brushless</td>
+            </tr>
+            <tr class="shaded">
+              <th scope="row">Noise Rating</th>
+              <td colspan="3">83LpA / 97LwA</td>
+              <td colspan="3">82LpA / 97LwA</td>
+              <td colspan="3">82LpA / 97LwA</td>
+              <td colspan="3">83LpA / 95LwA</td>
+            </tr>
+            <tr>
+              <th scope="row">Vibration (m/s<sup>2</sup>)</th>
+              <td colspan="3">1.5</td>
+              <td colspan="3">1.1</td>
+              <td colspan="3">1.35</td>
+              <td colspan="3">1.4</td>
+            </tr>
+          </tbody>
+        </table>
+
+        {% if content.body %}
+          <div class="footnote">{{ content.body }}</div>
+        {% endif %}
+    
+      </div>
+
+    {% elseif content.field_table_to_display['#items'][0].value == 'batteries' %}
+
+      <div class="batteries_table">
+      
+        {% if content.field_title %}
+          <div class="title">{{ content.field_title }}</div>
+        {% endif %}
+
+          <table class="batteries" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr class="title">
+                <td colspan="8">Performance statistics</td>
+              </tr>
+              <tr class="battery">
+                <td colspan="2" class="label">Battery</td>
+                <td>2.0Ah</td>
+                <td>2.0Ah</td>
+                <td>2.0Ah</td>
+                <td>2.0Ah</td>
+                <td>2.0Ah</td>
+                <td>Backpack Battery</td>
+              </tr>
+              <tr class="capacity">
+                <td colspan="2" class="label">Capacity (WH/AH)</td>
+                <td>112/2.0</td>
+                <td>112/2.0</td>
+                <td>112/2.0</td>
+                <td>112/2.0</td>
+                <td>112/2.0</td>
+                <td>1299Wh at 56v rated</td>
+              </tr>
+              <tr class="charge_times">
+                <td rowspan="2" class="label">Charge times</td>
+                <td class="label">Rapid charger</td>
+                <td>25 mins</td>
+                <td>25 mins</td>
+                <td>25 mins</td>
+                <td>25 mins</td>
+                <td>25 mins</td>
+                <td>XX mins</td>
+              </tr>
+              <tr class="charge_times">
+                <td class="label">Standard charger</td>
+                <td>40 mins</td>
+                <td>40 mins</td>
+                <td>40 mins</td>
+                <td>40 mins</td>
+                <td>40 mins</td>
+                <td>NA</td>
+              </tr>
+              <tr class="weight">
+                <td colspan="2" class="label">Weight</td>
+                <td>1.3kg</td>
+                <td>1.3kg</td>
+                <td>1.3kg</td>
+                <td>1.3kg</td>
+                <td>1.3kg</td>
+                <td>7.8kg without harness</td>
+              </tr>
+            </tbody>
+          </table>
+
+          {% if content.body %}
+            <div class="footnote">{{ content.body }}</div>
+          {% endif %}
+      
+      </div><!-- .batteries_table -->
+
+    {% elseif content.field_table_to_display['#items'][0].value == 'standard' %}
+
+      <div class="standard_table">
+    
+        {% if content.field_title %}
+          <h2>{{ content.field_title }}</h2>
+        {% endif %}
+          
+          <table class="standard" width="" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">CS1400E</th>
+                <th scope="col">CS1600E</th>
+              </tr>
+              <tr>
+                <th scope="row">Blade length</th>
+                <td>35cm</td>
+                <td>35cm</td>
+              </tr>
+              <tr>
+                <th scope="row">Chain speed</th>
+                <td>12.0m/s</td>
+                <td>12.0m/s</td>
+              </tr>
+              <tr>
+                <th scope="row">Run time*</th>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <th scope="row">Chain bar</th>
+                <td>AG1400</td>
+                <td>AG1400</td>
+              </tr>
+              <tr>
+                <th scope="row">Chain type</th>
+                <td>AC1400</td>
+                <td>AC1400</td>
+              </tr>
+              <tr>
+                <th scope="row">Oil reservoir</th>
+                <td>150ml</td>
+                <td>150ml</td>
+              </tr>
+              <tr>
+                <th scope="row">Weight without battery</th>
+                <td>3.7kg</td>
+                <td>3.7kg</td>
+              </tr>
+            </tbody>
+          </table>
+                  
+          {% if content.body %}
+            <div class="footnote">{{ content.body }}</div>
+          {% endif %}
+
+      </div>
+
+    {% endif %}
+  {% endblock %}
+</div>

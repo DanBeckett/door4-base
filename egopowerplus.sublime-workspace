@@ -100,208 +100,55 @@
 	"buffers":
 	[
 		{
-			"file": "core/themes/bartik/templates/page.html.twig",
+			"file": "core/themes/egopowerplus/templates/panels/block--feature-panels-block.html.twig",
 			"settings":
 			{
-				"buffer_size": 4956,
+				"buffer_size": 3023,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/layout/header.html.twig",
+			"file": "core/themes/egopowerplus/templates/panels/block--single-image-block.html.twig",
 			"settings":
 			{
-				"buffer_size": 1105,
+				"buffer_size": 1595,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/layout/region--header_search_location.html.twig",
+			"file": "core/themes/egopowerplus/templates/panels/block--our-story-intro-block.html.twig",
 			"settings":
 			{
-				"buffer_size": 174,
+				"buffer_size": 1522,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/navigation/menu--header-navigation.html.twig",
+			"file": "core/themes/egopowerplus/templates/panels/block--our-story-content-block.html.twig",
 			"settings":
 			{
-				"buffer_size": 1722,
+				"buffer_size": 1782,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/navigation/menu--header-sign-in-menu.html.twig",
+			"file": "core/themes/egopowerplus/templates/layout/node--product--full.html.twig",
 			"settings":
 			{
-				"buffer_size": 1830,
+				"buffer_size": 7645,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/navigation/menu--header-location-dropdowns.html.twig",
+			"file": "core/themes/egopowerplus/templates/field/field--node--field-features--product.html.twig",
 			"settings":
 			{
-				"buffer_size": 2125,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/css/sass/large.scss",
-			"settings":
-			{
-				"buffer_size": 58628,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/html.html.twig",
-			"settings":
-			{
-				"buffer_size": 1723,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/views/views-view.html.twig",
-			"settings":
-			{
-				"buffer_size": 2640,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/views/views-view-unformatted.html.twig",
-			"settings":
-			{
-				"buffer_size": 653,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/page.html.twig",
-			"settings":
-			{
-				"buffer_size": 4139,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/block/block.html.twig",
-			"settings":
-			{
-				"buffer_size": 1540,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/panels/block--heading-image-block.html.twig",
-			"settings":
-			{
-				"buffer_size": 1579,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/panels/block--page-intro-block.html.twig",
-			"settings":
-			{
-				"buffer_size": 1604,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/panels/block--warranty-block.html.twig",
-			"settings":
-			{
-				"buffer_size": 1559,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/taxonomy/node--product--teaser.html.twig",
-			"settings":
-			{
-				"buffer_size": 4612,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/taxonomy/taxonomy-term--3.html.twig",
-			"settings":
-			{
-				"buffer_size": 1121,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-block-1.html.twig",
-			"settings":
-			{
-				"buffer_size": 1509,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/field/field--block-content--field-review-slides--review-slider-block.html.twig",
-			"settings":
-			{
-				"buffer_size": 2608,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/egopowerplus.libraries.yml",
-			"settings":
-			{
-				"buffer_size": 319,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/js/egopowerplus.js",
-			"settings":
-			{
-				"buffer_size": 350,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/egopowerplus.theme",
-			"settings":
-			{
-				"buffer_size": 682,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/field/field.html.twig",
-			"settings":
-			{
-				"buffer_size": 1948,
+				"buffer_size": 2799,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -314,7 +161,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 147.0,
+		"height": 167.0,
 		"last_filter": "tabs",
 		"selected_items":
 		[
@@ -384,43 +231,88 @@
 		"/Applications/MAMP/htdocs/egopowerplus",
 		"/Applications/MAMP/htdocs/egopowerplus/core",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/classy",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/classy/templates",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/classy/templates/block",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/classy/templates/content",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/classy/templates/views",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/sass",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/js",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/js/vendor",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/js/egopowerplus.js",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--node--field-product-image--product.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--taxonomy-term--field-product-range-logos--product-type.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--feature-link-type-two-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--feature-link-type-one-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--header_search_location.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--header-navigation.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--header-sign-in-menu.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--header-location-dropdowns.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/sass/large.scss",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/html.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--lead_out.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/views-view-unformatted.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/page.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-video--heading-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_accessories.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_accessories.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--one-battery-multiple-tools-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--action-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--video-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--comparison-table-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_chainsaws.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/taxonomy-term--product-type.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.info.yml",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-labels--labelled-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.theme",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--labelled-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.libraries.yml",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_blowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--page-intro-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--uniqueness-banner.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/bartik/templates/page.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/header.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-category-links.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_batteries.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/footer.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footermenuthree.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--footer-menus.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-social-menu.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footersocialmenu.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-menu-one.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footermenutwo.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footermenuone.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-menu-three.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-menu-two.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--product-category-sections.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--warranty-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--product--teaser.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_line_trimmers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_batteries.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-review-slides--review-slider-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/compiled/large.css",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_blowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_line_trimmers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_chainsaws.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/views-view.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--heading-image-block.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--review-slider-block.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-heading-content--heading-image-block.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--headersigninmenu.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.info.yml",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--header_sign_in.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region-header_sign_in.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-heading-line-two--heading-image-block.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-image--heading-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--heading-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.theme",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--header.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--search-form-block.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--header-location-dropdown.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.libraries.yml",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/footer.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/classy/templates/block/block--search-form-block.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--header-location-dropdowns.html.twig",
@@ -430,8 +322,6 @@
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block--search-form-block.html",
 		"/Applications/MAMP/htdocs/egopowerplus/sites/example.settings.local.php",
 		"/Applications/MAMP/htdocs/egopowerplus/sites/development.services.yml",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/page.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/html.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/.htaccess",
 		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/functions.php",
 		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-site-plugin/toyotafleet-site-plugin.php",
@@ -481,57 +371,7 @@
 		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/front-page.php",
 		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/modules/colours.scss",
 		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/category.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/theme.js",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_partners.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_statistics_block.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-espresso_events.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_call_to_action_zebra.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_landing_page_block.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_trustees_block.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_faq_block.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/taxonomy-espresso_event_categories.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/archive-espresso_events.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-young-clarets.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/partials/small.scss",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-ucfb.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-brierfield-mill.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-partners.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-single-team.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-staff.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/jquery.inview.min.js",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/home.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/plugins/event-espresso-mods.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_costing_block.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_detail_block.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_team_archive_block.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/single-espresso_events.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/event_cart.template.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-checkout.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/countup.js",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/footer.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_wysiwyg_w_image.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_course_archive_block.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/single-espresso_people.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-page.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/archive.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/image.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/single.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-post.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-calendar.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/jquery-countup.js",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-careers.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/fonts/bfcitc_icons/css/bfcitc_icons.css",
-		"/Users/danbeckett/Desktop/Screen Shot 2016-10-21 at 10.49.23.png",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/plugins/eea-multi-event-registration/templates/event_cart.template.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-trustees.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-basic.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/page-templates/page-faqs.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/header.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/content-social-footer.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_banner_image.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content_section_title.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/inc_flexible_content.php"
+		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/theme.js"
 	],
 	"find":
 	{
@@ -549,6 +389,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"strapline",
+			"span.banner",
+			"classes",
 			"header",
 			"search",
 			"saerch",
@@ -673,10 +516,7 @@
 			"mobile-trigger",
 			"global-wrapper",
 			"'bm'",
-			"jquery",
-			".on",
-			"col-md-8",
-			"page-title"
+			"jquery"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -694,236 +534,55 @@
 	"groups":
 	[
 		{
-			"selected": 15,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "core/themes/bartik/templates/page.html.twig",
+					"file": "core/themes/egopowerplus/templates/panels/block--feature-panels-block.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4956,
+						"buffer_size": 3023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2439,
-								2445
+								2079,
+								2160
 							]
 						],
 						"settings":
 						{
+							"open_with_edit": true,
 							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 47.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "core/themes/egopowerplus/templates/layout/header.html.twig",
+					"file": "core/themes/egopowerplus/templates/panels/block--single-image-block.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1105,
+						"buffer_size": 1595,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								348,
-								348
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "core/themes/egopowerplus/templates/layout/region--header_search_location.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 174,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								174,
-								174
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "core/themes/egopowerplus/templates/navigation/menu--header-navigation.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1722,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1421,
-								1421
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "core/themes/egopowerplus/templates/navigation/menu--header-sign-in-menu.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1830,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1198,
-								1198
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "core/themes/egopowerplus/templates/navigation/menu--header-location-dropdowns.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2125,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								782,
-								782
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 173.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "core/themes/egopowerplus/css/sass/large.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 58628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								29597,
-								29605
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 22259.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "core/themes/egopowerplus/templates/html.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1723,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1586,
-								1572
+								1182,
+								1182
 							]
 						],
 						"settings":
@@ -941,20 +600,51 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "core/themes/egopowerplus/templates/views/views-view.html.twig",
+					"buffer": 2,
+					"file": "core/themes/egopowerplus/templates/panels/block--our-story-intro-block.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2640,
+						"buffer_size": 1522,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1587,
-								1587
+								1263,
+								1263
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "core/themes/egopowerplus/templates/panels/block--our-story-content-block.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1517,
+								1517
 							]
 						],
 						"settings":
@@ -972,79 +662,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "core/themes/egopowerplus/templates/views/views-view-unformatted.html.twig",
+					"buffer": 4,
+					"file": "core/themes/egopowerplus/templates/layout/node--product--full.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 653,
+						"buffer_size": 7645,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								622,
-								622
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "core/themes/egopowerplus/templates/page.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4139,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4122,
-								4122
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "core/themes/egopowerplus/templates/block/block.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1540,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1244,
-								1244
+								4987,
+								4987
 							]
 						],
 						"settings":
@@ -1055,150 +686,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "core/themes/egopowerplus/templates/panels/block--heading-image-block.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1579,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1445,
-								1445
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "core/themes/egopowerplus/templates/panels/block--page-intro-block.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1604,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								58,
-								58
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "core/themes/egopowerplus/templates/panels/block--warranty-block.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1559,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1443,
-								1443
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "core/themes/egopowerplus/templates/taxonomy/node--product--teaser.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4612,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4420,
-								4420
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 392.0,
+						"translation.y": 1189.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "core/themes/egopowerplus/templates/taxonomy/taxonomy-term--3.html.twig",
+					"buffer": 5,
+					"file": "core/themes/egopowerplus/templates/field/field--node--field-features--product.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1121,
+						"buffer_size": 2799,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								913,
-								913
+								1867,
+								1867
 							]
 						],
 						"settings":
@@ -1209,189 +717,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 267.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-block-1.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1509,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1484,
-								1484
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "core/themes/egopowerplus/templates/field/field--block-content--field-review-slides--review-slider-block.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2608,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2076,
-								2076
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 326.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "core/themes/egopowerplus/egopowerplus.libraries.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 319,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								236,
-								236
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "core/themes/egopowerplus/js/egopowerplus.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								349,
-								349
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "core/themes/egopowerplus/egopowerplus.theme",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 682,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								679,
-								679
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "core/themes/egopowerplus/templates/field/field.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1948,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								1948
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -1478,7 +807,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 271.0,
+	"side_bar_width": 383.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

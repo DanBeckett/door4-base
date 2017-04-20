@@ -16,6 +16,39 @@ jQuery(window).load(function() {
 		});
 	};
 
+	if(jQuery('div.single_product_details div.thumbnails_panel').length > 0) {
+		jQuery('div.single_product_details div.thumbnails_panel').flexslider({
+			animation: 'slide',
+			controlNav: false,
+			directionNav: true,
+			animationLoop: false,
+			slideshow: false,
+			itemWidth: 108,
+			itemMargin: 0,
+			prevText: "&#xf104;",
+			nextText: "&#xf105;",
+			asNavFor: 'div.single_product_details div.slide_panel',
+			start: function(){
+				 jQuery('div.single_product_details div.thumbnails_panel').addClass('active'); 
+			},
+		});
+	
+	};
+
+	if(jQuery('div.single_product_details div.slide_panel').length > 0) {
+		jQuery('div.single_product_details div.slide_panel').flexslider({
+			animation: 'fade',
+			controlNav: false,
+			directionNav: false,
+			animationLoop: false,
+			slideshow: false,
+			sync: 'div.single_product_details div.thumbnails_panel',
+			start: function(){
+				 jQuery('div.single_product_details div.slide_panel').addClass('active'); 
+			},
+		});
+	};
+
 	/*-- MatchHeight --*/
 
 	var matchEls = [
