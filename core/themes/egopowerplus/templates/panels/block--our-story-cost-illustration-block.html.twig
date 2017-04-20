@@ -1,0 +1,149 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'content_block content_block_our_story_cost_illustration'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+
+  <div class="our_story_cost_illustration">
+
+      <div class="unit_costs">
+
+          <div class="cost_per_unit">
+          
+              <span>Cost per charge*</span><br>
+              Cost per litre**
+          
+          </div><!-- .cost_per_unit -->
+
+          <div class="price charge">
+          
+            <div class="value"><span>£0.30</span></div>
+              
+              <div class="label">EGO Power<sup>+</sup></div>
+          
+          </div><!-- price charge -->
+          
+          <div class="price two_stroke">
+          
+            <div class="value"><span>£1.93</span></div>
+              
+              <div class="label">Using 2 stroke mix</div>
+          
+          </div><!-- price two_stroke -->
+          
+          <div class="price two_stroke_premium">
+          
+            <div class="value"><span>£1.93</span></div>
+              
+              <div class="label">Using 2 stroke<br>premium mix</div>
+          
+          </div><!-- price two_stroke -->
+      
+      </div><!-- .unit_costs -->
+      
+      <ul class="trimmer_silhouettos">
+      
+        <li>
+        
+              <div class="silhouetto ego_power">
+              
+                <img src="images/blocks/our_story_cost_illustration/our_story_cost_illustration_ego_power_trimmer.png">
+              
+              </div><!-- .silhouetto -->
+          
+          </li>
+          
+        <li>
+        
+              <div class="silhouetto petrol">
+              
+                <img src="images/blocks/our_story_cost_illustration/our_story_cost_illustration_petrol_trimmer.png">
+              
+              </div><!-- .silhouetto -->
+          
+          </li>  
+      
+      </ul><!-- i see a little silhouetto of a hedge trimmer -->
+      
+      <div class="price_calc_labels">
+
+          <div class="label charge">EGO Power<sup>+</sup></div>
+
+          <div class="label two_stroke">Using 2 stroke mix</div>
+
+          <div class="label two_stroke_premium">Using 2 stroke<br>premium mix</div>
+
+      </div><!-- .price_calc_labels -->
+      
+      <div class="cost_per day">
+      
+        <div class="label">Cost per day</div>
+
+          <div class="value charge">£0.30</div>
+
+          <div class="value two_stroke">£5.79</div>
+
+          <div class="value two_stroke_premium">£12.00</div>
+
+      </div><!-- .cost_per day -->
+      
+      <div class="cost_per month">
+      
+        <div class="label">Cost per month</div>
+
+          <div class="value charge">£6.50</div>
+
+          <div class="value two_stroke">£125.45</div>
+
+          <div class="value two_stroke_premium">£250.00</div>
+
+      </div><!-- .cost_per month -->
+      
+      <div class="cost_per year">
+      
+        <div class="label">Cost per year</div>
+
+          <div class="value charge"><span class="box"><span>£78.00</span></span></div>
+
+          <div class="value two_stroke"><span class="box"><span>£1,505</span></span></div>
+
+          <div class="value two_stroke_premium"><span class="box"><span>£3,120</span></span></div>
+
+      </div><!-- .cost_per year -->
+      
+      <p class="footnote">*Cost of charging according to kW pricing in UK.  **Cost of petrol mix based on published UK pricing.  †Petrol equivalent of 3 litres per day.</p>
+
+  </div><!-- .our_story_cost_illustration -->
+
+</div>
