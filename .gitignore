@@ -7,6 +7,9 @@ files/*
 # Place local settings in settings.local.php
 sites/*/settings.local.php
 
+# DB - If determined necessary, don't push settings file changes locally (Database connection is changed)
+# sites/*/settings.php
+
 # Note that services.local.yml is not loaded by default. If you would like
 # to use this file add the following to your settings.local.php file:
 #   $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
