@@ -1,0 +1,167 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'content_block content_block_our_story_the_power_illustration'
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+
+  <div class="the_power_illustration_wrapper">
+     
+      <div class="the_power_illustration">
+         
+         <div class="left_panel">
+
+              <div class="info_panel">
+              
+                <img class="dimensional_assurance" src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_322_434.png">
+                  
+                  <div class="content">
+                  
+                    <div class="icon" style="background-image:url(/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/the_power_icon_test.png);"><img src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_100_100.png"></div>
+                      
+                      <div class="title">Zero emissions<br>during use</div>
+                      
+                      <p>Our Arc Lithium battery gives petrol-matching power but without the fuss and fumes</p>
+                  
+                  </div><!-- .content -->
+              
+              </div><!-- .info_panel -->
+              
+              <div class="info_panel">
+              
+                <img class="dimensional_assurance" src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_322_434.png">
+                  
+                  <div class="content">
+                  
+                    <div class="icon" style="background-image:url(/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/the_power_icon_test.png);"><img src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_100_100.png"></div>
+                      
+                      <div class="title">Less noise and<br>less vibration</div>
+                      
+                      <p>EGO Power<sup>+</sup> tools often operate at lower noise and vibration levels than traditional petrol-powered tools</p>
+                  
+                  </div><!-- .content -->
+              
+              </div><!-- .info_panel -->
+         
+         </div><!-- .left_panel -->
+      
+         <div class="centre_panel">
+         
+              <div class="centre_circle_wrapper">
+              
+                <div class="centre_circle">
+                  
+                    <img src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_100_100.png">
+                      
+                      <div class="caption"><span>The power to</span><br>outperform petrol</div>
+                  
+                  </div><!-- .centre_circle -->
+              
+              </div><!-- .centre_circle_wrapper -->
+              
+              <div class="info_panel">
+              
+                <img class="dimensional_assurance" src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_322_434.png">
+                  
+                  <div class="content">
+                  
+                    <div class="icon" style="background-image:url(/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/the_power_icon_test.png);"><img src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_100_100.png"></div>
+                      
+                      <div class="title">Easy set up<br>and starting</div>
+                      
+                      <p>No filling up with fuel; with EGO Power<sup>+</sup> just click in the battery and get to work</p>
+                  
+                  </div><!-- .content -->
+              
+              </div><!-- .info_panel -->
+              
+              <div class="info_panel">
+              
+                <img class="dimensional_assurance" src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_322_434.png">
+                  
+                  <div class="content">
+                  
+                    <div class="icon" style="background-image:url(/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/the_power_icon_test.png);"><img src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_100_100.png"></div>
+                      
+                      <div class="title">Lower running<br>costs</div>
+                      
+                      <p>The cost of running an EGO Power<sup>+</sup> product for a month is around the same as using a 2 stroke product for a dayˆ</p>
+                  
+                  </div><!-- .content -->
+              
+              </div><!-- .info_panel -->
+         
+         </div><!-- .centre_panel -->
+      
+         <div class="right_panel">
+         
+              <div class="info_panel">
+              
+                <img class="dimensional_assurance" src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_322_434.png">
+                  
+                  <div class="content">
+                  
+                    <div class="icon" style="background-image:url(/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/the_power_icon_test.png);"><img src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_100_100.png"></div>
+                      
+                      <div class="title">No petrol<br>to store</div>
+                      
+                      <p>Instead, EGO’s rapid charger refuels batteries in as little as 25 minutes – less than the run time you get from a full charge</p>
+                  
+                  </div><!-- .content -->
+              
+              </div><!-- .info_panel -->
+              
+              <div class="info_panel">
+              
+                <img class="dimensional_assurance" src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_322_434.png">
+                  
+                  <div class="content">
+                  
+                    <div class="icon" style="background-image:url(/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/the_power_icon_test.png);"><img src="/{{ base_path ~ directory }}/images/blocks/our_story_the_power_illustration/dimensional_assurance_100_100.png"></div>
+                      
+                      <div class="title">Fold flat, easy<br>store design</div>
+                      
+                      <p>Unlike large heavy petrol mowers, the EGO Power<sup>+</sup> mower’s fold flat design makes storage and cleaning simple</p>
+                  
+                  </div><!-- .content -->
+              
+              </div><!-- .info_panel -->
+         
+         </div><!-- .right_panel -->
+      
+      </div><!-- .the_power_illustration-->
+  
+  </div><!-- .the_power_illustration_wrapper -->
+
+</div>

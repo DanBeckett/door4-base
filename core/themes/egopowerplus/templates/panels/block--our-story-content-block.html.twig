@@ -36,10 +36,14 @@
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
     <div class="our_story_content {{ content.field_background_style['#items'][0].value }}">
-      <div class="title">
-        <span>{{ content.field_strapline_line_one['#items'][0].value }}</span><br>
-        {{ content.field_strapline_line_two['#items'][0].value }}
-      </div>
+      {% if content.field_strapline_line_one['#items'][0].value or content.field_strapline_line_two['#items'][0].value %}
+
+        <div class="title">
+          <span>{{ content.field_strapline_line_one }}</span><br>
+          {{ content.field_strapline_line_two }}
+        </div>
+
+      {% endif %}
       
       {{ content.body }}
     
