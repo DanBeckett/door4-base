@@ -183,4 +183,6 @@
 
 </div>
 
-{{ content.field_features }}
+{% set taxonomy = content.field_product_type[0]['#title'] %}
+
+{% include '@egopowerplus/product/product-features--' ~ taxonomy|lower ~ '.html.twig' ignore missing %}

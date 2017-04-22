@@ -98,4 +98,19 @@ jQuery(window).load(function() {
 
 	};
 
+	/*-- YouTube Embeds --*/
+
+	if(jQuery('.play_button').length > 0) {
+
+		jQuery('.play_button').click(function(e){
+			var $this	=	jQuery(this),
+			    $img	=	$this.siblings('img'),
+			    $div	=	$this.siblings('div');
+			$this.hide();
+			$img.hide();
+			$div.show();
+		});
+
+	}
+
 });

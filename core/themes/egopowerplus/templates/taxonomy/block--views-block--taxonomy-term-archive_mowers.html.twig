@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for the our story video block. Videos yet to be linked in, not sure what source is (upload/YT?)
+ * Theme override for term taxonomy block 1 (chainsaws)
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -30,38 +30,14 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'content_block content_block_our_story_video',
+    'content_block',
+    'content_block_range_list_2_across_style_1'
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  <div class="our_story_video">
+  <div class="range_list_2_across_style_1">
     {% block content %}
-      <div class="video_panel">
-        <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" />
-        <span class="play_button"></span>
-        <div class="youtube-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ content.field_youtube_video_id['#items'][0].value }}?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <style type="text/css">
-          iframe {
-            width: 100%;
-          }
-          .youtube-container {
-            display: none;
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 51%;
-          }
-          .youtube-container iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0; top: 0;
-          }
-        </style>
-      </div>
+        {{ content }}
     {% endblock %}
   </div>
 </div>
