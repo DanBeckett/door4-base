@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for a field - labels stripped out.
+ * Theme override for the labels in a labelled image block.
  *
  * To override output, copy the "field.html.twig" from the templates directory
  * to your theme's directory and customize it, just like customizing other
@@ -45,11 +45,13 @@
     'field--label-' ~ label_display,
   ]
 %}
-{% for item in items %}
-  <li{{ attributes.addClass(classes) }}>
-    <span {{ item.attributes.addClass('field__item label') }}>{{ item.content['#paragraph'].field_label_title[0].value }}</span>
-    {% if item.content['#paragraph'].field_label_caption[0].value %}
-      <p>{{ item.content['#paragraph'].field_label_caption[0].value }}</p>
-    {% endif %}
-  </li>
-{% endfor %}
+<ol class="key_items">
+  {% for item in items %}
+    <li{{ attributes.addClass(classes) }}>
+      <span {{ item.attributes.addClass('field__item label') }}>{{ item.content['#paragraph'].field_label_title[0].value }}</span>
+      {% if item.content['#paragraph'].field_label_caption[0].value %}
+        <p>{{ item.content['#paragraph'].field_label_caption[0].value }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>

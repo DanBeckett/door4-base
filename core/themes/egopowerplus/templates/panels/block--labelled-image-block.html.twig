@@ -51,9 +51,11 @@
           Display Labels
           <span class="switch"></span>
         </div>
-        <ol class="key_items">
-          {{ content.field_labels }}
-        </ol>
+
+        {{ content.field_labels }}
+        
+        {{ content.field_labels_without_number }}
+
         <div class="arc56_logo"></div>
       </div>
     {% endblock %}
