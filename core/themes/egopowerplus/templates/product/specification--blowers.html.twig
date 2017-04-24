@@ -1,0 +1,480 @@
+{#
+/**
+ * @file
+ * Block to display the specification fields (if available) for blowers
+ *
+ * Fields: Run Time 2.0Ah - Low (mins)
+ * Run Time 2.0Ah - High (mins)
+ * Run Time 2.0Ah - Boost (mins)
+ * Run Time 4.0Ah - Low (mins)
+ * Run Time 4.0Ah - High (mins)
+ * Run Time 4.0Ah - Boost (mins)
+ * Run Time 5.0Ah - Low (mins)
+ * Run Time 5.0Ah - High (mins)
+ * Run Time 5.0Ah - Boost (mins)
+ * Run Time 7.5Ah - Low (mins)
+ * Run Time 7.5Ah - High (mins)
+ * Run Time 7.5Ah - Boost (mins)
+ * Air Volume - Low (m3/h)
+ * Air Volume - High (m3/h)
+ * Air Volume - Boost (m3/h)
+ * Air Speed - Low (km/h)
+ * Air Speed - High (km/h)
+ * Air Speed - Boost (km/h)
+ * Force (N) - Low | Blowers
+ * Force (N) - High
+ * Force (N) - Boost
+ * Speed Setting
+ * Weight without battery (kg)
+ * Motor Type
+ * Noise Rating LpA
+ * Noise Rating LwA
+ * Vibration (M/S)
+ */
+#}
+
+<div class="content_block content_block_single_product_specifications">
+
+	<div class="single_product_specifications">
+    
+		<div class="title">Specifications</div>
+
+  		<ul class="specifications">
+
+            {% if content.field_spec_run_time_2_boost|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 2.0Ah - Boost</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_2_boost }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_2_high|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 2.0Ah - High</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_2_high }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_2_low|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 2.0Ah - Low</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_2_low }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_4_boost|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 4.0Ah - Boost</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_4_boost }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_4_high|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 4.0Ah - High</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_4_high }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_4_low|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 4.0Ah - Low</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_4_low }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_5_boost|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 5.0Ah - Boost</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_5_boost }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_5_high|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 5.0Ah - High</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_5_high }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_5_low|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 5.0Ah - Low</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_5_low }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_75_boost|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 7.5Ah - Boost</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_75_boost }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_75_high|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 7.5Ah - High</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_75_high }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_run_time_75_low|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Run Time 7.5Ah - Low</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_75_low }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_air_speed_boost|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Air Speed - Boost</div>
+                        
+                        <div class="value">{{ content.field_spec_air_speed_boost }}km/h</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_air_speed_high|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Air Speed - High</div>
+                        
+                        <div class="value">{{ content.field_spec_air_speed_high }}km/h</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_air_speed_low|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Air Speed - Low</div>
+                        
+                        <div class="value">{{ content.field_spec_air_speed_low }}km/h</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_air_volume_boost|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Air Volume - Boost</div>
+                        
+                        <div class="value">{{ content.field_spec_air_volume_boost }}m3/h</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_air_volume_high|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Air Volume - High</div>
+                        
+                        <div class="value">{{ content.field_spec_air_volume_high }}m3/h</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_air_volume_low|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Air Volume - Low</div>
+                        
+                        <div class="value">{{ content.field_spec_air_volume_low }}m3/h</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_force_n_boost|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Force - Boost</div>
+                        
+                        <div class="value">{{ content.field_spec_force_n_boost }}N</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_force_n_high|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Force - High</div>
+                        
+                        <div class="value">{{ content.field_spec_force_n_high }}N</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_force_n_low|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Force - Low</div>
+                        
+                        <div class="value">{{ content.field_spec_force_n_low }}N</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_speed_setting|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Speed Setting</div>
+                        
+                        <div class="value">{{ content.field_spec_speed_setting }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_weight_wo_battery_kg|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Weight without battery</div>
+                        
+                        <div class="value">{{ content.field_spec_weight_wo_battery_kg }}kg</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_motor_type|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Motor Type</div>
+                        
+                        <div class="value">{{ content.field_spec_motor_type }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_noise_rating_lpa|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Noise Rating (LpA)</div>
+                        
+                        <div class="value">{{ content.field_spec_noise_rating_lpa }}lPa</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_noise_rating_lwa|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Noise Rating (LwA)</div>
+                        
+                        <div class="value">{{ content.field_spec_noise_rating_lwa }}LwA</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_vibration_ms|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Vibration</div>
+                        
+                        <div class="value">{{ content.field_spec_vibration_ms }}M/S</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+        </ul><!-- .specifications -->
+
+    </div><!-- .single_product_specifications -->
+
+</div>

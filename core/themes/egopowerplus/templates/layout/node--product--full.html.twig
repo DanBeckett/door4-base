@@ -162,20 +162,18 @@
               {% endif %}
             
             </ul><!-- .links -->
+
+            {% if node.field_show_product_info_section[0].value %} 
             
-            <p><strong>The Standard Kit includes</strong></p>
-            
-            <div class="includes_panel">
-            
-              <p>4.0Ah battery &amp; rapid charger</p>
-                
-                <!-- bit of a variation
-                
-                  <p class="exclamation"><strong>Not included</strong> &nbsp; <a href="#">Multi-Tool power head</a></p>
-                
-                -->
-            
-            </div><!-- .includes_panel -->
+              <p><strong>{{ node.field_product_info_lead_in_text[0].value }}</strong></p>
+              
+              <div class="includes_panel">
+              
+                {{ content.field_product_info_main_content }}
+              
+              </div><!-- .includes_panel -->
+
+            {% endif %}
         
         </div><!-- .info_panel -->
     
@@ -183,6 +181,8 @@
 
 </div>
 
-{% set taxonomy = content.field_product_type[0]['#title'] %}
+{% set taxonomy = content.field_product_type[0]['#title']|lower|replace({' ': '-', '&': ''})|replace({'--':'-'}) %}
 
-{% include '@egopowerplus/product/product-features--' ~ taxonomy|lower ~ '.html.twig' ignore missing %}
+{% include '@egopowerplus/product/product-features--' ~ taxonomy ~ '.html.twig' ignore missing %}
+
+{% include '@egopowerplus/product/specification--' ~ taxonomy ~ '.html.twig' ignore missing %}

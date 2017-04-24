@@ -86,7 +86,11 @@
   <div class="product">
     {% if not page %}
       <div class="image">
-        <img src="{{ file_url(node.field_product_image.entity.uri[0].value) }}" />
+        {% if node.field_grid_image.entity.uri[0].value %}
+          <img src="{{ file_url(node.field_grid_image.entity.uri[0].value) }}" />
+        {% else %}
+          <img src="{{ file_url(node.field_product_image.entity.uri[0].value) }}" />
+        {% endif %}
       </div>
       <div class="details">
         <div class="code">{{ node.field_sku[0].value }}</div>

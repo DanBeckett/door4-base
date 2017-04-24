@@ -1,0 +1,463 @@
+{#
+/**
+ * @file
+ * Block to display the specification fields (if available) for accessories
+ *
+ * Fields: Motor Type
+ * Rotating Direction
+ * Speed Control
+ * Drive Shaft Material
+ * Drive Tube Type
+ * Coupling Mechanism
+ * Weight (kg)
+ * Length (cm)
+ * Folded Length (cm)
+ * Barrier Bar 
+ * Blade Length (cm)
+ * Cutting Depth (mm)
+ * Blade Thickness (mm)
+ * Debris Guard Material
+ * Cutting Width (cm)
+ * Line Diameter (mm)
+ * Cutting Head
+ * Shaft Type
+ * Arbour Size (mm)
+ * Cutting Capacity (mm)
+ * Blade Type
+ * Fixed Cutting Angles
+ * Guide Bar Length
+ * Chain Pitch Gauge
+ * Cutting Diameter (mm)
+ * Oil Tank (ml)
+ */
+#}
+
+<div class="content_block content_block_single_product_specifications">
+
+	<div class="single_product_specifications">
+    
+		<div class="title">Specifications</div>
+
+  		<ul class="specifications">
+
+            {% if content.field_spec_motor_type|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Motor Type</div>
+                        
+                        <div class="value">{{ content.field_spec_motor_type }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_rotating_direction|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Rotating Direction</div>
+                        
+                        <div class="value">{{ content.field_spec_rotating_direction }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_speed_control|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Speed Control</div>
+                        
+                        <div class="value">{{ content.field_spec_speed_control }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_drive_shaft_material|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Drive Shaft Material</div>
+                        
+                        <div class="value">{{ content.field_spec_drive_shaft_material }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_drive_tube_type|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Drive Tube Type</div>
+                        
+                        <div class="value">{{ content.field_spec_drive_tube_type }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_coupling_mechanism|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Coupling Mechanism</div>
+                        
+                        <div class="value">{{ content.field_spec_coupling_mechanism }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_weight_kg|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Weight</div>
+                        
+                        <div class="value">{{ content.field_spec_weight_kg }}kg</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_length_cm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Length</div>
+                        
+                        <div class="value">{{ content.field_spec_length_cm }}cm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_folded_length_cm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Folded Length</div>
+                        
+                        <div class="value">{{ content.field_spec_folded_length_cm }}cm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_spec_barrier_bar|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Barrier Bar</div>
+                        
+                        <div class="value">{{ content.field_spec_spec_barrier_bar }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_blade_length_cm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Blade Length</div>
+                        
+                        <div class="value">{{ content.field_spec_blade_length_cm }}cm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_cutting_depth_mm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Cutting Depth</div>
+                        
+                        <div class="value">{{ content.field_spec_cutting_depth_mm }}mm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_blade_thickness_mm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Blade Thickness</div>
+                        
+                        <div class="value">{{ content.field_spec_blade_thickness_mm }}mm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_debris_guard_material|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Debris Guard Material</div>
+                        
+                        <div class="value">{{ content.field_spec_debris_guard_material }}Ah</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_cutting_width_cm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Cutting Width</div>
+                        
+                        <div class="value">{{ content.field_spec_cutting_width_cm }}cm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_line_diameter_mm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Line Diameter</div>
+                        
+                        <div class="value">{{ content.field_spec_line_diameter_mm }}mm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_cutting_head|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Cutting Head</div>
+                        
+                        <div class="value">{{ content.field_spec_cutting_head }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_shaft_type|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Shaft Type</div>
+                        
+                        <div class="value">{{ content.field_spec_shaft_type }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_arbour_size|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Arbour Size</div>
+                        
+                        <div class="value">{{ content.field_spec_arbour_size }}mm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_cutting_capacity_mm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Cutting Capacity</div>
+                        
+                        <div class="value">{{ content.field_spec_cutting_capacity_mm }}mm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_blade_type|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Blade Type</div>
+                        
+                        <div class="value">{{ content.field_spec_blade_type }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_fixed_cutting_angles|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Fixed Cutting Angles</div>
+                        
+                        <div class="value">{{ content.field_spec_fixed_cutting_angles }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_guide_bar_length|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Guide Bar Length</div>
+                        
+                        <div class="value">{{ content.field_spec_guide_bar_length }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_chain_pitch_gauge|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Chain Pitch Gauge</div>
+                        
+                        <div class="value">{{ content.field_spec_chain_pitch_gauge }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_cutting_diameter_mm|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Cutting Diameter</div>
+                        
+                        <div class="value">{{ content.field_spec_cutting_diameter_mm }}mm</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_oil_tank_ml|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Oil Tank</div>
+                        
+                        <div class="value">{{ content.field_spec_oil_tank_ml }}ml</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+        </ul><!-- .specifications -->
+
+    </div><!-- .single_product_specifications -->
+
+</div>

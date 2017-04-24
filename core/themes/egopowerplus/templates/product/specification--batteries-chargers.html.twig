@@ -1,0 +1,157 @@
+{#
+/**
+ * @file
+ * Block to display the specification fields (if available) for batteries
+ *
+ * Fields: Capacity (Ah)
+ * Capacity (Wh)
+ * Charge Times Rapid (mins)
+ * Charge Times Standard (min)
+ * Weight (kg)
+ * Harness
+ * Charging
+ * Life Cycle
+ */
+#}
+
+<div class="content_block content_block_single_product_specifications">
+
+	<div class="single_product_specifications">
+    
+		<div class="title">Specifications</div>
+
+  		<ul class="specifications">
+
+            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+        
+            	<li>
+                
+                	<div class="specification">
+                    
+                    	<div class="label">Capacity</div>
+                        
+                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_capacity_wh|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Capacity</div>
+                        
+                        <div class="value">{{ content.field_spec_capacity_wh }}Wh</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_charge_time_rapid|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Charge Time (Rapid)</div>
+                        
+                        <div class="value">{{ content.field_spec_charge_time_rapid }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_charge_time_standard|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Charge Time (Standard)</div>
+                        
+                        <div class="value">{{ content.field_spec_charge_time_standard }}mins</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_weight_kg|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Weight</div>
+                        
+                        <div class="value">{{ content.field_spec_weight_kg }}kg</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_harness|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Harness</div>
+                        
+                        <div class="value">{{ content.field_spec_harness }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_charging|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Charging</div>
+                        
+                        <div class="value">{{ content.field_spec_charging }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_life_cycle|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Life Cycle</div>
+                        
+                        <div class="value">{{ content.field_spec_life_cycle }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+        </ul><!-- .specifications -->
+
+    </div><!-- .single_product_specifications -->
+
+</div>
