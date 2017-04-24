@@ -17,7 +17,8 @@
  * Blade Tip Protector
  * Sound Pressure LpA
  * Sound Pressure LwA
- * Rotating Handle Vibration (M/S2)
+ * Rotating Handle 
+ * Vibration (M/S2)
  * Weight without battery (kg)
  * Motor Type
  */
@@ -31,15 +32,15 @@
 
   		<ul class="specifications">
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_blade_length_cm|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Blade Length</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_blade_length_cm }}cm</div>
                     
                     </div>
                 
@@ -47,15 +48,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_blade_gap_mm|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Blade Gap</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_blade_gap_mm }}mm</div>
                     
                     </div>
                 
@@ -63,15 +64,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_blade_tooth_depth_mm|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Blade Tooth Depth</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_blade_tooth_depth_mm }}mm</div>
                     
                     </div>
                 
@@ -79,15 +80,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_run_time_2|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Run Time 2.0Ah</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_run_time_2 }}mins</div>
                     
                     </div>
                 
@@ -95,15 +96,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_run_time_4|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Run Time 4.0Ah</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_run_time_4 }}mins</div>
                     
                     </div>
                 
@@ -111,15 +112,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_run_time_5|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Run Time 5.0Ah</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_run_time_5 }}mins</div>
                     
                     </div>
                 
@@ -127,15 +128,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_run_time_75|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Run Time 7.5Ah</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_run_time_75 }}mins</div>
                     
                     </div>
                 
@@ -143,15 +144,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_speed_control|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Speed Control</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_speed_control }}</div>
                     
                     </div>
                 
@@ -159,15 +160,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_no_load_speed_spm|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">No Load Speed</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_no_load_speed_spm }}spm</div>
                     
                     </div>
                 
@@ -175,15 +176,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_blade_type|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Blade Type</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_blade_type }}</div>
                     
                     </div>
                 
@@ -191,15 +192,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_cutting_action|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Cutting Action</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_cutting_action }}</div>
                     
                     </div>
                 
@@ -207,15 +208,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_blade_tip_protector|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Blade Tip Protector</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_blade_tip_protector }}</div>
                     
                     </div>
                 
@@ -223,15 +224,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_sound_pressure_lpa|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Sound Pressure</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_sound_pressure_lpa }}LpA</div>
                     
                     </div>
                 
@@ -239,15 +240,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_sound_pressure_lwa|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Sound Pressure</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_sound_pressure_lwa }}LwA</div>
                     
                     </div>
                 
@@ -255,15 +256,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_rotating_handle|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Rotating Handle</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_rotating_handle }}</div>
                     
                     </div>
                 
@@ -271,15 +272,15 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_vibration_ms2|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Vibration</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_vibration_ms2 }}M/S2</div>
                     
                     </div>
                 
@@ -287,15 +288,31 @@
 
             {% endif %}
 
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            {% if content.field_spec_weight_wo_battery_kg|render|trim is not empty %}
         
                 <li>
                 
                     <div class="specification">
                     
-                        <div class="label">Capacity</div>
+                        <div class="label">Weight without Battery</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
+                        <div class="value">{{ content.field_spec_weight_wo_battery_kg }}kg</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_motor_type|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Motor Type</div>
+                        
+                        <div class="value">{{ content.field_spec_motor_type }}</div>
                     
                     </div>
                 

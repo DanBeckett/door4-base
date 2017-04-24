@@ -38,6 +38,14 @@
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
+    <script type='text/javascript'>
+      (function (d, t) {
+        var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        bh.type = 'text/javascript';
+        bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=g8gjjyw7w3niibhlh56npq';
+        s.parentNode.insertBefore(bh, s);
+        })(document, 'script');
+    </script>
   </head>
   <body{{ attributes.addClass(body_classes) }}>
     {% include '@egopowerplus/layout/header.html.twig' %}
