@@ -23,6 +23,7 @@
  * Vibration (M/S)
  * Vertical Storage
  * Weight without battery (kg)
+ * Motor Type
  */
 #}
 
@@ -347,6 +348,22 @@
                         <div class="label">Weight without Battery</div>
                         
                         <div class="value">{{ content.field_spec_weight_wo_battery_kg }}kg</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_motor_type|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Motor Type</div>
+                        
+                        <div class="value">{{ content.field_spec_motor_type }}</div>
                     
                     </div>
                 
