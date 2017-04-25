@@ -40,8 +40,10 @@
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-  <div class="labelled_product_image">
+
+  <div class="labelled_product_image{% if content.field_flip_image_and_label_order %} lr-swap{% endif %}">
     {% block content %}
+      {{ content.field_titles }}
       <div class="product_image">
         <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" />
         <div class="overlay active" style="background-image: url({{ file_url(content.field_overlay_image.0['#item'].entity.uri.value) }}); ?>"></div>
