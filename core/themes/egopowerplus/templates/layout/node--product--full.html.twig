@@ -100,11 +100,11 @@
               <ul class="badges">
               
                 {% if node.field_badge_two_text[0].value %}
-                  <li class="info"><span>{{ node.field_badge_two_text }}</span></li>
+                  <li class="info"><span>{{ content.field_badge_two_text }}</span></li>
                 {% endif %}
                   
                 {% if node.field_badge_one_text[0].value %}
-                  <li{% if node.field_new_for_2017[0].value %} class="new"{% endif %}><span>{{ node.field_badge_one_text }}</span></li>
+                  <li{% if node.field_new_for_2017[0].value %} class="new"{% endif %}><span>{{ content.field_badge_one_text }}</span></li>
                 {% endif %}
               
               </ul><!-- .badges -->
