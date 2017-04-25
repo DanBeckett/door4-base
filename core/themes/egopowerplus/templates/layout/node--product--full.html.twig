@@ -93,7 +93,7 @@
         
           <div class="code">{{ node.field_sku[0].value }}</div>
             
-            <div class="product_name">{{ label }}</div>
+            <div class="product_name">{{ node.field_product_name[0].value }}</div>
             
               {% if node.field_badge_one_text[0].value or node.field_badge_two_text[0].value %}
 
@@ -119,7 +119,7 @@
             
             <div class="price">
             
-              <span>RRP</span><br>£{{ node.field_price[0].value }}
+              <span>RRP</span><br>&pound;{{ node.field_price[0].value }}
             
             </div><!-- .price -->
             
