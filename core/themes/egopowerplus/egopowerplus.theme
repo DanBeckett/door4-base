@@ -19,8 +19,10 @@ function egopowerplus_theme_suggestions_block_alter(&$suggestions, $variables) {
 }
 
 function egopowerplus_preprocess_html(&$variables) {
-  if ($variables['node_type'] == 'product' && ($node = \Drupal::routeMatch()->getParameter('node'))) {
-    $variables['meta_title'] = $node->field_meta_title->value;
-    $variables['meta_description'] = $node->field_meta_description->value;
+  if(isset($variables['node_type'])) {
+	if ($variables['node_type'] == 'product' && ($node = \Drupal::routeMatch()->getParameter('node'))) {
+	  $variables['meta_title'] = $node->field_meta_title->value;
+	  $variables['meta_description'] = $node->field_meta_description->value;
+	}
   }
 }
