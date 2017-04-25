@@ -23,6 +23,8 @@ $ego-darkest-grey: #333333;
 /* 'EGO Black' - #000000 - R.0 G.0 B.0 */
 $ego-black: #000000;
 
+/* 'EGO Blue' - #5c91a9 - R.92 G.145 B.169 */
+$ego-blue: #5c91a9;
 
 
 /* ========================== */
@@ -172,13 +174,20 @@ $ego-black: #000000;
 /* Intro Text Pill Caption */
 @mixin typography-mixin-intro-text-pill-caption {
 	font-weight:normal;
-	font-family: 'heroic_condensedblack', sans-serif;
+	font-family: 'heroic_condensedblack_italic', sans-serif;
 	font-size:66px;
 	line-height:66px;
-	letter-spacing:0.03em;
 	text-transform:uppercase;
 }
 
+/* Product Banner */
+@mixin typography-mixin-product-banner {
+	font-weight:normal;
+	font-family: 'heroic_condensedblack_italic', sans-serif;
+	font-size:38px;
+	line-height:38px;
+	text-transform:uppercase;
+}
 
 
 

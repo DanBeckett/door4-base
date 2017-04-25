@@ -1,4 +1,36 @@
 /* Styling overrides for screen size less than 1024px and greater than 640px */
+/*
+	Index of contents
+	============================================
+	1. Sass variables, mixins etc
+	2. Development aids
+	3. Fonts
+	4. Basic structural things
+	5. Mobile Menu
+	6. Header
+	7. Footer
+	8. WYSIWYG elements within div#main
+	9. Content Blocks
+	10. Extra fixes for small medium items
+	
+	============================================
+
+
+	Notes
+	--------------------------------------------
+	
+	Font names:
+	
+	font-family: 'heroic_condensedmedium', sans-serif;
+	font-family: 'heroic_condensedbold', sans-serif;
+	font-family: 'heroic_condensedblack', sans-serif;
+	
+	Arial is the main body font
+	
+*/
+/* ================================== */
+/* 1. Sass variables, mixins etc      */
+/* ================================== */
 /* ========================== */
 /* Colours                    */
 /* ========================== */
@@ -33,7 +65,28 @@
 /* Intro Text Pill Caption */
 /* Product Banner */
 @media only screen and (max-width: 1023px) and (min-width: 641px) {
+  /* ================================== */
+  /* 2. Development aids                */
+  /* ================================== */
+  /* ========================== */
+  /* 3. Fonts                   */
+  /* ========================== */
+  /* ========================== */
+  /* 4. Basic structural things */
+  /* ========================== */
   /* Main */
+  div#main {
+    padding-top: 177px; }
+
+  header.no_breadcrumb + div#main {
+    padding-top: 108px; }
+
+  /* ========================== */
+  /* 5. Mobile menu             */
+  /* ========================== */
+  /* ========================== */
+  /* 6. Header                  */
+  /* ========================== */
   /* Header */
   header {
     border-bottom-width: 6px; }
@@ -77,7 +130,52 @@
           margin: 0 4px; }
           header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li a {
             padding: 1px 12px 18px; }
+    header div#breadcrumb_bar_wrapper div#breadcrumb_bar {
+      padding: 0 14px 2px 14px;
+      /* */ }
+      header div#breadcrumb_bar_wrapper div#breadcrumb_bar div.breadcrumb {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 19px;
+        margin: 0;
+        /* */
+        padding: 6px 0 4px 0;
+        /* */
+        float: none;
+        /* */
+        width: auto;
+        /* */
+        font-size: 14px;
+        /* */
+        line-height: 26px;
+        /* */ }
+      header div#breadcrumb_bar_wrapper div#breadcrumb_bar div.anchors {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 19px;
+        margin: 0;
+        /* */
+        padding: 4px 0 6px 0;
+        /* */
+        float: none;
+        /* */
+        width: auto;
+        /* */
+        text-align: right;
+        /* */
+        font-size: 12px;
+        /* */
+        line-height: 20px;
+        /* */ }
+        header div#breadcrumb_bar_wrapper div#breadcrumb_bar div.anchors a.buy_online {
+          padding: 7px 15px 8px 15px; }
+          header div#breadcrumb_bar_wrapper div#breadcrumb_bar div.anchors a.buy_online i {
+            margin-left: 17px;
+            /* */ }
 
+  /* ========================== */
+  /* 7. Footer                  */
+  /* ========================== */
   /* Footer */
   footer div#footer_inner {
     padding: 28px 0 58px 0; }
@@ -112,21 +210,815 @@
         right: 50%;
         margin: 0 -137px 0 0; }
 
-  /* Content Block - Labelled Product Image - inc_block_labelled_product_image.php */
-  div#main div.content_block.content_block_labelled_product_image div.labelled_product_image {
-    padding: 0 20px 40px 20px;
-    max-width: 740px; }
-    div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.product_image {
-      width: 100%; }
-    div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key {
-      width: 100%;
-      padding-left: 0; }
+  /* ==================================== */
+  /* 8. WYSIWYG elements within div#main  */
+  /* ==================================== */
+  div#main h1 {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    padding: 16px 0 0 0; }
+  div#main h2 {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 70px;
+    line-height: 86px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    padding: 16px 0 0 0; }
+  div#main h3 {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 16px 0 0 0; }
+  div#main h4, div#main h5, div#main h6 {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 16px 0 0 0; }
+  div#main p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 12px 0 12px 0; }
+    div#main p img.alignright {
+      margin: 0 0 16px 16px;
+      padding: 0; }
+    div#main p img.alignleft {
+      margin: 0 16px 16px 0;
+      padding: 0; }
+  div#main ul {
+    padding: 16px 0 16px 24px; }
+    div#main ul li {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 6px 0 6px 0; }
+  div#main ol {
+    padding: 16px 0 16px 24px; }
+    div#main ol li {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 6px 0 6px 0; }
+
+  /* ========================== */
+  /* 9. Content blocks          */
+  /* ========================== */
+  /* Content Block - Action Links - inc_block_action_links.php */
+  /* Content Block - Batteries Table - inc_block_batteries_table.php */
+  div#main div.content_block.content_block_batteries_table div.batteries_table {
+    padding: 20px 20px 40px 20px;
+    /* */ }
+    div#main div.content_block.content_block_batteries_table div.batteries_table table.batteries tbody tr td {
+      padding: 8px 5px;
+      /* */ }
+      div#main div.content_block.content_block_batteries_table div.batteries_table table.batteries tbody tr td.label {
+        padding: 8px 5px;
+        /* */ }
+    div#main div.content_block.content_block_batteries_table div.batteries_table table.batteries tbody tr.title td {
+      padding: 8px 5px;
+      /* */ }
+    div#main div.content_block.content_block_batteries_table div.batteries_table table.batteries tbody tr.battery td {
+      font-size: 14px;
+      /* */ }
+
+  /* Content Block - Blog Article - inc_block_blog_article.php */
+  div#main div.content_block.content_block_blog_article div.blog_article {
+    padding: 0 20px;
+    /* */ }
+    div#main div.content_block.content_block_blog_article div.blog_article div.article_panel {
+      padding: 0 40px 0 60px;
+      /* */
+      width: 70%;
+      /* */ }
+      div#main div.content_block.content_block_blog_article div.blog_article div.article_panel article {
+        padding: 5px 0 20px 0;
+        /* */ }
+        div#main div.content_block.content_block_blog_article div.blog_article div.article_panel article h1 {
+          font-weight: normal;
+          font-family: 'heroic_condensedbold', sans-serif;
+          font-size: 60px;
+          line-height: 51px;
+          padding: 25px 0 25px 0; }
+        div#main div.content_block.content_block_blog_article div.blog_article div.article_panel article h2 {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 17px;
+          line-height: 25px;
+          font-size: 22px;
+          /* */
+          line-height: 26px;
+          /* */
+          font-weight: bold;
+          text-transform: none;
+          padding: 22px 0 3px 0;
+          /* */
+          letter-spacing: normal; }
+        div#main div.content_block.content_block_blog_article div.blog_article div.article_panel article div.subtitle {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 21px;
+          line-height: 33px;
+          font-weight: bold; }
+        div#main div.content_block.content_block_blog_article div.blog_article div.article_panel article ul.article_links li a {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 17px;
+          line-height: 25px; }
+      div#main div.content_block.content_block_blog_article div.blog_article div.article_panel div.gallery h2 {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+        letter-spacing: -1px; }
+      div#main div.content_block.content_block_blog_article div.blog_article div.article_panel ul.social_icons {
+        width: 30px;
+        /* */
+        top: 26px;
+        /* */ }
+        div#main div.content_block.content_block_blog_article div.blog_article div.article_panel ul.social_icons li {
+          font-size: 27px;
+          /* */
+          line-height: 27px;
+          /* */ }
+    div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel {
+      padding: 17px 0 0 0;
+      /* */
+      width: 30%;
+      /* */ }
+      div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel a.link_panel {
+        padding: 15px 15px 286px 15px;
+        /* */ }
+        div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel a.link_panel div.title {
+          font-weight: normal;
+          font-family: 'heroic_condensedbold', sans-serif;
+          font-size: 45px;
+          line-height: 42px;
+          text-transform: uppercase;
+          letter-spacing: -1px; }
+        div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel a.link_panel div.subtitle {
+          font-weight: normal;
+          font-family: 'heroic_condensedmedium', sans-serif;
+          font-size: 28px;
+          line-height: 28px;
+          letter-spacing: -1px; }
+        div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel a.link_panel span.link_button {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 13px;
+          line-height: 19px;
+          bottom: 15px;
+          /* */
+          left: 15px;
+          /* */ }
+          div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel a.link_panel span.link_button i {
+            margin-left: 12px;
+            /* */ }
+      div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text {
+        padding: 15px 15px 15px 15px;
+        /* */ }
+        div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text div.title {
+          font-weight: normal;
+          font-family: 'heroic_condensedbold', sans-serif;
+          font-size: 42px;
+          line-height: 40px;
+          letter-spacing: -1px;
+          padding: 3px 0 20px 0;
+          /* */ }
+        div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text ul.date_and_categories li {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 13px;
+          line-height: 19px; }
+
+  /* Content Block - Blog Index Featured Items - inc_block_blog_index_featured_items.php */
+  div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items {
+    padding: 0 10px;
+    /* */ }
+    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li {
+      width: 60%;
+      /* */ }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width {
+        width: 40%;
+        /* */ }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.double-width {
+        width: 60%;
+        /* */ }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item {
+        padding: 15px 15px 62px 15px;
+        /* */
+        min-height: 10px;
+        /* */ }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.title {
+          font-weight: normal;
+          font-family: 'heroic_condensedbold', sans-serif;
+          font-size: 45px;
+          line-height: 42px;
+          text-transform: uppercase;
+          letter-spacing: -1px;
+          width: 56%;
+          /* */ }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.excerpt {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 17px;
+          line-height: 25px;
+          width: 56%;
+          /* */ }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item ul.article_links {
+          bottom: 20px;
+          /* */
+          left: 15px;
+          /* */ }
+          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item ul.article_links li {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 19px; }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item.video span.play_button {
+          width: 100px;
+          /* */
+          height: 100px;
+          /* */
+          margin: -50px 0 0 -50px;
+          /* */ }
+
+  /* Content Block - Blog Index Links - inc_block_blog_index_links.php */
+  div#main div.content_block.content_block_blog_index_links {
+    padding: 0 10px 30px 10px;
+    /* */ }
+    div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li {
+      width: 50%;
+      /* */ }
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel div.title {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 42px;
+        line-height: 40px;
+        letter-spacing: -1px;
+        padding: 15px 15px 15px 15px;
+        /* */ }
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel ul.article_links {
+        padding: 0 15px 15px 15px;
+        /* */ }
+        div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel ul.article_links li {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 13px;
+          line-height: 19px; }
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li:nth-child(3n+1) {
+        clear: none;
+        /* */ }
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li:nth-child(2n+1) {
+        clear: left;
+        /* */ }
+    div#main div.content_block.content_block_blog_index_links a.load_more {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 19px; }
+
+  /* Content Block - Blowers Table - inc_block_blowers_table.php */
+  /* Content Block - Contact - inc_block_contact.php */
+  div#main div.content_block.content_block_contact div.contact {
+    padding: 38px 20px 0 20px;
+    /* */ }
+    div#main div.content_block.content_block_contact div.contact div.contact_main {
+      padding: 25px 20px 25px 0;
+      /* */
+      width: 60%;
+      /* */ }
+      div#main div.content_block.content_block_contact div.contact div.contact_main div.write_to_us {
+        width: 100%;
+        /* */ }
+        div#main div.content_block.content_block_contact div.contact div.contact_main div.write_to_us h3 {
+          font-weight: normal;
+          font-family: 'heroic_condensedbold', sans-serif;
+          font-size: 42px;
+          line-height: 40px;
+          text-transform: uppercase; }
+        div#main div.content_block.content_block_contact div.contact div.contact_main div.write_to_us a {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 17px;
+          line-height: 25px; }
+      div#main div.content_block.content_block_contact div.contact div.contact_main div.social {
+        width: 100%;
+        /* */ }
+        div#main div.content_block.content_block_contact div.contact div.contact_main div.social h3 {
+          font-weight: normal;
+          font-family: 'heroic_condensedbold', sans-serif;
+          font-size: 42px;
+          line-height: 40px;
+          text-transform: uppercase; }
+        div#main div.content_block.content_block_contact div.contact div.contact_main div.social ul.social li {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 17px;
+          line-height: 25px; }
+    div#main div.content_block.content_block_contact div.contact div.contact_sidebar {
+      width: 40%;
+      /* */ }
+      div#main div.content_block.content_block_contact div.contact div.contact_sidebar a.link_panel div.title {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 45px;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: -1px; }
+      div#main div.content_block.content_block_contact div.contact div.contact_sidebar a.link_panel div.subtitle {
+        font-weight: normal;
+        font-family: 'heroic_condensedmedium', sans-serif;
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: -1px; }
+      div#main div.content_block.content_block_contact div.contact div.contact_sidebar a.link_panel span.link_button {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 19px; }
+
+  /* Content Block - Single Product Documents and Downloads - inc_block_single_product_documents_and_downloads.php */
+  div#main div.content_block.content_block_single_product_documents_and_downloads div.documents_and_downloads {
+    padding: 20px 20px 41px 20px;
+    /* */ }
+    div#main div.content_block.content_block_single_product_documents_and_downloads div.documents_and_downloads div.title {
+      font-size: 54px;
+      /* */
+      line-height: 48px;
+      /* */ }
+    div#main div.content_block.content_block_single_product_documents_and_downloads div.documents_and_downloads ul.links {
+      padding: 10px 0 10px 0;
+      /* */ }
+      div#main div.content_block.content_block_single_product_documents_and_downloads div.documents_and_downloads ul.links li a.link div.document_name {
+        font-weight: normal;
+        font-family: 'heroic_condensedmedium', sans-serif;
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: -1px;
+        padding: 20px 0 0 0;
+        /* */ }
+
+  /* Content Block - Feature Link Type 1 - inc_block_feature_link_type_1.php */
+  div#main div.content_block.content_block_feature_link_type_1 div.feature_link_type_1 div.details {
+    padding: 40px 0 40px 10px;
+    /* */
+    width: 60%;
+    /* */ }
+    div#main div.content_block.content_block_feature_link_type_1 div.feature_link_type_1 div.details h2 {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 60px;
+      line-height: 51px;
+      max-width: none;
+      /* */ }
+    div#main div.content_block.content_block_feature_link_type_1 div.feature_link_type_1 div.details p {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 25px;
+      max-width: none;
+      /* */
+      padding: 0 0 16px 0;
+      /* */ }
+    div#main div.content_block.content_block_feature_link_type_1 div.feature_link_type_1 div.details a {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 25px; }
+  div#main div.content_block.content_block_feature_link_type_1 div.feature_link_type_1 div.image {
+    width: 40%;
+    /* */
+    text-align: center; }
+
+  /* Content Block - Feature Link Type 2 - inc_block_feature_link_type_2.php */
+  div#main div.content_block.content_block_feature_link_type_2 {
+    padding: 64px 0 0 0;
+    /* */ }
+    div#main div.content_block.content_block_feature_link_type_2 div.feature_link_type_2 {
+      padding: 60px 20px 60px 56%;
+      /* */
+      min-height: 100px;
+      /* */ }
+      div#main div.content_block.content_block_feature_link_type_2 div.feature_link_type_2 h2 {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 60px;
+        line-height: 51px; }
+      div#main div.content_block.content_block_feature_link_type_2 div.feature_link_type_2 p {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        padding: 0 0 16px 0;
+        /* */ }
+      div#main div.content_block.content_block_feature_link_type_2 div.feature_link_type_2 a {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 17px;
+        line-height: 25px; }
+    div#main div.content_block.content_block_feature_link_type_2 div.image_overlay_wrapper {
+      left: -34%;
+      /* */ }
+      div#main div.content_block.content_block_feature_link_type_2 div.image_overlay_wrapper div.image_overlay {
+        margin: 0 -90px 0 0;
+        /* */ }
 
   /* Content Block - Feature Panels - inc_block_feature_panels.php */
   div#main div.content_block.content_block_feature_panels ul.feature_panels {
     max-width: 740px; }
     div#main div.content_block.content_block_feature_panels ul.feature_panels li {
       width: 100%; }
+
+  /* Content Block - Hero - inc_block_hero.php */
+  div#main div.content_block.content_block_hero div.hero {
+    height: 550px;
+    /* */ }
+    div#main div.content_block.content_block_hero div.hero div.caption {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 100px;
+      line-height: 120px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      line-height: 83px;
+      /* */ }
+
+  /* Content Block - Home 'Uniqueness' Banner - inc_block_home_uniqueness_banner.php */
+  div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner {
+    padding: 0 20px;
+    /* */ }
+    div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.graphic {
+      max-width: 480px;
+      /* */ }
+    div#main div.content_block.content_block_home_uniqueness_banner div.home_uniqueness_banner div.caption {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 42px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      padding: 10px 0 30px 0;
+      /* */ }
+
+  /* Content Block - Intro Text - inc_block_intro_text.php */
+  div#main div.content_block.content_block_intro_text span.pill_caption {
+    font-weight: normal;
+    font-family: 'heroic_condensedblack_italic', sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding: 10px 30px 10px 30px;
+    /* */ }
+  div#main div.content_block.content_block_intro_text div.intro_text {
+    padding: 24px 20px 0 20px;
+    /* */ }
+    div#main div.content_block.content_block_intro_text div.intro_text div.intro_title {
+      font-weight: normal;
+      font-family: 'heroic_condensedmedium', sans-serif;
+      font-size: 42px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      margin: 0 0 17px 0;
+      /* */
+      padding: 10px 0 42px 0;
+      /* */ }
+
+  /* Content Block - Labelled Product Image - inc_block_labelled_product_image.php */
+  div#main div.content_block.content_block_labelled_product_image div.labelled_product_image {
+    padding: 0 20px 30px 20px;
+    /* */ }
+    div#main div.content_block.content_block_labelled_product_image div.labelled_product_image.lr-swap ul.title {
+      margin: 0;
+      /* */ }
+    div#main div.content_block.content_block_labelled_product_image div.labelled_product_image.lr-swap div.labels_key {
+      padding-right: 0; }
+    div#main div.content_block.content_block_labelled_product_image div.labelled_product_image ul.title {
+      margin: 0;
+      /* */ }
+      div#main div.content_block.content_block_labelled_product_image div.labelled_product_image ul.title li {
+        font-weight: normal;
+        font-family: 'heroic_condensedmedium', sans-serif;
+        font-size: 42px;
+        line-height: 40px;
+        letter-spacing: -1px; }
+    div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.product_image {
+      width: 100%;
+      /* */ }
+    div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key {
+      width: 100%;
+      /* */
+      padding: 0;
+      /* */ }
+      div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key div.labels_toggle {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 19px; }
+      div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key ol.key_items li span.label {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 22px;
+        line-height: 28px;
+        text-transform: uppercase; }
+      div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key ol.key_items li p {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 19px; }
+      div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key div.further_info div.title {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+        letter-spacing: -1px; }
+      div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key div.further_info p {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 19px; }
+      div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key div.further_info a {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 19px; }
+    div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.footnote_panel div.title {
+      font-weight: normal;
+      font-family: 'heroic_condensedmedium', sans-serif;
+      font-size: 42px;
+      line-height: 40px;
+      letter-spacing: -1px; }
+
+  /* Content Block - Manuals and Safety Sheets - inc_block_manuals.php */
+  div#main div.content_block.content_block_manuals div.manuals {
+    padding: 0 20px;
+    /* */ }
+    div#main div.content_block.content_block_manuals div.manuals div.intro h1 {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 100px;
+      line-height: 120px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      line-height: 82px;
+      /* */
+      padding: 30px 0 56px 0;
+      /* */ }
+      div#main div.content_block.content_block_manuals div.manuals div.intro h1:after {
+        width: 90px;
+        height: 17px;
+        margin: 0 0 0 -45px; }
+    div#main div.content_block.content_block_manuals div.manuals div.intro p {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 36px 0 41px 0;
+      /* */ }
+    div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.section_bar.conc-trigger div.text {
+      padding: 20px 0 20px 0;
+      /* */ }
+      div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.section_bar.conc-trigger div.text div.title {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 45px;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: -1px; }
+      div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.section_bar.conc-trigger div.text div.subtitle {
+        font-weight: normal;
+        font-family: 'heroic_condensedmedium', sans-serif;
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: -1px; }
+    div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.section_bar.conc-trigger div.open_close {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 36px 15px 20px 15px;
+      /* */ }
+    div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table table tbody tr th {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 10px 10px;
+      /* */ }
+    div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table table tbody tr td {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 19px;
+      padding: 10px 10px;
+      /* */ }
+
+  /* Content Block - Multi Tool Illustration - inc_block_multi_tool_illustration.php */
+  /* Content Block - Multi Tool Intro - inc_block_multi_tool_intro.php */
+  div#main div.content_block.content_block_multi_tool_intro span.pill_caption {
+    font-weight: normal;
+    font-family: 'heroic_condensedblack_italic', sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding: 10px 30px 10px 30px;
+    /* */ }
+  div#main div.content_block.content_block_multi_tool_intro div.intro_text div.intro_title {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 82px;
+    /* */
+    margin: 0 0 27px 0;
+    /* */
+    padding: 0 0 50px 0;
+    /* */ }
+    div#main div.content_block.content_block_multi_tool_intro div.intro_text div.intro_title:after {
+      width: 90px;
+      /* */
+      height: 17px;
+      /* */
+      margin: 0 0 0 -45px;
+      /* */ }
+  div#main div.content_block.content_block_multi_tool_intro div.intro_text span.banner {
+    font-weight: normal;
+    font-family: 'heroic_condensedblack_italic', sans-serif;
+    font-size: 38px;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    /* */ }
+
+  /* Content Block - One Banner Multiple Tools - inc_block_one_battery_multiple_tools.php */
+  div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools {
+    padding: 20px 20px;
+    /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content {
+      padding: 5px 0 22px 0;
+      /* */ }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content h2 {
+        padding: 5px 0;
+        /* */
+        line-height: 75px;
+        /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper {
+      padding: 3px 10px;
+      /* */
+      left: 6%;
+      /* */
+      top: 78%;
+      /* */ }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper div.label {
+        font-size: 18px;
+        /* */
+        line-height: 18px;
+        /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle.circle_3_2 div.label_wrapper {
+      left: 58%;
+      /* */
+      top: 56%;
+      /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item div.title {
+      font-size: 17px;
+      /* */
+      line-height: 19px;
+      /* */ }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h2 {
+      line-height: 75px;
+      /* */ }
+
+  /* Content Block - Our Story Content - inc_block_our_story_content.php */
+  div#main div.content_block.content_block_our_story_content div.our_story_content div.title {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 100px;
+    line-height: 120px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    line-height: 82px;
+    /* */ }
+  div#main div.content_block.content_block_our_story_content div.our_story_content h3 {
+    font-weight: normal;
+    font-family: 'heroic_condensedmedium', sans-serif;
+    font-size: 42px;
+    line-height: 40px;
+    letter-spacing: -1px; }
+
+  /* Content Block - Our Story Cost Illustration - inc_block_our_story_cost_illustration.php */
+  div#main div.content_block.content_block_our_story_cost_illustration div.our_story_cost_illustration div.unit_costs div.cost_per_unit {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 45px;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: -1px; }
+  div#main div.content_block.content_block_our_story_cost_illustration div.our_story_cost_illustration div.unit_costs div.price div.value span {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 45px;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: -1px; }
+  div#main div.content_block.content_block_our_story_cost_illustration div.our_story_cost_illustration div.unit_costs div.price div.label {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase; }
+  div#main div.content_block.content_block_our_story_cost_illustration div.our_story_cost_illustration div.price_calc_labels div.label {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase; }
+  div#main div.content_block.content_block_our_story_cost_illustration div.our_story_cost_illustration div.cost_per div.label {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: -1px; }
+  div#main div.content_block.content_block_our_story_cost_illustration div.our_story_cost_illustration div.cost_per div.value {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: -1px; }
+  div#main div.content_block.content_block_our_story_cost_illustration div.our_story_cost_illustration div.cost_per.year div.value span.box span {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 45px;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 33px;
+    /* */ }
+  div#main div.content_block.content_block_our_story_cost_illustration div.our_story_cost_illustration p.footnote {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 19px; }
+
+  /* Content Block - Our Story Feature Panels - inc_block_our_story_feature_panels.php */
+  div#main div.content_block.content_block_our_story_feature_panels ul.feature_panels {
+    padding: 20px 10px 0 10px;
+    /* */ }
+    div#main div.content_block.content_block_our_story_feature_panels ul.feature_panels li {
+      width: 50%;
+      /* */ }
+      div#main div.content_block.content_block_our_story_feature_panels ul.feature_panels li div.feature_panel div.text h2 {
+        font-weight: normal;
+        font-family: 'heroic_condensedmedium', sans-serif;
+        font-size: 42px;
+        line-height: 40px;
+        letter-spacing: -1px; }
+
+  /* Content Block - Our Story Intro - inc_block_our_story_intro.php */
+  /* Content Block - Our Story The Power Illustration - inc_block_our_story_the_power_illustration.php */
+  div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper {
+    padding: 50px 10px 40px 10px;
+    /* */ }
+    div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration {
+      background-image: none;
+      /* */ }
+      div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.centre_panel div.centre_circle_wrapper div.centre_circle div.caption {
+        font-size: 46px;
+        /* */
+        line-height: 44px;
+        /* */ }
+      div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.info_panel img.dimensional_assurance {
+        display: none;
+        /* */ }
+      div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.info_panel div.content {
+        position: relative;
+        /* */
+        padding: 0 0 30px 0;
+        /* */
+        top: auto;
+        /* */
+        left: auto;
+        /* */ }
+        div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.info_panel div.content div.icon {
+          width: 60%;
+          /* */ }
+        div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.info_panel div.content div.title {
+          font-weight: normal;
+          font-family: 'heroic_condensedbold', sans-serif;
+          font-size: 32px;
+          line-height: 40px;
+          text-transform: uppercase;
+          letter-spacing: -1px;
+          line-height: 29px;
+          padding: 18px 10px 8px 10px;
+          /* */ }
+        div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.info_panel div.content p {
+          padding: 0 10px;
+          /* */
+          font-size: 14px;
+          /* */
+          line-height: 22px;
+          /* */ }
+
+  /* Content Block - Our Story Video - inc_block_our_story_video.php */
+  div#main div.content_block.content_block_our_story_video div.our_story_video {
+    padding: 10px 20px 30px 20px;
+    /* */ }
+    div#main div.content_block.content_block_our_story_video div.our_story_video div.video_panel span.play_button {
+      width: 100px;
+      /* */
+      height: 100px;
+      /* */
+      margin: -50px 0 0 -50px;
+      /* */ }
 
   /* Content Block - Product Category Links - inc_block_product_category_links.php */
   div#main div.content_block.content_block_product_category_links ul.product_category_links li {
@@ -140,11 +1032,58 @@
       div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper {
         padding: 25px 25px; }
 
-  /* Content Block - Review Slider - inc_block_review_slider.php */
-  div#main div.content_block.content_block_review_slider {
-    padding: 50px 20px 50px 20px; }
-    div#main div.content_block.content_block_review_slider div.review_slider ul.slides li div.review {
-      padding: 0 70px 0 70px; }
+  /* Content Block - Product Category Link Bar - inc_block_product_category_link_bar.php */
+  div#main div.content_block.content_block_product_category_link_bar {
+    padding: 10px 20px;
+    /* */ }
+    div#main div.content_block.content_block_product_category_link_bar div.product_category_link_bar div.image {
+      min-height: 200px;
+      /* */
+      width: 200px;
+      /* */ }
+    div#main div.content_block.content_block_product_category_link_bar div.product_category_link_bar div.text {
+      margin: 0 0 0 200px;
+      /* */
+      padding: 28px 20px 10px 20px;
+      /* */
+      min-height: 1px;
+      /* */
+      width: auto;
+      /* */
+      float: none;
+      /* */
+      height: auto !important;
+      /* */ }
+      div#main div.content_block.content_block_product_category_link_bar div.product_category_link_bar div.text div.title {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 45px;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: -1px; }
+      div#main div.content_block.content_block_product_category_link_bar div.product_category_link_bar div.text div.subtitle {
+        font-weight: normal;
+        font-family: 'heroic_condensedmedium', sans-serif;
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: -1px; }
+    div#main div.content_block.content_block_product_category_link_bar div.product_category_link_bar div.link {
+      margin: 0 0 0 200px;
+      /* */
+      padding: 10px 20px 28px 20px;
+      /* */
+      min-height: 1px;
+      /* */
+      width: auto;
+      /* */
+      float: none;
+      /* */
+      height: auto !important;
+      /* */ }
+      div#main div.content_block.content_block_product_category_link_bar div.product_category_link_bar div.link > a {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 19px; }
 
   /* Content Block - Range List 1 Across - inc_block_range_list_1_across.php */
   div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list.swapped li:nth-child(odd) div.product div.details {
@@ -185,63 +1124,259 @@
       div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product {
         padding: 20px 20px; }
 
-  /* Content Block - Feature Link Type 1 - inc_block_feature_link_type_1.php */
-  div#main div.content_block.content_block_feature_link_type_1 div.feature_link_type_1 div.details {
-    padding: 54px 0 69px 79px;
-    width: 45%; }
-  div#main div.content_block.content_block_feature_link_type_1 div.feature_link_type_1 div.image {
-    width: 55%; }
+  /* Content Block - Review Slider - inc_block_review_slider.php */
+  div#main div.content_block.content_block_review_slider {
+    padding: 50px 20px 50px 20px; }
+    div#main div.content_block.content_block_review_slider div.review_slider ul.slides li div.review {
+      padding: 0 70px 0 70px; }
 
-  /* Content Block - Feature Link Type 2 - inc_block_feature_link_type_2.php */
-  div#main div.content_block.content_block_feature_link_type_2 div.feature_link_type_2 {
-    padding: 112px 20px 56px 52%;
-    min-height: 300px; }
-  div#main div.content_block.content_block_feature_link_type_2 div.image_overlay_wrapper {
-    left: -39%; }
-    div#main div.content_block.content_block_feature_link_type_2 div.image_overlay_wrapper div.image_overlay {
-      margin: 0 -100px 0 0; }
-
-  /* Content Block - One Banner Multiple Tools - inc_block_one_battery_multiple_tools.php */
-  div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools {
-    padding: 20px 20px;
+  /* Content Block - Single Image - inc_block_single_image.php */
+  /* Content Block - Single Product Details - inc_block_single_product_details.php */
+  div#main div.content_block.content_block_single_product_details div.single_product_details {
+    padding: 0 10px;
     /* */ }
-    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content {
-      padding: 5px 0 22px 0;
+    div#main div.content_block.content_block_single_product_details div.single_product_details div.images_panel {
+      width: 50%;
       /* */ }
-      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content h2 {
-        padding: 5px 0;
-        /* */
-        line-height: 75px;
+    div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel {
+      padding: 30px 10px 30px 10px;
+      /* */
+      width: 50%;
+      /* */ }
+      div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel div.code {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 45px;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: -1px; }
+      div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel div.product_name {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 45px;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        margin: 0; }
+      div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel ul.badges li {
+        font-weight: normal;
+        font-family: 'heroic_condensedblack_italic', sans-serif;
+        font-size: 38px;
+        line-height: 38px;
+        text-transform: uppercase; }
+      div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel div.price {
+        width: 100%;
         /* */ }
-    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper {
-      padding: 3px 10px;
-      /* */
-      left: 6%;
-      /* */
-      top: 78%;
-      /* */ }
-      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper div.label {
-        font-size: 18px;
+      div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel div.reviews {
+        padding: 29px 0 0 0;
         /* */
-        line-height: 18px;
+        width: 100%;
         /* */ }
-    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle.circle_3_2 div.label_wrapper {
-      left: 58%;
-      /* */
-      top: 56%;
+      div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel ul.links li {
+        width: 100%;
+        /* */ }
+        div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel ul.links li a {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 13px;
+          line-height: 19px; }
+
+  /* Content Block - Single Product Features - inc_block_single_product_features.php */
+  div#main div.content_block.content_block_single_product_features div.single_product_features ul.features li div.feature div.icon {
+    max-width: 75px;
+    /* */ }
+  div#main div.content_block.content_block_single_product_features div.single_product_features ul.features li div.feature div.label {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    line-height: 24px;
+    /* */ }
+
+  /* Content Block - Single Product Parts & Accessories - inc_block_single_product_parts_accessories.php */
+  div#main div.content_block.content_block_single_product_parts_accessories div.single_product_parts_accessories div.parts_accessories_carousel div.flex-viewport {
+    margin: 0 40px;
+    /* */ }
+  div#main div.content_block.content_block_single_product_parts_accessories div.single_product_parts_accessories div.parts_accessories_carousel ul.flex-direction-nav {
+    top: 90px;
+    /* */ }
+    div#main div.content_block.content_block_single_product_parts_accessories div.single_product_parts_accessories div.parts_accessories_carousel ul.flex-direction-nav li:first-child {
+      left: 0;
       /* */ }
-    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item div.title {
+    div#main div.content_block.content_block_single_product_parts_accessories div.single_product_parts_accessories div.parts_accessories_carousel ul.flex-direction-nav li:last-child {
+      right: 0;
+      /* */ }
+  div#main div.content_block.content_block_single_product_parts_accessories div.single_product_parts_accessories div.parts_accessories_carousel ul.slides li div.item div.title {
+    font-weight: normal;
+    font-family: 'heroic_condensedmedium', sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -1px; }
+  div#main div.content_block.content_block_single_product_parts_accessories div.single_product_parts_accessories div.parts_accessories_carousel ul.slides li div.item div.price {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 25px; }
+
+  /* Content Block - Single Product Questions - inc_block_single_product_questions.php */
+  /* Content Block - Single Product Related Products - inc_block_single_product_related_products.php */
+  div#main div.content_block.content_block_single_product_related_products div.single_product_related_products div.related_products_carousel div.flex-viewport {
+    margin: 0 40px;
+    /* */ }
+  div#main div.content_block.content_block_single_product_related_products div.single_product_related_products div.related_products_carousel ul.flex-direction-nav {
+    top: 90px;
+    /* */ }
+    div#main div.content_block.content_block_single_product_related_products div.single_product_related_products div.related_products_carousel ul.flex-direction-nav li:first-child {
+      left: 0;
+      /* */ }
+    div#main div.content_block.content_block_single_product_related_products div.single_product_related_products div.related_products_carousel ul.flex-direction-nav li:last-child {
+      right: 0;
+      /* */ }
+  div#main div.content_block.content_block_single_product_related_products div.single_product_related_products div.related_products_carousel ul.slides li div.item div.title {
+    font-weight: normal;
+    font-family: 'heroic_condensedmedium', sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -1px; }
+  div#main div.content_block.content_block_single_product_related_products div.single_product_related_products div.related_products_carousel ul.slides li div.item div.price {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 25px; }
+
+  /* Content Block - Single Product Reviews - inc_block_single_product_reviews.php */
+  div#main div.content_block.content_block_single_product_reviews div.single_product_reviews ul.reviews li div.review div.title {
+    font-weight: normal;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 42px;
+    line-height: 40px;
+    letter-spacing: -1px; }
+  div#main div.content_block.content_block_single_product_reviews div.single_product_reviews ul.reviews li div.review div.text {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 25px; }
+  div#main div.content_block.content_block_single_product_reviews div.single_product_reviews ul.reviews li div.review div.reviewer {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 25px; }
+  div#main div.content_block.content_block_single_product_reviews div.single_product_reviews div.review_link a {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 25px; }
+
+  /* Content Block - Single Product Specifications - inc_block_single_product_specifications.php */
+  div#main div.content_block.content_block_single_product_specifications.four-across div.single_product_specifications ul.specifications li {
+    width: 33.3333%;
+    /* */ }
+    div#main div.content_block.content_block_single_product_specifications.four-across div.single_product_specifications ul.specifications li:nth-child(4n+1), div#main div.content_block.content_block_single_product_specifications.four-across div.single_product_specifications ul.specifications li:nth-child(5n+1) {
+      clear: none;
+      /* */ }
+      div#main div.content_block.content_block_single_product_specifications.four-across div.single_product_specifications ul.specifications li:nth-child(4n+1) div.specification, div#main div.content_block.content_block_single_product_specifications.four-across div.single_product_specifications ul.specifications li:nth-child(5n+1) div.specification {
+        border-left: 1px solid #000000;
+        /* */ }
+    div#main div.content_block.content_block_single_product_specifications.four-across div.single_product_specifications ul.specifications li:nth-child(3n+1) {
+      clear: left;
+      /* */ }
+      div#main div.content_block.content_block_single_product_specifications.four-across div.single_product_specifications ul.specifications li:nth-child(3n+1) div.specification {
+        border-left: none;
+        /* */ }
+  div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li {
+    width: 33.3333%;
+    /* */ }
+    div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(5n+1) {
+      clear: none;
+      /* */ }
+      div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(5n+1) div.specification {
+        border-left: 1px solid #000000;
+        /* */ }
+    div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(3n+1) {
+      clear: left;
+      /* */ }
+      div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(3n+1) div.specification {
+        border-left: none;
+        /* */ }
+    div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(4) div.specification, div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(5) div.specification {
+      border-top: 1px solid #000000;
+      /* */ }
+    div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li div.specification div.label {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 32px;
+      line-height: 40px;
+      text-transform: uppercase;
+      letter-spacing: -1px; }
+    div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li div.specification div.value {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       font-size: 17px;
+      line-height: 25px; }
+  div#main div.content_block.content_block_single_product_specifications div.single_product_specifications p.footnote {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 19px; }
+
+  /* Content Block - Standard Table - inc_block_standard_table.php */
+  div#main div.content_block.content_block_standard_table div.standard_table table.standard tbody tr th, div#main div.content_block.content_block_standard_table div.standard_table table.standard tbody tr td {
+    padding: 8px 10px;
+    /* */ }
+    div#main div.content_block.content_block_standard_table div.standard_table table.standard tbody tr th[scope="col"], div#main div.content_block.content_block_standard_table div.standard_table table.standard tbody tr td[scope="col"] {
+      font-size: 16px;
       /* */
-      line-height: 19px;
+      padding: 8px 10px;
       /* */ }
-    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h2 {
-      line-height: 75px;
+  div#main div.content_block.content_block_standard_table div.standard_table div.footnote {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 19px; }
+
+  /* Content Block - Video - inc_block_video.php */
+  div#main div.content_block.content_block_video {
+    padding: 40px 20px 20px 20px;
+    /* */ }
+    div#main div.content_block.content_block_video div.video span.play_button {
+      width: 100px;
+      /* */
+      height: 100px;
+      /* */
+      margin: -50px 0 0 -50px;
       /* */ }
 
-  /* QUARANTINE --------------------------------------- */
-  /* */ }
-/* Extra fixes for small medium items */
+  /* Content Block - Warranty Panel - inc_block_warranty_panel.php */
+  /* Content Block - Where To Buy - Intro - inc_block_where_to_buy_info.php */
+  div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info {
+    padding: 0 10px 30px 10px;
+    /* */ }
+    div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.find_a_dealer {
+      width: 100%;
+      /* */ }
+    div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.buy_online {
+      width: 100%;
+      /* */ }
+
+  /* Content Block - Where To Buy - Intro - inc_block_where_to_buy_intro.php */
+  div#main div.content_block.content_block_where_to_buy_intro div.intro {
+    padding: 0 20px;
+    /* */ }
+    div#main div.content_block.content_block_where_to_buy_intro div.intro h1 {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 100px;
+      line-height: 120px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      line-height: 86px;
+      /* */
+      padding: 30px 0 60px 0;
+      /* */ }
+    div#main div.content_block.content_block_where_to_buy_intro div.intro p {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 37px 0 37px 0;
+      /* */ }
+
+  /* -------------------------------------------------- */ }
+/* End: @media only screen and (max-width: 1023px) and (min-width: 641px) { */
+/* ========================================== */
+/* 10. Extra fixes for small medium items     */
+/* ========================================== */
 @media only screen and (max-width: 760px) and (min-width: 641px) {
   header div#header_main_wrapper div#header_main ul#sign_in_register {
     padding: 18px 17px 10px 0;
@@ -280,6 +1415,6 @@
     padding-top: 100px; }
 
   div#main {
-    padding-top: 138px; } }
+    padding-top: 169px; } }
 
 /*# sourceMappingURL=medium.css.map */

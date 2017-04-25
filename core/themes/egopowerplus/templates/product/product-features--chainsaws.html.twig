@@ -1,24 +1,82 @@
 <div class="content_block content_block_single_product_features">
 
-	<div class="single_product_features">
+    <div class="single_product_features">
 
-  		<div class="title">Product features</div>
+        <div class="title">Product features</div>
         
         <ul class="features">
 
-            <li>
-            
-            	<div class="feature">
+            {% if node.field_show_chainsaw_ft_bar.value %}
+
+                <li>
                 
-                	<div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                    <div class="feature">
                     
-                    <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                	
-                    <div class="label">Brushless motor</div>
+                        <div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">{{ content.field_chainsaw_ft_bar }}</div>
+                    
+                    </div>
                 
-                </div><!-- .feature -->
-            
-            </li>
+                </li>
+
+            {% endif %}
+
+            {% if node.field_show_chainsaw_ft_chain_spd.value %}
+
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">{{ content.field_chainsaw_ft_chain_spd }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if node.field_show_chainsaw_ft_chain_brk.value %}
+
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">{{ content.field_chainsaw_ft_chain_brk }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if node.field_show_chainsaw_ft_brushless.value %}
+
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">{{ content.field_chainsaw_ft_brushless }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
         
         </ul><!-- .features -->
     

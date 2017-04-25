@@ -9,6 +9,7 @@
 /* 'EGO Dark Grey' - #4D4D4D - R.77 G.77 B.77 */
 /* 'EGO Darkest Grey' - #333333 - R.51 G.51 B.51 */
 /* 'EGO Black' - #000000 - R.0 G.0 B.0 */
+/* 'EGO Blue' - #5c91a9 - R.92 G.145 B.169 */
 /* ========================== */
 /* Typography                 */
 /* ========================== */
@@ -30,30 +31,53 @@
 /* 'Mobile Regular' */
 /* 'Mobile Block Header' */
 /* Intro Text Pill Caption */
+/* Product Banner */
 @media only screen and (max-width: 640px) {
   /* Header */
   header {
-    border-bottom-width: 3px; }
-    header div#header_inner ul#sign_in_register {
+    border-bottom-width: 0px;
+    position: fixed;
+    width: 100%;
+    height: 81px;
+    overflow: hidden;
+    z-index: 999; }
+    header.no_breadcrumb {
+      border-bottom-width: 0px; }
+      header.no_breadcrumb + div#main {
+        padding-top: 83px; }
+    header div#header_main_wrapper div#header_main ul#sign_in_register {
       display: none; }
-    header div#header_inner div#navigation_wrapper {
+    header div#header_main_wrapper div#header_main div#navigation_wrapper {
       margin: 0;
       background-image: url(../../images/mobile_header_background.jpg);
-      background-size: cover; }
-      header div#header_inner div#navigation_wrapper div#header_logo {
+      background-size: cover;
+      position: relative; }
+      header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_logo {
         margin: 0 auto;
         padding: 13px 0 13px 0;
         float: none;
         width: 136px; }
-        header div#header_inner div#navigation_wrapper div#header_logo a {
+        header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_logo a {
           width: 136px;
           height: 54px; }
-      header div#header_inner div#navigation_wrapper div#header_search_and_location {
+      header div#header_main_wrapper div#header_main div#navigation_wrapper a.hamburger.mobile_menu_trigger {
+        display: block; }
+      header div#header_main_wrapper div#header_main div#navigation_wrapper a.search.mobile_menu_trigger {
+        display: block; }
+      header div#header_main_wrapper div#header_main div#navigation_wrapper div#header_search_and_location {
         display: none; }
-      header div#header_inner div#navigation_wrapper ul#header_menu {
+      header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu {
         display: none; }
+    header div#breadcrumb_bar_wrapper {
+      display: none; }
 
-  /* QUARANTINE --------------------------------------- */
+  html.svg header div#header_main_wrapper div#header_main div#navigation_wrapper a.search.mobile_menu_trigger {
+    background-image: url(../../images/icon_search.svg); }
+
+  /* Main */
+  div#main {
+    padding-top: 83px; }
+
   /* Footer */
   footer div#footer_inner {
     margin: 0;
@@ -145,6 +169,225 @@
         margin: 0;
         display: inline-block;
         position: relative; }
+
+  /* QUARANTINE --------------------------------------- */
+  /* Content Block - One Banner Multiple Tools - inc_block_one_battery_multiple_tools.php */
+  div#main div.content_block.content_block_one_battery_multiple_tools {
+    background-color: #2d2d2d;
+    margin: 0;
+    background-image: url(../../images/blocks/one_battery_multiple_tools/1bmt_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 6px solid #ffffff; }
+    div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools {
+      margin: 0 auto;
+      padding: 20px 20px 20px 20px;
+      /* */
+      max-width: 1366px;
+      min-height: 400px; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content {
+        margin: 0;
+        padding: 24px 0 39px 0; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content div.logo {
+          margin: 0;
+          padding: 10px 0 19px 0;
+          text-align: center; }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content div.logo img {
+            width: auto;
+            height: auto;
+            max-width: 100%; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content h2 {
+          margin: 0;
+          padding: 24px 0 5px 0;
+          text-align: center;
+          color: #77bc1f; }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content h2 span {
+            color: #ffffff; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.upper_content p {
+          margin: 0;
+          padding: 5px 0 5px 0;
+          text-align: center;
+          color: #ffffff; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration {
+        margin: 0;
+        padding: 0; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel {
+          float: none;
+          /* */
+          margin: 0 auto;
+          /* */
+          padding: 0;
+          width: 100%;
+          /* */
+          min-height: 1px;
+          /* */
+          background: none;
+          /* */
+          max-width: 300px;
+          /* */ }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            /* */
+            float: left; }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle {
+              margin: 0;
+              padding: 0;
+              position: relative; }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle img {
+                display: block;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: auto;
+                position: relative; }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.image {
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%; }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper {
+                margin: 0;
+                padding: 11px 22px;
+                background-color: #77bc1f;
+                position: absolute;
+                left: 8%;
+                /* */
+                top: 78%;
+                /* */
+                transform: skewX(-16deg);
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+                z-index: 50;
+                white-space: nowrap;
+                overflow: hidden; }
+                div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper div.label {
+                  font-weight: normal;
+                  font-family: 'heroic_condensedbold', sans-serif;
+                  font-size: 22px;
+                  line-height: 28px;
+                  text-transform: uppercase;
+                  line-height: 22px;
+                  transform: skewX(16deg);
+                  color: #ffffff;
+                  margin: 0;
+                  padding: 0; }
+                  div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle div.label_wrapper div.label span {
+                    color: #000000; }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column div.circle.circle_3_2 div.label_wrapper {
+                left: 8%;
+                /* */
+                top: 78%;
+                /* */ }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column.circle_column_1, div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.main_graphic_panel div.circle_column.circle_column_3 {
+              padding-top: 0;
+              /* */ }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel {
+          float: left;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          /* */
+          min-height: 1px;
+          /* */
+          background: none;
+          /* */ }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key {
+            margin: 0 auto;
+            /* */
+            padding: 0;
+            /* */
+            text-align: left;
+            /* */
+            max-width: 300px;
+            /* */ }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li {
+              margin: 0 -2px;
+              /* */
+              padding: 0;
+              list-style-position: outside;
+              list-style-type: none;
+              display: inline-block;
+              /* */
+              vertical-align: top;
+              /* */
+              width: 50%;
+              /* */ }
+              div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item {
+                margin: 0;
+                padding: 0;
+                position: relative; }
+                div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item img {
+                  margin: 0;
+                  padding: 0;
+                  width: auto;
+                  height: auto;
+                  max-width: 100%;
+                  display: block;
+                  position: relative; }
+                div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item div.overlay {
+                  margin: 0;
+                  padding: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 100%;
+                  width: 100%;
+                  background-position: center;
+                  background-size: contain; }
+                div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.illustration div.sidebar_panel ul.sidebar_key li div.sidebar_key_item div.title {
+                  font-weight: normal;
+                  font-family: 'heroic_condensedbold', sans-serif;
+                  font-size: 22px;
+                  line-height: 28px;
+                  text-transform: uppercase;
+                  font-size: 20px;
+                  position: absolute;
+                  margin: 0;
+                  padding: 0;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  text-align: center;
+                  color: #ffffff; }
+      div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content {
+        margin: 0;
+        padding: 12px 0 21px 0; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h2 {
+          margin: 0;
+          padding: 24px 0 2px 0;
+          text-align: center;
+          color: #77bc1f; }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h2 span {
+            color: #ffffff; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content h3 {
+          font-weight: normal;
+          font-family: 'heroic_condensedbold', sans-serif;
+          font-size: 54px;
+          line-height: 54px;
+          letter-spacing: -1px;
+          margin: 0;
+          padding: 0 0 16px 0;
+          text-align: center;
+          color: #ffffff;
+          text-transform: none; }
+        div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content p {
+          margin: 0;
+          padding: 16px 0 5px 0;
+          text-align: center;
+          color: #ffffff; }
+          div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content p a {
+            color: #77bc1f;
+            text-decoration: none; }
+            div#main div.content_block.content_block_one_battery_multiple_tools div.one_battery_multiple_tools div.lower_content p a i {
+              margin-left: 10px; }
 
   /* */ }
 

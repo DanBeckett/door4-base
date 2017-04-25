@@ -6,19 +6,77 @@
         
         <ul class="features">
 
-            <li>
-            
-            	<div class="feature">
+            {% if node.field_show_blower_ft_turbo_boost.value %}
+
+                <li>
                 
-                	<div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                    <div class="feature">
                     
-                    <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                	
-                    <div class="label">Brushless motor</div>
+                        <div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">{{ content.field_blower_ft_turbo_boost }}</div>
+                    
+                    </div>
                 
-                </div><!-- .feature -->
-            
-            </li>
+                </li>
+
+            {% endif %}
+
+            {% if node.field_show_blower_ft_speed_contr.value %}
+
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">{{ content.field_blower_ft_speed_contr }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if node.field_show_blower_ft_brushless.value %}
+
+                <li>
+                
+                	<div class="feature">
+                    
+                    	<div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                    	
+                        <div class="label">{{ content.field_blower_ft_brushless }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if node.field_show_blower_ft_backpack.value %}
+
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url({{base_path ~ directory}}/images/blocks/single_product_features/BRUSHLESSMOTOR.png);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url({{base_path ~ directory}}images/blocks/single_product_features/BRUSHLESSMOTOR.svg);"><img src="images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">{{ content.field_blower_ft_backpack }}</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
         
         </ul><!-- .features -->
     

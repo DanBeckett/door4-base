@@ -49,6 +49,42 @@ jQuery(window).load(function() {
 		});
 	};
 
+	if(jQuery('div.parts_accessories_carousel').length > 0) {
+		jQuery('div.parts_accessories_carousel').flexslider({
+			animation: 'slide',
+			controlNav: false,
+			directionNav: true,
+			animationLoop: false,
+			slideshow: false,
+			itemWidth: 217,
+			itemMargin: 0,
+			move: 1,
+			prevText: "&#xf104;",
+			nextText: "&#xf105;",
+			start: function(){
+				 jQuery('div.parts_accessories_carousel').addClass('active'); 
+			},
+		});
+	};
+
+	if(jQuery('div.related_products_carousel').length > 0) {	
+		jQuery('div.related_products_carousel').flexslider({
+			animation: 'slide',
+			controlNav: false,
+			directionNav: true,
+			animationLoop: false,
+			slideshow: false,
+			itemWidth: 217,
+			itemMargin: 0,
+			move: 1,
+			prevText: "&#xf104;",
+			nextText: "&#xf105;",
+			start: function(){
+				 jQuery('div.related_products_carousel').addClass('active'); 
+			},
+		});
+	};
+
 	/*-- MatchHeight --*/
 
 	var matchEls = [
