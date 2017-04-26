@@ -34,6 +34,10 @@
     content.field_background_style['#items'][0].value
   ]
 %}
+{% if content.field_negative_top_margin %}
+  {% set classes = classes|merge(['negative-top-margin']) %}
+{% endif %}
+
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -49,11 +53,10 @@
         {# /* <div class="overlay active" style="background-image: url({{ file_url(content.field_overlay_image.0['#item'].entity.uri.value) }}); ?>"></div>*/ #}
       </div>
       <div class="labels_key">
-        {# /*<div class="labels_toggle active">
-          Display Labels
-          <span class="switch"></span>
+        <div class="labels_toggle active">
+          {# /*Display Labels
+          <span class="switch"></span> */ #}
         </div>
-        */ #}
 
         {{ content.field_labels }}
         
