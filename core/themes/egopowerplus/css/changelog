@@ -1,8 +1,0 @@
-Updated IDs for header search form: 
-
-large.scss 488 form#searchform { to form#search-block-form
-large.scss 506 input#s { to input#edit-keys {
-	changed width: 182px to width:148px;
-	added &:focus { outline: none; }
-large.scss 518 button { to input#edit-submit {
-	added text-indent: -5000em;

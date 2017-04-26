@@ -1609,67 +1609,69 @@ div#main {
 
 /* Search results page */
 
-div.region.region-content {
-	div.messages.messages--warning {
-		@include typography-mixin-regular;
-		margin:20px auto -27px auto;
-		padding:28px 20px;
-		border-left:20px solid #fff;
-		border-right:20px solid #fff;
-		&:before {
-			font-size:24px;
-			margin-right:13px;
+.path-search {
+	div.region.region-content {
+		div.messages.messages--warning {
+			@include typography-mixin-regular;
+			margin:20px auto -27px auto;
+			padding:28px 20px;
+			border-left:20px solid #fff;
+			border-right:20px solid #fff;
+			&:before {
+				font-size:24px;
+				margin-right:13px;
+			}
 		}
-	}
-	div#block-egopowerplus-content.block.block-system.block-system-main-block {
-		padding:30px 20px 30px 20px;
-		form.search-form {
+		div#block-egopowerplus-content.block.block-system.block-system-main-block {
 			padding:30px 20px 30px 20px;
-			div.form-wrapper {
-				div.form-item {
-					label {
-						@include typography-mixin-regular;
+			form.search-form {
+				padding:30px 20px 30px 20px;
+				div.form-wrapper {
+					div.form-item {
+						label {
+							@include typography-mixin-regular;
+						}
+						input.form-search {
+							@include typography-mixin-large;
+						}
 					}
-					input.form-search {
+					input.form-submit {
 						@include typography-mixin-large;
+						margin-top:39px;
 					}
 				}
-				input.form-submit {
-					@include typography-mixin-large;
-					margin-top:39px;
+				a.search-help-link {
+					@include typography-mixin-regular;
 				}
 			}
-			a.search-help-link {
-				@include typography-mixin-regular;
+			h2 {
+				@include typography-mixin-title-1;
 			}
-		}
-		h2 {
-			@include typography-mixin-title-1;
-		}
-		div.item-list {
-			padding:0 20px 0 20px;
-			> h3 {
-				@include typography-mixin-category-title;
-				padding:50px 0 20px 0;
-			}
-			ul {
-				margin:0 -20px 0 -20px;
-				padding:50px 20px 50px 20px;
-			}
-			ol.search-results {
-				li {
-					h3.search-result__title {
-						@include typography-mixin-category-title;
+			div.item-list {
+				padding:0 20px 0 20px;
+				> h3 {
+					@include typography-mixin-category-title;
+					padding:50px 0 20px 0;
+				}
+				ul {
+					margin:0 -20px 0 -20px;
+					padding:50px 20px 50px 20px;
+				}
+				ol.search-results {
+					li {
+						h3.search-result__title {
+							@include typography-mixin-category-title;
+						}
 					}
 				}
 			}
-		}
-		nav.pager {
-			ul.pager__items {
-				padding:30px 20px;
-				li.pager__item {
-					a {
-						@include typography-mixin-regular;
+			nav.pager {
+				ul.pager__items {
+					padding:30px 20px;
+					li.pager__item {
+						a {
+							@include typography-mixin-regular;
+						}
 					}
 				}
 			}

@@ -2236,82 +2236,84 @@ div#main {
 
 /* Search results page */
 
-div.region.region-content {
-	div.messages.messages--warning {
-		@include typography-mixin-regular;
-		margin:20px auto -17px auto;
-		padding:20px 20px;
-		border-left:20px solid #fff;
-		border-right:20px solid #fff;
-		&:before {
-			margin-right:0;
-			display:block;
-			padding-bottom:10px;
+.path-search {
+	div.region.region-content {
+		div.messages.messages--warning {
+			@include typography-mixin-regular;
+			margin:20px auto -17px auto;
+			padding:20px 20px;
+			border-left:20px solid #fff;
+			border-right:20px solid #fff;
+			&:before {
+				margin-right:0;
+				display:block;
+				padding-bottom:10px;
+			}
 		}
-	}
-	div#block-egopowerplus-content.block.block-system.block-system-main-block {
-		padding:20px 20px 20px 20px;
-		form.search-form {
+		div#block-egopowerplus-content.block.block-system.block-system-main-block {
 			padding:20px 20px 20px 20px;
-			div.form-wrapper {
-				div.form-item {
-					width:100%;
-					label {
-						@include typography-mixin-regular;
+			form.search-form {
+				padding:20px 20px 20px 20px;
+				div.form-wrapper {
+					div.form-item {
+						width:100%;
+						label {
+							@include typography-mixin-regular;
+						}
+						input.form-search {
+							@include typography-mixin-large;
+						}
 					}
-					input.form-search {
+					input.form-submit {
 						@include typography-mixin-large;
+						margin:19px 0 0 0;
+						width:100%;
 					}
 				}
-				input.form-submit {
-					@include typography-mixin-large;
-					margin:19px 0 0 0;
-					width:100%;
+				a.search-help-link {
+					@include typography-mixin-regular;
 				}
 			}
-			a.search-help-link {
-				@include typography-mixin-regular;
-			}
-		}
-		h2 {
-			@include typography-mixin-title-1;
-			padding:30px 0 30px 0;
-			&:after {
-				width:80px;
-				height:14px;
-				margin:0 0 0 -40px;
-			}
-		}
-		div.item-list {
-			padding:0;
-			> h3 {
-				@include typography-mixin-category-title;
-				padding:40px 0 20px 0;
-			}
-			ul {
-				margin:0 -20px 0 -20px;
-				padding:30px 20px 30px 20px;
-				li {
-					font-size:14px;
-					line-height:21px;
-					margin:0 0 0 13px;
-					padding:0;
+			h2 {
+				@include typography-mixin-title-1;
+				padding:30px 0 30px 0;
+				&:after {
+					width:80px;
+					height:14px;
+					margin:0 0 0 -40px;
 				}
 			}
-			ol.search-results {
-				li {
-					h3.search-result__title {
-						@include typography-mixin-category-title;
+			div.item-list {
+				padding:0;
+				> h3 {
+					@include typography-mixin-category-title;
+					padding:40px 0 20px 0;
+				}
+				ul {
+					margin:0 -20px 0 -20px;
+					padding:30px 20px 30px 20px;
+					li {
+						font-size:14px;
+						line-height:21px;
+						margin:0 0 0 13px;
+						padding:0;
+					}
+				}
+				ol.search-results {
+					li {
+						h3.search-result__title {
+							@include typography-mixin-category-title;
+						}
 					}
 				}
 			}
-		}
-		nav.pager {
-			ul.pager__items {
-				padding:20px 0;
-				li.pager__item {
-					a {
-						@include typography-mixin-regular;
+			nav.pager {
+				ul.pager__items {
+					padding:20px 0;
+					li.pager__item {
+						a {
+							@include typography-mixin-regular;
+						}
 					}
 				}
 			}

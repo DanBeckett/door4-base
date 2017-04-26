@@ -1170,7 +1170,7 @@
   /* 10. Search results              */
   /* =============================== */
   /* Search results page */
-  div.region.region-content div.messages.messages--warning {
+  .path-search div.region.region-content div.messages.messages--warning {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 17px;
     line-height: 25px;
@@ -1178,40 +1178,40 @@
     padding: 28px 20px;
     border-left: 20px solid #fff;
     border-right: 20px solid #fff; }
-    div.region.region-content div.messages.messages--warning:before {
+    .path-search div.region.region-content div.messages.messages--warning:before {
       font-size: 24px;
       margin-right: 13px; }
-  div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block {
+  .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block {
     padding: 30px 20px 30px 20px; }
-    div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form {
+    .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form {
       padding: 30px 20px 30px 20px; }
-      div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form div.form-wrapper div.form-item label {
+      .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form div.form-wrapper div.form-item label {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 17px;
         line-height: 25px; }
-      div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form div.form-wrapper div.form-item input.form-search {
+      .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form div.form-wrapper div.form-item input.form-search {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 21px;
         line-height: 33px; }
-      div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form div.form-wrapper input.form-submit {
+      .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form div.form-wrapper input.form-submit {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 21px;
         line-height: 33px;
         margin-top: 39px; }
-      div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form a.search-help-link {
+      .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block form.search-form a.search-help-link {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 17px;
         line-height: 25px; }
-    div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block h2 {
+    .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block h2 {
       font-weight: normal;
       font-family: 'heroic_condensedbold', sans-serif;
       font-size: 100px;
       line-height: 120px;
       text-transform: uppercase;
       letter-spacing: -2px; }
-    div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block div.item-list {
+    .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block div.item-list {
       padding: 0 20px 0 20px; }
-      div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block div.item-list > h3 {
+      .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block div.item-list > h3 {
         font-weight: normal;
         font-family: 'heroic_condensedbold', sans-serif;
         font-size: 45px;
@@ -1219,19 +1219,19 @@
         text-transform: uppercase;
         letter-spacing: -1px;
         padding: 50px 0 20px 0; }
-      div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block div.item-list ul {
+      .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block div.item-list ul {
         margin: 0 -20px 0 -20px;
         padding: 50px 20px 50px 20px; }
-      div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block div.item-list ol.search-results li h3.search-result__title {
+      .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block div.item-list ol.search-results li h3.search-result__title {
         font-weight: normal;
         font-family: 'heroic_condensedbold', sans-serif;
         font-size: 45px;
         line-height: 42px;
         text-transform: uppercase;
         letter-spacing: -1px; }
-    div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block nav.pager ul.pager__items {
+    .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block nav.pager ul.pager__items {
       padding: 30px 20px; }
-      div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block nav.pager ul.pager__items li.pager__item a {
+      .path-search div.region.region-content div#block-egopowerplus-content.block.block-system.block-system-main-block nav.pager ul.pager__items li.pager__item a {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 17px;
         line-height: 25px; }
