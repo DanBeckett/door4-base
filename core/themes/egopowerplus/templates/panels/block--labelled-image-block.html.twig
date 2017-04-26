@@ -46,13 +46,14 @@
       {{ content.field_titles }}
       <div class="product_image">
         <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" />
-        <div class="overlay active" style="background-image: url({{ file_url(content.field_overlay_image.0['#item'].entity.uri.value) }}); ?>"></div>
+        {# /* <div class="overlay active" style="background-image: url({{ file_url(content.field_overlay_image.0['#item'].entity.uri.value) }}); ?>"></div>*/ #}
       </div>
       <div class="labels_key">
-        <div class="labels_toggle active">
+        {# /*<div class="labels_toggle active">
           Display Labels
           <span class="switch"></span>
         </div>
+        */ #}
 
         {{ content.field_labels }}
         
