@@ -30,6 +30,7 @@
  * Noise Rating LpA
  * Noise Rating LwA
  * Vibration (M/S)
+ * Constant Speed
  */
 #}
 
@@ -466,6 +467,22 @@
                         <div class="label">Vibration</div>
                         
                         <div class="value">{{ content.field_spec_vibration_ms }}M/S</div>
+                    
+                    </div>
+                
+                </li>
+
+            {% endif %}
+
+            {% if content.field_spec_constant_speed|render|trim is not empty %}
+        
+                <li>
+                
+                    <div class="specification">
+                    
+                        <div class="label">Constant Speed</div>
+                        
+                        <div class="value">{{ content.field_spec_run_time_2_boost }}</div>
                     
                     </div>
                 
