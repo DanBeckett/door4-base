@@ -114,6 +114,12 @@
             <div class="description">
             
               {{ content.body }}
+
+              {% if node.field_kit_product[0].value or node.field_kit_alternative[0].value %}
+
+                <p>{{ content.field_kit_link }}</p>
+
+              {% endif %}
             
             </div><!-- .description -->
             
