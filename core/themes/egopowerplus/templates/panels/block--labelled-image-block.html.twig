@@ -35,9 +35,7 @@
   ]
 %}
 
-{{ content.field_negative_top_margin }}
-{% if content.field_negative_top_margin == 'On' %}
-  clause met
+{% if content.field_negative_top_margin['#items'][0].value %}
   {% set classes = classes|merge(['negative-top-margin']) %}
 {% endif %}
 
@@ -48,7 +46,7 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div class="labelled_product_image{% if content.field_flip_image_and_label_order == 'On' %} lr-swap{% endif %}">
+  <div class="labelled_product_image{% if content.field_flip_image_and_label_order['#items'][0].value %} lr-swap{% endif %}">
     {% block content %}
       {{ content.field_titles }}
       <div class="product_image">
