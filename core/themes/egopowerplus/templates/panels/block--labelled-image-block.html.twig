@@ -34,7 +34,10 @@
     content.field_background_style['#items'][0].value
   ]
 %}
+
+{{ content.field_negative_top_margin }}
 {% if content.field_negative_top_margin == 'On' %}
+  clause met
   {% set classes = classes|merge(['negative-top-margin']) %}
 {% endif %}
 
