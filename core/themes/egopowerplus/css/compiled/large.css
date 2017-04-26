@@ -1647,6 +1647,298 @@ div#main div.content_block.content_block_blowers_table {
         div#main div.content_block.content_block_blowers_table div.blowers_table table.blowers tbody tr.headers td:last-child, div#main div.content_block.content_block_blowers_table div.blowers_table table.blowers tbody tr.headers th:last-child {
           border-right: none; }
 
+/* Content Block - Blowers Table - hedge trimmers variant */
+div#main div.content_block.content_block_hedge-trimmers_table {
+  margin: 0;
+  padding: 0; }
+  div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table {
+    margin: 0 auto;
+    padding: 40px 40px;
+    max-width: 1366px; }
+    div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table div.title {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 80px;
+      line-height: 96px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      line-height: 100px;
+      color: #77bc1f;
+      margin: 0 auto 45px auto;
+      padding: 30px 0 37px 0;
+      position: relative;
+      max-width: 930px;
+      text-align: center; }
+      div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table div.title:after {
+        content: "";
+        display: block;
+        width: 74px;
+        height: 15px;
+        background-color: #77bc1f;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin: 0 0 0 -37px;
+        padding: 0;
+        -webkit-transform: skewX(-16deg);
+        transform: skewX(-16deg);
+        -webkit-border-radius: 999px;
+        border-radius: 999px; }
+    div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers {
+      margin: 0 auto;
+      padding: 0;
+      border: 1px solid #4d4d4d; }
+      div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr td, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr th {
+        border-right: 1px solid #4d4d4d;
+        margin: 0;
+        padding: 19px 15px;
+        text-align: center;
+        color: #000000;
+        font-size: 14px;
+        line-height: 21px; }
+        div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr td:last-child, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr th:last-child {
+          border-right: none; }
+        div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr td.no-right-border, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr th.no-right-border {
+          border-right: none; }
+        div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr td[scope="row"], div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr th[scope="row"] {
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: left;
+          white-space: nowrap;
+          padding: 19px 26px; }
+      div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.shaded td, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.shaded th {
+        background-color: #f5f5f5; }
+      div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.reduce-padding-top td, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.reduce-padding-top th {
+        padding-top: 8px; }
+      div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.reduce-padding-bottom td, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.reduce-padding-bottom th {
+        padding-bottom: 8px; }
+      div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.headers td, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.headers th {
+        background-color: #2d2d2d;
+        color: #ffffff;
+        border-right: 1px solid #ffffff;
+        font-size: 19px; }
+        div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.headers td:last-child, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr.headers th:last-child {
+          border-right: none; }
+
+/* Content Block - Blowers Table - mowers variant */
+div#main div.content_block.content_block_mowers_table {
+  margin: 0;
+  padding: 0; }
+  div#main div.content_block.content_block_mowers_table div.mowers_table {
+    margin: 0 auto;
+    padding: 40px 40px;
+    max-width: 1366px; }
+    div#main div.content_block.content_block_mowers_table div.mowers_table div.title {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 80px;
+      line-height: 96px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      line-height: 100px;
+      color: #77bc1f;
+      margin: 0 auto 45px auto;
+      padding: 30px 0 37px 0;
+      position: relative;
+      max-width: 930px;
+      text-align: center; }
+      div#main div.content_block.content_block_mowers_table div.mowers_table div.title:after {
+        content: "";
+        display: block;
+        width: 74px;
+        height: 15px;
+        background-color: #77bc1f;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin: 0 0 0 -37px;
+        padding: 0;
+        -webkit-transform: skewX(-16deg);
+        transform: skewX(-16deg);
+        -webkit-border-radius: 999px;
+        border-radius: 999px; }
+    div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers {
+      margin: 0 auto;
+      padding: 0;
+      border: 1px solid #4d4d4d; }
+      div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr td, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr th {
+        border-right: 1px solid #4d4d4d;
+        margin: 0;
+        padding: 19px 15px;
+        text-align: center;
+        color: #000000;
+        font-size: 14px;
+        line-height: 21px; }
+        div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr td:last-child, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr th:last-child {
+          border-right: none; }
+        div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr td.no-right-border, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr th.no-right-border {
+          border-right: none; }
+        div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr td[scope="row"], div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr th[scope="row"] {
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: left;
+          white-space: nowrap;
+          padding: 19px 26px; }
+      div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.shaded td, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.shaded th {
+        background-color: #f5f5f5; }
+      div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.reduce-padding-top td, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.reduce-padding-top th {
+        padding-top: 8px; }
+      div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.reduce-padding-bottom td, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.reduce-padding-bottom th {
+        padding-bottom: 8px; }
+      div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.headers td, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.headers th {
+        background-color: #2d2d2d;
+        color: #ffffff;
+        border-right: 1px solid #ffffff;
+        font-size: 19px; }
+        div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.headers td:last-child, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr.headers th:last-child {
+          border-right: none; }
+
+/* Content Block - Blowers Table - line trimmers variant */
+div#main div.content_block.content_block_line-trimmers_table {
+  margin: 0;
+  padding: 0; }
+  div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table {
+    margin: 0 auto;
+    padding: 40px 40px;
+    max-width: 1366px; }
+    div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table div.title {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 80px;
+      line-height: 96px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      line-height: 100px;
+      color: #77bc1f;
+      margin: 0 auto 45px auto;
+      padding: 30px 0 37px 0;
+      position: relative;
+      max-width: 930px;
+      text-align: center; }
+      div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table div.title:after {
+        content: "";
+        display: block;
+        width: 74px;
+        height: 15px;
+        background-color: #77bc1f;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin: 0 0 0 -37px;
+        padding: 0;
+        -webkit-transform: skewX(-16deg);
+        transform: skewX(-16deg);
+        -webkit-border-radius: 999px;
+        border-radius: 999px; }
+    div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers {
+      margin: 0 auto;
+      padding: 0;
+      border: 1px solid #4d4d4d; }
+      div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr td, div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr th {
+        border-right: 1px solid #4d4d4d;
+        margin: 0;
+        padding: 19px 15px;
+        text-align: center;
+        color: #000000;
+        font-size: 14px;
+        line-height: 21px; }
+        div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr td:last-child, div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr th:last-child {
+          border-right: none; }
+        div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr td.no-right-border, div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr th.no-right-border {
+          border-right: none; }
+        div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr td[scope="row"], div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr th[scope="row"] {
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: left;
+          white-space: nowrap;
+          padding: 19px 26px; }
+      div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.shaded td, div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.shaded th {
+        background-color: #f5f5f5; }
+      div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.reduce-padding-top td, div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.reduce-padding-top th {
+        padding-top: 8px; }
+      div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.reduce-padding-bottom td, div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.reduce-padding-bottom th {
+        padding-bottom: 8px; }
+      div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.headers td, div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.headers th {
+        background-color: #2d2d2d;
+        color: #ffffff;
+        border-right: 1px solid #ffffff;
+        font-size: 19px; }
+        div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.headers td:last-child, div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers tbody tr.headers th:last-child {
+          border-right: none; }
+
+/* Content Block - Blowers Table - chainsaws variant */
+div#main div.content_block.content_block_chainsaws_table {
+  margin: 0;
+  padding: 0; }
+  div#main div.content_block.content_block_chainsaws_table div.chainsaws_table {
+    margin: 0 auto;
+    padding: 40px 40px;
+    max-width: 1366px; }
+    div#main div.content_block.content_block_chainsaws_table div.chainsaws_table div.title {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 80px;
+      line-height: 96px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      line-height: 100px;
+      color: #77bc1f;
+      margin: 0 auto 45px auto;
+      padding: 30px 0 37px 0;
+      position: relative;
+      max-width: 930px;
+      text-align: center; }
+      div#main div.content_block.content_block_chainsaws_table div.chainsaws_table div.title:after {
+        content: "";
+        display: block;
+        width: 74px;
+        height: 15px;
+        background-color: #77bc1f;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin: 0 0 0 -37px;
+        padding: 0;
+        -webkit-transform: skewX(-16deg);
+        transform: skewX(-16deg);
+        -webkit-border-radius: 999px;
+        border-radius: 999px; }
+    div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws {
+      margin: 0 auto;
+      padding: 0;
+      border: 1px solid #4d4d4d; }
+      div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr td, div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr th {
+        border-right: 1px solid #4d4d4d;
+        margin: 0;
+        padding: 19px 15px;
+        text-align: center;
+        color: #000000;
+        font-size: 14px;
+        line-height: 21px; }
+        div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr td:last-child, div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr th:last-child {
+          border-right: none; }
+        div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr td.no-right-border, div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr th.no-right-border {
+          border-right: none; }
+        div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr td[scope="row"], div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr th[scope="row"] {
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: left;
+          white-space: nowrap;
+          padding: 19px 26px; }
+      div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.shaded td, div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.shaded th {
+        background-color: #f5f5f5; }
+      div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.reduce-padding-top td, div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.reduce-padding-top th {
+        padding-top: 8px; }
+      div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.reduce-padding-bottom td, div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.reduce-padding-bottom th {
+        padding-bottom: 8px; }
+      div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.headers td, div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.headers th {
+        background-color: #2d2d2d;
+        color: #ffffff;
+        border-right: 1px solid #ffffff;
+        font-size: 19px; }
+        div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.headers td:last-child, div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws tbody tr.headers th:last-child {
+          border-right: none; }
+
 /* Content Block - Contact - inc_block_contact.php */
 div#main div.content_block.content_block_contact {
   margin: 0;
