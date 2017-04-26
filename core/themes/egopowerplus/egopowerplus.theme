@@ -21,8 +21,20 @@ function egopowerplus_theme_suggestions_block_alter(&$suggestions, $variables) {
 function egopowerplus_preprocess_html(&$variables) {
   if(isset($variables['node_type'])) {
 	if ($variables['node_type'] == 'product' && ($node = \Drupal::routeMatch()->getParameter('node'))) {
-	  $variables['meta_title'] = $node->field_meta_title->value;
+	  //add meta as variables as it needs to go into head
+    $variables['meta_title'] = $node->field_meta_title->value;
 	  $variables['meta_description'] = $node->field_meta_description->value;
+    //add variables for the downloads
+    $variables['product_manual'] = $node->field_download_product_manual;
+    $variables['safety_sheet'] = $node->field_download_safety_sheet;
 	}
   }
+}
+
+function egopowerplus_preprocess_block(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  //add variables for the downloads
+  $variables['bidsing'] = $variables['plugin_id'];
+  //$variables['product_manual'] = $node->field_download_product_manual;
+  //$variables['safety_sheet'] = $node->field_download_safety_sheet;
 }
