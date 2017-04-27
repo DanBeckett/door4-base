@@ -19,15 +19,21 @@ function egopowerplus_theme_suggestions_block_alter(&$suggestions, $variables) {
 }
 
 function egopowerplus_preprocess_html(&$variables) {
+  //enable is_front variable
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    $variables['is_front'] = FALSE;
+  }
+
+  //if on a product, grab values needed for meta tag
   if(isset($variables['node_type'])) {
-	if ($variables['node_type'] == 'product' && ($node = \Drupal::routeMatch()->getParameter('node'))) {
-	  //add meta as variables as it needs to go into head
-    $variables['meta_title'] = $node->field_meta_title->value;
-	  $variables['meta_description'] = $node->field_meta_description->value;
-    //add variables for the downloads
-    $variables['product_manual'] = $node->field_download_product_manual;
-    $variables['safety_sheet'] = $node->field_download_safety_sheet;
-	}
+  	if ($variables['node_type'] == 'product' && ($node = \Drupal::routeMatch()->getParameter('node'))) {
+  	  //add meta as variables as it needs to go into head
+      $variables['meta_title'] = $node->field_meta_title->value;
+  	  $variables['meta_description'] = $node->field_meta_description->value;
+  	}
   }
 }
 

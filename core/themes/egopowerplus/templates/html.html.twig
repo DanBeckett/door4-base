@@ -48,6 +48,7 @@
     </script>
   </head>
   <body{{ attributes.addClass(body_classes) }}>
+    {{ root_path }}
     {% include '@egopowerplus/layout/header.html.twig' %}
     {{ page }}
     {% include '@egopowerplus/layout/footer.html.twig' %}

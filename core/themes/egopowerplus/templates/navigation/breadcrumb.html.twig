@@ -8,18 +8,15 @@
  */
 #}
 {% if breadcrumb %}
-  <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
-    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
-    <ol>
+<div id="breadcrumb_bar">
+  <div class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
     {% for item in breadcrumb %}
-      <li>
         {% if item.url %}
           <a href="{{ item.url }}">{{ item.text }}</a>
         {% else %}
-          {{ item.text }}
+          <span>{{ item.text }}</span>
         {% endif %}
-      </li>
     {% endfor %}
-    </ol>
-  </nav>
+  </div>
+</div>
 {% endif %}

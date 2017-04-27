@@ -8,7 +8,7 @@
     
         <div id="site_wrapper"><!-- Wraps the site, and the mobile menu sits outside -->
         
-            <header class="no_breadcrumb">
+            <header{% if is_front %} class="no_breadcrumb"{% endif %}>
     
                 <div id="header_main_wrapper">
 
@@ -38,7 +38,7 @@
                     
                 </div><!-- #header_main_wrapper -->
 
-                {{ page.breadcrumbs }}
+                {% if is_front == false %} {{ page.breadcrumbs }} {% endif %}
     
             </header>
             
