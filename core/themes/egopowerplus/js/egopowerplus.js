@@ -152,14 +152,46 @@ jQuery(window).load(function() {
 
 	}
 
-	/*-- Add Anchors to product pages --*/
+	/*-- Add Anchors to product pages - should really refactor this into one function --*/
 
 	if(jQuery('.page-node-type-product').length > 0 && jQuery('#breadcrumb_bar .anchors').length > 0) {
 		// els to anchor: #specification, #product-features
+		if(jQuery('#summary').length > 0) {
+			var $this = jQuery('#summary'),
+			    $header = jQuery('header'),
+			    $anchors = jQuery('#breadcrumb_bar .anchors'),
+			    $el_pos = $this.position(),
+			    $header_height = $header.outerHeight()
+			    $scrollto = $el_pos.top - $header_height;
+			$anchors.append('<a href="#summary" data-scroll-to="' + $scrollto + 'px">Summary</a>');
+		}
+
 		if(jQuery('#product_features').length > 0) {
 			var $this = jQuery('#product_features'),
-			    $anchors = jQuery('#breadcrumb_bar .anchors');
-			$anchors.append('<a href="#product_features">Product Features</a>');
+			    $header = jQuery('header'),
+			    $anchors = jQuery('#breadcrumb_bar .anchors'),
+			    $el_pos = $this.position(),
+			    $header_height = $header.outerHeight()
+			    $scrollto = $el_pos.top - $header_height;
+			$anchors.append('<a href="#product_features" data-scroll-to="' + $scrollto + 'px">Features</a>');
 		}
+
+		if(jQuery('#specification').length > 0) {
+			var $this = jQuery('#specification'),
+			    $header = jQuery('header'),
+			    $anchors = jQuery('#breadcrumb_bar .anchors'),
+			    $el_pos = $this.position(),
+			    $header_height = $header.outerHeight()
+			    $scrollto = $el_pos.top - $header_height;
+			$anchors.append('<a href="#specification" data-scroll-to="' + $scrollto + 'px">Specification</a>');
+		}
+
+		jQuery('.anchors a').on('click', function(e){
+			$this = jQuery(this);
+			$scroll = $this.data('scroll-to');
+			$this.siblings('.current').removeClass('current');
+			$this.addClass('current');
+			jQuery('html, body').animate({scrollTop: $scroll}, 800);
+		});
 	}
 });
