@@ -149,4 +149,14 @@ jQuery(window).load(function() {
 
 	}
 
+	/*-- Add Anchors to product pages --*/
+
+	if(jQuery('.page-node-type-product').length > 0 && jQuery('#breadcrumb_bar .anchors')) {
+		// els to anchor: #specification, #product-features
+		if(jQuery('#product_features').length > 0) {
+			var $this = jQuery('#product_features'),
+			    $anchors = jQuery('#breadcrumb_bar .anchors');
+			$anchors.append('<a href="#product_features">Product Features</a>');
+		}
+	}
 });

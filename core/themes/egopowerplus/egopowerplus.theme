@@ -30,9 +30,14 @@ function egopowerplus_preprocess_html(&$variables) {
   //if on a product, grab values needed for meta tag
   if(isset($variables['node_type'])) {
   	if ($variables['node_type'] == 'product' && ($node = \Drupal::routeMatch()->getParameter('node'))) {
-  	  //add meta as variables as it needs to go into head
-      $variables['meta_title'] = $node->field_meta_title->value;
-  	  $variables['meta_description'] = $node->field_meta_description->value;
+  	  //add meta as variables as it needs to go into head.
+      //originally used preset fields, but now we're auto-genning.
+
+      //$variables['meta_title'] = $node->field_meta_title->value;
+  	  //$variables['meta_description'] = $node->field_meta_description->value;
+      $variables['product_name'] = $node->field_product_name->value;
+      $variables['sku'] = $node->field_sku->value;
+      //$variables['product_type'] = $node->field_product_type;
   	}
   }
 }
