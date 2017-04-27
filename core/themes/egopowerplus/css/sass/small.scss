@@ -522,6 +522,39 @@ div#main {
 }
 
 
+/* Content Block - Blowers Table - chainsaw variant */
+
+div#main {
+	div.content_block.content_block_chainsaws_table {
+		display:none;
+	}
+}
+
+/* Content Block - Blowers Table - line trimmers variant */
+
+div#main {
+	div.content_block.content_block_line-trimmers_table {
+		display:none;
+	}
+}
+
+/* Content Block - Blowers Table - hedge trimmers variant */
+
+div#main {
+	div.content_block.content_block_hedge-trimmers_table {
+		display:none;
+	}
+}
+
+/* Content Block - Blowers Table - mowers variant */
+
+div#main {
+	div.content_block.content_block_mowers_table {
+		display:none;
+	}
+}
+
+
 /* Content Block - Contact - inc_block_contact.php */
 
 div#main {
