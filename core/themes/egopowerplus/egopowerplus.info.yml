@@ -14,5 +14,8 @@ regions:
   breadcrumbs: Breadcrumb Bar
   content: Content
   lead_out : Lead Out
+  mobile_mega_menu : Mobile Mega Menu
+  mobile_regions : Mobile Menu Regions
+  mobile_search : Mobile Search
   footer_menus: Footer Menus
   footer_social: Footer Social

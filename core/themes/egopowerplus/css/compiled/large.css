@@ -183,7 +183,7 @@ div#global_wrapper {
       background-repeat: repeat-y;
       background-size: 100% auto;
       text-align: left; }
-      div#global_wrapper div#mobile_menu_wrapper div#mobile_search form#mobile_searchform {
+      div#global_wrapper div#mobile_menu_wrapper div#mobile_search form#search-block-form--2 {
         background-color: #333333;
         margin: 0;
         padding: 0;
@@ -193,7 +193,7 @@ div#global_wrapper {
         position: relative;
         width: 233px;
         display: inline-block; }
-        div#global_wrapper div#mobile_menu_wrapper div#mobile_search form#mobile_searchform:after {
+        div#global_wrapper div#mobile_menu_wrapper div#mobile_search form#search-block-form--2:after {
           background-color: #555;
           content: "";
           display: block;
@@ -202,7 +202,7 @@ div#global_wrapper {
           right: 42px;
           top: 0;
           width: 3px; }
-        div#global_wrapper div#mobile_menu_wrapper div#mobile_search form#mobile_searchform input#s {
+        div#global_wrapper div#mobile_menu_wrapper div#mobile_search form#search-block-form--2 input#edit-keys--2 {
           -webkit-transform: skewX(16deg);
           transform: skewX(16deg);
           background: none;
@@ -212,8 +212,8 @@ div#global_wrapper {
           line-height: 26px;
           margin: 0;
           padding: 3px 16px;
-          width: 192px; }
-        div#global_wrapper div#mobile_menu_wrapper div#mobile_search form#mobile_searchform button {
+          width: 166px; }
+        div#global_wrapper div#mobile_menu_wrapper div#mobile_search form#search-block-form--2 input#edit-submit--2 {
           -webkit-transform: skewX(16deg) translateY(-3px);
           transform: skewX(16deg) translateY(-3px);
           background: none;
@@ -225,10 +225,11 @@ div#global_wrapper {
           width: 30px;
           border: none;
           cursor: pointer;
-          height: 24px;
+          height: 40px;
           background-image: url(../../images/icon_search.png);
           background-position: center;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          text-indent: -5000em; }
       div#global_wrapper div#mobile_menu_wrapper div#mobile_search a.close.mobile_menu_trigger {
         display: inline-block;
         margin: 0 0 0 15px;

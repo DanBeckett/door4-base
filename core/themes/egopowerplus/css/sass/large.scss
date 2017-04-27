@@ -203,7 +203,7 @@ div#global_wrapper {
 			background-repeat:repeat-y;
 			background-size:100% auto;
 			text-align:left;
-			form#mobile_searchform {
+			form#search-block-form--2 {
 				background-color:$ego-darkest-grey;
 				margin:0;
 				padding:0;
@@ -223,7 +223,7 @@ div#global_wrapper {
 					top: 0;
 					width: 3px;
 				}
-				input#s {
+				input#edit-keys--2 {
 					-webkit-transform: skewX(16deg);
 					transform: skewX(16deg);
 					background:none;
@@ -233,9 +233,9 @@ div#global_wrapper {
 					line-height:26px;
 					margin:0;
 					padding:3px 16px;
-					width:192px;
+					width:166px;
 				}
-				button {
+				input#edit-submit--2 {
 					-webkit-transform: skewX(16deg) translateY(-3px);
 					transform: skewX(16deg) translateY(-3px);
 					background:none;
@@ -247,10 +247,11 @@ div#global_wrapper {
 					width:30px;
 					border:none;
 					cursor:pointer;
-					height:24px;
+					height:40px;
 					background-image:url(../../images/icon_search.png);
 					background-position:center;
 					background-repeat:no-repeat;
+					text-indent: -5000em;
 				}
 			}
 			a.close.mobile_menu_trigger {

@@ -1,4 +1,17 @@
 jQuery(window).load(function() {
+	
+	//trigger mobile menu
+	jQuery(".mobile_menu_trigger").click(function(e) {
+		e.preventDefault(); // Prevent default behaviour
+		jQuery('div#global_wrapper').toggleClass('mobile-menu-active');
+	});
+	
+	jQuery('div#global_wrapper div#mobile_menu_wrapper ul#mobile_menu > li.drop-down > a').append('<span class="submenu_trigger"><i class="fa fa-angle-down"></i></span>');	
+	jQuery("div#global_wrapper div#mobile_menu_wrapper ul#mobile_menu > li.drop-down > a > span.submenu_trigger").click(function(e) {
+		e.preventDefault(); // Prevent default behaviour
+		jQuery(this).closest('div#global_wrapper div#mobile_menu_wrapper ul#mobile_menu > li.drop-down').toggleClass('active');
+	}); // $("div#mobile_menu li.menu-item-has-children > span.submenu_trigger").click(function(e) {
+
 	// The review slider
 	if(jQuery('div.review_slider').length > 0) { 
 		jQuery('div.review_slider').flexslider({
