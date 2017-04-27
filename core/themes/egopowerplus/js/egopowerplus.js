@@ -145,13 +145,16 @@ jQuery(window).load(function() {
 			$this.hide();
 			$img.hide();
 			$div.show();
+			$div.children('iframe').each(function() {
+			  jQuery(this).attr('src', jQuery(this, parent).attr('src') + '&autoplay=1');
+			});
 		});
 
 	}
 
 	/*-- Add Anchors to product pages --*/
 
-	if(jQuery('.page-node-type-product').length > 0 && jQuery('#breadcrumb_bar .anchors')) {
+	if(jQuery('.page-node-type-product').length > 0 && jQuery('#breadcrumb_bar .anchors').length > 0) {
 		// els to anchor: #specification, #product-features
 		if(jQuery('#product_features').length > 0) {
 			var $this = jQuery('#product_features'),

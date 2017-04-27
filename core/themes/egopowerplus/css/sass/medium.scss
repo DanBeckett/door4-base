@@ -1096,6 +1096,15 @@ div#main {
 					height:408px;
 					div.content_wrapper {
 						padding:25px 25px;
+						div.text_wrapper {
+							div.cta {
+								@include typography-mixin-regular;
+								padding:22px 0 0 0;
+								&.extra-padding {
+									padding-top:100px;
+								}
+							}
+						}
 					}
 				}
 			}

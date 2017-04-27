@@ -1014,7 +1014,7 @@ div#main div.content_block.content_block_action_links {
   padding: 0; }
   div#main div.content_block.content_block_action_links ul.action_links {
     margin: 0 auto;
-    padding: 65px 0 63px 0;
+    padding: 0;
     text-align: center;
     max-width: 1300px; }
     div#main div.content_block.content_block_action_links ul.action_links li {
@@ -2384,9 +2384,9 @@ div#main div.content_block.content_block_hero {
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       text-align: center;
-      background-image: url(../../images/blocks/hero/hero_caption_shade.png);
+      background-image: url(../../images/blocks/hero/hero_caption_shade_faded.png);
       background-position: center;
-      background-size: 100% 100%;
+      background-size: 75% 75%;
       background-repeat: no-repeat; }
       div#main div.content_block.content_block_hero div.hero div.caption span {
         color: #ffffff; }
@@ -3819,7 +3819,7 @@ div#main div.content_block.content_block_our_story_the_power_illustration {
             width: 46.6%;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 64% auto;
             border: 3px solid #ffffff;
             -webkit-border-radius: 999px;
             border-radius: 999px;
@@ -3996,6 +3996,8 @@ div#main div.content_block.content_block_product_category_links ul.product_categ
             color: #000000;
             margin: 0;
             padding: 22px 0 0 0; }
+            div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper div.text_wrapper div.cta.extra-padding {
+              padding-top: 155px; }
 
 /* Tweaks for smaller desktop widths */
 @media only screen and (max-width: 1200px) and (min-width: 1024px) {
@@ -4308,7 +4310,7 @@ div#main div.content_block.content_block_range_list_2_across_style_1 {
             color: #ffffff;
             position: absolute;
             top: 39px;
-            left: 10px;
+            left: 60px;
             -webkit-transform: skewX(-16deg);
             transform: skewX(-16deg);
             -webkit-border-radius: 8px;
@@ -4646,7 +4648,8 @@ div#main div.content_block.content_block_review_slider {
             color: #4d4d4d;
             margin: 0;
             padding: 0 0 12px 0;
-            text-align: center; }
+            text-align: center;
+            font-weight: bold; }
           div#main div.content_block.content_block_review_slider div.review_slider ul.slides li div.review ul.stars {
             margin: 0;
             padding: 12px 0 0 0;
@@ -5408,7 +5411,8 @@ div#main div.content_block.content_block_single_product_reviews {
             color: #4d4d4d;
             margin: 0;
             padding: 0 0 12px 0;
-            text-align: center; }
+            text-align: center;
+            font-weight: bold; }
           div#main div.content_block.content_block_single_product_reviews div.single_product_reviews ul.reviews li div.review ul.stars {
             margin: 0;
             padding: 12px 0 0 0;

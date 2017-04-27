@@ -884,6 +884,13 @@
       height: 408px; }
       div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper {
         padding: 25px 25px; }
+        div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper div.text_wrapper div.cta {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 17px;
+          line-height: 25px;
+          padding: 22px 0 0 0; }
+          div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper div.text_wrapper div.cta.extra-padding {
+            padding-top: 100px; }
 
   /* Content Block - Product Category Link Bar - inc_block_product_category_link_bar.php */
   div#main div.content_block.content_block_product_category_link_bar {

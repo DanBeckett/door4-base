@@ -303,7 +303,7 @@ div#main {
 div#main {
 	div.content_block.content_block_action_links {
 		ul.action_links {
-			padding:15px 0;
+			padding:0;
 			li {
 				width:100%;
 				border-right:none;
@@ -1517,6 +1517,9 @@ div#main {
 							}
 							div.cta {
 								@include typography-mixin-regular;
+								&.extra-padding {
+									padding:22px 0 0 0;
+								}
 							}
 						}
 					}

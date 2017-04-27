@@ -6,7 +6,7 @@
         
         <ul class="features">
 
-            {% if node.field_show_hedge_ft_blade_length.value %}
+            {% if content.field_hedge_ft_blade_length|render|trim is not empty %}
 
                 <li>
                 
@@ -24,7 +24,7 @@
 
             {% endif %}
 
-            {% if node.field_show_hedge_ft_blade_gap.value %}
+            {% if content.field_hedge_ft_blade_gap|render|trim is not empty %}
 
                 <li>
                 
@@ -42,7 +42,7 @@
 
             {% endif %}
 
-            {% if node.field_show_hedge_ft_laser_cut.value %}
+            {% if content.field_hedge_ft_laser_cut|render|trim is not empty %}
 
                 <li>
                 
@@ -60,7 +60,7 @@
 
             {% endif %}
 
-            {% if node.field_show_hedge_ft_two_speed.value %}
+            {% if content.field_hedge_ft_two_speed|render|trim is not empty %}
 
                 <li>
                 
@@ -78,7 +78,7 @@
 
             {% endif %}
 
-            {% if node.field_show_hedge_ft_dual_action.value %}
+            {% if content.field_hedge_ft_dual_action|render|trim is not empty %}
 
                 <li>
                 
@@ -96,7 +96,7 @@
 
             {% endif %}
 
-            {% if node.field_show_hedge_ft_rear_handle.value %}
+            {% if content.field_hedge_ft_rear_handle|render|trim is not empty %}
 
                 <li>
                 
@@ -114,7 +114,7 @@
 
             {% endif %}
 
-            {% if node.field_show_hedge_ft_backpack.value %}
+            {% if content.field_hedge_ft_backpack|render|trim is not empty %}
 
                 <li>
                 
@@ -132,7 +132,7 @@
 
             {% endif %}
 
-            {% if node.field_show_hedge_ft_brushless.value %}
+            {% if content.field_hedge_ft_brushless|render|trim is not empty %}
 
                 <li>
                 

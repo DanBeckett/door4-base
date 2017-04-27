@@ -276,7 +276,7 @@
   /* ========================== */
   /* Content Block - Action Links - inc_block_action_links.php */
   div#main div.content_block.content_block_action_links ul.action_links {
-    padding: 15px 0; }
+    padding: 0; }
     div#main div.content_block.content_block_action_links ul.action_links li {
       width: 100%;
       border-right: none; }
@@ -452,6 +452,22 @@
 
   /* Content Block - Blowers Table - inc_block_blowers_table.php */
   div#main div.content_block.content_block_blowers_table {
+    display: none; }
+
+  /* Content Block - Blowers Table - chainsaw variant */
+  div#main div.content_block.content_block_chainsaws_table {
+    display: none; }
+
+  /* Content Block - Blowers Table - line trimmers variant */
+  div#main div.content_block.content_block_line-trimmers_table {
+    display: none; }
+
+  /* Content Block - Blowers Table - hedge trimmers variant */
+  div#main div.content_block.content_block_hedge-trimmers_table {
+    display: none; }
+
+  /* Content Block - Blowers Table - mowers variant */
+  div#main div.content_block.content_block_mowers_table {
     display: none; }
 
   /* Content Block - Contact - inc_block_contact.php */
@@ -1244,6 +1260,8 @@
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 16px;
           line-height: 24px; }
+          div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper div.text_wrapper div.cta.extra-padding {
+            padding: 22px 0 0 0; }
 
   /* Content Block - Product Category Link Bar - inc_block_product_category_link_bar.php */
   div#main div.content_block.content_block_product_category_link_bar {
