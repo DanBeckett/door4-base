@@ -41,9 +41,12 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MLMZ55S');</script>
     <!-- End Google Tag Manager -->
-    
+
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
+
+    <meta name="description" content="{{ head_title.title }}. EGO Power+ delivers petrol-matching power, just without the noise, fuss or fumes. View {{ head_title.title }} here.  " /> 
+
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
     <script type='text/javascript'>
@@ -56,7 +59,7 @@
     </script>
   </head>
   <body{{ attributes.addClass(body_classes) }}>
-    <!-- Google Tag Manager (noscript) -->
+     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLMZ55S"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
