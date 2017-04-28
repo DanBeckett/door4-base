@@ -43,6 +43,16 @@ function egopowerplus_preprocess_html(&$variables) {
 }
 
 function egopowerplus_preprocess_block(&$variables) {
+  if($variables['label'] == 'Product BazaarVoice Questions Block') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    //add variables for the downloads
+    $variables['sku'] = $node->field_sku;
+  }
+  if($variables['label'] == 'Product BazaarVoice Reviews Block') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    //add variables for the downloads
+    $variables['sku'] = $node->field_sku;
+  }
   if($variables['label'] == 'Product Downloads Block') {
     $node = \Drupal::routeMatch()->getParameter('node');
     //add variables for the downloads

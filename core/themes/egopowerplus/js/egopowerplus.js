@@ -199,6 +199,26 @@ jQuery(window).load(function() {
 			$anchors.append('<a href="#specification" data-scroll-to="' + $scrollto + 'px">Specification</a>');
 		}
 
+		if(jQuery('#questions').length > 0) {
+			var $this = jQuery('#questions'),
+			    $header = jQuery('header'),
+			    $anchors = jQuery('#breadcrumb_bar .anchors'),
+			    $el_pos = $this.position(),
+			    $header_height = $header.outerHeight()
+			    $scrollto = $el_pos.top - $header_height;
+			$anchors.append('<a href="#questions" data-scroll-to="' + $scrollto + 'px">Questions</a>');
+		}
+
+		if(jQuery('#reviews').length > 0) {
+			var $this = jQuery('#reviews'),
+			    $header = jQuery('header'),
+			    $anchors = jQuery('#breadcrumb_bar .anchors'),
+			    $el_pos = $this.position(),
+			    $header_height = $header.outerHeight()
+			    $scrollto = $el_pos.top - $header_height;
+			$anchors.append('<a href="#reviews" data-scroll-to="' + $scrollto + 'px">Reviews</a>');
+		}
+
 		jQuery('.anchors a').on('click', function(e){
 			$this = jQuery(this);
 			$scroll = $this.data('scroll-to');
