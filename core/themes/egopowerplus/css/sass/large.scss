@@ -2063,7 +2063,19 @@ div#main {
 	}
 }
 
-/* Content Block - Blowers Table - hedge trimmers variant */
+/* Privacy, Warranty, Terms pages. Very rush fix, find a nice way to sort this */
+
+div#main {
+	div#block-egopowerplus-content {
+		.block-block-contentc99c8928-9ee2-48df-9ea5-e3a7c232339c,
+		.block-block-contentc2392302-d78f-44b8-9d83-1ad1e32a5181,
+		.block-block-contentd6dbed87-dabd-415b-89b6-c8b19b63eaba {
+			margin:0 auto;
+			padding:40px 40px;
+			max-width:1366px;
+		}
+	}
+}
 
 div#main {
 	div.content_block.content_block_hedge-trimmers_table {
