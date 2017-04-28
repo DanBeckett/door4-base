@@ -48,7 +48,7 @@
 <ul class="title items-{{ items|length }} no_margin">
   {% for item in items %}
     <li{{ attributes.addClass(classes) }}>
-      <span {{ item.attributes.addClass('field__item') }}>{{ item.content }}</span>
+      {{ item.content }}
     </li>
   {% endfor %}
 </ul>

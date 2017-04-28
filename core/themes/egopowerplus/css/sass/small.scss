@@ -875,6 +875,34 @@ div#main {
 	}
 }
 
+/* Content Block - Simple WYSIWYG Block */
+
+div#main {
+	div.content_block.content_block_simple_wysiwyg_block {
+		.content_wrapper {
+			p {
+				&:last-child {
+					padding-bottom: 20px;
+				}
+			}
+			ul.buttons {
+				text-align: center;
+				li {
+					width: 100%;
+					a {
+						width: 100%;
+						i {
+							margin-left: 20px;
+						}
+					}
+				}
+				&:last-child {
+					padding-bottom:20px;
+				}
+			}
+		}
+	}
+}
 
 /* Content Block - Intro Text - inc_block_intro_text.php */
 
@@ -895,6 +923,21 @@ div#main {
 			p {
 				&:last-child {
 					padding-bottom:20px;
+				}
+			}
+			ul.buttons {
+				text-align: center;
+				li {
+					width: 100%;
+					a {
+						width: 100%;
+						i {
+							margin-left: 20px;
+						}
+					}
+				}
+				&:last-child {
+					padding-bottom: 20px;
 				}
 			}
 		}

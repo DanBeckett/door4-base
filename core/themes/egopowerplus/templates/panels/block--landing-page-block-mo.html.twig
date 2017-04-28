@@ -1,0 +1,126 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'content_block content_block_contact'
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% block content %}
+<div id="product_features" class="content_block content_block_single_product_features">
+
+  <div class="single_product_features">
+
+      <div class="title">Mower features</div>
+        
+        <ul class="features">
+
+            
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/png/brushless_motor.png);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/svg/brushless_motor.svg);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">Brushless Motor</div>
+                    
+                    </div>
+                
+                </li>
+
+
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/png/cutting_capacity.png);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/svg/cutting_capacity.svg);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">50-52cm Cutting Capacity</div>
+                    
+                    </div>
+                
+                </li>
+
+
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/png/self_propelled.png);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/svg/self_propelled.svg);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">Self-Propelled</div>
+                    
+                    </div>
+                
+                </li>
+            
+            
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/png/cutting_speed.png);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/svg/cutting_speed.svg);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">Automatic Variable Cutting Speed</div>
+                    
+                    </div>
+                
+                </li>
+
+
+                <li>
+                
+                    <div class="feature">
+                    
+                        <div class="icon" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/png/cutting_deck.png);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="icon svg" style="background-image:url(/core/themes/egopowerplus/images/product_feature_icons/svg/cutting_deck.svg);"><img src="/core/themes/egopowerplus/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        
+                        <div class="label">Metal Cutting Deck</div>
+                    
+                    </div>
+                
+                </li>
+                    
+        </ul><!-- .features -->
+    
+    </div><!-- .single_product_features -->
+
+  {% endblock %}
+</div>

@@ -569,6 +569,14 @@
       letter-spacing: -1px;
       padding: 10px 0 30px 0; }
 
+  /* Content Block - Simple WYSIWYG Block */
+  div#main div.content_block.content_block_simple_wysiwyg_block .content_wrapper ul.buttons {
+    text-align: center; }
+    div#main div.content_block.content_block_simple_wysiwyg_block .content_wrapper ul.buttons li {
+      width: 100%; }
+    div#main div.content_block.content_block_simple_wysiwyg_block .content_wrapper ul.buttons:last-child {
+      padding-bottom: 50px; }
+
   /* Content Block - Intro Text - inc_block_intro_text.php */
   div#main div.content_block.content_block_intro_text span.pill_caption {
     font-weight: normal;
@@ -587,6 +595,10 @@
       letter-spacing: -1px;
       margin: 0 0 17px 0;
       padding: 10px 0 42px 0; }
+    div#main div.content_block.content_block_intro_text div.intro_text ul.buttons {
+      text-align: center; }
+      div#main div.content_block.content_block_intro_text div.intro_text ul.buttons li {
+        width: 100%; }
 
   /* Content Block - Labelled Product Image - inc_block_labelled_product_image.php */
   div#main div.content_block.content_block_labelled_product_image div.labelled_product_image {
