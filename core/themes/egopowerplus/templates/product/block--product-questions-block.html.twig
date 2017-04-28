@@ -34,13 +34,10 @@
   ]
 %}
 <div id="questions"{{ attributes.addClass(classes) }}>
-
-	<div class="single_product_questions">
-
-		{{ sku[0].value  }}
-    
-		<div class="title">{{ content.field_title }}</div>
-    
-    </div><!-- .single_product_questions -->
-
+  <div class="single_product_questions">
+    <div class="bazaarvoice-questions-wrapper">
+      <div id="BVQAContainer"></div>
+      <script>$BV.ui( 'qa', 'show_questions', {});</script>
+    </div>
+  </div><!-- .single_product_questions -->
 </div>

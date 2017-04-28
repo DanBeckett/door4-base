@@ -687,6 +687,23 @@ div#main {
 	}
 }
 
+/* Content Block - Simple WYSIWYG Block */
+
+div#main {
+	div.content_block.content_block_simple_wysiwyg_block {
+		.content_wrapper {
+			ul.buttons {
+				text-align: center;
+				li {
+					width: 100%;
+				}
+				&:last-child {
+					padding-bottom:50px;
+				}
+			}
+		}
+	}
+}
 
 /* Content Block - Intro Text - inc_block_intro_text.php */
 
@@ -702,6 +719,12 @@ div#main {
 				@include typography-mixin-block-header-small-medium-cut;
 				margin:0 0 17px 0;
 				padding:10px 0 42px 0;
+			}
+			ul.buttons {
+				text-align: center;
+				li {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -1096,6 +1119,15 @@ div#main {
 					height:408px;
 					div.content_wrapper {
 						padding:25px 25px;
+						div.text_wrapper {
+							div.cta {
+								@include typography-mixin-regular;
+								padding:22px 0 0 0;
+								&.extra-padding {
+									padding-top:100px;
+								}
+							}
+						}
 					}
 				}
 			}

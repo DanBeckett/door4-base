@@ -303,7 +303,7 @@ div#main {
 div#main {
 	div.content_block.content_block_action_links {
 		ul.action_links {
-			padding:15px 0;
+			padding:0;
 			li {
 				width:100%;
 				border-right:none;
@@ -875,6 +875,34 @@ div#main {
 	}
 }
 
+/* Content Block - Simple WYSIWYG Block */
+
+div#main {
+	div.content_block.content_block_simple_wysiwyg_block {
+		.content_wrapper {
+			p {
+				&:last-child {
+					padding-bottom: 20px;
+				}
+			}
+			ul.buttons {
+				text-align: center;
+				li {
+					width: 100%;
+					a {
+						width: 100%;
+						i {
+							margin-left: 20px;
+						}
+					}
+				}
+				&:last-child {
+					padding-bottom:20px;
+				}
+			}
+		}
+	}
+}
 
 /* Content Block - Intro Text - inc_block_intro_text.php */
 
@@ -895,6 +923,21 @@ div#main {
 			p {
 				&:last-child {
 					padding-bottom:20px;
+				}
+			}
+			ul.buttons {
+				text-align: center;
+				li {
+					width: 100%;
+					a {
+						width: 100%;
+						i {
+							margin-left: 20px;
+						}
+					}
+				}
+				&:last-child {
+					padding-bottom: 20px;
 				}
 			}
 		}
@@ -1517,6 +1560,9 @@ div#main {
 							}
 							div.cta {
 								@include typography-mixin-regular;
+								&.extra-padding {
+									padding:22px 0 0 0;
+								}
 							}
 						}
 					}

@@ -34,6 +34,7 @@
 <!DOCTYPE html>
 <html{{ html_attributes }}>
   <head>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -55,6 +56,15 @@
         s.parentNode.insertBefore(bh, s);
         })(document, 'script');
     </script>
+
+    <script src="https://display.ugc.bazaarvoice.com/static/egopowerplus_uk/en_GB/bvapi.js"></script>
+    <script src="https://curations-static.feedmagnet.com/gallery/chervon/prod/loader.js"></script>
+    <script type="text/javascript">
+    // $BV.configure('global', { productId : 'LM2001E' });
+    $BV.configure('global', { productId : '{{ sku }}' });
+    //$BV.configure('global', { productId : 'product1' });
+    </script>
+
   </head>
   <body{{ attributes.addClass(body_classes) }}>
     <!-- Google Tag Manager (noscript) -->

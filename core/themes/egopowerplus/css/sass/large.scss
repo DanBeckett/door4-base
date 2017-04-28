@@ -2921,6 +2921,7 @@ div#main {
 			background-repeat:no-repeat;
 			background-size:cover;
 			position:relative;
+			background-color:$ego-darkest-grey;
 			div.video_wrapper {
 				position:absolute;
 				margin:0;
@@ -5191,7 +5192,7 @@ div#main {
 					}
 					div.product {
 						margin:0;
-						padding:50px 0 56px 0;
+						padding:25px 0 25px 0;
 						overflow:hidden;
 						border-bottom:1px solid #a6a6a6;
 						div.image {
@@ -6755,6 +6756,19 @@ div#main {
 				padding:29px 0 37px 0;
 				overflow:hidden;
 				max-width:1070px;
+				position:relative;
+				&:after {
+					content:"";
+					background-color:#fff;
+					margin:0;
+					padding:0;
+					height:1px;
+					width:100%;
+					left:0;
+					bottom:37px;
+					position:absolute;
+					display:block;
+				}
 				li {
 					margin:0;
 					padding:0;
@@ -6777,10 +6791,11 @@ div#main {
 						}
 					}
 					div.specification {
-						margin:0;
+						margin:-1px 0 0 0;
 						padding:43px 0 17px 0;
 						border-top:1px solid $ego-black;
 						border-left:1px solid $ego-black;
+						border-bottom:1px solid $ego-black;
 						text-align:center;
 						div.label {
 							@include typography-mixin-title-3;

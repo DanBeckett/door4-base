@@ -6,6 +6,7 @@ ego-base-styles:
       css/compiled/large.css: {}
       css/compiled/medium.css: {}
       css/compiled/small.css: {}
+      css/compiled/bazaarvoice.css: {}
   js:
     js/vendor/modernizr.js: {}
     js/vendor/jquery.flexslider-min.js: {}

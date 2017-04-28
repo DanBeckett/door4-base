@@ -1,0 +1,334 @@
+.bazaarvoice-rating-summary-wrapper * {
+  font-family: 'Arial', sans-serif !important; }
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-primarySummary-rating-container .bv-rating-stars-container .bv-rating-stars {
+  font-size: 36px !important;
+  letter-spacing: 8px !important; }
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar .bv-rating-ratio-number .bv-rating span {
+  color: #000 !important;
+  font-size: 19px !important; }
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar .bv-rating-ratio-count {
+  display: none !important; }
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button.bv-write-review,
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button.bv-write-review {
+  color: #000 !important; }
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button.bv-write-review:hover,
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button.bv-write-review:hover {
+    color: #77bc1f !important; }
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button.bv-write-review:before,
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button.bv-write-review:before {
+    content: "\f044";
+    font-family: FontAwesome;
+    margin-right: 5px;
+    font-size: 15px;
+    color: #000000;
+    display: inline-block; }
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button,
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button,
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-read-reviews-button,
+.bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-read-reviews-button {
+  color: #000 !important; }
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button:hover,
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button:hover,
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-read-reviews-button:hover,
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-read-reviews-button:hover {
+    color: #77bc1f !important; }
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button:before,
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button:before,
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-write-container .bv-read-reviews-button:before,
+  .bazaarvoice-rating-summary-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-summary-bar-minimalist .bv-read-container .bv-read-reviews-button:before {
+    content: "\f044";
+    font-family: FontAwesome;
+    margin-right: 5px;
+    font-size: 15px;
+    color: #000000;
+    display: inline-block; }
+.bazaarvoice-rating-summary-wrapper button {
+  font-family: 'Arial', sans-serif !important; }
+
+.bazaarvoice-reviews-wrapper {
+  background: #ededed;
+  max-width: 1280px;
+  margin: 25px auto;
+  padding: 20px 5%; }
+  .bazaarvoice-reviews-wrapper * {
+    font-family: 'Arial', sans-serif !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-list-container .bv-trustmarkIcon {
+    display: none !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-action-bar-header,
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-mbox-breadcrumb {
+    font-family: 'heroic_condensedbold', sans-serif !important;
+    font-weight: normal !important;
+    font-size: 64px !important;
+    line-height: 70px !important;
+    text-transform: uppercase !important;
+    letter-spacing: -1px !important;
+    text-align: center !important;
+    float: none !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-action-bar button {
+    font-family: 'Arial', sans-serif !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    background: #77bc1f !important;
+    border-radius: 3px !important;
+    margin: -52px 0 0 0 !important;
+    padding: 8px 20px !important; }
+    .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-action-bar button:hover {
+      font-family: 'Arial', sans-serif !important;
+      color: #fff !important;
+      font-size: 14px !important;
+      font-weight: normal !important;
+      background: #7CC420 !important;
+      border-radius: 3px !important;
+      margin: -52px 0 0 0 !important;
+      padding: 8px 20px !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-section-summary .bv-content-title {
+    font-size: 19px !important;
+    font-weight: bold !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-section-summary .bv-section-summary-inline .bv-inline-histogram-ratings .bv-histogram-filter-helper {
+    font-size: 14px !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-inline-histogram-ratings .bv-inline-histogram-ratings-star,
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-popup-histogram-ratings .bv-inline-histogram-ratings-star
+  .bv-cv2-cleanslate .bv-core-container-34 .bv-inline-histogram-ratings .bv-popup-histogram-ratings-star,
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-popup-histogram-ratings .bv-popup-histogram-ratings-star {
+    font-size: 19px !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-inline-histogram-ratings .bv-inline-histogram-ratings-score,
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-popup-histogram-ratings .bv-inline-histogram-ratings-score,
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-inline-histogram-ratings .bv-popup-histogram-ratings-score,
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-popup-histogram-ratings .bv-popup-histogram-ratings-score {
+    font-size: 19px !important;
+    font-weight: bold !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-secondary-rating-summary-list {
+    margin: 35px 0 0 0 !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-secondary-rating-summary-list .bv-secondary-rating-summary-id {
+    font-size: 19px !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-rating-ratio .bv-secondary-rating-summary-rating {
+    font-size: 19px !important;
+    font-weight: bold !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-details-offset-on {
+    width: 100% !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 span.bv-content-pagination-pages-current,
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 span.bv-content-pagination-pages-current:hover {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 19px !important; }
+  .bazaarvoice-reviews-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-dropdown-target button {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 19px !important;
+    padding: 0 30% 0 0 !important; }
+
+.bazaarvoice-questions-wrapper {
+  background: #ededed;
+  max-width: 1280px;
+  margin: 25px auto;
+  padding: 20px 5%; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-focusable:focus,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-pseudo-focused,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-tc-footer .bv-accept-tc-button:focus {
+    outline: none !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-action-bar-header,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-mbox-breadcrumb {
+    font-family: 'heroic_condensedbold', sans-serif !important;
+    font-weight: normal !important;
+    font-size: 64px !important;
+    line-height: 70px !important;
+    text-transform: uppercase !important;
+    letter-spacing: -1px !important;
+    text-align: center !important;
+    float: none !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-action-bar button {
+    font-family: 'Arial', sans-serif !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    background: #77bc1f !important;
+    border-radius: 3px !important;
+    margin: -52px 0 0 0 !important;
+    padding: 8px 20px !important; }
+    .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-action-bar button:hover {
+      font-family: 'Arial', sans-serif !important;
+      color: #fff !important;
+      font-size: 14px !important;
+      font-weight: normal !important;
+      background: #7CC420 !important;
+      border-radius: 3px !important;
+      margin: -52px 0 0 0 !important;
+      padding: 8px 20px !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-control-bar {
+    background: #ccc !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 span.bv-content-pagination-pages-current,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 span.bv-content-pagination-pages-current:hover {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 19px !important;
+    padding: 5px 0 0 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-dropdown-target {
+    background: #fff !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-dropdown-target button {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 19px !important;
+    padding: 0 30% 0 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item-product-image-offset-on .bv-content-header,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item-avatar-offset-on .bv-content-header {
+    margin-left: 0 !important;
+    border: 0 !important;
+    text-decoration: none !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item-product-image-offset-on,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item-avatar-offset-on {
+    padding: 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item-product-image-offset-on .bv-content-header .bv-author-avatar,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item-avatar-offset-on .bv-content-header .bv-author-avatar {
+    display: none !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item-product-image-offset-on .bv-content-data-summary,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item-avatar-offset-on .bv-content-data-summary {
+    padding: 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-top-question .bv-content-core-float button {
+    font-size: 19px !important;
+    font-weight: normal !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-top-question .bv-content-core-float .bv-content-title {
+    font-size: 19px !important;
+    font-weight: normal !important;
+    line-height: 27px !important;
+    width: 80% !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-top-question .bv-content-core-float .bv-content-details-offset-off {
+    display: none !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 ol,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 ul,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 dl {
+    font-family: 'Arial', sans-serif !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-data-summary .bv-content-data-count .bv-content-title {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 27px !important;
+    font-weight: bold !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-data-summary .bv-content-data-count .bv-content-data-label {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 14px !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn:hover {
+    font-family: 'Arial', sans-serif !important;
+    color: #77bc1f !important;
+    font-size: 14px;
+    border: none !important;
+    padding: 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-mbox-need-user .bv-content-feedback-btn-container .bv-content-btn,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-mbox-need-user .bv-secondary-content-actions-container .bv-content-btn {
+    font-family: 'Arial', sans-serif !important;
+    background: none !important;
+    text-decoration: none !important;
+    border: 0 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn:first-child,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-mbox-need-user .bv-content-feedback-btn-container .bv-content-btn:first-child,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn:first-child,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-mbox-need-user .bv-secondary-content-actions-container .bv-content-btn:first-child {
+    text-decoration: none !important;
+    border: 0 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-list .bv-content-item-avatar-offset-on {
+    padding-left: 30px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-list .bv-content-item {
+    background: #fff !important;
+    -moz-border-radius: 40px !important;
+    -webkit-border-radius: 40px !important;
+    border-radius: 40px !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-author .bv-avatar-popup-target,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-popup-profull .bv-content-item .bv-content-author-name .bv-author .bv-avatar-popup-target,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-author .bv-avatar-author-name,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-popup-profull .bv-content-item .bv-content-author-name .bv-author .bv-avatar-author-name {
+    font-size: 19px !important;
+    font-weight: bold !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-content-feedback-vote .bv-content-feedback-vote-request h4 {
+    font-family: 'Arial', sans-serif !important;
+    font-size: 14px !important;
+    margin: 5px 0 0 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-yes,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn-feedback-yes,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-yes,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-yes,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn-feedback-yes,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-yes {
+    font-family: 'Arial', sans-serif !important;
+    color: #fff !important;
+    background: #78bb1f !important;
+    font-size: 14px !important;
+    border: 0 !important;
+    margin: 0 5px 0 0 !important;
+    padding: 0 15px !important;
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    border-radius: 10px !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-yes .bv-content-btn-count {
+    color: #fff !important;
+    font-size: 18px !important;
+    padding: 8px 0 !important;
+    display: inline-block !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-no,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn-feedback-no,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-no,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-no,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn-feedback-no,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-no {
+    font-family: 'Arial', sans-serif !important;
+    color: #fff !important;
+    background: #333 !important;
+    font-size: 14px !important;
+    border: 0 !important;
+    padding: 0 15px !important;
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    border-radius: 10px !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-no .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn-feedback-no .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-no .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-no .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn-feedback-no .bv-content-btn-count,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-secondary-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-no {
+    color: #fff !important;
+    font-size: 18px !important;
+    padding: 8px 0 !important;
+    display: inline-block !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-content-report-btn,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-item .bv-content-feedback-vote-request {
+    font-family: 'Arial', sans-serif !important;
+    color: #77BC1F !important;
+    font-size: 14px !important;
+    margin: 5px 0 0 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-pagination {
+    margin: 30px 0 0 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-control-bar .bv-content-pagination-container,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-content-pagination .bv-content-pagination-container {
+    margin: 0 !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-submission .bv-fieldsets .bv-form-actions .bv-submission-button-submit,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-submission .bv-fieldsets .bv-form-actions .bv-submission-button-submit:hover,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-submission .bv-fieldsets .bv-form-actions .bv-submission-button-submit:focus {
+    font-family: 'Arial', sans-serif !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important; }
+
+.bv-cv2-cleanslate .bv-core-container-34 .bv-mbox .bv-mbox-breadcrumb span span {
+  font-family: 'Arial', sans-serif !important; }
+
+@media screen and (max-width: 640px) {
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-action-bar-header,
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-mbox-breadcrumb {
+    float: left !important; }
+  .bazaarvoice-questions-wrapper .bv-cv2-cleanslate .bv-core-container-34 .bv-action-bar button {
+    margin: 18px 0 0 0 !important;
+    float: left !important; } }
+
+/*# sourceMappingURL=bazaarvoice.css.map */

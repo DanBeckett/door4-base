@@ -34,13 +34,14 @@
   ]
 %}
 <div id="reviews"{{ attributes.addClass(classes) }}>
+  <div class="single_product_reviews">
+    <div id="BVRRSummaryContainer"></div>
+    <div class="bazaarvoice-reviews-wrapper">
+      <div id="BVRRContainer"></div>
 
-	<div class="single_product_reviews">
-
-        {{ sku[0].value  }}
-    
-		<div class="title">{{ content.body }}</div>
-    
-    </div><!-- .single_product_reviews -->
-
+      <script type="text/javascript">
+        $BV.ui( 'rr', 'show_reviews', {});
+      </script>
+    </div>
+  </div><!-- .single_product_reviews -->
 </div>

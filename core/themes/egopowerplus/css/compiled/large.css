@@ -2441,7 +2441,8 @@ div#main div.content_block.content_block_hero {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative; }
+    position: relative;
+    background-color: #333333; }
     div#main div.content_block.content_block_hero div.hero div.video_wrapper {
       position: absolute;
       margin: 0;
@@ -4319,7 +4320,7 @@ div#main div.content_block.content_block_range_list_1_across {
           border-bottom: none; }
         div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product {
           margin: 0;
-          padding: 50px 0 56px 0;
+          padding: 25px 0 25px 0;
           overflow: hidden;
           border-bottom: 1px solid #a6a6a6; }
           div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.image {
@@ -5653,7 +5654,19 @@ div#main div.content_block.content_block_single_product_specifications {
       margin: 0 auto;
       padding: 29px 0 37px 0;
       overflow: hidden;
-      max-width: 1070px; }
+      max-width: 1070px;
+      position: relative; }
+      div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications:after {
+        content: "";
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 37px;
+        position: absolute;
+        display: block; }
       div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li {
         margin: 0;
         padding: 0;
@@ -5667,10 +5680,11 @@ div#main div.content_block.content_block_single_product_specifications {
         div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(1) div.specification, div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(2) div.specification, div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(3) div.specification, div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(4) div.specification, div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li:nth-child(5) div.specification {
           border-top: none; }
         div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li div.specification {
-          margin: 0;
+          margin: -1px 0 0 0;
           padding: 43px 0 17px 0;
           border-top: 1px solid #000000;
           border-left: 1px solid #000000;
+          border-bottom: 1px solid #000000;
           text-align: center; }
           div#main div.content_block.content_block_single_product_specifications div.single_product_specifications ul.specifications li div.specification div.label {
             font-weight: normal;

@@ -131,25 +131,12 @@
             
             <div class="reviews">
         
-                <ul class="stars">
-                
-                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                    
-                </ul><!-- .stars -->
-                
-                <span class="star_label">5/5 Stars</span>
-            
-              <div class="view_write">
-                
-                  <a class="view_all" href="#">View all review</a>
-                    
-                    <a class="write_review" href="#">Write a review</a>
-                
-                </div><!-- .view_write -->
+              <div class="bazaarvoice-rating-summary-wrapper">
+                <div id="BVRRSummaryContainer"></div>
+                <div class="bazaarvoice-reviews-wrapper">
+                    <script>$BV.ui('rr', 'show_reviews');</script>
+                </div>
+              </div>
             
             </div><!-- .reviews -->
             
