@@ -30,10 +30,10 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'content_block content_block_single_product_related_products'
   ]
 %}
-
-{% block content %}
-  {{ content }}
-{% endblock %}
+<div{{ attributes.addClass(classes) }}>
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>
