@@ -37,19 +37,19 @@
   {% block content %}
     <ul class="action_links">
       <li>
-        <a href="{{ content.field_panel_one_link[0]['#url'] }}">
+        <a href="{{ content.field_panel_one_link[0]['#url'] }}" class="footer-link-one">
           <div class="image" style="background-image:url({{ file_url(content.field_panel_one_image.0['#item'].entity.uri.value) }});"></div>
           <div class="caption">{{ content.field_panel_one_caption['#items'][0].value }}</div>
         </a>
       </li>
       <li>
-        <a href="{{ content.field_panel_two_link[0]['#url'] }}">
+        <a href="{{ content.field_panel_two_link[0]['#url'] }}" class="footer-link-two">
           <div class="image" style="background-image:url({{ file_url(content.field_panel_two_image.0['#item'].entity.uri.value) }});"></div>
           <div class="caption">{{ content.field_panel_two_caption['#items'][0].value }}</div>
         </a>
       </li>
       <li>
-        <a href="{{ content.field_panel_three_link[0]['#url'] }}">
+        <a href="{{ content.field_panel_three_link[0]['#url'] }}" class="footer-link-three">
           <div class="image" style="background-image:url({{ file_url(content.field_panel_three_image.0['#item'].entity.uri.value) }});"></div>
           <div class="caption">{{ content.field_panel_three_caption['#items'][0].value }}</div>
         </a>
