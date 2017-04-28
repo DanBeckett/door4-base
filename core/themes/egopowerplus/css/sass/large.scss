@@ -770,7 +770,7 @@ header {
 									background-image:url(../../images/icon_search.png);
 									background-position:center;
 									background-repeat:no-repeat;
-									text-indent: 100%;
+									text-indent: -5000em;
 									white-space: nowrap;
 									overflow: hidden;
 								}
@@ -867,7 +867,7 @@ header {
 				margin:0 0 0 -6px;
 				padding:0 10px 0 0;
 				float:left;
-				width:40%;
+				width:45%;
 				text-align:left;
 				color:$ego-black;
 				a {
@@ -888,7 +888,7 @@ header {
 				margin:0 -6px 0 0;
 				padding:0 0 0 10px;
 				float:right;
-				width:60%;
+				width:55%;
 				text-align:right;
 				color:$ego-black;
 				a {
@@ -2334,6 +2334,117 @@ div#main {
 				}
 			}
 			table.line-trimmers {
+				margin:0 auto;
+				padding:0;
+				border:1px solid $ego-dark-grey;
+				tbody {
+					tr {
+						td, th {
+							border-right:1px solid $ego-dark-grey;
+							margin:0;
+							padding:19px 15px;
+							text-align:center;
+							color:$ego-black;
+							font-size:14px;
+							line-height:21px;
+							&:last-child {
+								border-right:none;
+							}
+							&.no-right-border {
+								border-right:none;
+							}
+							&[scope="row"] {
+								text-transform:uppercase;
+								font-weight:bold;
+								text-align:left;
+								white-space:nowrap;
+								padding:19px 26px;
+							}
+						}
+						&.shaded {
+							td, th {
+								background-color:#f5f5f5;
+							}
+						}
+						&.reduce-padding-top {
+							td, th {
+								padding-top:8px;
+							}
+						}
+						&.reduce-padding-bottom {
+							td, th {
+								padding-bottom:8px;
+							}
+						}
+						&.headers {
+							td, th {
+								background-color:#2d2d2d;
+								color:$ego-white;
+								border-right:1px solid $ego-white;
+								font-size:19px;
+								&:last-child {
+									border-right:none;
+								}
+							}
+						}
+					}
+				}
+			}
+			div.footnote {
+				@include typography-mixin-small;
+				margin:0;
+				padding:30px 20px 0 20px;
+				text-align:center;
+				color:$ego-black;
+				p {
+					@include typography-mixin-small;
+					margin:0;
+					padding:30px 20px 0 20px;
+					text-align:center;
+					color:$ego-black;
+				}
+			}
+		}
+	}
+}
+
+/* Content Block - Blowers Table - brush cutters variant */
+
+div#main {
+	div.content_block.content_block_brush-cutters_table {
+		margin:0;
+		padding:0;
+		div.brush-cutters_table {
+			margin:0 auto;
+			padding:40px 40px;
+			max-width:1366px;
+			div.title {
+				@include typography-mixin-title-2;
+				line-height:100px;
+				color:$ego-green;
+				margin:0 auto 45px auto;
+				padding:30px 0 37px 0;
+				position:relative;
+				max-width:930px;
+				text-align:center;
+				&:after {
+					content:"";
+					display:block;
+					width:74px;
+					height:15px;
+					background-color:$ego-green;
+					position:absolute;
+					bottom:0px;
+					left:50%;
+					margin:0 0 0 -37px;
+					padding:0;
+					-webkit-transform:skewX(-16deg);
+					transform:skewX(-16deg);
+					-webkit-border-radius:999px;
+					border-radius:999px;
+				}
+			}
+			table.brush-cutters {
 				margin:0 auto;
 				padding:0;
 				border:1px solid $ego-dark-grey;

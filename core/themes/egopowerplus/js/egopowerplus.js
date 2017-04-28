@@ -199,6 +199,16 @@ jQuery(window).load(function() {
 			$anchors.append('<a href="#specification" data-scroll-to="' + $scrollto + 'px">Specification</a>');
 		}
 
+		if(jQuery('#block-views-block-product-related-content-parts-and-accessories').length > 0) {
+			var $this = jQuery('#block-views-block-product-related-content-parts-and-accessories'),
+			    $header = jQuery('header'),
+			    $anchors = jQuery('#breadcrumb_bar .anchors'),
+			    $el_pos = $this.position(),
+			    $header_height = $header.outerHeight()
+			    $scrollto = $el_pos.top - $header_height;
+			$anchors.append('<a href="#block-views-block-product-related-content-parts-and-accessories" data-scroll-to="' + $scrollto + 'px">Parts &amp; Accessories</a>');
+		}
+
 		if(jQuery('#questions').length > 0) {
 			var $this = jQuery('#questions'),
 			    $header = jQuery('header'),
@@ -218,6 +228,16 @@ jQuery(window).load(function() {
 			    $scrollto = $el_pos.top - $header_height;
 			$anchors.append('<a href="#reviews" data-scroll-to="' + $scrollto + 'px">Reviews</a>');
 		}
+
+		// if(jQuery('#block-views-block-product-related-content-related-products').length > 0) {
+		// 	var $this = jQuery('#block-views-block-product-related-content-related-products'),
+		// 	    $header = jQuery('header'),
+		// 	    $anchors = jQuery('#breadcrumb_bar .anchors'),
+		// 	    $el_pos = $this.position(),
+		// 	    $header_height = $header.outerHeight()
+		// 	    $scrollto = $el_pos.top - $header_height;
+		// 	$anchors.append('<a href="#block-views-block-product-related-content-related-products" data-scroll-to="' + $scrollto + 'px">Related Products</a>');
+		// }
 
 		jQuery('.anchors a').on('click', function(e){
 			$this = jQuery(this);
