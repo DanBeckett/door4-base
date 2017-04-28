@@ -3487,7 +3487,7 @@ div#main {
 					padding:0;
 					li {
 						margin:0;
-						padding:15px 47px 16px 3px;
+						padding:15px 3px 16px 47px;
 						list-style-position:outside;
 						list-style-type:none;
 						position:relative;
@@ -3499,7 +3499,7 @@ div#main {
 							padding:0;
 							position:absolute;
 							top:15px;
-							right:8px;
+							left:8px;
 							display:block;
 							background-color: $ego-green;
 							color:$ego-white;

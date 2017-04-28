@@ -46,7 +46,7 @@
           <div class="text_wrapper align-{{ item.content['#paragraph'].field_text_align.value }}">
             <div class="title">{{ item.content['#paragraph'].field_cta_title.value|raw }}</div>
             <div class="subtitle">{{ item.content['#paragraph'].field_cta_subtitle.value|raw }}</div>
-            <div class="cta">
+            <div class="cta{% if item.content['#paragraph'].field_range_link_spacing.value %} extra-padding{% endif %}">
               {{ item.content['#paragraph'].field_cta_text.value }}
               <i class="fa fa-angle-right"></i>
             </div>

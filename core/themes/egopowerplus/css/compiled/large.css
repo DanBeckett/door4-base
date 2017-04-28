@@ -2865,7 +2865,7 @@ div#main div.content_block.content_block_labelled_product_image {
         padding: 0; }
         div#main div.content_block.content_block_labelled_product_image div.labelled_product_image div.labels_key ol.key_items li {
           margin: 0;
-          padding: 15px 47px 16px 3px;
+          padding: 15px 3px 16px 47px;
           list-style-position: outside;
           list-style-type: none;
           position: relative;
@@ -2877,7 +2877,7 @@ div#main div.content_block.content_block_labelled_product_image {
             padding: 0;
             position: absolute;
             top: 15px;
-            right: 8px;
+            left: 8px;
             display: block;
             background-color: #77bc1f;
             color: #ffffff;

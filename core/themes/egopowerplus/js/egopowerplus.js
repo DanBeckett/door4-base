@@ -227,4 +227,15 @@ jQuery(window).load(function() {
 			jQuery('html, body').animate({scrollTop: $scroll}, 800);
 		});
 	}
+
+	/* -- Add placeholder text to search form. Eventually change to a more graceful way of doing this via the theme --*/
+
+	if(jQuery('#edit-keys').length > 0) {
+		jQuery('#edit-keys').attr('placeholder', 'Search');
+	}
+
+	if(jQuery('#edit-keys--2').length > 0) {
+		jQuery('#edit-keys--2').attr('placeholder', 'Search');
+	}
+
 });
