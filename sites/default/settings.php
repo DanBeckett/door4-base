@@ -1250,7 +1250,28 @@ if (($_SERVER['REQUEST_URI'] == '/pages/contact-us') &&
   // Check if Drupal or WordPress is running via command line
   (php_sapi_name() != "cli")) {
   header('HTTP/1.0 301 Moved Permanently');
-  header('Location: https://www.egopowerplus.co.uk/contact-us');
+  header('Location: https://www.egopowerplus.co.uk/contact');
+  exit();
+}
+if (($_SERVER['REQUEST_URI'] == '/pages/promo1-freelinetrimmer') &&
+  // Check if Drupal or WordPress is running via command line
+  (php_sapi_name() != "cli")) {
+  header('HTTP/1.0 301 Moved Permanently');
+  header('Location: https://www.egopowerplus.co.uk/promo1-freelinetrimmer');
+  exit();
+}
+if (($_SERVER['REQUEST_URI'] == '/pages/promo2-freeglovesandglasses') &&
+  // Check if Drupal or WordPress is running via command line
+  (php_sapi_name() != "cli")) {
+  header('HTTP/1.0 301 Moved Permanently');
+  header('Location: https://www.egopowerplus.co.uk/promo2-freeglovesandglasses');
+  exit();
+}
+if (($_SERVER['REQUEST_URI'] == '/pages/promo3-multitool') &&
+  // Check if Drupal or WordPress is running via command line
+  (php_sapi_name() != "cli")) {
+  header('HTTP/1.0 301 Moved Permanently');
+  header('Location: https://www.egopowerplus.co.uk/promo3-multitool');
   exit();
 }
 
