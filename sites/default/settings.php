@@ -1300,4 +1300,4 @@ if (file_exists($local_settings)) {
 }
 
 $settings['hash_salt'] = 'klrwZW6YTn5540ensN7myhnmzJd3RitOGLh7Uou2CQhbidisns4eBqFKtArUw3ON-pZIVr-6zQ';
-$settings['install_profile'] = 'standard';
+
