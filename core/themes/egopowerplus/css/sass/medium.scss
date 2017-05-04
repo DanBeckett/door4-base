@@ -428,7 +428,7 @@ div#main {
 	div.content_block.content_block_blog_index_featured_items {
 		ul.blog_index_featured_items {
 			padding:0 10px;
-			> li {
+			li {
 				width:60%;
 				&.single-width {
 					width:40%;
@@ -474,7 +474,7 @@ div#main {
 	div.content_block.content_block_blog_index_links {
 		padding:0 10px 30px 10px;
 		ul.blog_index_links {
-			> li {
+			li {
 				width:50%;
 				a.link_panel {
 					div.title {

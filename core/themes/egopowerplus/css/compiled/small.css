@@ -384,23 +384,23 @@
   /* Content Block - Blog Index Featured Items - inc_block_blog_index_featured_items.php */
   div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items {
     padding: 0; }
-    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li {
+    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li {
       padding: 7px 0 8px 0;
       width: 100%; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width {
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width {
         width: 100%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width a.featured_item div.wedge_overlay {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width a.featured_item div.wedge_overlay {
           display: none; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width a.featured_item div.title {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width a.featured_item div.title {
           width: 87%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width a.featured_item div.excerpt {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width a.featured_item div.excerpt {
           width: 87%; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.double-width {
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.double-width {
         width: 100%; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item {
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item {
         padding: 15px 15px 60px 15px;
         min-height: 100px; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.title {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.title {
           font-weight: normal;
           font-family: 'heroic_condensedbold', sans-serif;
           font-size: 35px;
@@ -408,18 +408,18 @@
           text-transform: uppercase;
           letter-spacing: -1px;
           width: 75%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.excerpt {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.excerpt {
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 16px;
           line-height: 24px;
           padding: 8px 0 8px 0;
           width: 75%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item ul.article_links {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item ul.article_links {
           bottom: 18px;
           left: 17px; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item.video {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item.video {
           padding-bottom: 200px; }
-          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item.video span.play_button {
+          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item.video span.play_button {
             width: 100px;
             height: 100px;
             margin: -50px 0 0 -50px; }
@@ -427,11 +427,11 @@
   /* Content Block - Blog Index Links - inc_block_blog_index_links.php */
   div#main div.content_block.content_block_blog_index_links {
     padding: 0 0 20px 0; }
-    div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li {
+    div#main div.content_block.content_block_blog_index_links ul.blog_index_links li {
       padding: 8px 0 7px 0;
       width: 100%;
       float: none; }
-      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel div.title {
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel div.title {
         font-weight: normal;
         font-family: 'heroic_condensedbold', sans-serif;
         font-size: 38px;
@@ -439,9 +439,9 @@
         letter-spacing: -1px;
         line-height: 36px;
         padding: 15px 15px 15px 15px; }
-      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel ul.article_links {
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel ul.article_links {
         padding: 0 15px 15px 15px; }
-        div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel ul.article_links li {
+        div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel ul.article_links li {
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 13px;
           line-height: 19px; }

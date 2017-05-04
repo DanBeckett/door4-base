@@ -362,16 +362,16 @@
   /* Content Block - Blog Index Featured Items - inc_block_blog_index_featured_items.php */
   div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items {
     padding: 0 10px; }
-    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li {
+    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li {
       width: 60%; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width {
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width {
         width: 40%; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.double-width {
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.double-width {
         width: 60%; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item {
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item {
         padding: 15px 15px 62px 15px;
         min-height: 10px; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.title {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.title {
           font-weight: normal;
           font-family: 'heroic_condensedbold', sans-serif;
           font-size: 45px;
@@ -379,19 +379,19 @@
           text-transform: uppercase;
           letter-spacing: -1px;
           width: 56%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.excerpt {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.excerpt {
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 17px;
           line-height: 25px;
           width: 56%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item ul.article_links {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item ul.article_links {
           bottom: 20px;
           left: 15px; }
-          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item ul.article_links li {
+          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item ul.article_links li {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             font-size: 13px;
             line-height: 19px; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item.video span.play_button {
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item.video span.play_button {
           width: 100px;
           height: 100px;
           margin: -50px 0 0 -50px; }
@@ -399,24 +399,24 @@
   /* Content Block - Blog Index Links - inc_block_blog_index_links.php */
   div#main div.content_block.content_block_blog_index_links {
     padding: 0 10px 30px 10px; }
-    div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li {
+    div#main div.content_block.content_block_blog_index_links ul.blog_index_links li {
       width: 50%; }
-      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel div.title {
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel div.title {
         font-weight: normal;
         font-family: 'heroic_condensedbold', sans-serif;
         font-size: 42px;
         line-height: 40px;
         letter-spacing: -1px;
         padding: 15px 15px 15px 15px; }
-      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel ul.article_links {
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel ul.article_links {
         padding: 0 15px 15px 15px; }
-        div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel ul.article_links li {
+        div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel ul.article_links li {
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 13px;
           line-height: 19px; }
-      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li:nth-child(3n+1) {
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links li:nth-child(3n+1) {
         clear: none; }
-      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li:nth-child(2n+1) {
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links li:nth-child(2n+1) {
         clear: left; }
     div#main div.content_block.content_block_blog_index_links a.load_more {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;

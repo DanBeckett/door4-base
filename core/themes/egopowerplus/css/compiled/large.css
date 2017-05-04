@@ -91,6 +91,17 @@ div#main div.dev_all_blocks_block {
     color: #fff;
     display: block; }
 
+/* Responsive table styling hacked in from foundation */
+table.scroll {
+  display: block;
+  width: 100%;
+  overflow-x: auto; }
+
+.table-scroll {
+  overflow-x: auto; }
+  .table-scroll table {
+    width: auto; }
+
 /* ========================== */
 /* 3. Fonts                   */
 /* ========================== */
@@ -1292,12 +1303,13 @@ div#main div.content_block.content_block_blog_article {
       div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel a.link_panel {
         display: block;
         margin: 0;
-        padding: 25px 23px 286px 23px;
         position: relative;
         text-decoration: none;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
+        div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel a.link_panel img {
+          max-width: 100%; }
         div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel a.link_panel:hover span.link_button {
           background-color: #639d1a;
           text-decoration: underline; }
@@ -1406,6 +1418,8 @@ div#main div.content_block.content_block_blog_article {
                 div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text ul.date_and_categories li a {
                   color: #000000;
                   text-decoration: underline; }
+      div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel .product_list {
+        padding: 16px 0; }
 
 /* Content Block - Blog Index Featured Items - inc_block_blog_index_featured_items.php */
 div#main div.content_block.content_block_blog_index_featured_items {
@@ -1417,113 +1431,124 @@ div#main div.content_block.content_block_blog_index_featured_items {
     padding: 0 18px;
     overflow: hidden;
     text-align: left; }
-    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li {
+    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width {
       margin: 0;
       padding: 10px 10px;
       list-style-position: outside;
       list-style-type: none;
-      width: 66.6666%;
       display: block;
-      float: left; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width {
-        width: 33.3333%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width a.featured_item {
-          background-image: url(../../images/blocks/blog_index_featured_items/single_width_item_background.jpg);
-          background-position: right center;
-          background-repeat: no-repeat;
-          background-size: cover; }
-          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width a.featured_item div.wedge_overlay {
-            display: none; }
-          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width a.featured_item div.title {
-            color: #ffffff;
-            width: 87%; }
-          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.single-width a.featured_item div.excerpt {
-            width: 87%; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li.double-width {
-        width: 66.6666%; }
-      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item {
-        background-color: #000000;
+      float: left;
+      width: 33.3333%; }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width a.featured_item {
+        background-image: url(../../images/blocks/blog_index_featured_items/single_width_item_background.jpg);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width a.featured_item div.wedge_overlay {
+          display: none; }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width a.featured_item div.title {
+          color: #ffffff;
+          width: 87%; }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.single-width a.featured_item div.excerpt {
+          width: 87%; }
+    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li.double-width {
+      margin: 0;
+      padding: 10px 10px;
+      list-style-position: outside;
+      list-style-type: none;
+      display: block;
+      float: left;
+      width: 66.6666%; }
+    div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item {
+      background-color: #000000;
+      margin: 0;
+      padding: 37px 46px 100px 46px;
+      display: block;
+      position: relative;
+      text-decoration: none;
+      background-position: center;
+      background-size: cover;
+      min-height: 475px; }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.wedge_overlay {
         margin: 0;
-        padding: 37px 46px 100px 46px;
-        display: block;
-        position: relative;
-        text-decoration: none;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../../images/blocks/blog_index_featured_items/wedge_overlay_01.png);
         background-position: center;
-        background-size: cover;
-        min-height: 475px; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.wedge_overlay {
-          margin: 0;
-          padding: 0;
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          background-image: url(../../images/blocks/blog_index_featured_items/wedge_overlay_01.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 100% auto; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.title {
-          font-weight: normal;
-          font-family: 'heroic_condensedbold', sans-serif;
-          font-size: 54px;
-          line-height: 50px;
-          text-transform: uppercase;
-          letter-spacing: -1px;
-          color: #000000;
-          margin: 0;
-          padding: 0;
-          text-decoration: none;
-          position: relative;
-          width: 48%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item div.excerpt {
-          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        background-repeat: no-repeat;
+        background-size: 100% auto; }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.title {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 54px;
+        line-height: 50px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        position: relative;
+        width: 48%; }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.excerpt {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 19px;
+        line-height: 27px;
+        color: #ffffff;
+        margin: 0;
+        padding: 18px 0 18px 0;
+        text-decoration: none;
+        position: relative;
+        width: 45%; }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.excerpt p {
+          color: #ffffff;
           font-size: 19px;
           line-height: 27px;
+          padding: 0; }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item ul.article_links {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 33px;
+        left: 46px; }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item ul.article_links li {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 0;
+          padding: 0 30px 0 0;
+          list-style-position: outside;
+          list-style-type: none;
           color: #ffffff;
-          margin: 0;
-          padding: 18px 0 18px 0;
-          text-decoration: none;
-          position: relative;
-          width: 45%; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item ul.article_links {
-          margin: 0;
-          padding: 0;
-          position: absolute;
-          bottom: 33px;
-          left: 46px; }
-          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item ul.article_links li {
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 14px;
-            line-height: 20px;
-            margin: 0;
-            padding: 0 30px 0 0;
-            list-style-position: outside;
-            list-style-type: none;
-            color: #ffffff;
-            display: inline-block;
-            text-decoration: underline; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item.video div.wedge_overlay {
-          background-image: url(../../images/blocks/blog_index_featured_items/wedge_overlay_02.png); }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item.video div.title {
-          color: #ffffff; }
-        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item.video span.play_button {
-          width: 130px;
-          height: 130px;
-          top: 50%;
-          left: 50%;
-          margin: -65px 0 0 -65px;
-          padding: 0;
-          position: absolute;
-          cursor: pointer;
-          background-image: url(../../images/icon_video.png);
-          background-position: center;
-          background-size: contain;
-          opacity: 0.45;
-          -webkit-transition: all 0.4s;
-          transition: all 0.4s; }
-          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items > li a.featured_item.video span.play_button:hover {
-            opacity: 0.65; }
+          display: inline-block;
+          text-decoration: underline; }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item.video div.wedge_overlay {
+        background-image: url(../../images/blocks/blog_index_featured_items/wedge_overlay_02.png); }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item.video div.title {
+        color: #ffffff; }
+      div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item.video span.play_button {
+        width: 130px;
+        height: 130px;
+        top: 50%;
+        left: 50%;
+        margin: -65px 0 0 -65px;
+        padding: 0;
+        position: absolute;
+        cursor: pointer;
+        background-image: url(../../images/icon_video.png);
+        background-position: center;
+        background-size: contain;
+        opacity: 0.45;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s; }
+        div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item.video span.play_button:hover {
+          opacity: 0.65; }
+  div#main div.content_block.content_block_blog_index_featured_items .product_list {
+    padding: 0; }
 
 /* Content Block - Blog Index Links - inc_block_blog_index_links.php */
 div#main div.content_block.content_block_blog_index_links {
@@ -1536,21 +1561,21 @@ div#main div.content_block.content_block_blog_index_links {
     max-width: 1300px;
     overflow: hidden;
     text-align: left; }
-    div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li {
+    div#main div.content_block.content_block_blog_index_links ul.blog_index_links li {
       margin: 0;
       padding: 10px 10px;
       list-style-position: outside;
       list-style-type: none;
       width: 33.3333%;
       float: left; }
-      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel {
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel {
         display: block;
         background-color: #ffffff;
         margin: 0;
         padding: 0;
         overflow: hidden;
         text-decoration: none; }
-        div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel div.image {
+        div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel div.image {
           margin: 0;
           padding: 0;
           position: relative;
@@ -1558,7 +1583,7 @@ div#main div.content_block.content_block_blog_index_links {
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat; }
-          div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel div.image div.wedge_overlay {
+          div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel div.image div.wedge_overlay {
             position: absolute;
             top: 0;
             left: 0;
@@ -1568,7 +1593,7 @@ div#main div.content_block.content_block_blog_index_links {
             background-position: right center;
             background-repeat: no-repeat;
             background-size: auto 100%; }
-        div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel div.title {
+        div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel div.title {
           font-weight: normal;
           font-family: 'heroic_condensedbold', sans-serif;
           font-size: 54px;
@@ -1579,10 +1604,10 @@ div#main div.content_block.content_block_blog_index_links {
           margin: 0;
           padding: 33px 37px 30px 37px;
           text-decoration: none; }
-        div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel ul.article_links {
+        div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel ul.article_links {
           margin: 0;
           padding: 0 17px 32px 37px; }
-          div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li a.link_panel ul.article_links li {
+          div#main div.content_block.content_block_blog_index_links ul.blog_index_links li a.link_panel ul.article_links li {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             font-size: 14px;
             line-height: 20px;
@@ -1593,8 +1618,34 @@ div#main div.content_block.content_block_blog_index_links {
             color: #000000;
             display: inline-block;
             text-decoration: underline; }
-      div#main div.content_block.content_block_blog_index_links ul.blog_index_links > li:nth-child(3n+1) {
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links li:nth-child(3n+1) {
         clear: left; }
+    div#main div.content_block.content_block_blog_index_links ul.blog_index_links .pager {
+      clear: both; }
+      div#main div.content_block.content_block_blog_index_links ul.blog_index_links .pager li {
+        width: auto; }
+        div#main div.content_block.content_block_blog_index_links ul.blog_index_links .pager li:nth-child(3n+1) {
+          clear: none; }
+        div#main div.content_block.content_block_blog_index_links ul.blog_index_links .pager li a {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 50px 0 0 0;
+          padding: 7px 15px 9px 15px;
+          display: inline-block;
+          color: #ffffff;
+          background-color: #77bc1f;
+          text-decoration: none;
+          -webkit-border-radius: 4px;
+          border-radius: 4px;
+          white-space: nowrap; }
+          div#main div.content_block.content_block_blog_index_links ul.blog_index_links .pager li a i {
+            margin-left: 26px;
+            font-size: 20px;
+            -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  div#main div.content_block.content_block_blog_index_links ul.view-content {
+    padding: 0; }
   div#main div.content_block.content_block_blog_index_links a.load_more {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 14px;
