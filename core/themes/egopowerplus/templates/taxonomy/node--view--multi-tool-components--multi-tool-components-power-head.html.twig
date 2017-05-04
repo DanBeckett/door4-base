@@ -85,24 +85,26 @@
 <li{{ attributes.addClass(classes) }}>
   <div class="product">
     {% if not page %}
-      <div class="image">
-        {% if node.field_grid_image.entity.uri[0].value %}
-          <img src="{{ file_url(node.field_grid_image.entity.uri[0].value) }}" />
-        {% else %}
-          <img src="{{ file_url(node.field_product_image.entity.uri[0].value) }}" />
-        {% endif %}
-      </div>
+      <a href="{{ url }}">
+        <div class="image">
+          {% if node.field_grid_image.entity.uri[0].value %}
+            <img src="{{ file_url(node.field_grid_image.entity.uri[0].value) }}" />
+          {% else %}
+            <img src="{{ file_url(node.field_product_image.entity.uri[0].value) }}" />
+          {% endif %}
+        </div>
+      </a>
        <div class="details">
         <div class="code">
-          {{ node.field_sku[0].value }} 
+          <a href="{{ url }}">{{ node.field_sku[0].value }} </a>
         </div>
         <div class="title">
-          {{ node.field_product_name[0].value }}
+          <a href="{{ url }}">{{ node.field_product_name[0].value }}</a>
         </div>
         <div class="description">
-          {{ node.field_excerpt_content[0].value }}
+          <a href="{{ url}}">{{ node.field_excerpt_content[0].value }}</a>
         </div>
-        <a href="{{ url }}" rel="bookmark">Find out more</a>
+        <a href="{{ url }}" class="find-out-more" rel="bookmark">Find out more</a>
       </div>
     {% endif %}
   </div>

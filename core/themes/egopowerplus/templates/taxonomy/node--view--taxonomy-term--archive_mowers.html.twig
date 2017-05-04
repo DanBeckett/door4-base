@@ -83,30 +83,32 @@
 {{ attach_library('classy/node') }}
 
 <li{{ attributes.addClass(classes) }}>
-  <div class="product">
-    {% if not page %}
+    <div class="product">
+      {% if not page %}
 
-    {{ node.field_hide_on_category_page[0].value }}
+      {{ node.field_hide_on_category_page[0].value }}
 
-      <div class="image">
-        {% if node.field_grid_image.entity.uri[0].value %}
-          <img src="{{ file_url(node.field_grid_image.entity.uri[0].value) }}" />
-        {% else %}
-          <img src="{{ file_url(node.field_product_image.entity.uri[0].value) }}" />
+        <a href="{{ url }}">
+          <div class="image">
+            {% if node.field_grid_image.entity.uri[0].value %}
+              <img src="{{ file_url(node.field_grid_image.entity.uri[0].value) }}" />
+            {% else %}
+              <img src="{{ file_url(node.field_product_image.entity.uri[0].value) }}" />
+            {% endif %}
+          </div>
+        </a>
+        <div class="details">
+          <div class="title">
+            <a href="{{ url }}"><span class="code">{{ node.field_sku[0].value }}</span> {{ node.field_product_name[0].value }}</a>
+          </div>
+          <div class="description">
+            <a href="{{ url }}">{{ node.field_excerpt_content[0].value }}</a>
+          </div>
+          <a href="{{ url }}" class="find-out-more" rel="bookmark">Find out more</a>
+        </div>
+        {% if node.field_new_for_2017[0].value %}
+          <span class="banner"><span>New for 2017</span></span>
         {% endif %}
-      </div>
-      <div class="details">
-        <div class="title">
-          <span class="code">{{ node.field_sku[0].value }}</span> {{ node.field_product_name[0].value }}
-        </div>
-        <div class="description">
-          {{ node.field_excerpt_content[0].value }}
-        </div>
-        <a href="{{ url }}" rel="bookmark">Find out more</a>
-      </div>
-      {% if node.field_new_for_2017[0].value %}
-        <span class="banner"><span>New for 2017</span></span>
       {% endif %}
-    {% endif %}
-  </div>
+    </div>
 </li>

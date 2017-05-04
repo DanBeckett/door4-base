@@ -4541,6 +4541,8 @@ div#main div.content_block.content_block_range_list_1_across {
               color: #000000;
               margin: 0;
               padding: 0; }
+              div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details div.code a {
+                color: #000000; }
             div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details div.title {
               font-weight: normal;
               font-family: 'heroic_condensedbold', sans-serif;
@@ -4551,6 +4553,8 @@ div#main div.content_block.content_block_range_list_1_across {
               color: #77bc1f;
               margin: -12px 0 0 0;
               padding: 0; }
+              div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details div.title a:hover {
+                color: #77bc1f; }
             div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details div.description {
               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
               font-size: 19px;
@@ -4559,7 +4563,11 @@ div#main div.content_block.content_block_range_list_1_across {
               margin: 0;
               padding: 6px 0 21px 0;
               max-width: 290px; }
+              div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details div.description a {
+                color: #000000; }
             div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details a {
+              text-decoration: none; }
+            div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details a.find-out-more {
               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
               font-size: 14px;
               line-height: 20px;
@@ -4571,10 +4579,10 @@ div#main div.content_block.content_block_range_list_1_across {
               text-decoration: none;
               -webkit-border-radius: 4px;
               border-radius: 4px; }
-              div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details a i {
+              div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details a.find-out-more i {
                 margin-left: 10px;
                 font-size: 20px; }
-              div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details a:hover {
+              div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details a.find-out-more:hover {
                 text-decoration: underline;
                 background-color: #639d1a; }
 
@@ -4715,6 +4723,10 @@ div#main div.content_block.content_block_range_list_2_across_style_1 {
               padding: 26px 0 12px 0; }
               div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details div.title span.code {
                 color: #000000; }
+              div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details div.title a:hover {
+                color: #77bc1f; }
+                div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details div.title a:hover span.code {
+                  color: #000000; }
             div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details div.description {
               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
               font-size: 19px;
@@ -4722,7 +4734,11 @@ div#main div.content_block.content_block_range_list_2_across_style_1 {
               color: #000000;
               margin: 0;
               padding: 0 0 44px 0; }
+              div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details div.description a {
+                color: #000000; }
             div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details a {
+              text-decoration: none; }
+            div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details a.find-out-more {
               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
               font-size: 14px;
               line-height: 20px;
@@ -4734,10 +4750,10 @@ div#main div.content_block.content_block_range_list_2_across_style_1 {
               text-decoration: none;
               -webkit-border-radius: 4px;
               border-radius: 4px; }
-              div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details a i {
+              div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details a.find-out-more i {
                 margin-left: 10px;
                 font-size: 20px; }
-              div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details a:hover {
+              div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details a.find-out-more:hover {
                 text-decoration: underline;
                 background-color: #639d1a; }
 
@@ -4816,7 +4832,7 @@ div#main div.content_block.content_block_range_list_2_across_style_2 {
           div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details {
             min-height: 100px;
             margin: 0;
-            padding: 31px 0 36px 34px;
+            padding: 31px 20px 36px 34px;
             width: 40%;
             float: left; }
             div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details div.code {
@@ -4829,6 +4845,8 @@ div#main div.content_block.content_block_range_list_2_across_style_2 {
               color: #000000;
               margin: 0;
               padding: 0; }
+              div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details div.code a {
+                color: #000000; }
             div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details div.title {
               font-weight: normal;
               font-family: 'heroic_condensedbold', sans-serif;
@@ -4837,9 +4855,14 @@ div#main div.content_block.content_block_range_list_2_across_style_2 {
               text-transform: uppercase;
               letter-spacing: -1px;
               color: #77bc1f;
-              margin: -12px 0 0 0;
+              line-height: 32px;
+              margin: -8px 0 0 0;
               padding: 0 0 38px 0; }
+              div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details div.title a:hover {
+                color: #77bc1f; }
             div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details a {
+              text-decoration: none; }
+            div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details a.find-out-more {
               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
               font-size: 14px;
               line-height: 20px;
@@ -4851,10 +4874,10 @@ div#main div.content_block.content_block_range_list_2_across_style_2 {
               text-decoration: none;
               -webkit-border-radius: 4px;
               border-radius: 4px; }
-              div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details a i {
+              div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details a.find-out-more i {
                 margin-left: 10px;
                 font-size: 20px; }
-              div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details a:hover {
+              div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details a.find-out-more:hover {
                 text-decoration: underline;
                 background-color: #639d1a; }
 
@@ -4953,6 +4976,11 @@ div#main div.content_block.content_block_range_list_3_across {
               padding: 0 0 44px 0;
               min-height: 100px; }
             div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product div.details a {
+              color: #000000;
+              text-decoration: none; }
+              div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product div.details a:hover {
+                color: #000000; }
+            div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product div.details a.find-out-more {
               font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
               font-size: 14px;
               line-height: 20px;
@@ -4964,10 +4992,10 @@ div#main div.content_block.content_block_range_list_3_across {
               text-decoration: none;
               -webkit-border-radius: 4px;
               border-radius: 4px; }
-              div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product div.details a i {
+              div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product div.details a.find-out-more i {
                 margin-left: 10px;
                 font-size: 20px; }
-              div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product div.details a:hover {
+              div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product div.details a.find-out-more:hover {
                 text-decoration: underline;
                 background-color: #639d1a; }
 

@@ -5497,12 +5497,18 @@ div#main {
 								color:$ego-black;
 								margin:0;
 								padding:0;
+								a {
+									color: $ego-black;
+								}
 							}
 							div.title {
 								@include typography-mixin-title-3;
 								color:$ego-green;
 								margin:-12px 0 0 0;
 								padding:0;
+								a:hover {
+									color: $ego-green;
+								}
 							}
 							div.description {
 								@include typography-mixin-regular;
@@ -5510,8 +5516,14 @@ div#main {
 								margin:0;
 								padding:6px 0 21px 0;
 								max-width:290px;
+								a {
+									color: $ego-black;
+								}
 							}
 							a {
+								text-decoration: none;
+							}
+							a.find-out-more {
 								@include typography-mixin-small;
 								margin:0;
 								padding:9px 21px;
@@ -5699,14 +5711,26 @@ div#main {
 								span.code {
 									color:$ego-black;
 								}
+								a:hover {
+									color: $ego-green;
+									span.code {
+										color: $ego-black;
+									}
+								}
 							}
 							div.description {
 								@include typography-mixin-regular;
 								color:$ego-black;
 								margin:0;
 								padding:0 0 44px 0;
+								a {
+									color: $ego-black;
+								}
 							}
 							a {
+								text-decoration: none;
+							}
+							a.find-out-more {
 								@include typography-mixin-small;
 								margin:0;
 								padding:9px 21px;
@@ -5820,7 +5844,7 @@ div#main {
 						div.details {
 							min-height:100px;
 							margin:0;
-							padding:31px 0 36px 34px;
+							padding:31px 20px 36px 34px;
 							width:40%;
 							float:left;
 							div.code {
@@ -5828,14 +5852,24 @@ div#main {
 								color:$ego-black;
 								margin:0;
 								padding:0;
+								a {
+									color: $ego-black;
+								}
 							}
 							div.title {
 								@include typography-mixin-title-3;
 								color:$ego-green;
-								margin:-12px 0 0 0;
+								line-height: 32px;
+								margin:-8px 0 0 0;
 								padding:0 0 38px 0;
+								a:hover {
+									color: $ego-green;
+								}
 							}
 							a {
+								text-decoration: none;
+							}
+							a.find-out-more {
 								@include typography-mixin-small;
 								margin:0;
 								padding:9px 21px;
@@ -5967,6 +6001,13 @@ div#main {
 								min-height:100px;
 							}
 							a {
+								color: $ego-black;
+								text-decoration: none;
+								&:hover {
+									color: $ego-black;
+								}
+							}
+							a.find-out-more {
 								@include typography-mixin-small;
 								margin:0;
 								padding:9px 21px;

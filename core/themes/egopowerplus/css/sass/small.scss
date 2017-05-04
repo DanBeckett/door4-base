@@ -1679,7 +1679,7 @@ div#main {
 							div.description {
 								@include typography-mixin-regular;
 							}
-							a {
+							a.find-out-more {
 								@include typography-mixin-small;
 							}
 						}
@@ -1753,7 +1753,7 @@ div#main {
 								@include typography-mixin-regular;
 								padding:0 0 24px 0;
 							}
-							a {
+							a.find-out-more {
 								@include typography-mixin-small;
 							}
 						}
@@ -1801,7 +1801,7 @@ div#main {
 								@include typography-mixin-title-3;
 								padding:0 0 20px 0;
 							}
-							a {
+							a.find-out-more {
 								@include typography-mixin-small;
 							}
 						}
@@ -1849,7 +1849,7 @@ div#main {
 								padding:0 0 24px 0;
 								min-height:10px;
 							}
-							a {
+							a.find-out-more {
 								@include typography-mixin-small;
 							}
 						}
