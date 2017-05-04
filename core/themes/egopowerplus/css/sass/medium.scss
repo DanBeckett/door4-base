@@ -1128,6 +1128,12 @@ div#main {
 								}
 							}
 						}
+						&.product-image-align-bottom-left {
+							background-position: right bottom;
+						}
+						&.product-image-align-top-left {
+							background-position: right bottom;
+						}
 					}
 				}
 			}

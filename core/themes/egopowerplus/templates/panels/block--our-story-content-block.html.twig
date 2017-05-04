@@ -33,7 +33,7 @@
     'content_block content_block_our_story_content'
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+<div id="{{ plugin_id|clean_class }}"{{ attributes.addClass(classes) }}>
   {% block content %}
     <div class="our_story_content {{ content.field_background_style['#items'][0].value }}">
       {% if content.field_strapline_line_one['#items'][0].value or content.field_strapline_line_two['#items'][0].value %}

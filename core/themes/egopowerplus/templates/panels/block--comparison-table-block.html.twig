@@ -43,7 +43,9 @@
           <div class="title">{{ content.field_title }}</div>
         {% endif %}
 
-         <table class="blowers" width="" border="0" cellspacing="0" cellpadding="0">
+        <div class="table-scroll">
+
+         <table class="blowers scroll" width="" border="0" cellspacing="0" cellpadding="0">
           <tbody>
             <tr class="headers">
               <th scope="row">&nbsp;</th>
@@ -217,9 +219,11 @@
           </tbody>
         </table>
 
-        {% if content.body %}
-          <div class="footnote">{{ content.body }}</div>
-        {% endif %}
+      </div>
+
+      {% if content.body %}
+        <div class="footnote">{{ content.body }}</div>
+      {% endif %}
     
       </div>
 
@@ -231,7 +235,9 @@
           <div class="title">{{ content.field_title }}</div>
         {% endif %}
 
-         <table class="hedge-trimmers" width="" border="0" cellspacing="0" cellpadding="0">
+        <div class="table-scroll">
+
+         <table class="hedge-trimmers scroll" width="" border="0" cellspacing="0" cellpadding="0">
           <tbody>
             <tr class="headers">
               <th scope="row">&nbsp;</th>
@@ -350,9 +356,11 @@
           </tbody>
         </table>
 
-        {% if content.body %}
-          <div class="footnote">{{ content.body }}</div>
-        {% endif %}
+      </div>
+
+      {% if content.body %}
+        <div class="footnote">{{ content.body }}</div>
+      {% endif %}
     
       </div>
 
@@ -528,65 +536,69 @@
       {% if content.field_title %}
         <div class="title">{{ content.field_title }}</div>
       {% endif %}
-      
-      <table class="brush-cutters" width="" border="0" cellspacing="0" cellpadding="0">
-        <tbody>
-          <tr class="headers">
-            <th scope="col"></th>
-            <th scope="col" colspan="3">BC3800E</th>
-          </tr>
-          <tr class="shaded">
-            <th scope="row">Cutting Width</th>
-            <td colspan="3">Three-sided blade: 30cm
-              <br>
-              Line trimmer head: 38cm </td>
-          </tr>
-          <tr>
-            <th scope="row">Run time*</th>
-            <td colspan="3"><strong>Battery Size</strong></td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td class="no-right-border"><strong>4.0Ah</strong></td>
-            <td class="no-right-border"><strong>6.0Ah</strong></td>
-            <td><strong>7.5Ah</strong></td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td class="no-right-border">Up to 30 mins</td>
-            <td class="no-right-border">Up to 50 mins</td>
-            <td>Up to 65 mins</td>
-          </tr>
-          <tr class="shaded">
-            <th scope="row">Blade material</th>
-            <td colspan="3">Three-sided reversible steel blade</td>
-          </tr>
-          <tr>
-            <th scope="row">Speed control</th>
-            <td colspan="3">Constant variable speed</td>
-          </tr>
-          <tr class="shaded">
-            <th scope="row">Line diameter</th>
-            <td colspan="3">2.4mm</td>
-          </tr>
-          <tr>
-            <th scope="row">Line feed</th>
-            <td colspan="3">Rapid reload bump feed head</td>
-          </tr>
-          <tr class="shaded">
-            <th scope="row">Rotating Direction</th>
-            <td colspan="3">Anti clockwise</td>
-          </tr>
-          <tr>
-            <th scope="row">Weight without battery</th>
-            <td colspan="3">Three-sided blade: 3.54kg<br>Line trimmer head: 4.43kg</td>
-          </tr>
-          <tr class="shaded">
-            <th scope="row">Motor type</th>
-            <td colspan="3">Brushless</td>
-          </tr>
-        </tbody>
-      </table>
+     
+      <div class="table-scroll">
+
+        <table class="brush-cutters scroll" width="" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr class="headers">
+              <th scope="col"></th>
+              <th scope="col" colspan="3">BC3800E</th>
+            </tr>
+            <tr class="shaded">
+              <th scope="row">Cutting Width</th>
+              <td colspan="3">Three-sided blade: 30cm
+                <br>
+                Line trimmer head: 38cm </td>
+            </tr>
+            <tr>
+              <th scope="row">Run time*</th>
+              <td colspan="3"><strong>Battery Size</strong></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="no-right-border"><strong>4.0Ah</strong></td>
+              <td class="no-right-border"><strong>6.0Ah</strong></td>
+              <td><strong>7.5Ah</strong></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="no-right-border">Up to 30 mins</td>
+              <td class="no-right-border">Up to 50 mins</td>
+              <td>Up to 65 mins</td>
+            </tr>
+            <tr class="shaded">
+              <th scope="row">Blade material</th>
+              <td colspan="3">Three-sided reversible steel blade</td>
+            </tr>
+            <tr>
+              <th scope="row">Speed control</th>
+              <td colspan="3">Constant variable speed</td>
+            </tr>
+            <tr class="shaded">
+              <th scope="row">Line diameter</th>
+              <td colspan="3">2.4mm</td>
+            </tr>
+            <tr>
+              <th scope="row">Line feed</th>
+              <td colspan="3">Rapid reload bump feed head</td>
+            </tr>
+            <tr class="shaded">
+              <th scope="row">Rotating Direction</th>
+              <td colspan="3">Anti clockwise</td>
+            </tr>
+            <tr>
+              <th scope="row">Weight without battery</th>
+              <td colspan="3">Three-sided blade: 3.54kg<br>Line trimmer head: 4.43kg</td>
+            </tr>
+            <tr class="shaded">
+              <th scope="row">Motor type</th>
+              <td colspan="3">Brushless</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
               
       {% if content.body %}
         <div class="footnote">{{ content.body }}</div>
@@ -811,7 +823,9 @@
           <div class="title">{{ content.field_title }}</div>
         {% endif %}
 
-          <table class="batteries" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <div class="table-scroll">
+
+          <table class="batteries scroll" width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody>
               <tr class="title">
                 <td colspan="8">Performance statistics</td>
@@ -865,6 +879,8 @@
             </tbody>
           </table>
 
+          </div>
+
           {% if content.body %}
             <div class="footnote">{{ content.body }}</div>
           {% endif %}
@@ -878,8 +894,10 @@
         {% if content.field_title %}
           <div class="title">{{ content.field_title }}</div>
         {% endif %}
+
+          <div class="table-scroll">
           
-          <table class="chainsaws" width="" border="0" cellspacing="0" cellpadding="0">
+          <table class="chainsaws scroll" width="" border="0" cellspacing="0" cellpadding="0">
             <tbody>
               <tr class="headers">
                 <th scope="col"></th>
@@ -971,6 +989,8 @@
               </tr>
             </tbody>
           </table>
+
+          </div>
                   
           {% if content.body %}
             <div class="footnote">{{ content.body }}</div>

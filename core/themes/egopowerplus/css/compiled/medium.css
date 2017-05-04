@@ -904,6 +904,10 @@
           padding: 22px 0 0 0; }
           div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper div.text_wrapper div.cta.extra-padding {
             padding-top: 100px; }
+        div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper.product-image-align-bottom-left {
+          background-position: right bottom; }
+        div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper.product-image-align-top-left {
+          background-position: right bottom; }
 
   /* Content Block - Product Category Link Bar - inc_block_product_category_link_bar.php */
   div#main div.content_block.content_block_product_category_link_bar {
