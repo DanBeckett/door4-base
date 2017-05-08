@@ -53,7 +53,7 @@ jQuery(window).load(function() {
 			animationLoop: true,
 			controlNav: false,
 			directionNav: true,
-			slideshowSpeed: 8000,
+			slideshowSpeed: 4000,
 			animationSpeed: 800,
 			prevText: "&#xf104;",
 			nextText: "&#xf105;",
