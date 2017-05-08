@@ -5533,6 +5533,29 @@ div#main {
 						padding:25px 0 25px 0;
 						overflow:hidden;
 						border-bottom:1px solid #a6a6a6;
+						span.banner {
+							@include typography-mixin-product-banner;
+							margin:0;
+							padding:9px 22px;
+							background-color:$ego-blue;
+							color:$ego-white;
+							position:absolute;
+							top:39px;
+							left:110px;
+							-webkit-transform:skewX(-16deg);
+							transform:skewX(-16deg);
+							-webkit-border-radius:8px;
+							border-radius:8px;
+							display:block;
+							span {
+								-webkit-transform:skewX(16deg);
+								transform:skewX(16deg);
+								display:inline-block;
+							}
+							+ div.details {
+								padding-top: 96px;
+							}
+						}
 						div.image {
 							min-height:100px;
 							margin:0;

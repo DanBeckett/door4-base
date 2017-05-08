@@ -4564,6 +4564,30 @@ div#main div.content_block.content_block_range_list_1_across {
           padding: 25px 0 25px 0;
           overflow: hidden;
           border-bottom: 1px solid #a6a6a6; }
+          div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product span.banner {
+            font-weight: normal;
+            font-family: 'heroic_condensedblack_italic', sans-serif;
+            font-size: 38px;
+            line-height: 38px;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 9px 22px;
+            background-color: #5c91a9;
+            color: #ffffff;
+            position: absolute;
+            top: 39px;
+            left: 110px;
+            -webkit-transform: skewX(-16deg);
+            transform: skewX(-16deg);
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            display: block; }
+            div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product span.banner span {
+              -webkit-transform: skewX(16deg);
+              transform: skewX(16deg);
+              display: inline-block; }
+            div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product span.banner + div.details {
+              padding-top: 96px; }
           div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.image {
             min-height: 100px;
             margin: 0;
