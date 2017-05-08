@@ -39,6 +39,30 @@ jQuery(window).load(function() {
 		});
 	};
 
+	// The heading image slider
+	if(jQuery('div.hero_image_slider').length > 0) {
+		
+		//if the slider has a video slide, switch to "fade" animation,
+		//as slide doesn't work with video content.
+		var animationStyle = "slide";
+		if(jQuery('div.hero_image_slider').find('.video_wrapper').length > 0)
+			animationStyle = "fade";
+
+		jQuery('div.hero_image_slider').flexslider({
+			animation: animationStyle,
+			animationLoop: true,
+			controlNav: false,
+			directionNav: true,
+			slideshowSpeed: 8000,
+			animationSpeed: 800,
+			prevText: "&#xf104;",
+			nextText: "&#xf105;",
+			start: function(){
+				 jQuery('div.hero_image_slider').addClass('active'); 
+			}
+		});
+	};
+
 	if(jQuery('div.single_product_details div.thumbnails_panel').length > 0) {
 		jQuery('div.single_product_details div.thumbnails_panel').flexslider({
 			animation: 'slide',

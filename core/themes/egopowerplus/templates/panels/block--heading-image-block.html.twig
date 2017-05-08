@@ -37,7 +37,17 @@
 
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-    {{ content }}
+    {% if content.field_multiple_heading_slides[0]|render|trim == 'On' %}
+      <div class="hero_image_slider">
+        <ul class="slides">
+          {{ content.field_heading_slide }}
+        </ul>
+      </div>
+    {% else %}
+      {{ content.field_image }}
+      {{ content.field_video }}
+      {{ content.field_heading_content }}
+    {% endif %}
   {% endblock %}
   </div><!-- .hero (opened in field/field--block-content--field-image--heading-image-block.html.twig) -->
 </div>
