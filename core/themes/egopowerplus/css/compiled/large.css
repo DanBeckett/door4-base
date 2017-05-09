@@ -727,7 +727,7 @@ header {
         margin: 0 0 0 -6px;
         padding: 0 10px 0 0;
         float: left;
-        width: 45%;
+        width: 55%;
         text-align: left;
         color: #000000; }
         header div#breadcrumb_bar_wrapper div#breadcrumb_bar div.breadcrumb a {
@@ -747,7 +747,7 @@ header {
         margin: 0 -6px 0 0;
         padding: 0 0 0 10px;
         float: right;
-        width: 55%;
+        width: 45%;
         text-align: right;
         color: #000000; }
         header div#breadcrumb_bar_wrapper div#breadcrumb_bar div.anchors a {
