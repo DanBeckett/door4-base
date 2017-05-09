@@ -1702,6 +1702,8 @@ div#main div.content_block.content_block_blowers_table {
         transform: skewX(-16deg);
         -webkit-border-radius: 999px;
         border-radius: 999px; }
+    div#main div.content_block.content_block_blowers_table div.blowers_table .table-scroll {
+      position: relative; }
     div#main div.content_block.content_block_blowers_table div.blowers_table table.blowers {
       margin: 0 auto;
       padding: 0;
@@ -1754,14 +1756,6 @@ div#main div.content_block.content_block_blowers_table {
         text-align: center;
         color: #000000; }
 
-/* Privacy, Warranty, Terms pages. Very rush fix, find a nice way to sort this */
-div#main div#block-egopowerplus-content .block-block-contentc99c8928-9ee2-48df-9ea5-e3a7c232339c,
-div#main div#block-egopowerplus-content .block-block-contentc2392302-d78f-44b8-9d83-1ad1e32a5181,
-div#main div#block-egopowerplus-content .block-block-contentd6dbed87-dabd-415b-89b6-c8b19b63eaba {
-  margin: 0 auto;
-  padding: 40px 40px;
-  max-width: 1366px; }
-
 div#main div.content_block.content_block_hedge-trimmers_table {
   margin: 0;
   padding: 0; }
@@ -1798,6 +1792,8 @@ div#main div.content_block.content_block_hedge-trimmers_table {
         transform: skewX(-16deg);
         -webkit-border-radius: 999px;
         border-radius: 999px; }
+    div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table .table-scroll {
+      position: relative; }
     div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers {
       margin: 0 auto;
       padding: 0;
@@ -1887,11 +1883,14 @@ div#main div.content_block.content_block_mowers_table {
         transform: skewX(-16deg);
         -webkit-border-radius: 999px;
         border-radius: 999px; }
+    div#main div.content_block.content_block_mowers_table div.mowers_table .table-scroll {
+      position: relative; }
     div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers {
       margin: 0 auto;
       padding: 0;
       border: 1px solid #4d4d4d; }
       div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr td, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr th {
+        background-color: #ffffff;
         border-right: 1px solid #4d4d4d;
         margin: 0;
         padding: 19px 15px;
@@ -1976,6 +1975,8 @@ div#main div.content_block.content_block_line-trimmers_table {
         transform: skewX(-16deg);
         -webkit-border-radius: 999px;
         border-radius: 999px; }
+    div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table .table-scroll {
+      position: relative; }
     div#main div.content_block.content_block_line-trimmers_table div.line-trimmers_table table.line-trimmers {
       margin: 0 auto;
       padding: 0;
@@ -2065,6 +2066,8 @@ div#main div.content_block.content_block_brush-cutters_table {
         transform: skewX(-16deg);
         -webkit-border-radius: 999px;
         border-radius: 999px; }
+    div#main div.content_block.content_block_brush-cutters_table div.brush-cutters_table .table-scroll {
+      position: relative; }
     div#main div.content_block.content_block_brush-cutters_table div.brush-cutters_table table.brush-cutters {
       margin: 0 auto;
       padding: 0;
@@ -2154,6 +2157,8 @@ div#main div.content_block.content_block_chainsaws_table {
         transform: skewX(-16deg);
         -webkit-border-radius: 999px;
         border-radius: 999px; }
+    div#main div.content_block.content_block_chainsaws_table div.chainsaws_table .table-scroll {
+      position: relative; }
     div#main div.content_block.content_block_chainsaws_table div.chainsaws_table table.chainsaws {
       margin: 0 auto;
       padding: 0;
@@ -2205,6 +2210,14 @@ div#main div.content_block.content_block_chainsaws_table {
         padding: 30px 20px 0 20px;
         text-align: center;
         color: #000000; }
+
+/* Privacy, Warranty, Terms pages. Very rush fix, find a nice way to sort this */
+div#main div#block-egopowerplus-content .block-block-contentc99c8928-9ee2-48df-9ea5-e3a7c232339c,
+div#main div#block-egopowerplus-content .block-block-contentc2392302-d78f-44b8-9d83-1ad1e32a5181,
+div#main div#block-egopowerplus-content .block-block-contentd6dbed87-dabd-415b-89b6-c8b19b63eaba {
+  margin: 0 auto;
+  padding: 40px 40px;
+  max-width: 1366px; }
 
 /* Content Block - Contact - inc_block_contact.php */
 div#main div.content_block.content_block_contact {

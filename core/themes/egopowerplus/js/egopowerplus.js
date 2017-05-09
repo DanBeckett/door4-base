@@ -282,6 +282,37 @@ jQuery(window).load(function() {
 		});
 	}
 
+	/* -- Lock table headings when scrolling horizontally -- */
+
+	if(jQuery('.table-scroll').length > 0 && jQuery('table.scroll').length > 0) {
+		jQuery('table.scroll').scroll(function(e){
+			$widest	=	0;
+			jQuery('th[scope="row"]').each(function(){
+				var $this = jQuery(this),
+				    $parent = $this.closest('table.scroll');
+				    $width = $this.outerWidth();
+				    if($width > $widest)
+				    	$widest = $width;
+				    $parent.css({
+				    	'padding-left'	: $widest + 'px'
+				    });
+			});
+			jQuery('th[scope="row"]').each(function(){
+				var $this		=	jQuery(this),
+				    $height		=	$this.outerHeight();
+				    $position	=	$this.position();
+				$this.css({
+					'border-left'	:	'1px solid #4d4d4d',
+					'height'		:	$height + 'px',
+					'left'			:	0,
+					'position'		:	'absolute',
+					'top'			:	$position.top + 'px',
+					'width'			:	$widest + 'px'
+				});
+			});
+		});
+	} 
+
 	/* -- Add placeholder text to search form. Eventually change to a more graceful way of doing this via the theme --*/
 
 	if(jQuery('#edit-keys').length > 0) {

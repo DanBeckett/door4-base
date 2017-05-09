@@ -871,7 +871,7 @@ header {
 		padding:3px 0 3px 0;
 		background-color:$ego-white;
 		div#breadcrumb_bar {
-			margin: 0 auto 0 auto;
+			margin: 0 auto 0 auto; 
 			max-width: 1320px;
 			padding: 0 20px 2px 25px;
 			overflow:hidden;
@@ -2052,6 +2052,9 @@ div#main {
 					border-radius:999px;
 				}
 			}
+			.table-scroll {
+				position: relative;
+			}
 			table.blowers {
 				margin:0 auto;
 				padding:0;
@@ -2127,20 +2130,6 @@ div#main {
 	}
 }
 
-/* Privacy, Warranty, Terms pages. Very rush fix, find a nice way to sort this */
-
-div#main {
-	div#block-egopowerplus-content {
-		.block-block-contentc99c8928-9ee2-48df-9ea5-e3a7c232339c,
-		.block-block-contentc2392302-d78f-44b8-9d83-1ad1e32a5181,
-		.block-block-contentd6dbed87-dabd-415b-89b6-c8b19b63eaba {
-			margin:0 auto;
-			padding:40px 40px;
-			max-width:1366px;
-		}
-	}
-}
-
 div#main {
 	div.content_block.content_block_hedge-trimmers_table {
 		margin:0;
@@ -2174,6 +2163,9 @@ div#main {
 					-webkit-border-radius:999px;
 					border-radius:999px;
 				}
+			}
+			.table-scroll {
+				position: relative;
 			}
 			table.hedge-trimmers {
 				margin:0 auto;
@@ -2286,6 +2278,9 @@ div#main {
 					border-radius:999px;
 				}
 			}
+			.table-scroll {
+				position: relative;
+			}
 			table.mowers {
 				margin:0 auto;
 				padding:0;
@@ -2293,6 +2288,7 @@ div#main {
 				tbody {
 					tr {
 						td, th {
+							background-color: $ego-white;
 							border-right:1px solid $ego-dark-grey;
 							margin:0;
 							padding:19px 15px;
@@ -2396,6 +2392,9 @@ div#main {
 					-webkit-border-radius:999px;
 					border-radius:999px;
 				}
+			}
+			.table-scroll {
+				position: relative;
 			}
 			table.line-trimmers {
 				margin:0 auto;
@@ -2508,6 +2507,9 @@ div#main {
 					border-radius:999px;
 				}
 			}
+			.table-scroll {
+				position: relative;
+			}
 			table.brush-cutters {
 				margin:0 auto;
 				padding:0;
@@ -2619,6 +2621,9 @@ div#main {
 					border-radius:999px;
 				}
 			}
+			.table-scroll {
+				position: relative;
+			}
 			table.chainsaws {
 				margin:0 auto;
 				padding:0;
@@ -2690,6 +2695,20 @@ div#main {
 					color:$ego-black;
 				}
 			}
+		}
+	}
+}
+
+/* Privacy, Warranty, Terms pages. Very rush fix, find a nice way to sort this */
+
+div#main {
+	div#block-egopowerplus-content {
+		.block-block-contentc99c8928-9ee2-48df-9ea5-e3a7c232339c,
+		.block-block-contentc2392302-d78f-44b8-9d83-1ad1e32a5181,
+		.block-block-contentd6dbed87-dabd-415b-89b6-c8b19b63eaba {
+			margin:0 auto;
+			padding:40px 40px;
+			max-width:1366px;
 		}
 	}
 }
