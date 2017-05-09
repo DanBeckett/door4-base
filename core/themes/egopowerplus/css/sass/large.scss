@@ -1125,6 +1125,7 @@ footer {
 			position:relative;
 			li {
 				@include typography-mixin-small;
+				font-size: 32px;
 				margin:0;
 				padding:4px 4px 4px 4px;
 				list-style-position:outside;
@@ -3864,6 +3865,7 @@ html.svg {
 		div.content_block.content_block_labelled_product_image {
 			div.labels_key {
 				div.arc56_logo {
+					background-color: $ego-white;
 					background-image:url(../../images/blocks/labelled_product_image/ARC56.svg);
 				}
 			}

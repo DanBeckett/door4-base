@@ -143,10 +143,12 @@
             <ul class="links">
 
               {% if node.field_buy_online_url[0].uri %}
-            
-                <li class="buy_online"><a href="{{ node.field_buy_online_url[0].uri }}" target="_blank" class="buy-online">Buy online <i class="fa fa-angle-right"></i></a></li>
-
+                {% set buy_online_uri = node.field_buy_online_url[0].uri %}
+              {% else %}
+                {% set buy_online_uri = '/where-to-buy/' %}
               {% endif %}
+            
+                <li class="buy_online"><a href="{{ buy_online_uri }}" target="_blank" class="buy-online">Buy online <i class="fa fa-angle-right"></i></a></li>
 
               {% if node.field_authorised_dealer_url[0].uri %}
                 

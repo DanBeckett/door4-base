@@ -896,6 +896,7 @@ footer {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 14px;
         line-height: 20px;
+        font-size: 32px;
         margin: 0;
         padding: 4px 4px 4px 4px;
         list-style-position: outside;
@@ -3182,6 +3183,7 @@ div#main div.content_block.content_block_labelled_product_image {
         color: #77bc1f; }
 
 html.svg div#main div.content_block.content_block_labelled_product_image div.labels_key div.arc56_logo {
+  background-color: #ffffff;
   background-image: url(../../images/blocks/labelled_product_image/ARC56.svg); }
 
 /* Content Block - Manuals and Safety Sheets - inc_block_manuals.php */
