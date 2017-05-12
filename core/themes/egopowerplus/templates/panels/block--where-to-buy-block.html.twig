@@ -40,14 +40,14 @@
       <div class="find_a_dealer">
           
             <h2>Find A Stockist</h2>
+
+            <a href="{{ content.field_find_a_dealer_link[0]['#url'] }}" class="find_local_dealer">{{ content.field_find_a_dealer_link[0]['#title'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             
             <div class="map">
               
-                <img src="{{ file_url(content.field_find_a_dealer_image.0['#item'].entity.uri.value) }}">
+                <a href="{{ content.field_find_a_dealer_link[0]['#url'] }}"><img src="{{ file_url(content.field_find_a_dealer_image.0['#item'].entity.uri.value) }}"></a>
             
             </div><!-- .map -->           
-
-            <a href="{{ content.field_find_a_dealer_link[0]['#url'] }}" class="find_local_dealer">{{ content.field_find_a_dealer_link[0]['#title'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
         
         </div><!-- .find_a_dealer -->
         

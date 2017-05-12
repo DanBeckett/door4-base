@@ -39,6 +39,10 @@
   {% set classes = classes|merge(['negative-top-margin']) %}
 {% endif %}
 
+{% if content.field_add_top_margin['#items'][0].value %}
+  {% set classes = classes|merge(['add-top-margin']) %}
+{% endif %}
+
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}

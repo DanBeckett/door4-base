@@ -15,8 +15,8 @@ jQuery(window).load(function() {
 	//if we've come to a specific part of a page, readjust for header
 	  if(window.location.hash) {
 		var $header = jQuery('header'),
-		    $header_height = $header.outerHeight(),
-		    $hash = window.location.hash.substring(1),
+			$header_height = $header.outerHeight(),
+			$hash = window.location.hash.substring(1),
 			$scrollEl = jQuery('#' + $hash),
 			$scrollElPos = $scrollEl.position();
 		jQuery('html, body').animate({scrollTop: ($scrollElPos.top - $header_height)}, 800);
@@ -160,6 +160,10 @@ jQuery(window).load(function() {
 	// Disabled matchHeight Els:
 	// 'div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.section_bar.conc-trigger div.matchheight'
 
+	jQuery.fn.matchHeight.afterUpdate = function(event, groups) {
+		console.log('hello');
+	}
+
 	for (i = 0, len = matchEls.length; i < len; i++) {
 		if(jQuery(matchEls[i]).length > 0) {
 			var $this = jQuery(matchEls[i]);
@@ -289,18 +293,18 @@ jQuery(window).load(function() {
 			$widest	=	0;
 			jQuery('th[scope="row"]').each(function(){
 				var $this = jQuery(this),
-				    $parent = $this.closest('table.scroll');
-				    $width = $this.outerWidth();
-				    if($width > $widest)
-				    	$widest = $width;
-				    $parent.css({
-				    	'padding-left'	: $widest + 'px'
-				    });
+					$parent = $this.closest('table.scroll');
+					$width = $this.outerWidth();
+					if($width > $widest)
+						$widest = $width;
+					$parent.css({
+						'padding-left'	: $widest + 'px'
+					});
 			});
 			jQuery('th[scope="row"]').each(function(){
 				var $this		=	jQuery(this),
-				    $height		=	$this.outerHeight();
-				    $position	=	$this.position();
+					$height		=	$this.outerHeight();
+					$position	=	$this.position();
 				$this.css({
 					'border-left'	:	'1px solid #4d4d4d',
 					'height'		:	$height + 'px',
@@ -321,6 +325,62 @@ jQuery(window).load(function() {
 
 	if(jQuery('#edit-keys--2').length > 0) {
 		jQuery('#edit-keys--2').attr('placeholder', 'Search');
+	}
+
+	/* -- Move smallprint on signup form (drupal won't allow us to add this after the signup button) -- */
+
+	if(jQuery('.offers_signup_form').length > 0) {
+		var $form = jQuery('.offers_signup_form').children('form'),
+		    $smallprint = $form.children('p.smallprint');
+		$smallprint.remove();
+		$form.append($smallprint);
+	}
+
+	/* -- Generic Concertina -- */
+
+	if(jQuery('.conc-trigger').length > 0) {
+
+	  if(jQuery('.conc-default').length > 0) {
+
+	  	jQuery('.conc-default').children('.conc-trigger').addClass('conc-active'); 
+	  	jQuery('.conc-default').children('.conc-content').show();
+
+	  };
+	
+	  jQuery('.conc-trigger').click( function(e) {
+
+		 e.preventDefault();
+
+		 if ( jQuery(this).hasClass('conc-active') ) {
+ 
+			jQuery(this).removeClass('conc-active');
+			
+			jQuery(this).closest('.conc-scope').children('.conc-content').slideUp();         
+		 
+		 } else {
+			
+			jQuery(this).addClass('conc-active');
+
+			if ( jQuery(this).closest('.conc-scope').hasClass('conc-exclusive') ) {
+
+			   if ( jQuery('.conc-active') ) { jQuery('.conc-active').removeClass('conc-active'); }
+
+			   jQuery('.conc-content').slideUp();
+
+			   jQuery(this).addClass('conc-active');
+
+			   jQuery(this).closest('.conc-scope').children('.conc-content').slideDown();   
+			   
+			} else {
+			  
+			   jQuery(this).closest('.conc-scope').children('.conc-content').slideDown();
+			   
+			} // if ( jQuery(this).closest('.conc-scope').hasClass('conc-exclusive') ) {
+			
+		 } // if ( jQuery(this).hasClass('conc-active') ) {
+		 
+	  }); // jQuery(".conc-trigger").click( function(e) {
+
 	}
 
 });

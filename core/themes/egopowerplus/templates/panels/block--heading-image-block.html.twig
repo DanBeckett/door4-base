@@ -35,6 +35,11 @@
   ]
 %}
 
+{% if content.field_shadow_style['#items'][0].value is not empty %}
+  {% set shadow_style = 'shadow-' ~ content.field_shadow_style['#items'][0].value %}
+  {% set classes = classes|merge([shadow_style]) %}
+{% endif %}
+
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
     {% if content.field_multiple_heading_slides[0]|render|trim == 'On' %}

@@ -1357,6 +1357,14 @@ div#main {
 				}
 			}
 		}
+		&.category-mowers {
+            div.single_product_details {
+                .promo-roundel {
+                	height: 66px;
+                	width: 66px;
+                }
+            }
+        }
 	}
 }
 

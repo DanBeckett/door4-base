@@ -83,9 +83,17 @@
 
 {{ attach_library('classy/node') }}
 
-<div id="summary" class="content_block content_block_single_product_details">
+{% set taxonomy = content.field_product_type[0]['#title']|lower|replace({' ': '-', '&': ''})|replace({'--':'-'}) %}
+
+<div id="summary" class="content_block content_block_single_product_details category-{{ taxonomy }}">
 
   <div class="single_product_details">
+
+    {% if taxonomy == 'mowers' %}
+
+      <span class="promo-roundel">&nbsp;</span>
+
+    {% endif %}
 
         {{ content.field_product_image }}
         
@@ -175,8 +183,6 @@
     </div><!-- .single_product_details -->
 
 </div>
-
-{% set taxonomy = content.field_product_type[0]['#title']|lower|replace({' ': '-', '&': ''})|replace({'--':'-'}) %}
 
 {% include '@egopowerplus/product/product-features--' ~ taxonomy ~ '.html.twig' ignore missing %}
 

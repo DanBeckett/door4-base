@@ -1,31 +1,31 @@
 /*
-	Index of contents
-	============================================
-	1. Sass variables, mixins etc
-	2. Development aids
-	3. Fonts
-	4. Basic structural things
-	5. Mobile Menu
-	6. Header
-	7. Footer
-	8. WYSIWYG elements within div#main
-	9. Content Blocks
-	10. Search Results
-	
-	============================================
+    Index of contents
+    ============================================
+    1. Sass variables, mixins etc
+    2. Development aids
+    3. Fonts
+    4. Basic structural things
+    5. Mobile Menu
+    6. Header
+    7. Footer
+    8. WYSIWYG elements within div#main
+    9. Content Blocks
+    10. Search Results
+    
+    ============================================
 
 
-	Notes
-	--------------------------------------------
-	
-	Font names:
-	
-	font-family: 'heroic_condensedmedium', sans-serif;
-	font-family: 'heroic_condensedbold', sans-serif;
-	font-family: 'heroic_condensedblack', sans-serif;
-	
-	Arial is the main body font
-	
+    Notes
+    --------------------------------------------
+    
+    Font names:
+    
+    font-family: 'heroic_condensedmedium', sans-serif;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-family: 'heroic_condensedblack', sans-serif;
+    
+    Arial is the main body font
+    
 */
 /* ================================== */
 /* 1. Sass variables, mixins etc      */
@@ -852,7 +852,7 @@ footer {
           transform: skewX(-16deg);
           -webkit-border-radius: 0 14px 9px 0;
           border-radius: 0 14px 9px 0; }
-          footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper button {
+          footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper input[type='submit'] {
             -webkit-transform: skewX(16deg);
             transform: skewX(16deg);
             border: none;
@@ -862,10 +862,12 @@ footer {
             font-size: 19px;
             color: #ffffff;
             background: none; }
-            footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper button i.fa.fa-angle-right {
+            footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper input[type='submit'] i.fa.fa-angle-right {
               font-size: 37px;
               margin-left: 6px;
               vertical-align: middle; }
+            footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper input[type='submit']:focus {
+              outline: none; }
         footer div#footer_inner div#footer_contact form#signup_form div#signup_input_wrapper {
           margin: 0 144px 0 0;
           padding: 0;
@@ -876,7 +878,7 @@ footer {
           -webkit-transform: skewX(-16deg);
           transform: skewX(-16deg);
           background-color: #333333; }
-          footer div#footer_inner div#footer_contact form#signup_form div#signup_input_wrapper input#signup {
+          footer div#footer_inner div#footer_contact form#signup_form div#signup_input_wrapper input#email {
             -webkit-transform: skewX(16deg);
             transform: skewX(16deg);
             border: none;
@@ -887,6 +889,8 @@ footer {
             color: #ffffff;
             font-size: 19px;
             background: none; }
+            footer div#footer_inner div#footer_contact form#signup_form div#signup_input_wrapper input#email:focus {
+              outline: none; }
     footer div#footer_inner ul#footer_social {
       margin: 0;
       padding: 25px 400px 20px 16px;
@@ -1001,6 +1005,8 @@ div#main p {
 div#main ul {
   margin: 0;
   padding: 16px 0 16px 24px; }
+  div#main ul.view-empty {
+    padding: 0; }
   div#main ul li {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 19px;
@@ -1360,21 +1366,21 @@ div#main div.content_block.content_block_blog_article {
           color: #000000;
           margin: 0;
           padding: 21px 0 11px 0; }
-        div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link {
+        div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts {
           margin: 0 0 19px 0;
           padding: 0; }
-          div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link a.image {
+          div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts a.image {
             margin: 0;
             padding: 0;
             display: block;
             position: relative; }
-            div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link a.image img {
+            div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts a.image img {
               display: block;
               margin: 0;
               padding: 0;
               width: 100%;
               height: auto; }
-            div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link a.image div.overlay {
+            div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts a.image div.overlay {
               margin: 0;
               padding: 0;
               position: absolute;
@@ -1386,11 +1392,11 @@ div#main div.content_block.content_block_blog_article {
               background-position: right center;
               background-repeat: no-repeat;
               background-size: contain; }
-          div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text {
-            margin: 0;
+          div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts div.text {
+            margin: 0 0 19px 0;
             padding: 20px 33px 20px 33px;
             background-color: #ededed; }
-            div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text div.title {
+            div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts div.text div.title {
               font-weight: normal;
               font-family: 'heroic_condensedbold', sans-serif;
               font-size: 54px;
@@ -1399,13 +1405,13 @@ div#main div.content_block.content_block_blog_article {
               margin: 0;
               padding: 11px 0 55px 0;
               color: #000000; }
-              div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text div.title a {
+              div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts div.text div.title a {
                 color: #000000;
                 text-decoration: none; }
-            div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text ul.date_and_categories {
+            div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts div.text ul.date_and_categories {
               margin: 0;
               padding: 6px 0 6px 0; }
-              div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text ul.date_and_categories li {
+              div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts div.text ul.date_and_categories li {
                 font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
                 font-size: 14px;
                 line-height: 20px;
@@ -1416,7 +1422,7 @@ div#main div.content_block.content_block_blog_article {
                 list-style-position: outside;
                 list-style-type: none;
                 display: inline-block; }
-                div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.article_link div.text ul.date_and_categories li a {
+                div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel div.other_articles div.view-id-related_posts div.text ul.date_and_categories li a {
                   color: #000000;
                   text-decoration: underline; }
       div#main div.content_block.content_block_blog_article div.blog_article div.sidebar_panel .product_list {
@@ -1802,7 +1808,7 @@ div#main div.content_block.content_block_hedge-trimmers_table {
       div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr td, div#main div.content_block.content_block_hedge-trimmers_table div.hedge-trimmers_table table.hedge-trimmers tbody tr th {
         border-right: 1px solid #4d4d4d;
         margin: 0;
-        padding: 19px 15px;
+        padding: 19px 8px;
         text-align: center;
         color: #000000;
         font-size: 14px;
@@ -2250,6 +2256,8 @@ div#main div.content_block.content_block_contact {
           margin: 0;
           padding: 0;
           color: #000000; }
+          div#main div.content_block.content_block_contact div.contact div.contact_main div.write_to_us h3 span {
+            color: #77bc1f; }
         div#main div.content_block.content_block_contact div.contact div.contact_main div.write_to_us p.address {
           color: #000000;
           padding: 30px 0 30px 0; }
@@ -2283,6 +2291,8 @@ div#main div.content_block.content_block_contact {
           margin: 0;
           padding: 0;
           color: #000000; }
+          div#main div.content_block.content_block_contact div.contact div.contact_main div.social h3 span {
+            color: #77bc1f; }
         div#main div.content_block.content_block_contact div.contact div.contact_main div.social ul.social {
           margin: 0;
           padding: 9px 0 9px 0; }
@@ -2321,6 +2331,8 @@ div#main div.content_block.content_block_contact {
                 font-size: 27px;
                 color: #77bc1f;
                 display: inline-block; }
+        div#main div.content_block.content_block_contact div.contact div.contact_main div.social.right {
+          padding-left: 142px; }
     div#main div.content_block.content_block_contact div.contact div.contact_sidebar {
       margin: 0;
       padding: 46px 0 0 0;
@@ -2619,7 +2631,10 @@ div#main div.content_block.content_block_feature_panels {
             text-transform: none;
             margin: 0;
             padding: 0;
-            color: #77bc1f; }
+            color: #77bc1f;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
           div#main div.content_block.content_block_feature_panels ul.feature_panels li div.feature_panel div.text p {
             margin-top: -5px;
             color: #ffffff; }
@@ -2672,7 +2687,7 @@ div#main div.content_block.content_block_hero {
       left: 50%;
       margin: 0;
       padding: 16px 30px 52px 30px;
-      max-width: 1040px;
+      max-width: 1110px;
       width: 100%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
@@ -2751,6 +2766,11 @@ div#main div.content_block.content_block_hero {
           border-radius: 999px; }
           div#main div.content_block.content_block_hero div.hero_image_slider ul.flex-direction-nav li a:hover {
             background-color: #639d1a; }
+  div#main div.content_block.content_block_hero.shadow-lighter div.hero div.caption {
+    background-image: url(../../images/blocks/hero/hero_caption_shade_faded-lighter.png); }
+  div#main div.content_block.content_block_hero.shadow-darker div.hero div.caption {
+    background-image: url(../../images/blocks/hero/hero_caption_shade_faded-darker.png);
+    background-size: 105% 105%; }
 
 /* Content Block - Home 'Uniqueness' Banner - inc_block_home_uniqueness_banner.php */
 div#main div.content_block.content_block_home_uniqueness_banner {
@@ -2835,6 +2855,78 @@ div#main div.content_block.content_block_simple_wysiwyg_block {
       div#main div.content_block.content_block_simple_wysiwyg_block .content_wrapper ul.buttons:last-child {
         padding-bottom: 50px; }
 
+/* Content Block - Simple Two Column WYSIWYG Block */
+div#main div.content_block.content_block_simple_two_column_wysiwyg_block {
+  margin: 0;
+  padding: 0;
+  background-color: #ededed;
+  color: #000000; }
+  div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 43px 0 43px;
+    overflow: hidden; }
+    div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block .column_one {
+      margin: 0;
+      padding: 54px 43px 25px 108px;
+      width: 54.25%;
+      float: left;
+      position: relative;
+      overflow: hidden; }
+    div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block .column_two {
+      margin: 0;
+      padding: 0;
+      width: 45.75%;
+      float: left; }
+      div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block .column_two img {
+        float: right;
+        max-width: 100%; }
+    div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block p {
+      padding: 14px 0 15px 0;
+      color: #000; }
+      div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block p:last-child {
+        padding-bottom: 50px; }
+      div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block p.smallprint {
+        font-size: 12px;
+        line-height: 16px; }
+    div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block h3 {
+      font-weight: normal;
+      font-family: 'heroic_condensedbold', sans-serif;
+      font-size: 48px;
+      line-height: 42px;
+      text-transform: uppercase;
+      margin: 0 0 0.6em;
+      padding: 0;
+      color: #000000; }
+      div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block h3 span {
+        color: #77bc1f; }
+    div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block ul.buttons {
+      text-align: center; }
+      div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block ul.buttons li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 16px 24px;
+        text-align: center;
+        width: 49%; }
+        div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block ul.buttons li a {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-size: 14px;
+          line-height: 20px;
+          margin: 0;
+          padding: 9px 2px 9px 21px;
+          display: inline-block;
+          color: #ffffff;
+          background-color: #77bc1f;
+          text-decoration: none;
+          -webkit-border-radius: 4px;
+          border-radius: 4px;
+          width: 80%; }
+          div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block ul.buttons li a i {
+            margin-left: 45px;
+            font-size: 20px; }
+      div#main div.content_block.content_block_simple_two_column_wysiwyg_block .two_column_wysiwyg_block ul.buttons:last-child {
+        padding-bottom: 50px; }
+
 /* Content Block - Intro Text - inc_block_intro_text.php */
 div#main div.content_block.content_block_intro_text {
   margin: 0;
@@ -2863,6 +2955,8 @@ div#main div.content_block.content_block_intro_text {
     margin: 0 auto;
     padding: 40px 20px 0 20px;
     max-width: 1140px; }
+    div#main div.content_block.content_block_intro_text div.intro_text.narrow {
+      max-width: 840px; }
     div#main div.content_block.content_block_intro_text div.intro_text div.intro_title {
       font-weight: normal;
       font-family: 'heroic_condensedmedium', sans-serif;
@@ -2891,7 +2985,7 @@ div#main div.content_block.content_block_intro_text {
       div#main div.content_block.content_block_intro_text div.intro_text div.intro_title.black {
         color: #000000; }
       div#main div.content_block.content_block_intro_text div.intro_text div.intro_title.no-rule {
-        padding-bottom: 25px; }
+        padding-bottom: 0px; }
         div#main div.content_block.content_block_intro_text div.intro_text div.intro_title.no-rule:after {
           display: none; }
     div#main div.content_block.content_block_intro_text div.intro_text p {
@@ -2940,23 +3034,29 @@ div#main div.content_block.content_block_labelled_product_image {
     margin-top: -75px;
     position: relative;
     z-index: 1; }
+  div#main div.content_block.content_block_labelled_product_image.add-top-margin div.labelled_product_image {
+    padding-top: 40px; }
   div#main div.content_block.content_block_labelled_product_image.background-light-grey {
     background-color: #ededed; }
+    div#main div.content_block.content_block_labelled_product_image.background-light-grey div.labelled_product_image {
+      padding-top: 40px; }
   div#main div.content_block.content_block_labelled_product_image.background-darkest-grey {
     background-color: #333333; }
-    div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image ul.title li {
-      color: #77bc1f; }
-      div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image ul.title li span {
-        color: #ffffff; }
-    div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image div.labels_key div.labels_toggle {
-      color: #ffffff;
-      display: none; }
-    div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image div.labels_key ol.key_items li {
-      border-top: 1px solid #ccc; }
-      div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image div.labels_key ol.key_items li span.label {
-        color: #ffffff; }
-      div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image div.labels_key ol.key_items li p {
-        color: #ffffff; }
+    div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image {
+      padding-top: 40px; }
+      div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image ul.title li {
+        color: #77bc1f; }
+        div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image ul.title li span {
+          color: #ffffff; }
+      div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image div.labels_key div.labels_toggle {
+        color: #ffffff;
+        display: none; }
+      div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image div.labels_key ol.key_items li {
+        border-top: 1px solid #ccc; }
+        div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image div.labels_key ol.key_items li span.label {
+          color: #ffffff; }
+        div#main div.content_block.content_block_labelled_product_image.background-darkest-grey div.labelled_product_image div.labels_key ol.key_items li p {
+          color: #ffffff; }
   div#main div.content_block.content_block_labelled_product_image div.labelled_product_image {
     margin: 0 auto;
     padding: 0 42px 40px 37px;
@@ -3190,6 +3290,8 @@ html.svg div#main div.content_block.content_block_labelled_product_image div.lab
 div#main div.content_block.content_block_manuals {
   margin: 0;
   padding: 0; }
+  div#main div.content_block.content_block_manuals .range-title, div#main div.content_block.content_block_manuals .range_logo {
+    display: none; }
   div#main div.content_block.content_block_manuals div.manuals {
     max-width: 1366px;
     margin: 0 auto;
@@ -3332,6 +3434,10 @@ div#main div.content_block.content_block_manuals {
           div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table {
             margin: 0;
             padding: 1px 1px 0 1px; }
+            div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table .view-content {
+              padding: 0; }
+            div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table .taxonomy-term {
+              display: none; }
             div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table table {
               border-left: 1px solid #333333;
               border-right: 1px solid #333333;
@@ -3563,6 +3669,8 @@ div#main div.content_block.content_block_multi_tool_intro {
       max-width: 850px; }
       div#main div.content_block.content_block_multi_tool_intro div.intro_text p:last-child {
         padding-bottom: 50px; }
+    div#main div.content_block.content_block_multi_tool_intro div.intro_text.narrow p {
+      max-width: 600px; }
     div#main div.content_block.content_block_multi_tool_intro div.intro_text span.banner {
       font-weight: normal;
       font-family: 'heroic_condensedblack_italic', sans-serif;
@@ -4677,6 +4785,8 @@ div#main div.content_block.content_block_range_list_1_across {
               div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details a.find-out-more:hover {
                 text-decoration: underline;
                 background-color: #639d1a; }
+  div#main div.content_block.content_block_range_list_1_across .section_bar {
+    display: none; }
 
 /* Content Block - Range List 2 Across Style 1 - inc_block_range_list_2_across_style_1.php */
 div#main div.content_block.content_block_range_list_2_across_style_1 {
@@ -4848,6 +4958,8 @@ div#main div.content_block.content_block_range_list_2_across_style_1 {
               div#main div.content_block.content_block_range_list_2_across_style_1 div.range_list_2_across_style_1 ul.product_list li div.product div.details a.find-out-more:hover {
                 text-decoration: underline;
                 background-color: #639d1a; }
+  div#main div.content_block.content_block_range_list_2_across_style_1 .section_bar {
+    display: none; }
 
 /* Content Block - Range List 2 Across Style 2 - inc_block_range_list_2_across_style_2.php */
 div#main div.content_block.content_block_range_list_2_across_style_2 {
@@ -4972,6 +5084,8 @@ div#main div.content_block.content_block_range_list_2_across_style_2 {
               div#main div.content_block.content_block_range_list_2_across_style_2 div.range_list_2_across_style_2 ul.product_list li div.product div.details a.find-out-more:hover {
                 text-decoration: underline;
                 background-color: #639d1a; }
+  div#main div.content_block.content_block_range_list_2_across_style_2 .section_bar {
+    display: none; }
 
 /* Content Block - Range List 3 Across - inc_block_range_list_3_across.php */
 div#main div.content_block.content_block_range_list_3_across {
@@ -5090,6 +5204,8 @@ div#main div.content_block.content_block_range_list_3_across {
               div#main div.content_block.content_block_range_list_3_across div.range_list_3_across ul.product_list li div.product div.details a.find-out-more:hover {
                 text-decoration: underline;
                 background-color: #639d1a; }
+  div#main div.content_block.content_block_range_list_3_across .section_bar {
+    display: none; }
 
 /* Content Block - Review Slider - inc_block_review_slider.php */
 div#main div.content_block.content_block_review_slider {
@@ -5533,6 +5649,18 @@ div#main div.content_block.content_block_single_product_details {
               top: 5px;
               left: 0;
               display: block; }
+  div#main div.content_block.content_block_single_product_details.category-mowers div.single_product_details {
+    position: relative; }
+    div#main div.content_block.content_block_single_product_details.category-mowers div.single_product_details .promo-roundel {
+      background-image: url(../../images/free-line-trimmer.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 66px;
+      left: 33px;
+      z-index: 20;
+      width: 100px;
+      height: 100px; }
 
 /* Content Block - Single Product Features - inc_block_single_product_features.php */
 div#main div.content_block.content_block_single_product_features {
@@ -6225,7 +6353,7 @@ div#main div.content_block.content_block_where_to_buy_info {
         text-align: center; }
       div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.find_a_dealer div.map {
         margin: 0;
-        padding: 33px 0 33px 0;
+        padding: 44px 0 33px 0;
         text-align: center; }
         div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.find_a_dealer div.map img {
           display: inline-block;
@@ -6238,7 +6366,7 @@ div#main div.content_block.content_block_where_to_buy_info {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 14px;
         line-height: 20px;
-        margin: 14px 0 0 0;
+        margin: 18px 0 0 0;
         padding: 9px 21px 9px 44px;
         display: inline-block;
         color: #ffffff;
@@ -6334,6 +6462,96 @@ div#main div.content_block.content_block_where_to_buy_intro {
       margin: 0 auto;
       padding: 48px 0 67px 0;
       max-width: 600px; }
+
+/* Content Block - Action Links - inc_block_action_links.php */
+div#main div.content_block.content_block_offers_signup_form {
+  background-color: #ededed;
+  color: #000000;
+  overflow: auto; }
+  div#main div.content_block.content_block_offers_signup_form div.offers_signup_form {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+    max-width: 1088px; }
+    div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form {
+      float: left;
+      max-width: 523px;
+      padding: 37px 0 42px; }
+      div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form h3 {
+        font-weight: normal;
+        font-family: 'heroic_condensedbold', sans-serif;
+        font-size: 54px;
+        line-height: 50px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        color: #77bc1f;
+        position: relative;
+        margin-bottom: 40px; }
+        div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form h3 span {
+          color: #000000; }
+        div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form h3:after {
+          content: "";
+          display: block;
+          width: 80px;
+          height: 16px;
+          background-color: #77bc1f;
+          position: absolute;
+          bottom: -34px;
+          left: 0;
+          margin: 0;
+          padding: 0;
+          -webkit-transform: skewX(-16deg);
+          transform: skewX(-16deg);
+          -webkit-border-radius: 999px;
+          border-radius: 999px; }
+      div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form p {
+        color: #000000;
+        font-size: 19px;
+        line-height: 27px; }
+        div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form p.smallprint {
+          clear: both;
+          color: #4d4d4d;
+          font-size: 14px;
+          font-style: italic;
+          line-height: 22px;
+          padding-top: 16px; }
+      div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form .form-item label {
+        display: block;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 27px;
+        margin-bottom: 13px; }
+      div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form .form-item input, div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form .form-item select {
+        background-color: #ffffff;
+        border: 0px solid #fff;
+        border-radius: 0px;
+        display: block;
+        font-size: 19px;
+        line-height: 27px;
+        margin-bottom: 13px;
+        padding: 10px 25px;
+        width: 100%;
+        -webkit-appearance: none; }
+      div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form .captcha {
+        float: left;
+        margin-top: 9px;
+        width: 304px; }
+      div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form #edit-actions {
+        float: left;
+        margin-left: 20px;
+        margin-top: 9px;
+        width: 199px; }
+        div#main div.content_block.content_block_offers_signup_form div.offers_signup_form form #edit-actions input {
+          border: 0px solid #77bc1f;
+          border-radius: 5px;
+          background-color: #77bc1f;
+          color: #ffffff;
+          font-size: 27px;
+          line-height: 34px;
+          padding: 20px 0;
+          width: 100%; }
+    div#main div.content_block.content_block_offers_signup_form div.offers_signup_form .offers_signup_backdrop {
+      float: right; }
 
 /* =============================== */
 /* 10. Search results              */

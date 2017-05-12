@@ -40,23 +40,29 @@
       <div class="contact_main">
         
         <div class="write_to_us">
-            
-          <h3>Write to us</h3>
+
+          {% if content.field_column_one_title is not empty %}
+
+            <h3>{{ content.field_column_one_title }}</h3>
+
+          {% endif %}
                 
           {{ content.body }}
-                
-          <a class="email" href="mailto:eu.support@egopowerplus.eu">eu.support@egopowerplus.eu</a>
             
         </div><!-- .write_to_us -->
             
-        <div class="social">
-            
-          <h3>Social</h3>
+        <div class="social{% if content.field_link[0]['#url'] is empty %} right{% endif %}">
+
+          {% if content.field_column_two_title is not empty %}
+
+            <h3>{{ content.field_column_two_title }}</h3>
+
+          {% endif %}
                 
           <ul class="social">
           
             <li><a class="facebook" href="https://www.facebook.com/EGOpowerplus.uk">EGOpowerplus/</a></li>
-            <li><a class="instagram" href="https://www.instagram.com/egopowerpluseu/">egopowerpluseu</a></li>
+            <li><a class="instagram" href="https://www.instagram.com/egopowerpluseu/">EGOpowerpluseu</a></li>
             <li><a class="twitter" href="https://twitter.com/EGOpowerplusEU?lang=en">@EGOpowerplusEU</a></li>
 
           </ul><!-- .social -->
