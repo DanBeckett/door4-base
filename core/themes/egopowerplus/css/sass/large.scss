@@ -4230,10 +4230,17 @@ div#main {
                                             color:$ego-black;
                                             a {
                                                 color:$ego-black;
+                                                display: inline-block;
+                                                min-width: 10em;
+                                                padding-left: 28px;
+                                                position: relative;
+                                                text-align: left;
                                                 &:before {
                                                     content: "\f0f6";
                                                     font-family: FontAwesome;
+                                                    left: 0px;
                                                     margin-right:17px;
+                                                    position: absolute;
                                                     font-size:21px;
                                                 }
                                                 &[href*=".pdf"]:before {
@@ -7112,6 +7119,14 @@ div#main {
     }
 }
 
+body.no-reviews {
+    div#main {
+        div.content_block.content_block_single_product_questions {
+            display: none;
+        }
+    }
+}
+
 
 /* Content Block - Single Product Related Products - inc_block_single_product_related_products.php */
 
@@ -7354,6 +7369,14 @@ div#main {
                     }
                 }
             }
+        }
+    }
+}
+
+body.no-reviews {
+    div#main {
+        div.content_block.content_block_single_product_reviews {
+            display: none;
         }
     }
 }

@@ -3473,11 +3473,18 @@ div#main div.content_block.content_block_manuals {
                 padding: 18px 35px;
                 color: #000000; }
                 div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table table tbody tr td a {
-                  color: #000000; }
+                  color: #000000;
+                  display: inline-block;
+                  min-width: 10em;
+                  padding-left: 28px;
+                  position: relative;
+                  text-align: left; }
                   div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table table tbody tr td a:before {
                     content: "\f0f6";
                     font-family: FontAwesome;
+                    left: 0px;
                     margin-right: 17px;
+                    position: absolute;
                     font-size: 21px; }
                   div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table table tbody tr td a[href*=".pdf"]:before {
                     content: "\f1c1"; }
@@ -5877,6 +5884,9 @@ div#main div.content_block.content_block_single_product_questions {
     max-width: 1280px;
     min-height: 200px; }
 
+body.no-reviews div#main div.content_block.content_block_single_product_questions {
+  display: none; }
+
 /* Content Block - Single Product Related Products - inc_block_single_product_related_products.php */
 div#main div.content_block.content_block_single_product_related_products {
   margin: 0;
@@ -6090,6 +6100,9 @@ div#main div.content_block.content_block_single_product_reviews {
         div#main div.content_block.content_block_single_product_reviews div.single_product_reviews div.review_link a:hover {
           text-decoration: underline;
           color: #639d1a; }
+
+body.no-reviews div#main div.content_block.content_block_single_product_reviews {
+  display: none; }
 
 /* Content Block - Single Product Specifications - inc_block_single_product_specifications.php */
 div#main div.content_block.content_block_single_product_specifications {

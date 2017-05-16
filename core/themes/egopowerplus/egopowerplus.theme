@@ -29,7 +29,7 @@ function egopowerplus_preprocess_html(&$variables) {
 
   //if on a product, grab values needed for meta tag
   if(isset($variables['node_type'])) {
-  	if($variables['node_type'] == 'product' && ($node = \Drupal::routeMatch()->getParameter('node'))) {
+  	if(($variables['node_type'] == 'product' || $variables['node_type'] == 'accessory' || $variables['node_type'] == 'battery' || $variables['node_type'] == 'blower' || $variables['node_type'] == 'chainsaw' || $variables['node_type'] == 'hedge-trimmer' || $variables['node_type'] == 'line-trimmer' || $variables['node_type'] == 'mower' || $variables['node_type'] == 'multi-tool') && ($node = \Drupal::routeMatch()->getParameter('node'))) {
   	  //add meta as variables as it needs to go into head.
       //originally used preset fields, but now we're auto-genning.
 
@@ -37,6 +37,7 @@ function egopowerplus_preprocess_html(&$variables) {
   	  //$variables['meta_description'] = $node->field_meta_description->value;
       $variables['product_name'] = $node->field_product_name->value;
       $variables['sku'] = $node->field_sku->value;
+      $variables['remove_reviews'] = $node->field_remove_reviews->value;
       //$variables['product_type'] = $node->field_product_type;
   	}
   }

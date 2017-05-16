@@ -248,23 +248,27 @@ jQuery(window).load(function() {
 		}
 
 		if(jQuery('#questions').length > 0) {
-			var $this = jQuery('#questions'),
-				$header = jQuery('header'),
-				$anchors = jQuery('#breadcrumb_bar .anchors'),
-				$el_pos = $this.position(),
-				$header_height = $header.outerHeight()
-				$scrollto = $el_pos.top - $header_height;
-			$anchors.append('<a href="#questions" data-scroll-to="' + $scrollto + 'px">Questions</a>');
+			var $this = jQuery('#questions');
+			if($this.is(':visible')){
+				var $header = jQuery('header'),
+				    $anchors = jQuery('#breadcrumb_bar .anchors'),
+				    $el_pos = $this.position(),
+				    $header_height = $header.outerHeight(),
+				    $scrollto = $el_pos.top - $header_height;
+				$anchors.append('<a href="#questions" data-scroll-to="' + $scrollto + 'px">Questions</a>');
+			};
 		}
 
 		if(jQuery('#reviews').length > 0) {
-			var $this = jQuery('#reviews'),
-				$header = jQuery('header'),
-				$anchors = jQuery('#breadcrumb_bar .anchors'),
-				$el_pos = $this.position(),
-				$header_height = $header.outerHeight()
-				$scrollto = $el_pos.top - $header_height;
-			$anchors.append('<a href="#reviews" data-scroll-to="' + $scrollto + 'px">Reviews</a>');
+			var $this = jQuery('#reviews');
+			if($this.is(':visible')){
+				var $header = jQuery('header'),
+				    $anchors = jQuery('#breadcrumb_bar .anchors'),
+				    $el_pos = $this.position(),
+				    $header_height = $header.outerHeight(),
+				    $scrollto = $el_pos.top - $header_height;
+				$anchors.append('<a href="#reviews" data-scroll-to="' + $scrollto + 'px">Reviews</a>');
+			};
 		}
 
 		// if(jQuery('#block-views-block-product-related-content-related-products').length > 0) {

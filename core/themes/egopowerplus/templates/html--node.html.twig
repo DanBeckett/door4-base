@@ -31,6 +31,23 @@
     db_offline ? 'db-offline',
   ]
 %}
+{%
+  set products = [
+    'accessory',
+    'battery',
+    'blower',
+    'chainsaw',
+    'hedge-trimmer',
+    'line-trimmer',
+    'mower',
+    'multi-tool'
+  ] 
+%}
+{% if node_type|clean_class in products|keys %}
+    {% set generic_product_class = 'page-node-type-product' %}
+    {% set body_classes = body_classes|merge([generic_product_class]) %}
+{% endif %}
+
 <!DOCTYPE html>
 <html{{ html_attributes }}>
   <head>
@@ -66,6 +83,12 @@
     </script>
 
   </head>
+  {% if 'page-node-type-product' in body_classes|keys %}
+    {% if remove_reviews == 1 %}
+        {% set review_class = 'no-reviews' %}
+        {% set body_classes = body_classes|merge([review_class]) %}
+    {% endif %}
+  {% endif %}
   <body{{ attributes.addClass(body_classes) }}>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLMZ55S"
