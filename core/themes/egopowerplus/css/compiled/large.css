@@ -3377,7 +3377,7 @@ div#main div.content_block.content_block_manuals {
             min-height: 1px;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             float: left;
             width: 17%; }
           div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.section_bar.conc-trigger div.text {

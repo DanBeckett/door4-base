@@ -133,7 +133,7 @@
             
             <div class="price">
             
-              <span>RRP</span><br>&pound;{{ node.field_price[0].value }}
+              <span>{{ 'Suggested Retail Price Abbreviation'|trans }}</span><br>{{ 'Currency Icon'|trans }}{{ node.field_price[0].value }}
             
             </div><!-- .price -->
             
@@ -156,11 +156,11 @@
                 {% set buy_online_uri = '/where-to-buy/' %}
               {% endif %}
             
-                <li class="buy_online"><a href="{{ buy_online_uri }}" target="_blank" class="buy-online">Buy online <i class="fa fa-angle-right"></i></a></li>
+                <li class="buy_online"><a href="{{ buy_online_uri }}" target="_blank" class="buy-online">{{ 'Buy online'|trans }} <i class="fa fa-angle-right"></i></a></li>
 
               {% if node.field_authorised_dealer_url[0].uri %}
                 
-                <li class="find_dealer"><a href="{{ node.field_authorised_dealer_url[0].uri }}" class="find-stockist">Find a stockist <i class="fa fa-angle-right"></i></a></li>
+                <li class="find_dealer"><a href="{{ node.field_authorised_dealer_url[0].uri }}" class="find-stockist">{{ 'Find a stockist'|trans }} <i class="fa fa-angle-right"></i></a></li>
               
               {% endif %}
             

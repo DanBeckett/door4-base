@@ -39,7 +39,11 @@
     
       <div class="find_a_dealer">
           
-            <h2>Find A Stockist</h2>
+          {% if content.field_column_one_title is not empty %}
+
+            <h2>{{ content.field_column_one_title }}</h2>
+
+          {% endif %}
 
             <a href="{{ content.field_find_a_dealer_link[0]['#url'] }}" class="find_local_dealer">{{ content.field_find_a_dealer_link[0]['#title'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             
@@ -53,7 +57,11 @@
         
       <div class="buy_online">
           
-            <h2>Buy online</h2>
+            {% if content.field_column_two_title is not empty %}
+
+              <h2>{{ content.field_column_two_title }}</h2>
+
+            {% endif %}
             
             {{ content.field_buy_online_content }}
             

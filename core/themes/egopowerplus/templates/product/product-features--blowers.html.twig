@@ -2,11 +2,11 @@
 
 	<div class="single_product_features">
 
-  		<div class="title">Product features</div>
+  		<div class="title">{{ 'Product features'|trans }}</div>
         
         <ul class="features">
 
-            {% if node.field_show_blower_ft_turbo_boost.value %}
+            {% if content.field_blower_ft_turbo_boost|render|trim is not empty %}
 
                 <li>
                 
@@ -24,7 +24,7 @@
 
             {% endif %}
 
-            {% if node.field_show_blower_ft_speed_contr.value %}
+            {% if content.field_blower_ft_speed_contr|render|trim is not empty %}
 
                 <li>
                 
@@ -42,7 +42,7 @@
 
             {% endif %}
 
-            {% if node.field_show_blower_ft_brushless.value %}
+            {% if content.field_blower_ft_brushless|render|trim is not empty %}
 
                 <li>
                 
@@ -60,7 +60,7 @@
 
             {% endif %}
 
-            {% if node.field_show_blower_ft_backpack.value %}
+            {% if content.field_blower_ft_backpack|render|trim is not empty %}
 
                 <li>
                 

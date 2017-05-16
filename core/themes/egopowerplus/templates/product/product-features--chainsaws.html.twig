@@ -2,11 +2,11 @@
 
     <div class="single_product_features">
 
-        <div class="title">Product features</div>
+        <div class="title">{{ 'Product features'|trans }}</div>
         
         <ul class="features">
 
-            {% if node.field_show_chainsaw_ft_bar.value %}
+            {% if content.field_chainsaw_ft_bar|render|trim is not empty %}
 
                 <li>
                 
@@ -24,7 +24,7 @@
 
             {% endif %}
 
-            {% if node.field_show_chainsaw_ft_chain_spd.value %}
+            {% if content.field_chainsaw_ft_chain_spd|render|trim is not empty %}
 
                 <li>
                 
@@ -42,7 +42,7 @@
 
             {% endif %}
 
-            {% if node.field_show_chainsaw_ft_chain_brk.value %}
+            {% if content.field_chainsaw_ft_chain_brk|render|trim is not empty %}
 
                 <li>
                 
@@ -60,7 +60,7 @@
 
             {% endif %}
 
-            {% if node.field_show_chainsaw_ft_brushless.value %}
+            {% if content.field_chainsaw_ft_brushless|render|trim is not empty %}
 
                 <li>
                 

@@ -2,11 +2,11 @@
 
 	<div class="single_product_features">
 
-  		<div class="title">Product features</div>
+  		<div class="title">{{ 'Product features'|trans }}</div>
         
         <ul class="features">
 
-            {% if node.field_show_mower_ft_cutting_cap.value %}
+            {% if content.field_mower_ft_cutting_cap|render|trim is not empty %}
 
                 <li>
                 
@@ -24,7 +24,7 @@
 
             {% endif %}
 
-            {% if node.field_show_mower_ft_cutting_deck.value %}
+            {% if content.field_mower_ft_cutting_deck|render|trim is not empty %}
 
                 <li>
                 
@@ -42,7 +42,7 @@
 
             {% endif %}
 
-            {% if node.field_show_mower_ft_cutting_spd.value %}
+            {% if content.field_mower_ft_cutting_spd|render|trim is not empty %}
 
                 <li>
                 
@@ -60,7 +60,7 @@
 
             {% endif %}
 
-            {% if node.field_show_mower_ft_self_prop.value %}
+            {% if content.field_mower_ft_self_prop|render|trim is not empty %}
 
                 <li>
                 
@@ -78,7 +78,7 @@
 
             {% endif %}
 
-            {% if node.field_show_mower_ft_brushless.value %}
+            {% if content.field_mower_ft_brushless|render|trim is not empty %}
 
                 <li>
                 
