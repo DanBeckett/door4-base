@@ -7962,6 +7962,84 @@ div#main {
     }
 }
 
+/*-- System Areas -- */
+
+div#main {
+    .block-local-tasks-block {
+        background-color: $ego-green;
+        nav.tabs {
+            margin: 0 auto 0 auto;
+            max-width: 1320px;
+            padding: 0 20px 2px 25px;
+            overflow: hidden;
+            ul {
+                margin-left: 0;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                font-size: 16px;
+                list-style-type: none;
+                margin-right: 10px;
+                a {
+                    color: $ego-white;
+                }
+            }
+        }
+    }
+    .user-login-form {
+        background-color: $ego-darkest-grey;
+        margin: 96px auto;
+        max-width: 760px;
+        padding: 40px;
+        width: 100%;
+        label {
+            color: $ego-white;
+            display: block;
+            font-family: 'heroic_condensedbold', sans-serif;
+            font-size: 33px;
+            font-weight: bold;
+            line-height: 36px;
+            text-transform: uppercase;
+        }
+        input[type=text],
+        input[type=password] {
+            color: $ego-dark-grey;
+            font-size: 19px;
+            line-height: 27px;
+            background: $ego-white;
+            border: 0;
+            border-radius: 0;
+            width: 100%;
+            margin: 10px 0 20px 0;
+            padding: 15px 15px;
+        }
+        input[type=submit] {
+                color: $ego-white;
+                font-size: 14px;
+                line-height: 20px;
+                background: $ego-green;
+                border: 0;
+                border-radius: 3px;
+                margin: 10px 0 20px 0;
+                padding: 7px 20px;
+                cursor: pointer;
+                &:hover {
+                    background: $ego-green-hover;
+                }
+        }
+        .description {
+            color: $ego-light-grey;
+            margin-bottom: 24px;
+        }
+    }
+    .profile {
+        margin: 0 auto 0 auto;
+        max-width: 1320px;
+        padding: 0 20px 2px 25px;
+    }
+}
+
 
 /* =============================== */
 /* 10. Search results              */

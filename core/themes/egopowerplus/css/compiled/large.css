@@ -6577,6 +6577,69 @@ div#main div.content_block.content_block_offers_signup_form {
     div#main div.content_block.content_block_offers_signup_form div.offers_signup_form .offers_signup_backdrop {
       float: right; }
 
+/*-- System Areas -- */
+div#main .block-local-tasks-block {
+  background-color: #77bc1f; }
+  div#main .block-local-tasks-block nav.tabs {
+    margin: 0 auto 0 auto;
+    max-width: 1320px;
+    padding: 0 20px 2px 25px;
+    overflow: hidden; }
+    div#main .block-local-tasks-block nav.tabs ul {
+      margin-left: 0;
+      padding: 0; }
+    div#main .block-local-tasks-block nav.tabs li {
+      display: inline-block;
+      font-size: 16px;
+      list-style-type: none;
+      margin-right: 10px; }
+      div#main .block-local-tasks-block nav.tabs li a {
+        color: #ffffff; }
+div#main .user-login-form {
+  background-color: #333333;
+  margin: 96px auto;
+  max-width: 760px;
+  padding: 40px;
+  width: 100%; }
+  div#main .user-login-form label {
+    color: #ffffff;
+    display: block;
+    font-family: 'heroic_condensedbold', sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 36px;
+    text-transform: uppercase; }
+  div#main .user-login-form input[type=text],
+  div#main .user-login-form input[type=password] {
+    color: #4d4d4d;
+    font-size: 19px;
+    line-height: 27px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    padding: 15px 15px; }
+  div#main .user-login-form input[type=submit] {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    background: #77bc1f;
+    border: 0;
+    border-radius: 3px;
+    margin: 10px 0 20px 0;
+    padding: 7px 20px;
+    cursor: pointer; }
+    div#main .user-login-form input[type=submit]:hover {
+      background: #639d1a; }
+  div#main .user-login-form .description {
+    color: #ededed;
+    margin-bottom: 24px; }
+div#main .profile {
+  margin: 0 auto 0 auto;
+  max-width: 1320px;
+  padding: 0 20px 2px 25px; }
+
 /* =============================== */
 /* 10. Search results              */
 /* =============================== */
