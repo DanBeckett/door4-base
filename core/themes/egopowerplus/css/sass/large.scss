@@ -2312,6 +2312,10 @@ div#main {
                             &.no-right-border {
                                 border-right:none;
                             }
+                            &.recommended {
+                                background-color: $ego-green;
+                                color: $ego-white;
+                            }
                             &[scope="row"] {
                                 text-transform:uppercase;
                                 font-weight:bold;
@@ -3607,6 +3611,9 @@ div#main {
             &.narrow {
                 max-width: 840px;
             }
+            &.remove_bottom_padding {
+                padding-bottom: 0px;
+            }
             div.intro_title {
                 @include typography-mixin-block-header-small-medium-cut;
                 color:$ego-black;
@@ -4436,6 +4443,12 @@ div#main {
             margin:0 auto;
             padding:40px 20px 60px 20px;
             max-width:1140px;
+            &.narrow {
+                max-width: 840px;
+            }
+            &.remove_bottom_padding {
+                padding-bottom: 0px;
+            }
             div.intro_title {
                 @include typography-mixin-title-1;
                 line-height:101px;
@@ -7726,9 +7739,11 @@ div#main {
                     color:$ego-black;
                     text-align:center;
                 }
-                p.intro {
-                    text-align:center;
-                    padding:33px 17px 19px 17px;
+                p {
+                    text-align: center;
+                    &.intro {
+                        padding:33px 17px 19px 17px;
+                    }
                 }
                 ul.retailers {
                     margin:0;

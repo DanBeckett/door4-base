@@ -41,7 +41,7 @@
     </span>
   {% endif %}
 
-  <div class="intro_text{% if content.field_make_narrow['#items'][0].value %} narrow{% endif %}">
+  <div class="intro_text{% if content.field_make_narrow['#items'][0].value %} narrow{% endif %}{% if content.field_remove_bottom_padding['#items'][0].value %} remove_bottom_padding{% endif %}">
     {% block content %}
       <div class="intro_title{% if content.field_include_rule['#items'][0].value == false %} no-rule{% endif %}">
         {{ content.field_strapline }}

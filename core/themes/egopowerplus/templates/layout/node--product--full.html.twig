@@ -138,6 +138,8 @@
             </div><!-- .price -->
             
             <div class="reviews">
+
+            {% if node.field_remove_reviews[0].value != 1 %}
         
               <div class="bazaarvoice-rating-summary-wrapper">
                 <div id="BVRRSummaryContainer"></div>
@@ -147,6 +149,8 @@
               </div>
             
             </div><!-- .reviews -->
+
+            {% endif %}
             
             <ul class="links">
 

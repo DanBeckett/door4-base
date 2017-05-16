@@ -1909,6 +1909,9 @@ div#main div.content_block.content_block_mowers_table {
           border-right: none; }
         div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr td.no-right-border, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr th.no-right-border {
           border-right: none; }
+        div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr td.recommended, div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr th.recommended {
+          background-color: #77bc1f;
+          color: #ffffff; }
         div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr td[scope="row"], div#main div.content_block.content_block_mowers_table div.mowers_table table.mowers tbody tr th[scope="row"] {
           text-transform: uppercase;
           font-weight: bold;
@@ -2957,6 +2960,8 @@ div#main div.content_block.content_block_intro_text {
     max-width: 1140px; }
     div#main div.content_block.content_block_intro_text div.intro_text.narrow {
       max-width: 840px; }
+    div#main div.content_block.content_block_intro_text div.intro_text.remove_bottom_padding {
+      padding-bottom: 0px; }
     div#main div.content_block.content_block_intro_text div.intro_text div.intro_title {
       font-weight: normal;
       font-family: 'heroic_condensedmedium', sans-serif;
@@ -3633,6 +3638,10 @@ div#main div.content_block.content_block_multi_tool_intro {
     margin: 0 auto;
     padding: 40px 20px 60px 20px;
     max-width: 1140px; }
+    div#main div.content_block.content_block_multi_tool_intro div.intro_text.narrow {
+      max-width: 840px; }
+    div#main div.content_block.content_block_multi_tool_intro div.intro_text.remove_bottom_padding {
+      padding-bottom: 0px; }
     div#main div.content_block.content_block_multi_tool_intro div.intro_text div.intro_title {
       font-weight: normal;
       font-family: 'heroic_condensedbold', sans-serif;
@@ -6388,9 +6397,10 @@ div#main div.content_block.content_block_where_to_buy_info {
       div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.buy_online h2 {
         color: #000000;
         text-align: center; }
-      div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.buy_online p.intro {
-        text-align: center;
-        padding: 33px 17px 19px 17px; }
+      div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.buy_online p {
+        text-align: center; }
+        div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.buy_online p.intro {
+          padding: 33px 17px 19px 17px; }
       div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.buy_online ul.retailers {
         margin: 0;
         padding: 0; }
