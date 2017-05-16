@@ -34,13 +34,11 @@
   ]
 %}
 
-{% if remove_reviews.0.value != 1 %}
-  <div id="questions"{{ attributes.addClass(classes) }}>
-    <div class="single_product_questions">
-      <div class="bazaarvoice-questions-wrapper">
-        <div id="BVQAContainer"></div>
-        <script>$BV.ui( 'qa', 'show_questions', {});</script>
-      </div>
-    </div><!-- .single_product_questions -->
-  </div>
-{% endif %}
+<div id="questions"{{ attributes.addClass(classes) }}>
+  <div class="single_product_questions">
+    <div class="bazaarvoice-questions-wrapper">
+      <div id="BVQAContainer"></div>
+      <script>$BV.ui( 'qa', 'show_questions', {});</script>
+    </div>
+  </div><!-- .single_product_questions -->
+</div>

@@ -34,17 +34,15 @@
   ]
 %}
 
-{% if remove_reviews.0.value != 1 %}
-  <div id="reviews"{{ attributes.addClass(classes) }}>
-    <div class="single_product_reviews">
-      <div id="BVRRSummaryContainer"></div>
-      <div class="bazaarvoice-reviews-wrapper">
-        <div id="BVRRContainer"></div>
+<div id="reviews"{{ attributes.addClass(classes) }}>
+  <div class="single_product_reviews">
+    <div id="BVRRSummaryContainer"></div>
+    <div class="bazaarvoice-reviews-wrapper">
+      <div id="BVRRContainer"></div>
 
-        <script type="text/javascript">
-          $BV.ui( 'rr', 'show_reviews', {});
-        </script>
-      </div>
-    </div><!-- .single_product_reviews -->
-  </div>
-{% endif %}
+      <script type="text/javascript">
+        $BV.ui( 'rr', 'show_reviews', {});
+      </script>
+    </div>
+  </div><!-- .single_product_reviews -->
+</div>
