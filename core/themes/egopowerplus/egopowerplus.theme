@@ -43,7 +43,6 @@ function egopowerplus_preprocess_html(&$variables) {
 }
 
 function egopowerplus_preprocess_block(&$variables) {
-  $variables['dickie'] = $variables['label'] . '123';
   if($variables['label'] == 'Product BazaarVoice Questions Block') {
     $node = \Drupal::routeMatch()->getParameter('node');
     //add variables for the downloads
