@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"typograpy-mixin-block",
+				"typography-mixin-block-header-small"
+			],
+			[
 				"create_default_",
 				"create_default_price_list_js_options"
 			],
@@ -100,37 +104,109 @@
 	"buffers":
 	[
 		{
-			"file": "core/themes/egopowerplus/templates/panels/block--feature-panels-block.html.twig",
+			"file": "core/themes/egopowerplus/templates/layout/footer.html.twig",
 			"settings":
 			{
-				"buffer_size": 3023,
+				"buffer_size": 1280,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/panels/block--single-image-block.html.twig",
+			"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-mowers.html.twig",
 			"settings":
 			{
-				"buffer_size": 1595,
+				"buffer_size": 3135,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/panels/block--our-story-intro-block.html.twig",
+			"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-multitool.html.twig",
 			"settings":
 			{
-				"buffer_size": 1522,
+				"buffer_size": 3148,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/panels/block--our-story-content-block.html.twig",
+			"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-line-trimmers.html.twig",
 			"settings":
 			{
-				"buffer_size": 1782,
+				"buffer_size": 3151,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-batteries.html.twig",
+			"settings":
+			{
+				"buffer_size": 3161,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-hedge-trimmers.html.twig",
+			"settings":
+			{
+				"buffer_size": 3161,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-chainsaws.html.twig",
+			"settings":
+			{
+				"buffer_size": 3148,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-blowers.html.twig",
+			"settings":
+			{
+				"buffer_size": 3138,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/css/sass/large.scss",
+			"settings":
+			{
+				"buffer_size": 288332,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/templates/content/node--article--full.html.twig",
+			"settings":
+			{
+				"buffer_size": 6897,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/templates/content/node--view--most-recent-blog-posts.html.twig",
+			"settings":
+			{
+				"buffer_size": 4833,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/templates/content/node--view--recent-blog-posts-older.html.twig",
+			"settings":
+			{
+				"buffer_size": 4641,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -139,16 +215,34 @@
 			"file": "core/themes/egopowerplus/templates/layout/node--product--full.html.twig",
 			"settings":
 			{
-				"buffer_size": 7645,
+				"buffer_size": 7988,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/panels/block--our-story-video-block.html.twig",
+			"file": "core/themes/egopowerplus/templates/html--node.html.twig",
 			"settings":
 			{
-				"buffer_size": 1740,
+				"buffer_size": 3959,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/egopowerplus.theme",
+			"settings":
+			{
+				"buffer_size": 4749,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "core/themes/egopowerplus/templates/panels/block--page-intro-block.html.twig",
+			"settings":
+			{
+				"buffer_size": 2210,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -157,24 +251,16 @@
 			"file": "core/themes/egopowerplus/templates/panels/block--comparison-table-block.html.twig",
 			"settings":
 			{
-				"buffer_size": 13822,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "core/themes/egopowerplus/templates/panels/block--our-story-cost-illustration-block.html.twig",
-			"settings":
-			{
-				"buffer_size": 4708,
+				"buffer_size": 42398,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "core/themes/egopowerplus/templates/field/field--node--field-features--product.html.twig",
+			"file": "core/themes/egopowerplus/templates/product/product-features--multi-tool.html.twig",
 			"settings":
 			{
-				"buffer_size": 2799,
+				"buffer_size": 18790,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -187,10 +273,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 167.0,
-		"last_filter": "tabs",
+		"height": 392.0,
+		"last_filter": "indent",
 		"selected_items":
 		[
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
 			[
 				"tabs",
 				"Indentation: Convert to Tabs"
@@ -232,7 +322,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 485.0
 	},
 	"console":
 	{
@@ -259,145 +349,142 @@
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/sass",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/js",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views"
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/node--view--most-recent-blog-posts-fourth.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/node--view--most-recent-blog-posts-second.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/node--view--most-recent-blog-posts-third.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/js/egopowerplus.js",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--node--field-product-image--product.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--taxonomy-term--field-product-range-logos--product-type.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--feature-link-type-two-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--feature-link-type-one-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--header_search_location.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--header-navigation.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--header-sign-in-menu.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--header-location-dropdowns.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/sass/large.scss",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/html.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--lead_out.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/views-view-unformatted.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/page.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-video--heading-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_accessories.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_accessories.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--one-battery-multiple-tools-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--action-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--video-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--comparison-table-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_chainsaws.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/taxonomy-term--product-type.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.info.yml",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-labels--labelled-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.theme",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--labelled-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.libraries.yml",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_blowers.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--page-intro-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--uniqueness-banner.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/bartik/templates/page.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/header.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-category-links.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_batteries.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/footer.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footermenuthree.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--footer-menus.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-social-menu.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footersocialmenu.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-menu-one.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footermenutwo.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/node-product.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/block--product-questions-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/block--product-reviews-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--landing-page-mower-taxonomies.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/mobile-menu.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--node--field-related-products.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footermenuone.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-menu-three.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-menu-two.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--product-category-sections.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--warranty-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footermenutwo.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--footermenuthree.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--landing-page-hedge-taxonomies.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--landing-page-block-mo.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--contact-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/product-features--blowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/product-features--chainsaws.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/product-features--line-trimmers-brush-cutters.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/product-features--mowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/product-features--multi-tool.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/specification--hedge-trimmers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/specification--mowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/specification--line-trimmers-brush-cutters.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/specification--chainsaws.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/specification--blowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/specification--batteries-chargers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/specification--accessories.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/block--product-downloads-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/product-features--hedge-trimmers.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--product--teaser.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_line_trimmers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--multi-tool-components--multi-tool-components-attachments.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--multi-tool-components--multi-tool-components-power-head.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--multi-tool-components--multi-tool-components-kit.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_batteries.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-review-slides--review-slider-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/compiled/large.css",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_blowers.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_line_trimmers.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_chainsaws.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/views-view.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_mowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_blowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_line_trimmers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_hedge_trimmers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_accessories.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/node--view--taxonomy-term--archive_chainsaws.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--simple-two-column-wysiwyg-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/sites/default/settings_notes",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-mowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/webforms/webform--offers-signup.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.theme",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/sass/large.scss",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/sass/medium.scss",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/node--view--most-recent-blog-posts.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/node--view--recent-blog-posts-older.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--page-intro-block.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--heading-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--review-slider-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-heading-content--heading-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--headersigninmenu.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--header_sign_in.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region-header_sign_in.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-heading-line-two--heading-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-image--heading-image-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--header.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--search-form-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--header-location-dropdown.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/classy/templates/block/block--search-form-block.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--header-location-dropdowns.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--headernavigation.html.twig",
-		"/Applications/MAMP/htdocs/egopowerplus/modules/Plugin/Block/HelloBlock.php",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/large.css",
-		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block--search-form-block.html",
-		"/Applications/MAMP/htdocs/egopowerplus/sites/example.settings.local.php",
-		"/Applications/MAMP/htdocs/egopowerplus/sites/development.services.yml",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--labelled-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--where-to-buy-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--comparison-table-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/node--product--full.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/taxonomy-term--product-type.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/node--view--manuals-and-safety-sheets.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/node--view--related-posts--sidebar-related-articles.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--footer-social-menu.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--ego-blog-lead-in-footer-html.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/block/block--ego-blog-lead-in-header-html.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/css/sass/small.scss",
+		"/Applications/MAMP/htdocs/egopowerplus/sites/default/settings.php",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--our-story-content-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-heading-slide--heading-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--product-range-banner.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/block--views-block--recent-blog-posts-older-remaining-posts.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/node--article--full.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/views-view-unformatted.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--node--field-gallery.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/block--views-block--most-recent-blog-posts-lead-in-posts.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/block--views-block--related-posts-sidebar-related-articles.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.info.yml",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/page--article.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/page--node--article.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/node-article-full.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/page--article--full.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/node--article.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--action-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/block--views-block--product-related-content-parts-accessories.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/block--views-block--product-related-content-related-products.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/views-view.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/html.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/html--node.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/region--breadcrumbs.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--simple-wysiwyg-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--our-story-power-illust-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--one-battery-multiple-tools-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-titles--labelled-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/content/search-result.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--mobile-menu.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/header.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--manual-taxonomy-intro-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/breadcrumb.html.twig",
 		"/Applications/MAMP/htdocs/egopowerplus/.htaccess",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/functions.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-site-plugin/toyotafleet-site-plugin.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-price-list-upload/css/admin.css",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-call_to_action_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-price-list-upload/js/toyotafleet-price-list-upload.js",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-interactive_price_list_commercial_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/comparison-table-functions.js",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-price-list-upload/toyotafleet-price-list-upload.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/index.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/theme-background-controller.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-hybrid_price_comparison_block.php",
-		"/Users/danbeckett/_projects/toyota/price_list_headers.csv",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-image_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/filter-range-functions.js",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-filter_hybrid_tabs_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-filter_range_tabs_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/modules/_type.scss",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-offers_scroller_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/main.scss",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/functions/table-functions.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/partials/_standard.scss",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-team_table_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-wysiwyg_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/modules/_colors.scss",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/theme-quick-links.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-multi_wysiwyg_panel_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/style.css",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/acf-json/index.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/equalise-multi-wysiwyg-panels.js",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/offer-slides.js",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/css/sass/modules/_helpers.scss",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/initialise-youtube.js",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/plugins/toyotafleet-site-plugin/toyotafleet-price-list-upload.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/inc-flexible-content-content_callouts_block.php",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/background-slides.js",
-		"/Applications/MAMP/htdocs/toyotafleet/wp-content/themes/toyotafleet/js/door4/theme-functions/dirts.js",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/functions.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/theme_load_posts.js",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/theme_load_team.js",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/partials/medium.scss",
-		"/Applications/MAMP/htdocs/floorplanner-retail.magnet/floorplanner-retail.sublime-project",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/sidebar-content.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/style.css",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/single-careers.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/front-page.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/css/sass/modules/colours.scss",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/category.php",
-		"/Applications/MAMP/htdocs/burnleyfootcom/wp-content/themes/burnleyfc/js/theme.js"
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/navigation/menu--mobile-locations-dropdown.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-category-links.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/layout/footer.html.twig",
+		"/Users/danbeckett/Desktop/speed_control.svg",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/block--views-block--product-related-content-parts-and-accessories.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/egopowerplus.libraries.yml",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-labels--labelled-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--multi-tool-components-multi-tool-components-power-head.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--multi-tool-components-multi-tool-components-attachments.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--multi-tool-components-multi-tool-components-kit.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--multi-tool-illustration-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--feature-link-type-one-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--feature-panels-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--node--field-product-image--product.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_hedge_trimmers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--feature-link-type-two-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--single-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--our-story-intro-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--text.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--node--field-features--product.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--our-story-cost-illustration-bloc.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--our-story-video-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/views-view-list.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--video-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_line_trimmers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/taxonomy/block--views-block--taxonomy-term-archive_mowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/views/views-view-fields.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/classy/templates/views/views-view-list.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--block-content--field-labels-without-number--labelled-image-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/product/lol-mowers.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/panels/block--our-story-feature-panels-block.html.twig",
+		"/Applications/MAMP/htdocs/egopowerplus/core/themes/egopowerplus/templates/field/field--taxonomy-term--field-product-range-logos--product-type.html.twig"
 	],
 	"find":
 	{
@@ -415,6 +502,47 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"reviews",
+			"classes",
+			"div.intro_text",
+			"mowers",
+			"mins",
+			"double-width",
+			"caption",
+			"newsletter",
+			".smallprint",
+			"style",
+			"ARC",
+			"labelled",
+			"footer_social",
+			".banner",
+			"span.banner",
+			"content_block_range_list_2_across_style_2",
+			"content_block_range_list_1_across",
+			"range_list_2_acr",
+			"blog_",
+			"sidebar_panel",
+			"edit-ke",
+			"breadcrumb",
+			"line-trimmer",
+			"header",
+			"labels_to",
+			"div.footnote",
+			".footnote",
+			"breadcrumb",
+			"}",
+			"breadcrumb",
+			"region-",
+			"variant",
+			"_table.php",
+			"else ",
+			"standard",
+			"diam",
+			"thickness",
+			"barrier_",
+			"motor",
+			"related",
+			"km/h",
 			"strapline",
 			"span.banner",
 			"classes",
@@ -501,48 +629,7 @@
 			"margin",
 			"twitter-bg",
 			"1.1.",
-			"for",
-			"full-w",
-			"bodygrey",
-			"load_team_ajax",
-			"load_posts_ajax",
-			"load_posts_",
-			"load_team",
-			"more-link",
-			"mobile-trigger",
-			"pull-left",
-			"n class=\"more-link-icon-wrap original\">\n\t\t\t\t\t\t<span class=\"more-link-icon\"></span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>",
-			"mobile-trigger",
-			"espresso_eve",
-			"mobile-trigger",
-			"ucfb-header-logo",
-			"<p>",
-			"load_team",
-			"search",
-			"load_team",
-			".show",
-			"news",
-			"load",
-			"load_",
-			"navbar-brand",
-			"navbar",
-			"page-ucfb",
-			"pull-left",
-			"page-template-",
-			"navbar-brand",
-			"young-",
-			"-yc",
-			"ucfb",
-			"7",
-			".current",
-			"trustee",
-			"paged",
-			"featured",
-			"featured-news",
-			"mobile-trigger",
-			"global-wrapper",
-			"'bm'",
-			"jquery"
+			"for"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -560,24 +647,84 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "core/themes/egopowerplus/templates/panels/block--feature-panels-block.html.twig",
+					"file": "core/themes/egopowerplus/templates/layout/footer.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3023,
+						"buffer_size": 1280,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2079,
-								2160
+								845,
+								845
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-mowers.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1357,
+								1357
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 222.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-multitool.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1357,
+								1357
 							]
 						],
 						"settings":
@@ -588,32 +735,396 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 47.0,
+						"translation.y": 222.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "core/themes/egopowerplus/templates/panels/block--single-image-block.html.twig",
+					"buffer": 3,
+					"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-line-trimmers.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1595,
+						"buffer_size": 3151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1182,
-								1182
+								1357,
+								1357
 							]
 						],
 						"settings":
 						{
 							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-batteries.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1188,
+								1188
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-hedge-trimmers.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1357,
+								1357
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 222.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-chainsaws.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1938,
+								1938
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 76.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "core/themes/egopowerplus/templates/views/block--views-block--manuals-and-safety-sheets-manual-safety-sheets-blowers.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1357,
+								1357
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "core/themes/egopowerplus/css/sass/large.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 288332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145586,
+								145586
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 63102.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "core/themes/egopowerplus/templates/content/node--article--full.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5207,
+								5207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1173.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "core/themes/egopowerplus/templates/content/node--view--most-recent-blog-posts.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4752,
+								4752
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 677.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "core/themes/egopowerplus/templates/content/node--view--recent-blog-posts-older.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4576,
+								4576
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 632.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "core/themes/egopowerplus/templates/layout/node--product--full.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4111,
+								4111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 582.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "core/themes/egopowerplus/templates/html--node.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3959,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1413,
+								1413
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 438.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "core/themes/egopowerplus/egopowerplus.theme",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1346,
+								1346
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "core/themes/egopowerplus/templates/panels/block--page-intro-block.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2210,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1746,
+								1746
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -626,219 +1137,63 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "core/themes/egopowerplus/templates/panels/block--our-story-intro-block.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1522,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1263,
-								1263
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "core/themes/egopowerplus/templates/panels/block--our-story-content-block.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1782,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1517,
-								1517
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "core/themes/egopowerplus/templates/layout/node--product--full.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7645,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4987,
-								4987
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1189.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "core/themes/egopowerplus/templates/panels/block--our-story-video-block.html.twig",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1740,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1691,
-								1691
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 16,
 					"file": "core/themes/egopowerplus/templates/panels/block--comparison-table-block.html.twig",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 13822,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "core/themes/egopowerplus/templates/panels/block--our-story-cost-illustration-block.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4708,
+						"buffer_size": 42398,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1369,
-								1369
+								28419,
+								28419
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
 							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 354.0,
+						"translation.y": 9409.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "core/themes/egopowerplus/templates/field/field--node--field-features--product.html.twig",
+					"buffer": 17,
+					"file": "core/themes/egopowerplus/templates/product/product-features--multi-tool.html.twig",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2799,
+						"buffer_size": 18790,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1867,
-								1867
+								17736,
+								17736
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
 							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 267.0,
+						"translation.y": 4967.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 16,
 					"type": "text"
 				}
 			]
@@ -925,7 +1280,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 383.0,
+	"side_bar_width": 485.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
