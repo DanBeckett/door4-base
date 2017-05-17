@@ -6640,6 +6640,10 @@ div#main .profile {
   max-width: 1320px;
   padding: 0 20px 2px 25px; }
 
+/* -- Blog Footer Spacing -- */
+.path-blog div.block-region-middle {
+  margin-bottom: 60px; }
+
 /* =============================== */
 /* 10. Search results              */
 /* =============================== */
