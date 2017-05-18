@@ -843,6 +843,9 @@ div#main {
 										td {
 											@include typography-mixin-small;
 											padding:10px 10px;
+											&:first-child {
+												min-width: auto;
+											}
 										}
 									}
 								}

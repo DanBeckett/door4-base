@@ -1089,6 +1089,9 @@ div#main {
 													font-size:12px;
 												}
 											}
+											&:first-child {
+												min-width: auto;
+											}
 										}
 									}
 								}

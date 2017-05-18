@@ -3496,6 +3496,7 @@ div#main div.content_block.content_block_manuals {
                 div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table table tbody tr td:first-child {
                   text-align: left;
                   font-weight: bold;
+                  min-width: 526px;
                   text-transform: uppercase; }
                 div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.conc-content div.manuals_table table tbody tr td:last-child {
                   border-right: none; }
