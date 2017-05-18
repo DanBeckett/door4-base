@@ -4282,6 +4282,229 @@ div#main {
     }
 }
 
+div#main {
+    div.content_block.content_block_press_releases {
+        margin:0;
+        padding:0;
+        .range-title, .range_logo {
+            display: none;
+        }
+        div.press_releases {
+            max-width:1366px;
+            margin:0 auto;
+            padding:0 43px;
+            div.intro {
+                margin:0;
+                padding:0;
+                h1 {
+                    @include typography-mixin-title-1;
+                    color: $ego-green;
+                    line-height:100px;
+                    margin:0;
+                    padding:30px 0 77px 0;
+                    text-align:center;
+                    position:relative;
+                    span {
+                        color: $ego-black;
+                    }
+                    &:after {
+                        content:"";
+                        display:block;
+                        width:106px;
+                        height:21px;
+                        background-color:$ego-green;
+                        position:absolute;
+                        bottom:0px;
+                        left:50%;
+                        margin:0 0 0 -53px;
+                        padding:0;
+                        -webkit-transform:skewX(-16deg);
+                        transform:skewX(-16deg);
+                        -webkit-border-radius:999px;
+                        border-radius:999px;
+                    }
+                }
+                p {
+                    @include typography-mixin-regular;
+                    text-align:center;
+                    margin:0 auto;
+                    padding:48px 0 67px 0;
+                    max-width:600px;
+                }
+            }
+            div.press_releases_concertina {
+                margin:0;
+                padding:0;
+                div.section {
+                    margin:0;
+                    padding:0 0 20px 0;
+                    div.section_bar {
+                        margin:0;
+                        padding:0;
+                        background-color:$ego-darkest-grey;
+                        color:$ego-white;
+                        overflow:hidden;
+                        &.colour-darkest-grey {
+                            background-color:$ego-darkest-grey;
+                            color:$ego-white;
+                            div.text {
+                                div.title {
+                                    color:$ego-white;
+                                }
+                                div.subtitle {
+                                    color:$ego-green;
+                                }
+                            }
+                        }
+                        div.image {
+                            margin:0;
+                            padding:0;
+                            min-height:1px;
+                            background-position:center;
+                            background-repeat:no-repeat;
+                            background-size:cover;
+                            float:left;
+                            width:17%;
+                        }
+                        div.text {
+                            margin:0;
+                            padding:30px 0 30px 0;
+                            float:left;
+                            width:51.2%;
+                            div.title {
+                                @include typography-mixin-category-title;
+                                color:$ego-white;
+                                margin:0;
+                                padding:3px 0 3px 0;
+                            }
+                            div.subtitle {
+                                @include typography-mixin-category-blurb;
+                                color:$ego-green;
+                                margin:0;
+                                padding:0 0 3px 0;
+                            }
+                        }
+                        div.open_close {
+                            @include typography-mixin-regular;
+                            margin:0;
+                            padding:94px 30px 20px 48px;
+                            float:left;
+                            width:31.8%;
+                            text-align:right;
+                            span.active-message {
+                                display:none;
+                                span {
+                                    text-decoration:underline;
+                                }
+                                i {
+                                    margin-left:9px;
+                                }
+                            }
+                            span.inactive-message {
+                                display:inline-block;
+                                span {
+                                    text-decoration:underline;
+                                }
+                                i {
+                                    margin-left:22px;
+                                }
+                            }
+                        }
+                    }
+                    div.content {
+                        div.press_releases_table {
+                            margin:0;
+                            padding:1px 1px 0 1px;
+                            .view-content {
+                                padding: 0;
+                            }
+                            .taxonomy-term {
+                                display: none;
+                            }
+                            table {
+                                border-left:1px solid $ego-darkest-grey;
+                                border-right:1px solid $ego-darkest-grey;
+                                border-bottom:1px solid $ego-darkest-grey;
+                                tbody {
+                                    tr {
+                                        th {
+                                            @include typography-mixin-regular;
+                                            background-color:#2d2d2d;
+                                            color:$ego-white;
+                                            border-right:1px solid $ego-white;
+                                            text-transform:uppercase;
+                                            text-align:center;
+                                            margin:0;
+                                            padding:18px 35px;
+                                            font-weight:bold;
+                                            &:first-child {
+                                                text-align:left;
+                                            }
+                                            &:last-child {
+                                                border-right:none;
+                                            }
+                                        }
+                                        td {
+                                            @include typography-mixin-small;
+                                            border-right:1px solid $ego-darkest-grey;
+                                            text-align:center;
+                                            margin:0;
+                                            padding:18px 35px;
+                                            color:$ego-black;
+                                            a {
+                                                color:$ego-black;
+                                                display: inline-block;
+                                                margin-left: 15px;
+                                                min-width: 10em;
+                                                padding-left: 28px;
+                                                position: relative;
+                                                text-align: left;
+                                                &:before {
+                                                    content: "\f0f6";
+                                                    font-family: FontAwesome;
+                                                    left: 0px;
+                                                    margin-right:17px;
+                                                    position: absolute;
+                                                    font-size:21px;
+                                                }
+                                                &[href*=".pdf"]:before {
+                                                    content: "\f1c1";
+                                                }
+                                                &[href*=".doc"]:before,
+                                                &[href*=".docx"]:before {
+                                                    content: "\f1c2";
+                                                }
+                                                &[href*=".xls"]:before,
+                                                &[href*=".xlsx"]:before {
+                                                    content: "\f1c3";
+                                                }
+                                            }
+                                            &:first-child {
+                                                text-align:left;
+                                                font-weight:bold;
+                                                min-width: 526px;
+                                                text-transform:uppercase;
+                                            }
+                                            &:last-child {
+                                                border-right:none;
+                                            }
+                                        }
+                                        &:nth-child(even) {
+                                            td {
+                                                background-color:$ego-light-grey;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 /* Content Block - Multi Tool Illustration - inc_block_multi_tool_illustration.php */
 
