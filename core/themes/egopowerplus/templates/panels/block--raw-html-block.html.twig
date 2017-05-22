@@ -30,7 +30,7 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'content_block content_block_our_story_cost_illustration'
+    'content_block content_block_raw_html_block content_block_' ~ content.field_content_block_class_name['#items'][0].value
   ]
 %}
 <div{{ attributes.addClass(classes) }}>

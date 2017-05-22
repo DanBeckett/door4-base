@@ -1088,9 +1088,14 @@
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 13px;
           line-height: 19px; }
-  div#main div.content_block.content_block_single_product_details.category-mowers div.single_product_details .promo-roundel {
-    height: 66px;
-    width: 66px; }
+    div#main div.content_block.content_block_single_product_details div.single_product_details .promo-roundel {
+      height: 66px;
+      top: 42px;
+      width: 66px; }
+    div#main div.content_block.content_block_single_product_details div.single_product_details .promo-roundel-two {
+      height: 66px;
+      top: 120px;
+      width: 66px; }
 
   /* Content Block - Single Product Features - inc_block_single_product_features.php */
   div#main div.content_block.content_block_single_product_features div.single_product_features ul.features li div.feature div.icon {

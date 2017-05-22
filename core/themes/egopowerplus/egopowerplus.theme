@@ -40,6 +40,9 @@ function egopowerplus_preprocess_html(&$variables) {
       $variables['remove_reviews'] = $node->field_remove_reviews->value;
       //$variables['product_type'] = $node->field_product_type;
   	}
+    if($variables['node_type'] == 'article' && $node = \Drupal::routeMatch()->getParameter('node')) {
+      $variables['title'] = $node->title->value;
+    }
   }
 }
 
@@ -48,13 +51,11 @@ function egopowerplus_preprocess_block(&$variables) {
     $node = \Drupal::routeMatch()->getParameter('node');
     //add variables for the downloads
     $variables['sku'] = $node->field_sku;
-    $variables['remove_reviews'] = $node->field_remove_reviews;
   }
   if($variables['label'] == 'Product BazaarVoice Reviews Block') {
     $node = \Drupal::routeMatch()->getParameter('node');
     //add variables for the downloads
     $variables['sku'] = $node->field_sku;
-    $variables['remove_reviews'] = $node->field_remove_reviews;
   }
   if($variables['label'] == 'Product Downloads Block') {
     $node = \Drupal::routeMatch()->getParameter('node');

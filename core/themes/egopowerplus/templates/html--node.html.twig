@@ -62,7 +62,11 @@
 
     <head-placeholder token="{{ placeholder_token }}">
     <meta name="description" content="Discover tne Ego Power+ {{ sku }} {{ product_name }} and find your nearest distributor or buy online today." />
-    <title>{{ sku }} {{ product_name }} - Ego Power+</title>
+    {% if node_type|clean_class == 'article' %}
+        <title>{{ title }} - Ego Power+</title>
+    {% else %}
+        <title>{{ sku }} {{ product_name }} - Ego Power+</title>
+    {% endif %}
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
     <script type='text/javascript'>

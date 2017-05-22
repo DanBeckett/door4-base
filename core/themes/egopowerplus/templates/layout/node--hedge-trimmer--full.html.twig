@@ -89,10 +89,12 @@
 
   <div class="single_product_details">
 
-    {% if taxonomy == 'mowers' %}
+    {% if node.field_promo_badge_one[0].entity.uri.value is not empty %}
+      <span class="promo-roundel" style="background-image:url({{ file_url(node.field_promo_badge_one[0].entity.uri.value) }});">&nbsp;</span>
+    {% endif %}
 
-      <span class="promo-roundel">&nbsp;</span>
-
+    {% if node.field_promo_badge_two[0].entity.uri.value is not empty %}
+      <span class="promo-roundel-two" style="background-image:url({{ file_url(node.field_promo_badge_two[0].entity.uri.value) }});">&nbsp;</span>
     {% endif %}
 
         {{ content.field_product_image }}

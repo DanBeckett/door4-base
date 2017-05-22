@@ -1425,15 +1425,17 @@ div#main {
 					}
 				}
 			}
-		}
-		&.category-mowers {
-            div.single_product_details {
-                .promo-roundel {
-                	height: 66px;
-                	width: 66px;
-                }
+			.promo-roundel {
+            	height: 66px;
+            	top: 42px;
+            	width: 66px;
             }
-        }
+            .promo-roundel-two {
+            	height: 66px;
+            	top: 120px;
+            	width: 66px;
+            }
+		}
 	}
 }
 
