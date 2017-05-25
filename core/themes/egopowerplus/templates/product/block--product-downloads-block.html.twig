@@ -44,57 +44,57 @@
 
         <ul class="links">
           
-            {% if product_manual.entity.uri.value %}
+          {% if product_manual.entity.uri.value %}
 
-              <li>
-                
-                  <a href="{{ file_url(product_manual.entity.uri.value) }}" class="link">
-                    
-                      <div class="image" style="background-image:url(/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/download_product_manual.png);">
-
-                <img src="/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/dimensional_assurance_100_100.png">
-                        
-                        </div><!-- .image -->
-                        
-                      <div class="image svg" style="background-image:url(/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/download_product_manual.svg);">
-
-                <img src="/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/dimensional_assurance_100_100.png">
-                        
-                        </div><!-- .image svg -->
-                        
-                        <div class="document_name">{{ 'Download Product Manual'|trans }}</div>
-                    
-                    </a><!-- .link -->
-                
-                </li>
-
-              {% endif %}
-
-              {% if safety_sheet.entity.uri.value %}
+            <li>
               
-                <li>
-                
-                  <a href="{{ file_url(safety_sheet.entity.uri.value) }}" class="link">
-                    
-                    <div class="image" style="background-image:url(/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/download_safety_data_sheet.png);">
+                <a href="{{ file_url(product_manual.entity.uri.value) }}" class="link">
+                  
+                    <div class="image" style="background-image:url(/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/download_product_manual.png);">
 
-                      <img src="/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/dimensional_assurance_100_100.png">
-                        
-                    </div><!-- .image -->
-                        
-                    <div class="image svg" style="background-image:url(/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/download_safety_data_sheet.svg);">
+              <img src="/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/dimensional_assurance_100_100.png">
+                      
+                      </div><!-- .image -->
+                      
+                    <div class="image svg" style="background-image:url(/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/download_product_manual.svg);">
 
-                      <img src="/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/dimensional_assurance_100_100.png">
-                        
-                    </div><!-- .image svg -->
-                        
-                    <div class="document_name">{{ 'Download Safety Data Sheet'|trans }}</div>
-                    
+              <img src="/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/dimensional_assurance_100_100.png">
+                      
+                      </div><!-- .image svg -->
+                      
+                      <div class="document_name">{{ 'Download Product Manual'|trans }}</div>
+                  
                   </a><!-- .link -->
-                
-                </li>
+              
+              </li>
 
-              {% endif %}
+            {% endif %}
+
+            {% if safety_sheet.entity.uri.value %}
+            
+              <li>
+              
+                <a href="{{ file_url(safety_sheet.entity.uri.value) }}" class="link">
+                  
+                  <div class="image" style="background-image:url(/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/download_safety_data_sheet.png);">
+
+                    <img src="/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/dimensional_assurance_100_100.png">
+                      
+                  </div><!-- .image -->
+                      
+                  <div class="image svg" style="background-image:url(/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/download_safety_data_sheet.svg);">
+
+                    <img src="/{{base_path ~ directory}}/images/blocks/single_product_documents_and_downloads/dimensional_assurance_100_100.png">
+                      
+                  </div><!-- .image svg -->
+                      
+                  <div class="document_name">{{ 'Download Safety Data Sheet'|trans }}</div>
+                  
+                </a><!-- .link -->
+              
+              </li>
+
+            {% endif %}
           
           </ul><!-- .links -->
 
