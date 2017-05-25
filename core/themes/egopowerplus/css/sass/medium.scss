@@ -1807,8 +1807,6 @@ div#main {
 } /* End: @media only screen and (max-width: 1023px) and (min-width: 641px) { */
 
 
-
-
 /* ========================================== */
 /* 11. Extra fixes for small medium items     */
 /* ========================================== */
@@ -1872,5 +1870,38 @@ div#main {
 	}
 	div#main {
 		padding-top:169px;
+	}
+
+	.path-promo1-freelinetrimmer {
+	    div#main {
+	        div.content_block.content_block_range_list_1_across {
+	            div.range_list_1_across {
+	                ul.product_list {
+	                    li {
+	                        div.product {
+	                            padding-bottom: 0;
+	                            div.image {
+	                                width: 36%;
+	                                margin-left: 11%;
+	                                img {
+	                                }
+	                            }
+	                            span.banner {
+	                                left: 120px;
+	                            }
+	                        }
+	                        &:nth-child(even) {
+	                            div.product {
+	                                div.image {
+	                                    margin-left: 0;
+	                                    margin-right: 11%;
+	                                }
+	                            }
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
 	}
 }

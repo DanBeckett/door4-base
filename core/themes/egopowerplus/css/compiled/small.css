@@ -12,6 +12,7 @@
 	8. WYSIWYG elements within div#main
 	9. Content Blocks
 	10. Search results
+	11. Miscellaneous hotfixes
 	
 	============================================
 
@@ -1954,6 +1955,24 @@
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 16px;
         line-height: 24px; }
+
+  /* =============================== */
+  /* 11. Miscellaneous Hotfixes      */
+  /* =============================== */
+  .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product {
+    padding-bottom: 25px; }
+    .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.image {
+      margin-left: 0;
+      width: 100%; }
+    .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product span.banner {
+      font-size: 30px;
+      left: 30px;
+      line-height: 30px;
+      top: 30px; }
+      .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product span.banner + div.details {
+        padding-top: 0; }
+  .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li:nth-child(even) div.product div.image {
+    margin-right: 0; }
 
   /* -------------------------------------------------- */ }
 /* End: @media only screen and (max-width: 640px) { */

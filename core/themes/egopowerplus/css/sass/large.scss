@@ -1520,19 +1520,15 @@ div#main {
                         }
                     }
                     h2 {
-                        @include typography-mixin-regular;
-                        font-size:24px;
-                        line-height:28px;
-                        font-weight:bold;
-                        text-transform:none;
+                        @include typography-mixin-title-3;
                         color:$ego-black;
+                        line-height: 36px;
                         margin:0;
                         padding:22px 0 8px 0;
-                        letter-spacing:normal;
                     }
                     div.subtitle {
-                        @include typography-mixin-large;
-                        color:$ego-black;
+                        @include typography-mixin-title-3;
+                        line-height: 36px;
                         margin:0;
                         padding:0;
                         font-weight:bold;
@@ -1592,6 +1588,12 @@ div#main {
                                     padding:0;
                                     max-width:100%;
                                 }
+                            }
+                            img {
+                                display:block;
+                                margin:0;
+                                padding:0;
+                                max-width:100%;
                             }
                         }
                     }
@@ -3311,6 +3313,31 @@ div#main {
                     padding:0;
                     list-style-position:outside;
                     list-style-type:none;
+                    &.background-color-green {
+                        div.hero {
+                            background-color: $ego-green;
+                        }
+                    }
+                    &.background-color-dark-grey {
+                        div.hero {
+                            background-color: $ego-darkest-grey;
+                        }
+                    }
+                    &.background-color-light-grey {
+                        div.hero {
+                            background-color: $ego-light-grey;
+                        }
+                    }
+                    &.background-color-white {
+                        div.hero {
+                            background-color: $ego-white;
+                        }
+                    }
+                    &.background-stretch-contain {
+                        div.hero {
+                            background-size: contain;
+                        }
+                    }
                 }
             }
             ul.flex-direction-nav {
@@ -8116,7 +8143,7 @@ div#main {
                     letter-spacing: -1px;
                     color: #77bc1f;
                     position: relative;
-                    margin-bottom: 40px;
+                    margin-bottom: 60px;
                     span {
                         color: $ego-black;
                     }
@@ -8195,6 +8222,9 @@ div#main {
             }
             .offers_signup_backdrop {
                 float: right;
+                img {
+                    float: left;
+                }
             }
         }
     }
@@ -8499,4 +8529,37 @@ div#main {
 
 #taxonomy-term-5 {
     margin-top: 30px;
+}
+
+.path-promo1-freelinetrimmer {
+    div#main {
+        div.content_block.content_block_range_list_1_across {
+            div.range_list_1_across {
+                ul.product_list {
+                    li {
+                        div.product {
+                            padding-bottom: 0;
+                            div.image {
+                                width: 30%;
+                                margin-left: 22%;
+                                img {
+                                }
+                            }
+                            span.banner {
+                                left: 210px;
+                            }
+                        }
+                        &:nth-child(even) {
+                            div.product {
+                                div.image {
+                                    margin-left: 0;
+                                    margin-right: 19%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

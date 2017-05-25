@@ -48,7 +48,7 @@
 %}
 
   {% for item in items %}
-    <li>
+    <li class="background-stretch-{{ item.content['#paragraph'].field_background_stretch.0.value }} background-color-{{ item.content['#paragraph'].field_background_overflow_colour.0.value }}">
       {% if item.content['#paragraph'].field_link.0.uri is not empty %}
         <a href="{{ item.content['#paragraph'].field_link.0.url }}">
       {% endif %}

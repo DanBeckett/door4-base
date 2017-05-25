@@ -1367,6 +1367,17 @@
     padding-top: 100px; }
 
   div#main {
-    padding-top: 169px; } }
+    padding-top: 169px; }
+
+  .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product {
+    padding-bottom: 0; }
+    .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.image {
+      width: 36%;
+      margin-left: 11%; }
+    .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product span.banner {
+      left: 120px; }
+  .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li:nth-child(even) div.product div.image {
+    margin-left: 0;
+    margin-right: 11%; } }
 
 /*# sourceMappingURL=medium.css.map */
