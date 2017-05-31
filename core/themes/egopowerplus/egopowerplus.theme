@@ -47,6 +47,11 @@ function egopowerplus_preprocess_html(&$variables) {
 }
 
 function egopowerplus_preprocess_block(&$variables) {
+
+  //force product downloads block (0cba55d0-a4a7-4a6a-a0a7-baceb682f51e) to never cache
+  if($variables['derivative_plugin_id'] == '0cba55d0-a4a7-4a6a-a0a7-baceb682f51e') {
+    $variables['#cache']['max-age'] = 0;
+  }
   if($variables['label'] == 'Product BazaarVoice Questions Block') {
     $node = \Drupal::routeMatch()->getParameter('node');
     //add variables for the downloads
