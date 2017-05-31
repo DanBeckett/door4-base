@@ -24,304 +24,308 @@
  */
 #}
 
-<div id="specification" class="content_block content_block_single_product_specifications">
+{% if node.field_suppress_product_spec[0].value != 1 %}
 
-	<div class="single_product_specifications">
-    
-		<div class="title">{{ 'Specifications'|trans }}</div>
+    <div id="specification" class="content_block content_block_single_product_specifications">
 
-  		<ul class="specifications">
-
-            {% if content.field_spec_blade_length_cm|render|trim is not empty %}
+    	<div class="single_product_specifications">
         
-                <li>
-                
-                    <div class="specification">
+    		<div class="title">{{ 'Specifications'|trans }}</div>
+
+      		<ul class="specifications">
+
+                {% if content.field_spec_blade_length_cm|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Blade Length'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_blade_length_cm }}cm</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_chain_speed_ms|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Chain Speed'|trans }}</div>
+                            <div class="label">{{ 'Blade Length'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_blade_length_cm }}cm</div>
                         
-                        <div class="value">{{ content.field_spec_chain_speed_ms }}m/s</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_speed_kmh|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_chain_speed_ms|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Speed'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_speed_kmh }}km/h</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_run_time_2|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Run Time 2.0Ah'|trans }}</div>
+                            <div class="label">{{ 'Chain Speed'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_chain_speed_ms }}m/s</div>
                         
-                        <div class="value">{{ content.field_spec_run_time_2 }}{{ 'cuts'|trans }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_run_time_4|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_speed_kmh|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Run Time 4.0Ah'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_run_time_4 }}{{ 'cuts'|trans }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_run_time_5|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Run Time 5.0Ah'|trans }}</div>
+                            <div class="label">{{ 'Speed'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_speed_kmh }}km/h</div>
                         
-                        <div class="value">{{ content.field_spec_run_time_5 }}{{ 'cuts'|trans }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_run_time_6|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_2|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Run Time 6.0Ah'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_run_time_6 }}{{ 'cuts'|trans }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_run_time_75|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Run Time 7.5Ah'|trans }}</div>
+                            <div class="label">{{ 'Run Time 2.0Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_2 }}{{ 'cuts'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_run_time_75 }}{{ 'cuts'|trans }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_chain_bar|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_4|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Chain Bar'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_chain_bar }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_chain_type|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Chain Type'|trans }}</div>
+                            <div class="label">{{ 'Run Time 4.0Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_4 }}{{ 'cuts'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_chain_type }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_oil_reservoir_ml|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_5|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Oil Reservoir'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_oil_reservoir_ml }}ml</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_chain_brake|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Chain Brake'|trans }}</div>
+                            <div class="label">{{ 'Run Time 5.0Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_5 }}{{ 'cuts'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_chain_brake }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_noise_rating_lpa|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_6|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Noise Rating'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_noise_rating_lpa }}LpA</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_noise_rating_lwa|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Noise Rating'|trans }}</div>
+                            <div class="label">{{ 'Run Time 6.0Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_6 }}{{ 'cuts'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_noise_rating_lwa }}LwA</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_vibration_ms|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_75|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Vibration'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_vibration_ms }}M/S</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_chain_tensioning|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Chain Tensioning'|trans }}</div>
+                            <div class="label">{{ 'Run Time 7.5Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_75 }}{{ 'cuts'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_chain_tensioning }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_weight_wo_battery_kg|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_chain_bar|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Weight without Battery'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_weight_wo_battery_kg }}kg</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_motor_type|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Motor Type'|trans }}</div>
+                            <div class="label">{{ 'Chain Bar'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_chain_bar }}</div>
                         
-                        <div class="value">{{ content.field_spec_motor_type }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-        </ul><!-- .specifications -->
+                {% if content.field_spec_chain_type|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Chain Type'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_chain_type }}</div>
+                        
+                        </div>
+                    
+                    </li>
 
-    </div><!-- .single_product_specifications -->
+                {% endif %}
 
-</div>
+                {% if content.field_spec_oil_reservoir_ml|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Oil Reservoir'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_oil_reservoir_ml }}ml</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_chain_brake|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Chain Brake'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_chain_brake }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_noise_rating_lpa|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Noise Rating'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_noise_rating_lpa }}LpA</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_noise_rating_lwa|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Noise Rating'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_noise_rating_lwa }}LwA</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_vibration_ms|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Vibration'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_vibration_ms }}M/S</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_chain_tensioning|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Chain Tensioning'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_chain_tensioning }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_weight_wo_battery_kg|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Weight without Battery'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_weight_wo_battery_kg }}kg</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_motor_type|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Motor Type'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_motor_type }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+            </ul><!-- .specifications -->
+
+        </div><!-- .single_product_specifications -->
+
+    </div>
+
+{% endif %}

@@ -14,144 +14,148 @@
  */
 #}
 
-<div id="specification" class="content_block content_block_single_product_specifications">
+{% if node.field_suppress_product_spec[0].value != 1 %}
 
-	<div class="single_product_specifications">
-    
-		<div class="title">{{ 'Specifications'|trans }}</div>
+    <div id="specification" class="content_block content_block_single_product_specifications">
 
-  		<ul class="specifications">
-
-            {% if content.field_spec_capacity_ah|render|trim is not empty %}
+    	<div class="single_product_specifications">
         
-            	<li>
-                
-                	<div class="specification">
+    		<div class="title">{{ 'Specifications'|trans }}</div>
+
+      		<ul class="specifications">
+
+                {% if content.field_spec_capacity_ah|render|trim is not empty %}
+            
+                	<li>
                     
-                    	<div class="label">{{ 'Capacity'|trans }}</div>
+                    	<div class="specification">
                         
-                        <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_capacity_wh|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Capacity' }}</div>
+                        	<div class="label">{{ 'Capacity'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_capacity_ah }}Ah</div>
                         
-                        <div class="value">{{ content.field_spec_capacity_wh }}Wh</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_charge_time_rapid|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_capacity_wh|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Charge Time (Rapid)'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_charge_time_rapid }}mins</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_charge_time_standard|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Charge Time (Standard)'|trans }}</div>
+                            <div class="label">{{ 'Capacity' }}</div>
+                            
+                            <div class="value">{{ content.field_spec_capacity_wh }}Wh</div>
                         
-                        <div class="value">{{ content.field_spec_charge_time_standard }}mins</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_weight_kg|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_charge_time_rapid|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Weight'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_weight_kg }}kg</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_harness|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Harness'|trans }}</div>
+                            <div class="label">{{ 'Charge Time (Rapid)'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_charge_time_rapid }}mins</div>
                         
-                        <div class="value">{{ content.field_spec_harness }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_charging|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_charge_time_standard|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Charging'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_charging }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_life_cycle|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Life Cycle'|trans }}</div>
+                            <div class="label">{{ 'Charge Time (Standard)'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_charge_time_standard }}mins</div>
                         
-                        <div class="value">{{ content.field_spec_life_cycle }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-        </ul><!-- .specifications -->
+                {% if content.field_spec_weight_kg|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Weight'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_weight_kg }}kg</div>
+                        
+                        </div>
+                    
+                    </li>
 
-    </div><!-- .single_product_specifications -->
+                {% endif %}
 
-</div>
+                {% if content.field_spec_harness|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Harness'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_harness }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_charging|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Charging'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_charging }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_life_cycle|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Life Cycle'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_life_cycle }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+            </ul><!-- .specifications -->
+
+        </div><!-- .single_product_specifications -->
+
+    </div>
+
+{% endif %}

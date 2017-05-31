@@ -1,157 +1,161 @@
-<div id="product_features" class="content_block content_block_single_product_features">
+{% if node.field_suppress_product_features[0].value != 1 %}
 
-	<div class="single_product_features">
+    <div id="product_features" class="content_block content_block_single_product_features">
 
-  		<div class="title">{{ 'Product features'|trans }}</div>
+    	<div class="single_product_features">
+
+      		<div class="title">{{ 'Product features'|trans }}</div>
+            
+            <ul class="features">
+
+                {% if content.field_hedge_ft_blade_length|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/blade_length.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/blade_length.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_hedge_ft_blade_length }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_hedge_ft_blade_gap|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/blade_gap.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/blade_gap.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_hedge_ft_blade_gap }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_hedge_ft_laser_cut|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/laser_cut.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/laser_cut.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_hedge_ft_laser_cut }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_hedge_ft_two_speed|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/two_speed.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/two_speed.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_hedge_ft_two_speed }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_hedge_ft_dual_action|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/dual_action.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/dual_action.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_hedge_ft_dual_action }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_hedge_ft_rear_handle|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/rotating_rear_handle.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/rotating_rear_handle.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_hedge_ft_rear_handle }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_hedge_ft_backpack|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/use_with_backpack.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/use_with_backpack.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_hedge_ft_backpack }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_hedge_ft_brushless|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/brushless_motor.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/brushless_motor.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_hedge_ft_brushless }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+            
+            </ul><!-- .features -->
         
-        <ul class="features">
+        </div><!-- .single_product_features -->
 
-            {% if content.field_hedge_ft_blade_length|render|trim is not empty %}
+    </div>
 
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/blade_length.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/blade_length.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_hedge_ft_blade_length }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_hedge_ft_blade_gap|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/blade_gap.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/blade_gap.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_hedge_ft_blade_gap }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_hedge_ft_laser_cut|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/laser_cut.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/laser_cut.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_hedge_ft_laser_cut }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_hedge_ft_two_speed|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/two_speed.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/two_speed.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_hedge_ft_two_speed }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_hedge_ft_dual_action|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/dual_action.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/dual_action.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_hedge_ft_dual_action }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_hedge_ft_rear_handle|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/rotating_rear_handle.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/rotating_rear_handle.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_hedge_ft_rear_handle }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_hedge_ft_backpack|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/use_with_backpack.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/use_with_backpack.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_hedge_ft_backpack }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_hedge_ft_brushless|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/brushless_motor.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/brushless_motor.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_hedge_ft_brushless }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-        
-        </ul><!-- .features -->
-    
-    </div><!-- .single_product_features -->
-
-</div>
+{% endif %}

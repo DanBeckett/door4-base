@@ -1,85 +1,89 @@
-<div id="product_features" class="content_block content_block_single_product_features">
+{% if node.field_suppress_product_features[0].value != 1 %}
 
-	<div class="single_product_features">
+    <div id="product_features" class="content_block content_block_single_product_features">
 
-  		<div class="title">{{ 'Product features'|trans }}</div>
+    	<div class="single_product_features">
+
+      		<div class="title">{{ 'Product features'|trans }}</div>
+            
+            <ul class="features">
+
+                {% if content.field_blower_ft_turbo_boost|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/turbo_boost.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/turbo_boost.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_blower_ft_turbo_boost }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_blower_ft_speed_contr|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/speed_control.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/speed_control.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_blower_ft_speed_contr }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_blower_ft_brushless|render|trim is not empty %}
+
+                    <li>
+                    
+                    	<div class="feature">
+                        
+                        	<div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/brushless_motor.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/brushless_motor.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                        	
+                            <div class="label">{{ content.field_blower_ft_brushless }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_blower_ft_backpack|render|trim is not empty %}
+
+                    <li>
+                    
+                        <div class="feature">
+                        
+                            <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/use_with_backpack.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/use_with_backpack.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
+                            
+                            <div class="label">{{ content.field_blower_ft_backpack }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+            
+            </ul><!-- .features -->
         
-        <ul class="features">
+        </div><!-- .single_product_features -->
 
-            {% if content.field_blower_ft_turbo_boost|render|trim is not empty %}
+    </div>
 
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/turbo_boost.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/turbo_boost.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_blower_ft_turbo_boost }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_blower_ft_speed_contr|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/speed_control.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/speed_control.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_blower_ft_speed_contr }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_blower_ft_brushless|render|trim is not empty %}
-
-                <li>
-                
-                	<div class="feature">
-                    
-                    	<div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/brushless_motor.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/brushless_motor.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                    	
-                        <div class="label">{{ content.field_blower_ft_brushless }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_blower_ft_backpack|render|trim is not empty %}
-
-                <li>
-                
-                    <div class="feature">
-                    
-                        <div class="icon" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/png/use_with_backpack.png);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="icon svg" style="background-image:url(/{{base_path ~ directory}}/images/product_feature_icons/svg/use_with_backpack.svg);"><img src="/{{base_path ~ directory}}/images/blocks/single_product_features/dimensional_assurance_100_100.png"></div>
-                        
-                        <div class="label">{{ content.field_blower_ft_backpack }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-        
-        </ul><!-- .features -->
-    
-    </div><!-- .single_product_features -->
-
-</div>
+{% endif %}

@@ -24,304 +24,308 @@
  */
 #}
 
-<div id="specification" class="content_block content_block_single_product_specifications">
+{% if node.field_suppress_product_spec[0].value != 1 %}
 
-	<div class="single_product_specifications">
-    
-		<div class="title">{{ 'Specifications'|trans }}</div>
+    <div id="specification" class="content_block content_block_single_product_specifications">
 
-  		<ul class="specifications">
-
-            {% if content.field_spec_blade_length_cm|render|trim is not empty %}
+    	<div class="single_product_specifications">
         
-                <li>
-                
-                    <div class="specification">
+    		<div class="title">{{ 'Specifications'|trans }}</div>
+
+      		<ul class="specifications">
+
+                {% if content.field_spec_blade_length_cm|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Blade Length'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_blade_length_cm }}cm</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_blade_gap_mm|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Blade Gap'|trans }}</div>
+                            <div class="label">{{ 'Blade Length'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_blade_length_cm }}cm</div>
                         
-                        <div class="value">{{ content.field_spec_blade_gap_mm }}mm</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_blade_tooth_depth_mm|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_blade_gap_mm|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Blade Tooth Depth'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_blade_tooth_depth_mm }}mm</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_run_time_2|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Run Time 2.0Ah'|trans }}</div>
+                            <div class="label">{{ 'Blade Gap'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_blade_gap_mm }}mm</div>
                         
-                        <div class="value">{{ content.field_spec_run_time_2 }}{{ 'Minutes suffix'|trans }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_run_time_4|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_blade_tooth_depth_mm|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Run Time 4.0Ah'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_run_time_4 }}{{ 'Minutes suffix'|trans }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_run_time_5|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Run Time 5.0Ah'|trans }}</div>
+                            <div class="label">{{ 'Blade Tooth Depth'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_blade_tooth_depth_mm }}mm</div>
                         
-                        <div class="value">{{ content.field_spec_run_time_5 }}{{ 'Minutes suffix'|trans }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_run_time_75|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_2|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Run Time 7.5Ah'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_run_time_75 }}{{ 'Minutes suffix'|trans }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_speed_control|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Speed Control'|trans }}</div>
+                            <div class="label">{{ 'Run Time 2.0Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_2 }}{{ 'Minutes suffix'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_speed_control }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_no_load_speed_spm|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_4|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'No Load Speed'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_no_load_speed_spm }}spm</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_blade_type|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Blade Type'|trans }}</div>
+                            <div class="label">{{ 'Run Time 4.0Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_4 }}{{ 'Minutes suffix'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_blade_type }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_cutting_action|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_5|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Cutting Action'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_cutting_action }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_blade_tip_protector|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Blade Tip Protector'|trans }}</div>
+                            <div class="label">{{ 'Run Time 5.0Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_5 }}{{ 'Minutes suffix'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_blade_tip_protector }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_sound_pressure_lpa|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_run_time_75|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Sound Pressure'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_sound_pressure_lpa }}LpA</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_sound_pressure_lwa|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Sound Pressure'|trans }}</div>
+                            <div class="label">{{ 'Run Time 7.5Ah'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_run_time_75 }}{{ 'Minutes suffix'|trans }}</div>
                         
-                        <div class="value">{{ content.field_spec_sound_pressure_lwa }}LwA</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_rotating_handle|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_speed_control|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Rotating Handle'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_rotating_handle }}</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_vibration_ms2|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Vibration'|trans }}</div>
+                            <div class="label">{{ 'Speed Control'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_speed_control }}</div>
                         
-                        <div class="value">{{ content.field_spec_vibration_ms2 }}M/S2</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-            {% if content.field_spec_weight_wo_battery_kg|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
+                {% if content.field_spec_no_load_speed_spm|render|trim is not empty %}
+            
+                    <li>
                     
-                        <div class="label">{{ 'Weight without Battery'|trans }}</div>
+                        <div class="specification">
                         
-                        <div class="value">{{ content.field_spec_weight_wo_battery_kg }}kg</div>
-                    
-                    </div>
-                
-                </li>
-
-            {% endif %}
-
-            {% if content.field_spec_motor_type|render|trim is not empty %}
-        
-                <li>
-                
-                    <div class="specification">
-                    
-                        <div class="label">{{ 'Motor Type'|trans }}</div>
+                            <div class="label">{{ 'No Load Speed'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_no_load_speed_spm }}spm</div>
                         
-                        <div class="value">{{ content.field_spec_motor_type }}</div>
+                        </div>
                     
-                    </div>
-                
-                </li>
+                    </li>
 
-            {% endif %}
+                {% endif %}
 
-        </ul><!-- .specifications -->
+                {% if content.field_spec_blade_type|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Blade Type'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_blade_type }}</div>
+                        
+                        </div>
+                    
+                    </li>
 
-    </div><!-- .single_product_specifications -->
+                {% endif %}
 
-</div>
+                {% if content.field_spec_cutting_action|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Cutting Action'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_cutting_action }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_blade_tip_protector|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Blade Tip Protector'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_blade_tip_protector }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_sound_pressure_lpa|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Sound Pressure'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_sound_pressure_lpa }}LpA</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_sound_pressure_lwa|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Sound Pressure'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_sound_pressure_lwa }}LwA</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_rotating_handle|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Rotating Handle'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_rotating_handle }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_vibration_ms2|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Vibration'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_vibration_ms2 }}M/S2</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_weight_wo_battery_kg|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Weight without Battery'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_weight_wo_battery_kg }}kg</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+                {% if content.field_spec_motor_type|render|trim is not empty %}
+            
+                    <li>
+                    
+                        <div class="specification">
+                        
+                            <div class="label">{{ 'Motor Type'|trans }}</div>
+                            
+                            <div class="value">{{ content.field_spec_motor_type }}</div>
+                        
+                        </div>
+                    
+                    </li>
+
+                {% endif %}
+
+            </ul><!-- .specifications -->
+
+        </div><!-- .single_product_specifications -->
+
+    </div>
+
+{% endif %}
