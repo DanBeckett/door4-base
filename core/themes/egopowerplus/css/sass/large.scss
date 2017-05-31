@@ -1921,7 +1921,7 @@ div#main {
 div#main {
     div.content_block.content_block_blog_index_links {
         margin:0;
-        padding:0 18px 60px 18px;
+        padding:0 18px 0px 18px;
         text-align:center;
         ul.blog_index_links {
             margin:0 auto;
@@ -1965,6 +1965,7 @@ div#main {
                     }
                     div.title {
                         @include typography-mixin-block-header-small;
+                        text-transform: uppercase;
                         line-height:50px;
                         color:$ego-black;
                         margin:0;
