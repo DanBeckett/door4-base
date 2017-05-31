@@ -1528,6 +1528,12 @@ div#main div.content_block.content_block_blog_index_featured_items {
           font-size: 19px;
           line-height: 27px;
           padding: 0; }
+          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.excerpt p em {
+            color: #ffffff;
+            font-style: normal; }
+          div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item div.excerpt p strong {
+            color: #ffffff;
+            font-weight: normal; }
       div#main div.content_block.content_block_blog_index_featured_items ul.blog_index_featured_items li a.featured_item ul.article_links {
         margin: 0;
         padding: 0;

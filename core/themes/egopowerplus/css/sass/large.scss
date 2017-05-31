@@ -1852,6 +1852,14 @@ div#main {
                             font-size: 19px;
                             line-height: 27px;
                             padding: 0;
+                            em {
+                                color: $ego-white;
+                                font-style: normal;
+                            }
+                            strong {
+                                color: $ego-white;
+                                font-weight: normal;
+                            }
                         }
                     }
                     ul.article_links {      

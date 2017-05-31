@@ -340,6 +340,21 @@ jQuery(window).load(function() {
 		$form.append($smallprint);
 	}
 
+	/* -- remove extra paragraphs from blog excerpts -- 
+
+	if(jQuery('.path-ego-news').length > 0) {
+		jQuery('.excerpt').each(function(){
+			var $this = jQuery(this),
+			    $paras = $this.children('p');
+			$paras.each(function($i){
+				if($i > 0) {
+					var $this = jQuery(this);
+					$this.remove();
+				};
+			});
+		});
+	};
+
 	/* -- Generic Concertina -- */
 
 	if(jQuery('.conc-trigger').length > 0) {
