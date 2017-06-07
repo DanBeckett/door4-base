@@ -5498,6 +5498,10 @@ div#main {
                                 span {
                                     color:$ego-black;
                                 }
+                                &.smaller {
+                                    font-size: 77px;
+                                    line-height: 70px;
+                                }
                             }
                         }
                     }
@@ -5785,7 +5789,8 @@ div#main {
                                 margin:0;
                                 padding:22px 0 0 0;
                                 &.extra-padding {
-                                    padding-top:155px;
+                                    position: absolute;
+                                    bottom: 30px;
                                 }
                             }
                         }

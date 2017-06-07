@@ -207,6 +207,8 @@ jQuery(window).load(function() {
 
 	if(jQuery('.page-node-type-product').length > 0 && jQuery('#breadcrumb_bar .anchors').length > 0) {
 		// els to anchor: #specification, #product-features
+		var $captions = jQuery('#potential_js_breadcrumbs').data();
+
 		if(jQuery('#summary').length > 0) {
 			var $this = jQuery('#summary'),
 				$header = jQuery('header'),
@@ -214,7 +216,7 @@ jQuery(window).load(function() {
 				$el_pos = $this.position(),
 				$header_height = $header.outerHeight()
 				$scrollto = $el_pos.top - $header_height;
-			$anchors.append('<a href="#summary" data-scroll-to="' + $scrollto + 'px">Summary</a>');
+			$anchors.append('<a href="#summary" data-scroll-to="' + $scrollto + 'px">' + $captions.summary + '</a>');
 		}
 
 		if(jQuery('#product_features').length > 0) {
@@ -224,7 +226,7 @@ jQuery(window).load(function() {
 				$el_pos = $this.position(),
 				$header_height = $header.outerHeight()
 				$scrollto = $el_pos.top - $header_height;
-			$anchors.append('<a href="#product_features" data-scroll-to="' + $scrollto + 'px">Features</a>');
+			$anchors.append('<a href="#product_features" data-scroll-to="' + $scrollto + 'px">' + $captions.features + '</a>');
 		}
 
 		if(jQuery('#specification').length > 0) {
@@ -233,8 +235,9 @@ jQuery(window).load(function() {
 				$anchors = jQuery('#breadcrumb_bar .anchors'),
 				$el_pos = $this.position(),
 				$header_height = $header.outerHeight()
-				$scrollto = $el_pos.top - $header_height;
-			$anchors.append('<a href="#specification" data-scroll-to="' + $scrollto + 'px">Specification</a>');
+				$scrollto = $el_pos.top - $header_height
+				$captions = jQuery('potential_js_breadcrumbs');
+			$anchors.append('<a href="#specification" data-scroll-to="' + $scrollto + 'px">' + $captions.specification + '</a>');
 		}
 
 		if(jQuery('#block-views-block-product-related-content-parts-and-accessories').length > 0) {
@@ -244,7 +247,7 @@ jQuery(window).load(function() {
 				$el_pos = $this.position(),
 				$header_height = $header.outerHeight()
 				$scrollto = $el_pos.top - $header_height;
-			$anchors.append('<a href="#block-views-block-product-related-content-parts-and-accessories" data-scroll-to="' + $scrollto + 'px">Parts &amp; Accessories</a>');
+			$anchors.append('<a href="#block-views-block-product-related-content-parts-and-accessories" data-scroll-to="' + $scrollto + 'px">' + $captions.partsAccessories + '</a>');
 		}
 
 		if(jQuery('#questions').length > 0) {
@@ -255,7 +258,7 @@ jQuery(window).load(function() {
 				    $el_pos = $this.position(),
 				    $header_height = $header.outerHeight(),
 				    $scrollto = $el_pos.top - $header_height;
-				$anchors.append('<a href="#questions" data-scroll-to="' + $scrollto + 'px">Questions</a>');
+				$anchors.append('<a href="#questions" data-scroll-to="' + $scrollto + 'px">' + $captions.questions + '</a>');
 			};
 		}
 
@@ -267,7 +270,7 @@ jQuery(window).load(function() {
 				    $el_pos = $this.position(),
 				    $header_height = $header.outerHeight(),
 				    $scrollto = $el_pos.top - $header_height;
-				$anchors.append('<a href="#reviews" data-scroll-to="' + $scrollto + 'px">Reviews</a>');
+				$anchors.append('<a href="#reviews" data-scroll-to="' + $scrollto + 'px">' + $captions.reviews + '</a>');
 			};
 		}
 

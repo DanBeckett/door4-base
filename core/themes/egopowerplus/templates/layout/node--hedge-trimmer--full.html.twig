@@ -85,6 +85,8 @@
 
 {% set taxonomy = content.field_product_type[0]['#title']|lower|replace({' ': '-', '&': ''})|replace({'--':'-'}) %}
 
+<div id="potential_js_breadcrumbs" data-summary="{{ 'Summary'|trans }}" data-features="{{ 'Features'|trans }}" data-specification="{{ 'Specification'|trans }}" data-parts-accessories="{{ 'Parts & Accessories'|trans }}" data-questions="{{ 'Questions'|trans }}" data-reviews="{{ 'Reviews'|trans }}"></div>
+
 <div id="summary" class="content_block content_block_single_product_details category-{{ taxonomy }}">
 
   <div class="single_product_details">

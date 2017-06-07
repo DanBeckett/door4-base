@@ -4550,6 +4550,9 @@ div#main div.content_block.content_block_our_story_the_power_illustration {
               color: #ffffff; }
               div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.centre_panel div.centre_circle_wrapper div.centre_circle div.caption span {
                 color: #000000; }
+              div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.centre_panel div.centre_circle_wrapper div.centre_circle div.caption.smaller {
+                font-size: 77px;
+                line-height: 70px; }
         div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.centre_panel div.info_panel {
           width: 50%;
           float: left; }
@@ -4773,7 +4776,8 @@ div#main div.content_block.content_block_product_category_links ul.product_categ
             margin: 0;
             padding: 22px 0 0 0; }
             div#main div.content_block.content_block_product_category_links ul.product_category_links li a.link div.content_wrapper div.text_wrapper div.cta.extra-padding {
-              padding-top: 155px; }
+              position: absolute;
+              bottom: 30px; }
 
 /* Tweaks for smaller desktop widths */
 @media only screen and (max-width: 1200px) and (min-width: 1024px) {
