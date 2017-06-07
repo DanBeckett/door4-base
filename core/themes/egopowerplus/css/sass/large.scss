@@ -5585,6 +5585,12 @@ div#main {
                             text-align:center;
                             color:$ego-white;
                         }
+                        &.smaller {
+                            p {
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                        }
                     }
                 }
             }
