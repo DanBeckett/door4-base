@@ -6615,6 +6615,9 @@ div#main div.content_block.content_block_where_to_buy_info {
         margin: 0;
         padding: 44px 0 33px 0;
         text-align: center; }
+        div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.find_a_dealer div.map iframe {
+          border: 0px solid transparent;
+          max-width: 100%; }
         div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.find_a_dealer div.map img {
           display: inline-block;
           width: auto;
@@ -6640,6 +6643,9 @@ div#main div.content_block.content_block_where_to_buy_info {
         div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.find_a_dealer a.find_local_dealer:hover {
           text-decoration: underline;
           background-color: #639d1a; }
+    div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info.one_column div.find_a_dealer {
+      float: none;
+      margin: 0 auto; }
     div#main div.content_block.content_block_where_to_buy_info div.where_to_buy_info div.buy_online {
       width: 50%;
       float: left;

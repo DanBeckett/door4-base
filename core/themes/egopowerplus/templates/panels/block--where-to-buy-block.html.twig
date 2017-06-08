@@ -35,7 +35,14 @@
 %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="where_to_buy_info">
+
+  {% if content.field_display_column_two[0]|render|trim == 'On' %} 
+    {% set where_class = '' %}
+  {% else %}
+    {% set where_class = ' one_column' %}
+  {% endif %}
+
+  <div class="where_to_buy_info{{ where_class }}">
     
       <div class="find_a_dealer">
           
@@ -48,52 +55,62 @@
             <a href="{{ content.field_find_a_dealer_link[0]['#url'] }}" class="find_local_dealer">{{ content.field_find_a_dealer_link[0]['#title'] }} <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             
             <div class="map">
+
+              {% if content.field_google_map_embed_url.0 is not empty %}
+
+                <iframe src="{{ content.field_google_map_embed_url.0 }}" width="640" height="480"></iframe>
+
+              {% else %}
               
                 <a href="{{ content.field_find_a_dealer_link[0]['#url'] }}"><img src="{{ file_url(content.field_find_a_dealer_image.0['#item'].entity.uri.value) }}"></a>
+
+              {% endif %}
             
             </div><!-- .map -->           
         
         </div><!-- .find_a_dealer -->
-        
-      <div class="buy_online">
+      
+      {% if content.field_display_column_two[0]|render|trim == 'On' %}
+        <div class="buy_online">
+            
+              {% if content.field_column_two_title is not empty %}
+
+                <h2>{{ content.field_column_two_title }}</h2>
+
+              {% endif %}
+              
+              {{ content.field_buy_online_content }}
+              
+              <ul class="retailers">
+              
+                {% if content.field_location_image_one.0['#item'].entity.uri.value %}
+
+                  <li><a href="{{ content.field_location_link_one[0]['#url'] }}"><img src="{{ file_url(content.field_location_image_one.0['#item'].entity.uri.value) }}"></a></li>
+
+                {% endif %}
+
+                {% if content.field_location_image_two.0['#item'].entity.uri.value %}
+                  
+                  <li><a href="{{ content.field_location_link_two[0]['#url'] }}"><img src="{{ file_url(content.field_location_image_two.0['#item'].entity.uri.value) }}"></a></li>
+
+                {% endif %}
+
+                {% if content.field_location_image_three.0['#item'].entity.uri.value %}
+                  
+                  <li><a href="{{ content.field_location_link_three[0]['#url'] }}"><img src="{{ file_url(content.field_location_image_three.0['#item'].entity.uri.value) }}"></a></li>
+
+                {% endif %}
+
+                {% if content.field_location_image_four.0['#item'].entity.uri.value %}
+                  
+                  <li><a href="{{ content.field_location_link_four[0]['#url'] }}"><img src="{{ file_url(content.field_location_image_four.0['#item'].entity.uri.value) }}"></a></li>
+
+                {% endif %}
+              
+              </ul><!-- .retailers -->
           
-            {% if content.field_column_two_title is not empty %}
-
-              <h2>{{ content.field_column_two_title }}</h2>
-
-            {% endif %}
-            
-            {{ content.field_buy_online_content }}
-            
-            <ul class="retailers">
-            
-              {% if content.field_location_image_one.0['#item'].entity.uri.value %}
-
-                <li><a href="{{ content.field_location_link_one[0]['#url'] }}"><img src="{{ file_url(content.field_location_image_one.0['#item'].entity.uri.value) }}"></a></li>
-
-              {% endif %}
-
-              {% if content.field_location_image_two.0['#item'].entity.uri.value %}
-                
-                <li><a href="{{ content.field_location_link_two[0]['#url'] }}"><img src="{{ file_url(content.field_location_image_two.0['#item'].entity.uri.value) }}"></a></li>
-
-              {% endif %}
-
-              {% if content.field_location_image_three.0['#item'].entity.uri.value %}
-                
-                <li><a href="{{ content.field_location_link_three[0]['#url'] }}"><img src="{{ file_url(content.field_location_image_three.0['#item'].entity.uri.value) }}"></a></li>
-
-              {% endif %}
-
-              {% if content.field_location_image_four.0['#item'].entity.uri.value %}
-                
-                <li><a href="{{ content.field_location_link_four[0]['#url'] }}"><img src="{{ file_url(content.field_location_image_four.0['#item'].entity.uri.value) }}"></a></li>
-
-              {% endif %}
-            
-            </ul><!-- .retailers -->
-        
-        </div><!-- .buy_online -->
+          </div><!-- .buy_online -->
+        {% endif %}
     
     </div><!-- .where_to_buy_info -->
     

@@ -8010,6 +8010,10 @@ div#main {
                     margin:0;
                     padding:44px 0 33px 0;
                     text-align:center;
+                    iframe {
+                        border: 0px solid transparent;
+                        max-width: 100%;
+                    }
                     img {
                         display:inline-block;
                         width:auto;
@@ -8037,6 +8041,12 @@ div#main {
                         text-decoration:underline;
                         background-color:$ego-green-hover;
                     }
+                }
+            }
+            &.one_column {
+                div.find_a_dealer {
+                    float: none;
+                    margin: 0 auto;
                 }
             }
             div.buy_online {
