@@ -36,25 +36,31 @@
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
     <ul class="action_links">
-      <li class="brochure">
-        <a href="{{ content.field_panel_one_link[0]['#url'] }}" class="footer-link-one">
-          <div class="image"></div>
-          {# /* removed CMS-able icons for these images, code if needed to re-instate: style="background-image:url({{ file_url(content.field_panel_two_image.0['#item'].entity.uri.value) }});" */ #}
-          <div class="caption">{{ content.field_panel_one_caption['#items'][0].value }}</div>
-        </a>
-      </li>
-      <li class="pin">
-        <a href="{{ content.field_panel_two_link[0]['#url'] }}" class="footer-link-two">
-          <div class="image"></div>
-          <div class="caption">{{ content.field_panel_two_caption['#items'][0].value }}</div>
-        </a>
-      </li>
-      <li class="basket">
-        <a href="{{ content.field_panel_three_link[0]['#url'] }}" class="footer-link-three">
-          <div class="image"></div>
-          <div class="caption">{{ content.field_panel_three_caption['#items'][0].value }}</div>
-        </a>
-      </li>
+      {% if content.field_panel_one_link[0]['#url'] is not empty %}
+        <li class="brochure">
+          <a href="{{ content.field_panel_one_link[0]['#url'] }}" class="footer-link-one">
+            <div class="image"></div>
+            {# /* removed CMS-able icons for these images, code if needed to re-instate: style="background-image:url({{ file_url(content.field_panel_two_image.0['#item'].entity.uri.value) }});" */ #}
+            <div class="caption">{{ content.field_panel_one_caption['#items'][0].value }}</div>
+          </a>
+        </li>
+      {% endif %}
+      {% if content.field_panel_two_link[0]['#url'] is not empty %}
+        <li class="pin">
+          <a href="{{ content.field_panel_two_link[0]['#url'] }}" class="footer-link-two">
+            <div class="image"></div>
+            <div class="caption">{{ content.field_panel_two_caption['#items'][0].value }}</div>
+          </a>
+        </li>
+      {% endif %}
+      {% if content.field_panel_three_link[0]['#url'] is not empty %}
+        <li class="basket">
+          <a href="{{ content.field_panel_three_link[0]['#url'] }}" class="footer-link-three">
+            <div class="image"></div>
+            <div class="caption">{{ content.field_panel_three_caption['#items'][0].value }}</div>
+          </a>
+        </li>
+      {% endif %}
     </ul>
   {% endblock %}
 </div>
