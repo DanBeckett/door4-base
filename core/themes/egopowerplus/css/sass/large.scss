@@ -2731,6 +2731,130 @@ div#main {
     }
 }
 
+/* Content Block - System Generated */
+
+div#main {
+    div.block-views-blockcomparison-tables-mowers-table {
+        margin:0;
+        padding:0;
+        div.view-comparison-tables {
+            margin:0 auto;
+            padding:40px 40px;
+            max-width:1366px;
+            div.title {
+                @include typography-mixin-title-2;
+                line-height:100px;
+                color:$ego-green;
+                margin:0 auto 45px auto;
+                padding:30px 0 37px 0;
+                position:relative;
+                max-width:930px;
+                text-align:center;
+                &:after {
+                    content:"";
+                    display:block;
+                    width:74px;
+                    height:15px;
+                    background-color:$ego-green;
+                    position:absolute;
+                    bottom:0px;
+                    left:50%;
+                    margin:0 0 0 -37px;
+                    padding:0;
+                    -webkit-transform:skewX(-16deg);
+                    transform:skewX(-16deg);
+                    -webkit-border-radius:999px;
+                    border-radius:999px;
+                }
+            }
+            .table-scroll {
+                position: relative;
+            }
+            table {
+                margin:0 auto;
+                padding:0;
+                border:1px solid $ego-dark-grey;
+                thead {
+                    td, th {
+                        background-color:#2d2d2d;
+                        border-right:1px solid $ego-white;
+                        color:$ego-white;
+                        font-weight: normal;
+                        margin: 0;
+                        padding:19px 15px;
+                        font-size:19px;
+                        line-height:21px;
+                        text-align: center;
+                        &:last-child {
+                            border-right:none;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td, th {
+                            background-color: $ego-white;
+                            border-right:1px solid $ego-dark-grey;
+                            margin:0;
+                            padding:19px 15px;
+                            text-align:center;
+                            color:$ego-black;
+                            font-size:14px;
+                            line-height:21px;
+                            &:last-child {
+                                border-right:none;
+                            }
+                            &.no-right-border {
+                                border-right:none;
+                            }
+                            &.recommended {
+                                background-color: $ego-green;
+                                color: $ego-white;
+                            }
+                            &[scope="row"] {
+                                text-transform:uppercase;
+                                font-weight:bold;
+                                text-align:left;
+                                white-space:nowrap;
+                                padding:19px 26px;
+                            }
+                        }
+                        &:nth-child(odd), &.shaded {
+                            td, th {
+                                background-color:#f5f5f5;
+                            }
+                        }
+                        &.reduce-padding-top {
+                            td, th {
+                                padding-top:8px;
+                            }
+                        }
+                        &.reduce-padding-bottom {
+                            td, th {
+                                padding-bottom:8px;
+                            }
+                        }
+                    }
+                }
+            }
+            div.footnote {
+                @include typography-mixin-small;
+                margin:0;
+                padding:30px 20px 0 20px;
+                text-align:center;
+                color:$ego-black;
+                p {
+                    @include typography-mixin-small;
+                    margin:0;
+                    padding:30px 20px 0 20px;
+                    text-align:center;
+                    color:$ego-black;
+                }
+            }
+        }
+    }
+}
+
 /* Privacy, Warranty, Terms pages. Very rush fix, find a nice way to sort this */
 
 div#main {
