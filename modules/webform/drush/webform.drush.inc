@@ -346,15 +346,17 @@ function drush_webform_purge($webform_id = NULL) {
   if (!$webform) {
     $submission_total = \Drupal::entityQuery('webform_submission')->count()->execute();
     $form_total = \Drupal::entityQuery('webform')->count()->execute();
+
     $t_args = [
       '@submission_total' => $submission_total,
-      '@submissions' => \Drupal::translation()->formatPlural($submission_total, t('submission'), t('submissions')),
+      '@submissions' => \Drupal::translation()->formatPlural($submission_total, 'submission', 'submissions'),
       '@form_total' => $form_total,
-      '@forms' => \Drupal::translation()->formatPlural($form_total, t('webform'), t('webforms')),
+      '@forms' => \Drupal::translation()->formatPlural($form_total, 'webform', 'webforms'),
     ];
     if (!drush_confirm(dt('Are you sure you want to delete @submission_total @submissions in @form_total @forms?', $t_args))) {
       return drush_user_abort();
     }
+
     $form = new WebformResultsClearForm($submission_storage, $request_handler);
     $form->batchSet();
     drush_backend_batch_process();
@@ -371,6 +373,7 @@ function drush_webform_purge($webform_id = NULL) {
     if (!drush_confirm(dt("Are you sure you want to delete all submissions from '@title' webform?", $t_args))) {
       return drush_user_abort();
     }
+
     $form = new WebformSubmissionsPurgeForm($submission_storage, $request_handler);
     $form->batchSet($webform, $source_entity);
     drush_backend_batch_process();
@@ -484,27 +487,6 @@ function drush_webform_libraries_status() {
  * Implements drush_hook_COMMAND().
  */
 function drush_webform_libraries_make() {
-  /** @var \Drupal\webform\WebformLibrariesManagerInterface $libraries_manager */
-  $libraries_manager = \Drupal::service('webform.libraries_manager');
-  $libraries = $libraries_manager->getLibraries(TRUE);
-
-  $data = [
-    'core' => '8.x',
-    'api' => 2,
-    'libraries' => [],
-  ];
-  foreach ($libraries as $library_name => $library) {
-    $url = $library['download_url']->toString();
-    $data['libraries'][$library_name] = [
-      'directory_name' => $library_name,
-      'destination' => 'libraries',
-      'download' => [
-        'type' => 'get',
-        'url' => $url,
-      ],
-    ];
-  }
-
   drush_print('# This file was generated using the `drush webform-libraries-make` command');
   drush_print(_drush_webform_libraries_make());
 }
@@ -681,7 +663,7 @@ function drush_webform_repair() {
   module_load_include('install', 'webform');
 
   drush_print('Repairing admin settings...');
-  _webform_update_admin_settings();
+  _webform_update_admin_settings(TRUE);
 
   drush_print('Repairing webform settings...');
   _webform_update_webform_settings();

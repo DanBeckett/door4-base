@@ -9,7 +9,7 @@ dependencies:
   - migrate_plus:migrate_plus
 
 # Information added by Drupal.org packaging script on 2017-05-10
-version: '8.x-4.x-dev'
+version: '8.x-4.0-beta1'
 core: '8.x'
 project: 'migrate_plus'
-datestamp: 1494423808
+datestamp: 1494450189

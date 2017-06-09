@@ -70,7 +70,7 @@ class WebformAccess {
       $access_result = AccessResult::forbidden()->addCacheableDependency($webform);
     }
     else {
-      $access_result = self::checkResultsAccess($webform, $source_entity);
+      $access_result = static::checkResultsAccess($webform, $source_entity);
     }
     return $access_result->addCacheTags(['config:webform.settings']);
   }
@@ -168,7 +168,7 @@ class WebformAccess {
    */
   public static function checkWebformWizardPagesAccess(WebformInterface $webform) {
     $elements = $webform->getElementsInitialized();
-    foreach ($elements as $key => $element) {
+    foreach ($elements as $element) {
       if (isset($element['#type']) && $element['#type'] == 'webform_wizard_page') {
         return AccessResult::allowed();
       }

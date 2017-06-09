@@ -101,10 +101,9 @@ class EmailWebformHandler extends WebformHandlerBase implements WebformHandlerMe
   /**
    * {@inheritdoc}
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, LoggerInterface $logger, EntityTypeManagerInterface $entity_type_manager, AccountInterface $current_user, ConfigFactoryInterface $config_factory, MailManagerInterface $mail_manager, WebformTokenManagerInterface $token_manager, WebformElementManagerInterface $element_manager) {
-    parent::__construct($configuration, $plugin_id, $plugin_definition, $logger, $entity_type_manager);
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, LoggerInterface $logger, ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager, AccountInterface $current_user, MailManagerInterface $mail_manager, WebformTokenManagerInterface $token_manager, WebformElementManagerInterface $element_manager) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition, $logger, $config_factory, $entity_type_manager);
     $this->currentUser = $current_user;
-    $this->configFactory = $config_factory;
     $this->mailManager = $mail_manager;
     $this->tokenManager = $token_manager;
     $this->elementManager = $element_manager;
@@ -119,9 +118,9 @@ class EmailWebformHandler extends WebformHandlerBase implements WebformHandlerMe
       $plugin_id,
       $plugin_definition,
       $container->get('logger.factory')->get('webform.email'),
+      $container->get('config.factory'),
       $container->get('entity_type.manager'),
       $container->get('current_user'),
-      $container->get('config.factory'),
       $container->get('plugin.manager.mail'),
       $container->get('webform.token_manager'),
       $container->get('plugin.manager.webform.element')
@@ -136,11 +135,11 @@ class EmailWebformHandler extends WebformHandlerBase implements WebformHandlerMe
     // Simplify the [webform_submission:values:.*] tokens.
     array_walk($settings, function (&$value, $key) {
       if (is_string($value)) {
-        $value = preg_replace('/\[webform_submission:(?:node|source_entity):([^:]+)[^]]*\]/', '[\1]', $value);
-        $value = preg_replace('/\[webform_submission:values:([^:]+)[^]]*\]/', '[\1]', $value);
-        $value = preg_replace('/\[webform_submission:([^:\]]+)[^]]*\]/', '[\1]', $value);
-        $value = preg_replace('/\[webform_role:([^:]+)\]/', '[\1]', $value);
         $value = preg_replace('/\[webform:([^:]+)\]/', '[\1]', $value);
+        $value = preg_replace('/\[webform_role:([^:]+)\]/', '[\1]', $value);
+        $value = preg_replace('/\[webform_submission:(?:node|source_entity|values):([^]]+)\]/', '[\1]', $value);
+        $value = preg_replace('/\[webform_submission:([^]]+)\]/', '[\1]', $value);
+        $value = preg_replace('/(:raw|:value)(:html)?\]/', ']', $value);
       }
     });
 
@@ -552,12 +551,11 @@ class EmailWebformHandler extends WebformHandlerBase implements WebformHandlerMe
    * {@inheritdoc}
    */
   public function getMessage(WebformSubmissionInterface $webform_submission) {
-    $token_data = [
-      'webform-submission-options' => [
-        'email' => TRUE,
-        'excluded_elements' => $this->configuration['excluded_elements'],
-        'html' => ($this->configuration['html'] && $this->supportsHtml()),
-      ],
+    $token_data = [];
+    $token_options = [
+      'email' => TRUE,
+      'excluded_elements' => $this->configuration['excluded_elements'],
+      'html' => ($this->configuration['html'] && $this->supportsHtml()),
     ];
 
     $message = [];
@@ -585,7 +583,7 @@ class EmailWebformHandler extends WebformHandlerBase implements WebformHandlerMe
       }
 
       // Set message key.
-      $message[$configuration_key] = $this->tokenManager->replace($configuration_value, $webform_submission, $token_data);
+      $message[$configuration_key] = $this->tokenManager->replace($configuration_value, $webform_submission, $token_data, $token_options);
     }
 
     // Trim the message body.
@@ -1092,7 +1090,7 @@ class EmailWebformHandler extends WebformHandlerBase implements WebformHandlerMe
       }
       $t_args = ['@title' => $title];
       if ($default_email = $this->getDefaultConfigurationValue($name)) {
-        $t_arg['%email'] = $default_email;
+        $t_args['%email'] = $default_email;
         $element[$name]['#description'] .= ' ' . $this->t("Leave blank to use %email as the '@title' email.", $t_args);
       }
       else {
