@@ -5780,7 +5780,7 @@ div#main div.content_block.content_block_single_product_details {
         line-height: 32px;
         margin: 0;
         padding: 22px 0 20px 0;
-        width: 50%;
+        width: 45%;
         float: left;
         color: #000000; }
         div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel div.price span {
@@ -5788,7 +5788,7 @@ div#main div.content_block.content_block_single_product_details {
       div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel div.reviews {
         margin: 0;
         padding: 29px 0 0 10px;
-        width: 50%;
+        width: 55%;
         float: left; }
         div#main div.content_block.content_block_single_product_details div.single_product_details div.info_panel div.reviews ul.stars {
           display: inline-block;
