@@ -172,11 +172,8 @@
 
               {% if node.field_buy_online_url.0.url %}
                 {% set buy_online_uri = node.field_buy_online_url.0.url %}
-              {% else %}
-                {% set buy_online_uri = '/where-to-buy/' %}
-              {% endif %}
-            
                 <li class="buy_online"><a href="{{ buy_online_uri }}" target="_blank" class="buy-online">{{ 'Buy online'|trans }} <i class="fa fa-angle-right"></i></a></li>
+              {% endif %}
 
               {% if node.field_authorised_dealer_url.0.url %}
                 
