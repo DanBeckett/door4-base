@@ -12,6 +12,7 @@
     9. Content Blocks
     10. Search Results
     11. Miscellaneous hotfixes
+    12. Language hotfixes
     
     ============================================
 
@@ -7195,5 +7196,27 @@ div#main .profile {
 .path-promo1-freelinetrimmer div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li:nth-child(even) div.product div.image {
   margin-left: 0;
   margin-right: 19%; }
+
+/* =============================== */
+/* 12. Language Hotfixes           */
+/* =============================== */
+html:lang(de) div#main div.content_block.content_block_hero div.hero div.caption {
+  line-height: 110px; }
+html:lang(de) div#main div.content_block.content_block_our_story_content div.our_story_content div.title {
+  line-height: 110px; }
+html:lang(de) div#main div.content_block.content_block_multi_tool_intro div.intro_text div.intro_title {
+  line-height: 104px; }
+html:lang(de) div#main div.content_block.content_block_our_story_feature_panels ul.feature_panels li div.feature_panel div.text h2 {
+  line-height: 60px; }
+html:lang(de) div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.info_panel div.content div.title {
+  line-height: 36px; }
+html:lang(de) div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details div.title {
+  line-height: 46px; }
+html:lang(de) footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper {
+  width: 218px; }
+  html:lang(de) footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper input[type='submit'] {
+    width: 218px; }
+html:lang(de) footer div#footer_inner div#footer_contact form#signup_form div#signup_input_wrapper {
+  margin: 0 224px 0 0; }
 
 /*# sourceMappingURL=large.css.map */

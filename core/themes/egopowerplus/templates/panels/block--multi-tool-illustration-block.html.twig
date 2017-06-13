@@ -46,21 +46,21 @@
         
           <div class="first_row">
             
-              <div class="attachment_01"><img src="/{{base_path ~ directory}}/images/blocks/multi_tool_illustration/multi_tool_illustration_attachment_01.png"></div>
+              <div class="attachment_01"><img src="{{ file_url(content.field_mt_image_one.0['#item'].entity.uri.value) }}"></div>
                 
-                <div class="power_unit"><img src="/{{base_path ~ directory}}/images/blocks/multi_tool_illustration/multi_tool_illustration_power_unit.png"></div>
+                <div class="power_unit"><img src="{{ file_url(content.field_mt_central_image.0['#item'].entity.uri.value) }}"></div>
                 
-                <div class="attachment_05"><img src="/{{base_path ~ directory}}/images/blocks/multi_tool_illustration/multi_tool_illustration_attachment_05.png"></div>
+                <div class="attachment_05"><img src="{{ file_url(content.field_mt_image_five.0['#item'].entity.uri.value) }}"></div>
             
             </div><!-- .first_row -->
             
             <div class="second_row">
             
-              <div class="attachment_02"><img src="/{{base_path ~ directory}}/images/blocks/multi_tool_illustration/multi_tool_illustration_attachment_02.png"></div>
+              <div class="attachment_02"><img src="{{ file_url(content.field_mt_image_two.0['#item'].entity.uri.value) }}"></div>
                 
-                <div class="attachment_03"><img src="/{{base_path ~ directory}}/images/blocks/multi_tool_illustration/multi_tool_illustration_attachment_03.png"></div>
+                <div class="attachment_03"><img src="{{ file_url(content.field_mt_image_three.0['#item'].entity.uri.value) }}"></div>
                 
-                <div class="attachment_04"><img src="/{{base_path ~ directory}}/images/blocks/multi_tool_illustration/multi_tool_illustration_attachment_04.png"></div>
+                <div class="attachment_04"><img src="{{ file_url(content.field_mt_image_four.0['#item'].entity.uri.value) }}"></div>
             
             </div><!-- .second_row -->
         
