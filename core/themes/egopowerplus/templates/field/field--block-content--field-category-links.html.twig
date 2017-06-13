@@ -47,7 +47,7 @@
             <div class="title">{{ item.content['#paragraph'].field_cta_title.value|raw }}</div>
             <div class="subtitle">{{ item.content['#paragraph'].field_cta_subtitle.value|raw }}</div>
             <div class="cta{% if item.content['#paragraph'].field_range_link_spacing.value %} extra-padding{% endif %}">
-              {{ item.content['#paragraph'].field_cta_text.value }}
+              {{ item.content['#paragraph'].field_cta_text.value|raw }}
               <i class="fa fa-angle-right"></i>
             </div>
           </div>
