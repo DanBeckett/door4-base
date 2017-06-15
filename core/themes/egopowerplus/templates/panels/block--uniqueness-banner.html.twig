@@ -42,11 +42,19 @@
   <div class="home_uniqueness_banner">
   {% block content %}
       <div class="graphic">
+        {% set standard_class = '' %}
+        {% set svg_class = '' %}
+
+        {% if content.field_image_standard.0['#item'].entity.uri.value and content.field_image_svg.0['#file'].uri.value %}
+          {% set standard_class = 'standard' %}
+          {% set svg_class = 'svg' %}
+        {% endif %}
+
         {% if content.field_image_standard.0['#item'].entity.uri.value %}
-         <img class="standard" src="{{ file_url(content.field_image_standard.0['#item'].entity.uri.value) }}" />
+         <img class="{{ standard_class }}" src="{{ file_url(content.field_image_standard.0['#item'].entity.uri.value) }}" />
         {% endif %}
         {% if content.field_image_svg.0['#file'].uri.value %}
-         <img class="svg" src="{{ file_url(content.field_image_svg.0['#file'].uri.value) }}" />
+         <img class="{{ svg_class }}" src="{{ file_url(content.field_image_svg.0['#file'].uri.value) }}" />
         {% endif %}
       </div>
       <div class="caption">

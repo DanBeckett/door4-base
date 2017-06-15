@@ -161,7 +161,6 @@ jQuery(window).load(function() {
 	// 'div#main div.content_block.content_block_manuals div.manuals div.manuals_concertina div.section div.section_bar.conc-trigger div.matchheight'
 
 	jQuery.fn.matchHeight.afterUpdate = function(event, groups) {
-		console.log('hello');
 	}
 
 	for (i = 0, len = matchEls.length; i < len; i++) {
@@ -234,9 +233,8 @@ jQuery(window).load(function() {
 				$header = jQuery('header'),
 				$anchors = jQuery('#breadcrumb_bar .anchors'),
 				$el_pos = $this.position(),
-				$header_height = $header.outerHeight()
-				$scrollto = $el_pos.top - $header_height
-				$captions = jQuery('potential_js_breadcrumbs');
+				$header_height = $header.outerHeight(),
+				$scrollto = $el_pos.top - $header_height;
 			$anchors.append('<a href="#specification" data-scroll-to="' + $scrollto + 'px">' + $captions.specification + '</a>');
 		}
 
