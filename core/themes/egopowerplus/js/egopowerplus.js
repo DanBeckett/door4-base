@@ -320,16 +320,6 @@ jQuery(window).load(function() {
 				});
 			});
 		});
-	} 
-
-	/* -- Add placeholder text to search form. Eventually change to a more graceful way of doing this via the theme --*/
-
-	if(jQuery('#edit-keys').length > 0) {
-		jQuery('#edit-keys').attr('placeholder', 'Search');
-	}
-
-	if(jQuery('#edit-keys--2').length > 0) {
-		jQuery('#edit-keys--2').attr('placeholder', 'Search');
 	}
 
 	/* -- Move smallprint on signup form (drupal won't allow us to add this after the signup button) -- */
