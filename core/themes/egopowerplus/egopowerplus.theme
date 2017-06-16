@@ -35,7 +35,8 @@ function egopowerplus_preprocess_html(&$variables) {
 
       //$variables['meta_title'] = $node->field_meta_title->value;
   	  //$variables['meta_description'] = $node->field_meta_description->value;
-      $variables['product_name'] = $node->field_product_name->value;
+
+      $variables['product_name'] = strip_tags($node->field_product_name->value);
       $variables['sku'] = $node->field_sku->value;
       $variables['remove_reviews'] = $node->field_remove_reviews->value;
       //$variables['product_type'] = $node->field_product_type;

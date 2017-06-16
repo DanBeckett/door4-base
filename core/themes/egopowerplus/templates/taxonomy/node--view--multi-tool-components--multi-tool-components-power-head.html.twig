@@ -99,7 +99,7 @@
           <a href="{{ url }}">{{ node.field_sku[0].value }} </a>
         </div>
         <div class="title">
-          <a href="{{ url }}">{{ node.field_product_name[0].value }}</a>
+          <a href="{{ url }}">{{ node.field_product_name[0].value|raw }}</a>
         </div>
         <div class="description">
           <a href="{{ url}}">{{ node.field_excerpt_content[0].value }}</a>

@@ -117,7 +117,7 @@
         
           <div class="code">{{ node.field_sku[0].value }}</div>
             
-            <div class="product_name">{{ node.field_product_name[0].value }}</div>
+            <div class="product_name">{{ node.field_product_name[0].value|raw }}</div>
             
               {% if node.field_badge_one_text[0].value or node.field_badge_two_text[0].value %}
 

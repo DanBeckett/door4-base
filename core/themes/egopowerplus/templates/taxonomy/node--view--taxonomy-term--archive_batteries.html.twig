@@ -96,7 +96,7 @@
       </a>
       <div class="details">
         <div class="code"><a href="{{ url }}">{{ node.field_sku[0].value }} </a></div>
-        <div class="title"><a href="{{ url }}">{{ node.field_product_name[0].value }}</a></div>
+        <div class="title"><a href="{{ url }}">{{ node.field_product_name[0].value|raw }}</a></div>
         <a href="{{ url }}" class="find-out-more" rel="bookmark">{{ 'Find out more'|trans }}</a>
       </div>
     {% endif %}
