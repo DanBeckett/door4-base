@@ -54,7 +54,7 @@
     {% block content %}
       {{ content.field_titles }}
       <div class="product_image">
-        <img src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" />
+        <img id="labelled-image-{{ plugin_id|clean_class }}" src="{{ file_url(content.field_image.0['#item'].entity.uri.value) }}" />
         {# /* <div class="overlay active" style="background-image: url({{ file_url(content.field_overlay_image.0['#item'].entity.uri.value) }}); ?>"></div>*/ #}
       </div>
       <div class="labels_key">

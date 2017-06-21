@@ -394,3 +394,41 @@ jQuery(window).load(function() {
 	}
 
 });
+
+/* If Labelled image block is a gif, add animation controls */
+
+if(jQuery('.labelled_product_image').length > 0) {
+
+	jQuery('.labelled_product_image').each(function(){
+
+		var img		=	jQuery(this).find('.product_image img'),
+		    imgId	=	img.attr('id');
+
+		if(img.attr('src').indexOf('gif') !== -1) {
+			
+			//loop mode is set to fault, but we've chosen to "draw while loading"
+			//this means it will play once while loading then the gif.load callback
+			//will make it play a second time.
+
+			var gif = new SuperGif({
+			  gif: document.getElementById(imgId),
+			  loop_mode: false,
+			  auto_play: true,
+			  draw_while_loading: true,
+			  show_progress_bar: false
+			  
+			});
+
+			gif.load(function(){
+			  gif.play();
+			});
+
+			var canvas = jQuery(this).find('canvas');
+
+			canvas.mouseenter(function(e){
+				gif.play();
+			});
+		}
+
+	});
+}
