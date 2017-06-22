@@ -124,7 +124,7 @@ function egopowerplus_add_regions_to_node($allowed_regions, &$variables) {
 }
 
 /**
-* egopowerplus_form_system_theme_settings_alter - Add custom settings in admin/appearance/settings
+* egopowerplus_form_system_theme_settings_alter - Add custom settings in admin/appearance/settings/egopowerplus
 */
 
 function egopowerplus_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
