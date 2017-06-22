@@ -27,6 +27,9 @@ function egopowerplus_preprocess_html(&$variables) {
     $variables['is_front'] = FALSE;
   }
 
+  //pull our custom GTM tracking code in as a variable twig can call
+  $variables['gtm'] = theme_get_setting('gtm');
+
   //if on a product, grab values needed for meta tag
   if(isset($variables['node_type'])) {
   	if(($variables['node_type'] == 'product' || $variables['node_type'] == 'accessory' || $variables['node_type'] == 'battery' || $variables['node_type'] == 'blower' || $variables['node_type'] == 'chainsaw' || $variables['node_type'] == 'hedge_trimmer' || $variables['node_type'] == 'line_trimmer' || $variables['node_type'] == 'mower' || $variables['node_type'] == 'multi_tool') && ($node = \Drupal::routeMatch()->getParameter('node'))) {
@@ -118,4 +121,22 @@ function egopowerplus_add_regions_to_node($allowed_regions, &$variables) {
     // Add build to region
     $variables[$region] = $build;
   }
+}
+
+/**
+* egopowerplus_form_system_theme_settings_alter - Add custom settings in admin/appearance/settings
+*/
+
+function egopowerplus_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  $form['gtm'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Google Tag Manager Tracking Code'),
+    '#default_value' => theme_get_setting('gtm'),
+    '#description'   => t("Enter the GTM code for this site (for example GTM-XXYYZZ)."),
+  );
 }
