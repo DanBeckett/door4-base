@@ -8808,3 +8808,89 @@ html:lang(de) {
         }
     }
 }
+
+html:lang(fr) {
+    div#main {
+        div.content_block {
+            &.content_block_hero {
+                div.hero {
+                    div.caption {
+                        line-height: 118px;
+                    }
+                }
+            }
+            &.content_block_our_story_content {
+                div.our_story_content {
+                    div.title {
+                        line-height: 118px;
+                    }
+                }
+            }
+            &.content_block_multi_tool_intro {
+                div.intro_text {
+                    div.intro_title {
+                        line-height: 110px;
+                    }
+                }
+            }
+            &.content_block_our_story_feature_panels {
+                ul.feature_panels {
+                    li {
+                        div.feature_panel {
+                            div.text {
+                                h2 {
+                                    line-height: 70px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.content_block_our_story_the_power_illustration {
+                div.the_power_illustration_wrapper {
+                    div.the_power_illustration {
+                        div.info_panel {
+                            div.content {
+                                div.title {
+                                    line-height: 42px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.content_block_range_list_1_across {
+                div.range_list_1_across {
+                    ul.product_list {
+                        li {
+                            div.product {
+                                div.details {
+                                    div.title {
+                                        line-height: 52px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        div#footer_inner {
+            div#footer_contact {
+                form#signup_form {
+                    div#signup_button_wrapper {
+                        width: 218px;
+                        input[type='submit'] {
+                            width: 218px;
+                        }
+                    }
+                    div#signup_input_wrapper {
+                        margin: 0 224px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
