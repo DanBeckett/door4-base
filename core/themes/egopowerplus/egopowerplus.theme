@@ -18,6 +18,8 @@ function egopowerplus_theme_suggestions_block_alter(&$suggestions, $variables) {
   }
 }
 
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
 function egopowerplus_preprocess_html(&$variables) {
   //enable is_front variable
   try {
@@ -32,7 +34,7 @@ function egopowerplus_preprocess_html(&$variables) {
 
   //if on a product, grab values needed for meta tag
   if(isset($variables['node_type'])) {
-  	if(($variables['node_type'] == 'product' || $variables['node_type'] == 'accessory' || $variables['node_type'] == 'battery' || $variables['node_type'] == 'blower' || $variables['node_type'] == 'chainsaw' || $variables['node_type'] == 'hedge_trimmer' || $variables['node_type'] == 'line_trimmer' || $variables['node_type'] == 'mower' || $variables['node_type'] == 'multi_tool') && ($node = \Drupal::routeMatch()->getParameter('node'))) {
+    if(($variables['node_type'] == 'product' || $variables['node_type'] == 'accessory' || $variables['node_type'] == 'battery' || $variables['node_type'] == 'blower' || $variables['node_type'] == 'chainsaw' || $variables['node_type'] == 'hedge_trimmer' || $variables['node_type'] == 'line_trimmer' || $variables['node_type'] == 'mower' || $variables['node_type'] == 'multi_tool') && ($node = \Drupal::routeMatch()->getParameter('node'))) {
   	  //add meta as variables as it needs to go into head.
       //originally used preset fields, but now we're auto-genning.
 
