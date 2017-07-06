@@ -712,6 +712,39 @@ header {
                 opacity: 0;
                 -webkit-transition: all 0.3s;
                 transition: all 0.3s; }
+            header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li.menu-item--expanded {
+              position: relative; }
+              header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li.menu-item--expanded > .menu {
+                background-color: #77bc1f;
+                top: 2.8em;
+                display: block;
+                left: 0.8em;
+                opacity: 0;
+                overflow: hidden;
+                padding-left: 0;
+                position: absolute;
+                min-width: 200%;
+                -webkit-box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.45);
+                -moz-box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.45);
+                box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.45);
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s; }
+                header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li.menu-item--expanded > .menu li {
+                  clear: left;
+                  display: block;
+                  margin-left: 0;
+                  margin-right: 0;
+                  text-align: left; }
+                  header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li.menu-item--expanded > .menu li a {
+                    background-color: #77bc1f;
+                    padding: 10px 12px; }
+                    header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li.menu-item--expanded > .menu li a:hover {
+                      background-color: #639d1a; }
+                    header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li.menu-item--expanded > .menu li a:after {
+                      height: 0px; }
+              header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li.menu-item--expanded:hover > .menu {
+                opacity: 1;
+                top: 3.2em; }
   header div#breadcrumb_bar_wrapper {
     margin: 0;
     padding: 3px 0 3px 0;
@@ -7217,6 +7250,25 @@ html:lang(de) footer div#footer_inner div#footer_contact form#signup_form div#si
   html:lang(de) footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper input[type='submit'] {
     width: 218px; }
 html:lang(de) footer div#footer_inner div#footer_contact form#signup_form div#signup_input_wrapper {
+  margin: 0 224px 0 0; }
+
+html:lang(fr) div#main div.content_block.content_block_hero div.hero div.caption {
+  line-height: 118px; }
+html:lang(fr) div#main div.content_block.content_block_our_story_content div.our_story_content div.title {
+  line-height: 118px; }
+html:lang(fr) div#main div.content_block.content_block_multi_tool_intro div.intro_text div.intro_title {
+  line-height: 110px; }
+html:lang(fr) div#main div.content_block.content_block_our_story_feature_panels ul.feature_panels li div.feature_panel div.text h2 {
+  line-height: 70px; }
+html:lang(fr) div#main div.content_block.content_block_our_story_the_power_illustration div.the_power_illustration_wrapper div.the_power_illustration div.info_panel div.content div.title {
+  line-height: 42px; }
+html:lang(fr) div#main div.content_block.content_block_range_list_1_across div.range_list_1_across ul.product_list li div.product div.details div.title {
+  line-height: 52px; }
+html:lang(fr) footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper {
+  width: 218px; }
+  html:lang(fr) footer div#footer_inner div#footer_contact form#signup_form div#signup_button_wrapper input[type='submit'] {
+    width: 218px; }
+html:lang(fr) footer div#footer_inner div#footer_contact form#signup_form div#signup_input_wrapper {
   margin: 0 224px 0 0; }
 
 /*# sourceMappingURL=large.css.map */
