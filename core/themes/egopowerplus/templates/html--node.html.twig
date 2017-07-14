@@ -41,7 +41,7 @@
     'line-trimmer',
     'mower',
     'multi-tool'
-  ] 
+  ]
 %}
 {% if node_type|clean_class in products|keys %}
     {% set generic_product_class = 'page-node-type-product' %}
@@ -76,13 +76,15 @@
         })(document, 'script');
     </script>
 
-    <script src="https://display.ugc.bazaarvoice.com/static/egopowerplus_uk/en_GB/bvapi.js"></script>
-    <script src="https://curations-static.feedmagnet.com/gallery/chervon/prod/loader.js"></script>
-    <script type="text/javascript">
-    // $BV.configure('global', { productId : 'LM2001E' });
-    $BV.configure('global', { productId : '{{ sku }}' });
-    //$BV.configure('global', { productId : 'product1' });
-    </script>
+    {% if bvjs %}
+      <script src="{{ bvjs }}"></script>
+      <script src="https://curations-static.feedmagnet.com/gallery/chervon/prod/loader.js"></script>
+      <script type="text/javascript">
+      // $BV.configure('global', { productId : 'LM2001E' });
+      $BV.configure('global', { productId : '{{ sku }}' });
+      //$BV.configure('global', { productId : 'product1' });
+      </script>
+    {% endif %}
 
   </head>
   {% if 'page-node-type-product' in body_classes|keys %}
