@@ -16,6 +16,19 @@ jQuery(window).load(function() {
 		});
 	};
 
+	var $htmlLang = jQuery('html').attr('lang');
+
+	//in some languages we want to display price with a ',' as the decimal seperator
+	if($htmlLang == 'de' || $htmlLang == 'fr' || $htmlLang == 'it') {
+		if(jQuery('.info_panel div.price').length > 0) {
+			jQuery('.info_panel div.price').each(function(){
+				var $this	=	jQuery(this),
+				    $text	=	$this.html();
+				$this.html($text.replace('.',','));
+			});
+		};
+	};
+
 	//trigger mobile menu
 	jQuery(".mobile_menu_trigger").click(function(e) {
 		e.preventDefault(); // Prevent default behaviour
