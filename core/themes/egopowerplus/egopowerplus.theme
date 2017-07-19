@@ -30,6 +30,7 @@ function egopowerplus_preprocess_html(&$variables) {
   //pull our custom GTM tracking code in as a variable twig can call
   $variables['gtm'] = theme_get_setting('gtm');
   $variables['bvjs'] = theme_get_setting('bvjs');
+  $variables['cookie_url'] = theme_get_setting('cookie_url');
 
   //if on a product, grab values needed for meta tag
   if(isset($variables['node_type'])) {
@@ -146,5 +147,11 @@ function egopowerplus_form_system_theme_settings_alter(&$form, \Drupal\Core\Form
     '#title'         => t('BazaarVoice JavaScript URL'),
     '#default_value' => theme_get_setting('bvjs'),
     '#description'   => t("Enter the resource location for the BazaarVoice js for this nationality"),
+  );
+  $form['cookie_url'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Cookie Policy URL'),
+    '#default_value' => theme_get_setting('cookie_url'),
+    '#description'   => t("Enter the resource location for this sites Cookie Policy page (to be included in the cookie pop-up)"),
   );
 }

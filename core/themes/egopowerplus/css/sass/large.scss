@@ -8505,6 +8505,71 @@ div#main {
     }
 }
 
+/* -- Cookie warning message ----- */
+
+.cookie_overlay {
+    background-color:$ego-darkest-grey;
+    bottom: 0;
+    display: none;
+    font-size: 14px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    .cookie_content {
+        margin: 0 auto;
+        max-width: 1110px;
+        overflow: auto;
+        padding: 1em 0 0;
+        text-align: center;
+        * {
+            color: $ego-white;
+        }
+        a {
+            color: $ego-green;
+            display: inline-block;
+            margin: 0 1em 0 0;
+            text-decoration: none;
+            &:hover {
+                color: $ego-green-hover;
+            }
+        }
+        p {
+            display: inline-block;
+        }
+        ul {
+            display: inline-block;
+            padding-left: 1em;
+            margin-top: 0;
+            margin-bottom: 1em;
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding: 1em 0 1em 1em;
+                &.cookie_link_button {
+                    background-color: #77bc1f;
+                    -webkit-transform: skewX(-16deg);
+                    transform: skewX(-16deg);
+                    -webkit-border-radius: 10px;
+                    border-radius: 10px;
+                    a {
+                        color: $ego-white;
+                        -webkit-transform: skewX(16deg);
+                        transform: skewX(16deg);
+                    }
+                }
+                &.cookie_link_detail {
+                    a {
+                        border-bottom: 1px solid $ego-green;
+                        color: $ego-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 /* =============================== */
 /* 10. Search results              */
 /* =============================== */

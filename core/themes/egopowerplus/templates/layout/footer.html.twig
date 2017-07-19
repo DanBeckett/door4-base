@@ -42,4 +42,21 @@
     
 	{% include '@egopowerplus/layout/mobile-menu.html.twig' %}
 
+    {% if cookie_url %}
+
+    <div class="cookie_overlay">
+
+        <div class="cookie_content">
+            <p>{{ 'Cookie Disclaimer'|trans }}</p>
+            <ul class="cookie_links">
+                <li class="cookie_link_detail"><a href="{{ cookie_url }}">{{ 'Cookie Details'|trans }}</a></li>
+                <li class="cookie_link_button"><a href="javascript:void(0);">{{ 'Allow Cookies'|trans }}</a></li>
+                <li class="cookie_link_disallow"><a href="http://www.google.com">{{ 'Disallow Cookies'|trans }}</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    {% endif %}
+
 </div><!-- #global_wrapper -->

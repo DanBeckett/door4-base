@@ -1,5 +1,21 @@
 jQuery(window).load(function() {
 	
+	var docCookies = document.cookie,
+	    thisCookie = "cookies=allow;";
+
+	if(docCookies.indexOf(thisCookie) === -1) {
+		jQuery('.cookie_overlay').slideDown();
+
+		//if cookies already allowed, don't need to load in click functionality
+		jQuery('.cookie_link_button a').click(function(e){
+			jQuery('.cookie_overlay').slideUp();
+			var d = new Date(),
+			    days = 30;
+		    d.setTime(d.getTime() + (days*24*60*60*1000));
+			document.cookie = "cookies=allow; expires=" + d.toUTCString() + "; path=/;";
+		});
+	};
+
 	//trigger mobile menu
 	jQuery(".mobile_menu_trigger").click(function(e) {
 		e.preventDefault(); // Prevent default behaviour
