@@ -1,7 +1,7 @@
 jQuery(window).load(function() {
 	
 	var docCookies = document.cookie,
-	    thisCookie = "cookies=allow;";
+		thisCookie = "cookies=allow;";
 
 	if(docCookies.indexOf(thisCookie) === -1) {
 		jQuery('.cookie_overlay').slideDown();
@@ -10,8 +10,8 @@ jQuery(window).load(function() {
 		jQuery('.cookie_link_button a').click(function(e){
 			jQuery('.cookie_overlay').slideUp();
 			var d = new Date(),
-			    days = 30;
-		    d.setTime(d.getTime() + (days*24*60*60*1000));
+				days = 30;
+			d.setTime(d.getTime() + (days*24*60*60*1000));
 			document.cookie = "cookies=allow; expires=" + d.toUTCString() + "; path=/;";
 		});
 	};
@@ -23,7 +23,7 @@ jQuery(window).load(function() {
 		if(jQuery('.info_panel div.price').length > 0) {
 			jQuery('.info_panel div.price').each(function(){
 				var $this	=	jQuery(this),
-				    $text	=	$this.html();
+					$text	=	$this.html();
 				$this.html($text.replace('.',','));
 			});
 		};
@@ -281,10 +281,10 @@ jQuery(window).load(function() {
 			var $this = jQuery('#questions');
 			if($this.is(':visible')){
 				var $header = jQuery('header'),
-				    $anchors = jQuery('#breadcrumb_bar .anchors'),
-				    $el_pos = $this.position(),
-				    $header_height = $header.outerHeight(),
-				    $scrollto = $el_pos.top - $header_height;
+					$anchors = jQuery('#breadcrumb_bar .anchors'),
+					$el_pos = $this.position(),
+					$header_height = $header.outerHeight(),
+					$scrollto = $el_pos.top - $header_height;
 				$anchors.append('<a href="#questions" data-scroll-to="' + $scrollto + 'px">' + $captions.questions + '</a>');
 			};
 		}
@@ -293,10 +293,10 @@ jQuery(window).load(function() {
 			var $this = jQuery('#reviews');
 			if($this.is(':visible')){
 				var $header = jQuery('header'),
-				    $anchors = jQuery('#breadcrumb_bar .anchors'),
-				    $el_pos = $this.position(),
-				    $header_height = $header.outerHeight(),
-				    $scrollto = $el_pos.top - $header_height;
+					$anchors = jQuery('#breadcrumb_bar .anchors'),
+					$el_pos = $this.position(),
+					$header_height = $header.outerHeight(),
+					$scrollto = $el_pos.top - $header_height;
 				$anchors.append('<a href="#reviews" data-scroll-to="' + $scrollto + 'px">' + $captions.reviews + '</a>');
 			};
 		}
@@ -355,7 +355,7 @@ jQuery(window).load(function() {
 
 	if(jQuery('.offers_signup_form').length > 0) {
 		var $form = jQuery('.offers_signup_form').children('form'),
-		    $smallprint = $form.children('p.smallprint');
+			$smallprint = $form.children('p.smallprint');
 		$smallprint.remove();
 		$form.append($smallprint);
 	}
@@ -365,7 +365,7 @@ jQuery(window).load(function() {
 	if(jQuery('.path-ego-news').length > 0) {
 		jQuery('.excerpt').each(function(){
 			var $this = jQuery(this),
-			    $paras = $this.children('p');
+				$paras = $this.children('p');
 			$paras.each(function($i){
 				if($i > 0) {
 					var $this = jQuery(this);
@@ -381,8 +381,8 @@ jQuery(window).load(function() {
 
 	  if(jQuery('.conc-default').length > 0) {
 
-	  	jQuery('.conc-default').children('.conc-trigger').addClass('conc-active'); 
-	  	jQuery('.conc-default').children('.conc-content').show();
+		jQuery('.conc-default').children('.conc-trigger').addClass('conc-active'); 
+		jQuery('.conc-default').children('.conc-content').show();
 
 	  };
 	
@@ -431,32 +431,69 @@ if(jQuery('.labelled_product_image').length > 0) {
 	jQuery('.labelled_product_image').each(function(){
 
 		var img		=	jQuery(this).find('.product_image img'),
-		    imgId	=	img.attr('id');
+			imgId	=	img.attr('id'),
+			number 	=	0;
 
 		if(img.attr('src').indexOf('gif') !== -1) {
+
+			function loopOnce() {
+				gif.pause();
+				if(number == 0) {
+					number++;
+					gif.move_to(0);
+					gif.play();
+				} else {
+					gif.pause();
+				}
+			}
 			
+			var gif = new SuperGif({
+				gif: document.getElementById(imgId),
+				loop_mode: true,
+				auto_play: false,
+				on_end: loopOnce,
+				show_progress_bar: false
+			});
+
+			gif.load(function (err) {
+				if (err) {
+					console.error(err);
+				} else {
+					gif.play();
+				}
+			});
+
+			var gifCanvas = gif.get_canvas(),
+			    $gifCanvas = jQuery(gifCanvas);
+
+			$gifCanvas.mouseenter(function(){
+				gif.play();
+			});
+
 			//loop mode is set to fault, but we've chosen to "draw while loading"
 			//this means it will play once while loading then the gif.load callback
 			//will make it play a second time.
 
-			var gif = new SuperGif({
-			  gif: document.getElementById(imgId),
-			  loop_mode: false,
-			  auto_play: true,
-			  draw_while_loading: true,
-			  show_progress_bar: false
+			// var gif = new SuperGif({
+			//   gif: document.getElementById(imgId),
+			//   loop_mode: false,
+			//   auto_play: true,
+			//   draw_while_loading: true,
+			//   show_progress_bar: false
 			  
-			});
+			// });
 
-			gif.load(function(){
-			  gif.play();
-			});
+			// gif.load(function(){
+			//   gif.play();
+			// });
 
-			var canvas = jQuery(this).find('canvas');
+			// var canvas = jQuery(this).find('canvas');
 
-			canvas.mouseenter(function(e){
-				gif.play();
-			});
+			// canvas.mouseenter(function(e){
+			// 	gif.play();
+			// });
+
+
 		}
 
 	});

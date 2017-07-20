@@ -11,7 +11,7 @@ ego-base-styles:
     js/vendor/modernizr.js: {}
     js/vendor/jquery.flexslider-min.js: {}
     js/vendor/jquery.matchHeight.js: {}
-    js/vendor/libgif.js: {}
+    js/vendor/sibgif.min.js: {}
     js/egopowerplus.js: {}
   dependencies:
     - core/jquery
