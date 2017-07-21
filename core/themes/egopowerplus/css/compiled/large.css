@@ -1321,6 +1321,7 @@ div#main div.content_block.content_block_blog_article {
               padding: 0; }
               div#main div.content_block.content_block_blog_article div.blog_article div.article_panel div.gallery ul.gallery_items li a img {
                 display: block;
+                height: auto;
                 margin: 0;
                 padding: 0;
                 max-width: 100%; }
