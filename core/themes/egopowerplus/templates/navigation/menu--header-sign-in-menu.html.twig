@@ -42,7 +42,15 @@
           item.is_collapsed ? 'menu-item--collapsed',
           item.in_active_trail ? 'menu-item--active-trail current',
           item.title == 'Sign In' ? 'sign_in',
-          item.title == 'Register Product' ? 'register'
+          item.title == 'Mein Konto' ? 'sign_in',
+          item.title == 'Mijn Account' ? 'sign_in',
+          item.title == 'Mon compte' ? 'sign_in',
+          item.title == 'Il mio Account' ? 'sign_in',
+          item.title == 'Register Product' ? 'register',
+          item.title == 'Garantieanmeldung' ? 'register',
+          item.title == 'Registreer uw garantie' ? 'register',
+          item.title == 'Enregistrez la garantie' ? 'register',
+          item.title == 'Registrazione Garanzia' ? 'register'
         ]
       %}
       <li{{ item.attributes.addClass(classes) }}>
