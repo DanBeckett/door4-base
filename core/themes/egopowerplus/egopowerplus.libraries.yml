@@ -6,7 +6,6 @@ ego-base-styles:
       css/compiled/large.css: {}
       css/compiled/medium.css: {}
       css/compiled/small.css: {}
-      css/compiled/bazaarvoice.css: {}
   js:
     js/vendor/modernizr.js: {}
     js/vendor/jquery.flexslider-min.js: {}
@@ -15,3 +14,33 @@ ego-base-styles:
     js/egopowerplus.js: {}
   dependencies:
     - core/jquery
+bazaarvoice-de:
+  version: 1.0
+  css:
+    theme:
+      css/compiled/bazaarvoice-de.css: {}
+bazaarvoice-en:
+  version: 1.0
+  css:
+    theme:
+      css/compiled/bazaarvoice-en.css: {}
+bazaarvoice-fr:
+  version: 1.0
+  css:
+    theme:
+      css/compiled/bazaarvoice-fr.css: {}
+bazaarvoice-ga:
+  version: 1.0
+  css:
+    theme:
+      css/compiled/bazaarvoice-ga.css: {}
+bazaarvoice-it:
+  version: 1.0
+  css:
+    theme:
+      css/compiled/bazaarvoice-it.css: {}
+bazaarvoice-nl:
+  version: 1.0
+  css:
+    theme:
+      css/compiled/bazaarvoice-nl.css: {}

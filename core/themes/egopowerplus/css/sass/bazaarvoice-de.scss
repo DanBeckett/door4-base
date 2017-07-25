@@ -1,0 +1,491 @@
+.bazaarvoice-rating-summary-wrapper {
+    * {
+        font-family: 'Arial', sans-serif !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-primarySummary-rating-container .bv-rating-stars-container .bv-rating-stars {
+        font-size: 36px !important;
+        letter-spacing: 8px !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-summary-bar .bv-rating-ratio-number .bv-rating span {
+        color: #000 !important;
+        font-size: 19px !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-summary-bar .bv-rating-ratio-count {
+        display: none !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button.bv-write-review,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button.bv-write-review {
+        color: #000 !important;
+
+        &:hover {
+            color: #77bc1f !important;
+        }
+
+        &:before {
+            content: "\f044";
+            font-family: FontAwesome;
+            margin-right: 5px;
+            font-size: 15px;
+            color: #000000;
+            display: inline-block;
+        }
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-summary-bar-minimalist .bv-write-container .bv-read-reviews-button,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-summary-bar-minimalist .bv-read-container .bv-read-reviews-button {
+        color: #000 !important;
+
+        &:hover {
+            color: #77bc1f !important;
+        }
+
+        &:before {
+            content: "\f044";
+            font-family: FontAwesome;
+            margin-right: 5px;
+            font-size: 15px;
+            color: #000000;
+            display: inline-block;
+        }
+    }
+
+    button {
+        font-family: 'Arial', sans-serif !important;
+    }
+
+}
+
+// ----------------------------------------------------------------------------
+
+// --- bazaarvoice reviews ---
+.bazaarvoice-reviews-wrapper {
+    background: #ededed;
+    max-width: 1280px;
+    margin: 25px auto; padding: 20px 5%;
+
+    * {
+        font-family: 'Arial', sans-serif !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-list-container .bv-trustmarkIcon {
+        display: none !important;
+    }
+
+    // main title
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-action-bar-header,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-mbox-breadcrumb {
+        font-family: 'heroic_condensedbold', sans-serif !important;
+        font-weight: normal !important;
+        font-size: 64px !important;
+        line-height: 70px !important;
+        text-transform: uppercase !important;
+        letter-spacing: -1px !important;
+        text-align: center !important;
+        float: none !important;
+    }
+
+    // ask question button
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-action-bar button {
+        font-family: 'Arial', sans-serif !important;
+        color: #fff !important;
+        font-size: 14px !important;
+        font-weight: normal !important;
+        background: #77bc1f !important;
+        border-radius: 3px !important;
+        margin: -52px 0 0 0 !important; padding: 8px 20px !important;
+
+        &:hover {
+            font-family: 'Arial', sans-serif !important;
+            color: #fff !important;
+            font-size: 14px !important;
+            font-weight: normal !important;
+            background: #7CC420 !important;
+            border-radius: 3px !important;
+            margin: -52px 0 0 0 !important; padding: 8px 20px !important;
+        }
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-section-summary .bv-content-title {
+        font-size: 19px !important;
+        font-weight: bold !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-section-summary .bv-section-summary-inline .bv-inline-histogram-ratings .bv-histogram-filter-helper {
+        font-size: 14px !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-inline-histogram-ratings .bv-inline-histogram-ratings-star,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-popup-histogram-ratings .bv-inline-histogram-ratings-star
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-inline-histogram-ratings .bv-popup-histogram-ratings-star,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-popup-histogram-ratings .bv-popup-histogram-ratings-star {
+        font-size: 19px !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-inline-histogram-ratings .bv-inline-histogram-ratings-score,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-popup-histogram-ratings .bv-inline-histogram-ratings-score,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-inline-histogram-ratings .bv-popup-histogram-ratings-score,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-popup-histogram-ratings .bv-popup-histogram-ratings-score {
+        font-size: 19px !important;
+        font-weight: bold !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-secondary-rating-summary-list {
+        margin: 35px 0 0 0 !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-secondary-rating-summary-list .bv-secondary-rating-summary-id {
+        font-size: 19px !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-section-summary .bv-section-summary-inline .bv-secondary-rating-summary .bv-rating-ratio .bv-secondary-rating-summary-rating {
+        font-size: 19px !important;
+        font-weight: bold !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-details-offset-on {
+        width: 100% !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 span.bv-content-pagination-pages-current,
+    .bv-cv2-cleanslate .bv-core-container-29 span.bv-content-pagination-pages-current:hover {
+        font-family: 'Arial', sans-serif !important;
+        font-size: 19px !important;
+    }
+
+    // sort dropdown background/button wrapper
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-dropdown-target {
+    }
+
+    // sort dropdown text
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-dropdown-target button {
+        font-family: 'Arial', sans-serif !important;
+        font-size: 19px !important;
+        padding: 0 30% 0 0 !important;
+    }
+
+}
+
+// ----------------------------------------------------------------------------
+
+// --- bazaarvoice questions/answers ---
+
+.bazaarvoice-questions-wrapper {
+    background: #ededed;
+    max-width: 1280px;
+    margin: 25px auto; padding: 20px 5%;
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-focusable:focus,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-pseudo-focused,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-tc-footer .bv-accept-tc-button:focus {
+        outline: none !important;
+    }
+
+    // main title
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-action-bar-header,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-mbox-breadcrumb {
+        font-family: 'heroic_condensedbold', sans-serif !important;
+        font-weight: normal !important;
+        font-size: 64px !important;
+        line-height: 70px !important;
+        text-transform: uppercase !important;
+        letter-spacing: -1px !important;
+        text-align: center !important;
+        float: none !important;
+    }
+
+    // ask question button
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-action-bar button {
+        font-family: 'Arial', sans-serif !important;
+        color: #fff !important;
+        font-size: 14px !important;
+        font-weight: normal !important;
+        background: #77bc1f !important;
+        border-radius: 3px !important;
+        margin: -52px 0 0 0 !important; padding: 8px 20px !important;
+
+        &:hover {
+            font-family: 'Arial', sans-serif !important;
+            color: #fff !important;
+            font-size: 14px !important;
+            font-weight: normal !important;
+            background: #7CC420 !important;
+            border-radius: 3px !important;
+            margin: -52px 0 0 0 !important; padding: 8px 20px !important;
+        }
+    }
+
+    // question count/sort bar
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-control-bar {
+        background: #ccc !important;
+    }
+
+    // questions count text
+    .bv-cv2-cleanslate .bv-core-container-29 span.bv-content-pagination-pages-current,
+    .bv-cv2-cleanslate .bv-core-container-29 span.bv-content-pagination-pages-current:hover {
+        font-family: 'Arial', sans-serif !important;
+        font-size: 19px !important;
+        padding: 5px 0 0 0 !important;
+    }
+
+    // sort dropdown background/button wrapper
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-dropdown-target {
+        background: #fff !important;
+    }
+
+    // sort dropdown text
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-dropdown-target button {
+        font-family: 'Arial', sans-serif !important;
+        font-size: 19px !important;
+        padding: 0 30% 0 0 !important;
+    }
+
+    // disable the 60px margin so comments and replies are indented
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item-product-image-offset-on .bv-content-header,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item-avatar-offset-on .bv-content-header {
+        margin-left: 0 !important;
+        border: 0 !important;
+        text-decoration: none !important;
+    }
+
+    // remove the indenting of comments and replies
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item-product-image-offset-on,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item-avatar-offset-on {
+        padding: 0 !important;
+    }
+
+    // comment avatar
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item-product-image-offset-on .bv-content-header .bv-author-avatar,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item-avatar-offset-on .bv-content-header .bv-author-avatar {
+        display: none !important;
+    }
+
+    // removing padding due to avatar being removed
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item-product-image-offset-on .bv-content-data-summary,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item-avatar-offset-on .bv-content-data-summary {
+        padding: 0 !important;
+    }
+
+    // comment author name
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-top-question .bv-content-core-float button {
+        font-size: 19px !important;
+        font-weight: normal !important;
+    }
+
+    // actual main question text
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-top-question .bv-content-core-float .bv-content-title {
+        font-size: 19px !important;
+        font-weight: normal !important;
+        line-height: 27px !important;
+        width: 80% !important;
+    }
+
+    // some random height/margin/padding
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-top-question .bv-content-core-float .bv-content-details-offset-off {
+        display: none !important;
+    }
+
+    //---
+
+    .bv-cv2-cleanslate .bv-core-container-29 ol,
+    .bv-cv2-cleanslate .bv-core-container-29 ul,
+    .bv-cv2-cleanslate .bv-core-container-29 dl {
+        font-family: 'Arial', sans-serif !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-data-summary .bv-content-data-count {
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-data-summary .bv-content-data-count .bv-content-title {
+        font-family: 'Arial', sans-serif !important;
+        font-size: 27px !important;
+        font-weight: bold !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-data-summary .bv-content-data-count .bv-content-data-label {
+        font-family: 'Arial', sans-serif !important;
+        font-size: 14px !important;
+    }
+
+    // ---
+
+    // answer question text
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn:hover {
+        font-family: 'Arial', sans-serif !important;
+        color: #77bc1f !important;
+        font-size: 14px;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-mbox-need-user .bv-content-feedback-btn-container .bv-content-btn,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-mbox-need-user .bv-secondary-content-actions-container .bv-content-btn {
+        font-family: 'Arial', sans-serif !important;
+        background: none !important;
+        text-decoration: none !important;
+        border: 0 !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn:first-child,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-mbox-need-user .bv-content-feedback-btn-container .bv-content-btn:first-child,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn:first-child,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-mbox-need-user .bv-secondary-content-actions-container .bv-content-btn:first-child {
+        text-decoration: none !important;
+        border: 0 !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-list .bv-content-item-avatar-offset-on {
+        padding-left: 30px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    // list item - answer reply main box
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-list .bv-content-item {
+        background: #fff !important;
+        -moz-border-radius: 40px !important;
+        -webkit-border-radius: 40px !important;
+        border-radius: 40px !important;
+    }
+
+    // author name & ego answers
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-author .bv-avatar-popup-target,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-popup-profull .bv-content-item .bv-content-author-name .bv-author .bv-avatar-popup-target,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-author .bv-avatar-author-name,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-popup-profull .bv-content-item .bv-content-author-name .bv-author .bv-avatar-author-name {
+        font-size: 19px !important;
+        font-weight: bold !important;
+    }
+
+    // helpful text
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-content-feedback-vote .bv-content-feedback-vote-request h4 {
+        font-family: 'Arial', sans-serif !important;
+        font-size: 14px !important;
+        margin: 5px 0 0 0 !important;
+    }
+
+    // feedback YES
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-yes,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn-feedback-yes,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-yes,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-yes,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn-feedback-yes,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-yes {
+        font-family: 'Arial', sans-serif !important;
+        color: #fff !important;
+        background: #78bb1f !important;
+        font-size: 14px !important;
+        border: 0 !important;
+        margin: 0 5px 0 0 !important; padding: 0 15px !important;
+        -moz-border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        border-radius: 10px !important;
+    }
+
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn-feedback-yes .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-yes .bv-content-btn-count {
+            color: #fff !important;
+            font-size: 18px !important;
+            padding: 8px 0 !important;
+            display: inline-block !important;
+        }
+
+    // feedback NO
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-no,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn-feedback-no,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-no,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-no,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn-feedback-no,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-no {
+        font-family: 'Arial', sans-serif !important;
+        color: #fff !important;
+        background: #333 !important;
+        font-size: 14px !important;
+        border: 0 !important;
+        padding: 0 15px !important;
+        -moz-border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        border-radius: 10px !important;
+    }
+
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-no .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-content-feedback-btn-container .bv-content-btn-feedback-no .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-item .bv-content-feedback-btn-container .bv-content-btn-feedback-no .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-no .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item:hover .bv-secondary-content-actions-container .bv-content-btn-feedback-no .bv-content-btn-count,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-secondary-content-item .bv-secondary-content-actions-container .bv-content-btn-feedback-no {
+            color: #fff !important;
+            font-size: 18px !important;
+            padding: 8px 0 !important;
+            display: inline-block !important;
+        }
+
+    // report button
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-content-report-btn,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-item .bv-content-feedback-vote-request {
+        font-family: 'Arial', sans-serif !important;
+        color: #77BC1F !important;
+        font-size: 14px !important;
+        margin: 5px 0 0 0 !important;
+    }
+
+    // ---
+
+    // pagination
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-pagination {
+        margin: 30px 0 0 0 !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-control-bar .bv-content-pagination-container,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-content-pagination .bv-content-pagination-container {
+        margin: 0 !important;
+    }
+
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-submission .bv-fieldsets .bv-form-actions .bv-submission-button-submit,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-submission .bv-fieldsets .bv-form-actions .bv-submission-button-submit:hover,
+    .bv-cv2-cleanslate .bv-core-container-29 .bv-submission .bv-fieldsets .bv-form-actions .bv-submission-button-submit:focus {
+        font-family: 'Arial', sans-serif !important;
+        color: #fff !important;
+        font-size: 14px !important;
+        font-weight: normal !important;
+        -webkit-border-radius: 5px !important;
+        -moz-border-radius: 5px !important;
+        border-radius: 5px !important;
+    }
+}
+
+.bv-cv2-cleanslate .bv-core-container-29 .bv-mbox .bv-mbox-breadcrumb span span {
+    font-family: 'Arial', sans-serif !important;
+}
+
+@media screen and (max-width: 640px) {
+    .bazaarvoice-questions-wrapper {
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-action-bar-header,
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-mbox-breadcrumb {
+            float: left !important;
+        }
+
+        .bv-cv2-cleanslate .bv-core-container-29 .bv-action-bar button {
+            margin: 18px 0 0 0 !important;
+            float: left !important;
+        }
+    }
+}

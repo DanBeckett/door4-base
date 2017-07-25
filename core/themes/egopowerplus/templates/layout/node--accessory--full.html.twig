@@ -82,6 +82,7 @@
 %}
 
 {{ attach_library('classy/node') }}
+{{ attach_library('egopowerplus/bazaarvoice-' ~ language ) }}
 
 {% set taxonomy = content.field_product_type[0]['#title']|lower|replace({' ': '-', '&': ''})|replace({'--':'-'}) %}
 

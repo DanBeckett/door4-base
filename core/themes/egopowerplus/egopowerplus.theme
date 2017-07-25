@@ -45,6 +45,7 @@ function egopowerplus_preprocess_html(&$variables) {
       $variables['sku'] = $node->field_sku->value;
       $variables['remove_reviews'] = $node->field_remove_reviews->value;
       //$variables['product_type'] = $node->field_product_type;
+      
   	}
     if($variables['node_type'] == 'article' && $node = \Drupal::routeMatch()->getParameter('node')) {
       $variables['title'] = $node->title->value;
@@ -94,6 +95,10 @@ function egopowerplus_preprocess_node(&$variables) {
   // Change how post time stamps are displayed
   $date = $variables['node']->getCreatedTime();
   $variables['date'] = \Drupal::service('date.formatter')->format($date, 'teaser_short_date');
+
+  //get language so we can get specific versions of bazaarvoice css
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
 }
  
 /**
@@ -155,3 +160,16 @@ function egopowerplus_form_system_theme_settings_alter(&$form, \Drupal\Core\Form
     '#description'   => t("Enter the resource location for this sites Cookie Policy page (to be included in the cookie pop-up)"),
   );
 }
+
+/*
+*
+*/
+
+// function egopowerplus_preprocess_search_result(&$variables) {
+//   $result = $variables['result'];
+//   $variables['type'] = $result['type'];
+//   if($result['type'] == 'Press Release') {
+//     //WE NEED TO IDENTIFY THE DOWNLOAD LINK
+//     print_r($result);
+//   }
+// }
