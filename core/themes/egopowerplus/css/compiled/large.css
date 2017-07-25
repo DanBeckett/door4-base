@@ -728,7 +728,8 @@ header {
                 -moz-box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.45);
                 box-shadow: 0px 5px 19px 0px rgba(0, 0, 0, 0.45);
                 -webkit-transition: all 0.3s;
-                transition: all 0.3s; }
+                transition: all 0.3s;
+                z-index: 10; }
                 header div#header_main_wrapper div#header_main div#navigation_wrapper ul#header_menu li.menu-item--expanded > .menu li {
                   clear: left;
                   display: block;

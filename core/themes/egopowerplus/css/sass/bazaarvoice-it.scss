@@ -17,8 +17,8 @@
         display: none !important;
     }
 
-    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button.bv-write-review,
-    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button.bv-write-review {
+    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar .bv-write-container .bv-submission-button.bv-write-review,
+    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar .bv-read-container .bv-submission-button.bv-write-review {
         color: #000 !important;
 
         &:hover {
@@ -35,10 +35,10 @@
         }
     }
 
-    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar-minimalist .bv-write-container .bv-submission-button,
-    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar-minimalist .bv-read-container .bv-submission-button,
-    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar-minimalist .bv-write-container .bv-read-reviews-button,
-    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar-minimalist .bv-read-container .bv-read-reviews-button {
+    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar .bv-write-container .bv-submission-button,
+    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar .bv-read-container .bv-submission-button,
+    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar .bv-write-container .bv-read-reviews-button,
+    .bv-cv2-cleanslate .bv-core-container-23 .bv-summary-bar .bv-read-container .bv-read-reviews-button {
         color: #000 !important;
 
         &:hover {
