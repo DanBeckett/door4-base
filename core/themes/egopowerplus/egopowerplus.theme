@@ -43,7 +43,7 @@ function egopowerplus_preprocess_html(&$variables) {
 
       $variables['product_name'] = strip_tags($node->field_product_name->value);
       $variables['sku'] = $node->field_sku->value;
-      $variables['remove_reviews'] = $node->field_remove_reviews->value;
+      //$variables['remove_reviews'] = $node->field_remove_reviews->value;
       //$variables['product_type'] = $node->field_product_type;
       
   	}
