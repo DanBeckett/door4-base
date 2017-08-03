@@ -165,11 +165,12 @@ function egopowerplus_form_system_theme_settings_alter(&$form, \Drupal\Core\Form
 *
 */
 
-// function egopowerplus_preprocess_search_result(&$variables) {
-//   $result = $variables['result'];
-//   $variables['type'] = $result['type'];
-//   if($result['type'] == 'Press Release') {
-//     //WE NEED TO IDENTIFY THE DOWNLOAD LINK
-//     print_r($result);
-//   }
-// }
+function egopowerplus_preprocess_search_result(&$variables) {
+  $result = $variables['result'];
+  $variables['type'] = $result['type'];
+  if($variables['type'] == "Press Release") {
+    echo '<pre>';
+    //print_r($result);
+    echo '</pre>';  
+  }
+}

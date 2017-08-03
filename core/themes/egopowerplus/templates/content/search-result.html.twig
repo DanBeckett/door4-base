@@ -59,7 +59,11 @@
 {{ attach_library('classy/search-results') }}
 {{ title_prefix }}
 <h3{{ title_attributes.addClass('search-result__title') }}>
-  <a href="{{ url }}">{{ title }}</a>
+  {% if type == "Press Release" %}
+  	<a href="{{ url }}">{{ title }}</a>
+  {% else %}
+  	<a href="{{ url }}">{{ title }}</a>
+  {% endif %}
 </h3>
 {{ title_suffix }}
 <div class="search-result__snippet-info">
