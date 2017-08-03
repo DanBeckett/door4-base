@@ -1274,6 +1274,20 @@ if (($_SERVER['REQUEST_URI'] == '/pages/promo3-multitool') &&
   header('Location: https://www.egopowerplus.co.uk/promo3-multitool');
   exit();
 }
+if (($_SERVER['REQUEST_URI'] == '/pages/submit-review') &&
+  // Check if Drupal or WordPress is running via command line
+  (php_sapi_name() != "cli")) {
+  header('HTTP/1.0 301 Moved Permanently');
+  header('Location: https://www.egopowerplus.co.uk/submit-review');
+  exit();
+}
+if (($_SERVER['REQUEST_URI'] == '/products/batteries-chargers/7-5-amp-hour-battery') &&
+  // Check if Drupal or WordPress is running via command line
+  (php_sapi_name() != "cli")) {
+  header('HTTP/1.0 301 Moved Permanently');
+  header('Location: https://www.egopowerplus.co.uk/products/batteries-chargers/ba4200-7-5-amp-hour-battery');
+  exit();
+}
 
 /**
  * Load services definition file.
@@ -1298,5 +1312,5 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
-$settings['hash_salt'] = 'klrwZW6YTn5540ensN7myhnmzJd3RitOGLh7Uou2CQhbidisns4eBqFKtArUw3ON-pZIVr-6zQ';
 
+$settings['hash_salt'] = 'klrwZW6YTn5540ensN7myhnmzJd3RitOGLh7Uou2CQhbidisns4eBqFKtArUw3ON-pZIVr-6zQ';
