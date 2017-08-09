@@ -14,6 +14,7 @@ if (($_SERVER['REQUEST_URI'] == '/account') &&
   header('Location: https://myaccount.egopowerplus.co.uk/account');
   exit();
 }
+
 if (($_SERVER['REQUEST_URI'] == '/account/login') &&
   // Check if Drupal or WordPress is running via command line
   (php_sapi_name() != "cli")) {
@@ -1275,6 +1276,33 @@ if (($_SERVER['REQUEST_URI'] == '/pages/promo3-multitool') &&
   exit();
 }
 
+if (false !== strpos($_SERVER['REQUEST_URI'], '/pages/submit-review') &&
+  // Check if Drupal or WordPress is running via command line
+  (php_sapi_name() != "cli")) {
+  $query_str = '';
+  if($!empty($_GET)) {
+    $get_count = count($_GET);
+    $query_str = '?';
+    $i =  0;
+    foreach($_GET as $get_key => $get) {
+      $i++;
+      $query_str .= $get_key . '=' . $get;
+      if($i < $get_count)
+        $query_str .= '&';
+    }
+  }
+  header('HTTP/1.0 301 Moved Permanently');
+  header('Location: https://www.egopowerplus.co.uk/submit-review' . $query_str);
+  exit();
+}
+if (($_SERVER['REQUEST_URI'] == '/products/batteries-chargers/7-5-amp-hour-battery') &&
+  // Check if Drupal or WordPress is running via command line
+  (php_sapi_name() != "cli")) {
+  header('HTTP/1.0 301 Moved Permanently');
+  header('Location: https://www.egopowerplus.co.uk/products/batteries-chargers/ba4200-7-5-amp-hour-battery');
+  exit();
+}
+
 /**
  * Load services definition file.
  */
@@ -1298,5 +1326,6 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+
 $settings['hash_salt'] = 'klrwZW6YTn5540ensN7myhnmzJd3RitOGLh7Uou2CQhbidisns4eBqFKtArUw3ON-pZIVr-6zQ';
 
