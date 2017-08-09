@@ -1280,7 +1280,7 @@ if (false !== strpos($_SERVER['REQUEST_URI'], '/pages/submit-review') &&
   // Check if Drupal or WordPress is running via command line
   (php_sapi_name() != "cli")) {
   $query_str = '';
-  if($!empty($_GET)) {
+  if(!empty($_GET)) {
     $get_count = count($_GET);
     $query_str = '?';
     $i =  0;
@@ -1326,6 +1326,4 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
-
 $settings['hash_salt'] = 'klrwZW6YTn5540ensN7myhnmzJd3RitOGLh7Uou2CQhbidisns4eBqFKtArUw3ON-pZIVr-6zQ';
-
